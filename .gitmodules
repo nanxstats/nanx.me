@@ -1,0 +1,8 @@
+[submodule "themes/hugo-renga"]
+	path = themes/hugo-renga
+	url = git@github.com:road2stat/hugo-renga.git
+	branch = master
+[submodule "public"]
+	path = public
+	url = git@github.com:road2stat/road2stat.github.io.git
+	branch = master
