@@ -17,7 +17,7 @@ my core mission is to make genomic data analysis
 [collaborative](talks/#talk-bostonbiocmeetup)
 and [reproducible](talks/#poster-dockflow).
 
-I am an [active contributor](http://depsy.org/person/329910) to the R community,
+I am an active contributor to the R community,
 with 20+ open source [R packages and Shiny applications](software/) for
 machine learning, data visualization, and reproducible research. I won the 2018
 [John M. Chambers Statistical Software Award](http://stat-computing.org/awards/jmc/index.html)
