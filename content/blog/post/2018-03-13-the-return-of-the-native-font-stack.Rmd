@@ -12,7 +12,7 @@ tags:
   - bootstrap 4
 ---
 
-![Figure: Lead type.](/image/lead-set-printing.jpg)
+![Photo: Lead type](/image/lead-set-printing.jpg)
 
 As people said, [web design is 95% typography](https://ia.net/topics/the-web-is-all-about-typography-period/).
 Once upon a time, people who care about the typography of their website

@@ -14,7 +14,7 @@ tags:
 </div>
 </div>
 
-<center>"They'll take your soul if you let them --- don't let them." (You've Got a Friend)</center>
+<p class="caption">"They'll take your soul if you let them --- don't let them." (You've Got a Friend)</p>
 
 <p></p>
 

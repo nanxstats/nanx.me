@@ -14,8 +14,8 @@ tags:
 _Disclaimer: this article reflects my personal opinion only.
 Reader discretion is advised._
 
-![Figure: How Beemo changes batteries (Adventure Time).
-Cute but dangerous, just like working with Python 2 and Python 3
+![How BMO changes batteries (Adventure Time).
+Cute but dangerous, just like working with Python 2 and 3
 simultaneously.](/image/bmo-change-batteries.gif)
 
 OK. There I said it. Everybody should consider #DeletePython.

@@ -37,7 +37,7 @@ This theme is named as **Renga** (連歌, linked poem). See more
 screenshots in its [GitHub repo](https://github.com/road2stat/hugo-renga).
 Here is a [live preview site](https://nanx.me/hugo-renga/).
 
-![A screenshot of the Renga theme.](/image/project-hugo-renga.png)
+![Figure: A screenshot of the Renga theme.](/image/project-hugo-renga.png)
 
 OK, now we have both [Tanka](https://nanx.me/blog/post/hugo-tanka-theme/)
 and [Renga](https://github.com/road2stat/hugo-renga),

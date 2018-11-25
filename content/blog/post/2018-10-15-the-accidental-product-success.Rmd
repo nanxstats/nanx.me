@@ -7,7 +7,7 @@ categories: []
 tags: []
 ---
 
-![A roadmap may tell how you can get there but doesn't tell you where to go. [Photo source](https://unsplash.com/photos/qYgDrCHV1B0).](/image/map-rawpixel-211022-unsplash.jpg)
+![A roadmap may tell how you can get there but doesn't tell you where to go. Photo: [rawpixel](https://unsplash.com/photos/qYgDrCHV1B0)/Unsplash.](/image/map-rawpixel-211022-unsplash.jpg)
 
 Technology companies are sometimes quirky but always quite interesting.
 

@@ -7,7 +7,7 @@ categories: []
 tags: []
 ---
 
-![[Middle of Nowhere](https://unsplash.com/photos/G85VuTpw6jg) by David Kovalenko.](/image/middle-of-nowhere-david-kovalenko.jpg)
+![Photo: [Middle of Nowhere](https://unsplash.com/photos/G85VuTpw6jg) by David Kovalenko](/image/middle-of-nowhere-david-kovalenko.jpg)
 
 > Anything posted on the Internet, stays there forever.
 

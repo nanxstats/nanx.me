@@ -9,7 +9,7 @@ tags: []
 
 Inbox zero means having zero unread emails in your email's inbox. I have an OCD for it.
 
-![Fraser Valley, British Columbia, Canada.](/image/fraser-valley.jpg)
+![Photo: Fraser Valley, British Columbia, Canada.](/image/fraser-valley.jpg)
 
 Many years ago, like many people, I used to "mark as unread" some emails I received, when I cannot decide to reply or not reply immediately for whatever reasons.
 
