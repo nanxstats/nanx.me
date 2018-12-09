@@ -1,7 +1,7 @@
 ---
 title: "Home"
 menu: "main"
-description: "Data scientist based in Cambridge, Massachusetts."
+description: "Data scientist based in Boston, Massachusetts."
 ---
 
 Hi! This is Nan. My research focuses on developing scalable
