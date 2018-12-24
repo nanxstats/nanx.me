@@ -12,7 +12,7 @@ My [Erdős number](https://en.wikipedia.org/wiki/Erd%C5%91s_number) is
 
 My industry experience dedicates to designing and implementing cloud-based
 data analysis solutions for leading pharmaceutical & life science research
-organizations around the world. By connecting the dots in product and engineering,
+organizations. By connecting the dots in data science and product engineering,
 my core mission is to make genomic data analysis
 [collaborative](talks/#talk-bostonbiocmeetup)
 and [reproducible](talks/#poster-dockflow).
