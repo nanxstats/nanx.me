@@ -40,7 +40,13 @@ Web applications:
 </p>
 
 <p>
-Code contributor:
+R code recipes & awesome lists:
+<a href="#recipes">deep-learning-recipes</a>
+&middot; <a href="#recipes">awesome-shiny-extensions</a>
+</p>
+
+<p>
+R code contributor:
 <a href="#contributor">ashr</a>
 &middot; <a href="#contributor">dml</a>
 &middot; <a href="#contributor">mxnet-r</a>
@@ -626,6 +632,19 @@ The application is powered by the data from
 </div>
 </div>
 </div>
+
+<hr>
+
+<a class="anchor" id="recipes"></a>
+
+## R Code Recipes & Awesome Lists
+
+I contributed some code to the following open source software.
+
+<hr>
+
+- <a href="https://github.com/road2stat/deep-learning-recipes">deep-learning-recipes</a> - R implementation for selected machine learning methods with deep learning frameworks (Keras, Tensorflow).
+- <a href="https://github.com/road2stat/awesome-shiny-extensions">awesome-shiny-extensions</a> - Awesome R packages that offer extended UI or server components for the R web framework Shiny.
 
 <hr>
 
