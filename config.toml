@@ -1,8 +1,7 @@
-baseurl = "/"
+baseurl = "https://nanx.me/"
 publishDir = "public"
 title = "Nan Xiao | 肖楠"
 author = "Nan Xiao"
-relativeurls = true
 canonifyurls = true
 languagecode = "en"
 paginate = 3
@@ -18,7 +17,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params]
 pagetitle = "Nan Xiao"
 copyright = "© 2018 Nan Xiao"
-copyrightUrl = "https://nanx.me"
+copyrightUrl = "https://nanx.me/"
 faviconfile = "image/favicon.png"
 logofile = "image/nanxiao.jpg"
 posts_navigation = true
