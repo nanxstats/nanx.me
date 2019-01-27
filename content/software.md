@@ -291,36 +291,6 @@ and comparison for high-dimensional data.
 
 <hr>
 
-<a class="anchor" id="sevenbridges-r"></a>
-
-<div class="py-3">
-<div class="container">
-<div class="row">
-<div class="col">
-<div class="row">
-<div class="col-md-3">
-<img src="../image/project-sevenbridges-r.png" class="img-fluid" alt="sevenbridges-r-icon" />
-</div>
-<div class="col-md-9">
-<h3>sevenbridges-r: Seven Bridges API Client, CWL Schema, Meta Schema, and SDK Helper in R</h3>
-<p>
-R client and utilities for Seven Bridges platform API, from Cancer
-Genomics Cloud to other Seven Bridges supported platforms.
-</p>
-<p>
-<a href="https://sbg.github.io/sevenbridges-r/" class="btn btn-outline-primary">Website</a>
-<a href="https://bioconductor.org/packages/sevenbridges" class="btn btn-outline-primary">Bioconductor</a>
-<a href="https://github.com/sbg/sevenbridges-r" class="btn btn-outline-primary">GitHub</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<hr>
-
 <a class="anchor" id="enpls"></a>
 
 <div class="py-3">
@@ -402,6 +372,36 @@ Entrez IDs, HGNC gene symbols, and UniProt IDs, for Genotype-Tissue Expression (
 <a href="/grex/" class="btn btn-outline-primary">Website</a>
 <a href="https://cran.r-project.org/package=grex" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/road2stat/grex" class="btn btn-outline-primary">GitHub</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<a class="anchor" id="sevenbridges-r"></a>
+
+<div class="py-3">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="row">
+<div class="col-md-3">
+<img src="../image/project-sevenbridges-r.png" class="img-fluid" alt="sevenbridges-r-icon" />
+</div>
+<div class="col-md-9">
+<h3>sevenbridges-r: Seven Bridges API Client, CWL Schema, Meta Schema, and SDK Helper in R</h3>
+<p>
+R client and utilities for Seven Bridges platform API, from Cancer
+Genomics Cloud to other Seven Bridges supported platforms.
+</p>
+<p>
+<a href="https://sbg.github.io/sevenbridges-r/" class="btn btn-outline-primary">Website</a>
+<a href="https://bioconductor.org/packages/sevenbridges" class="btn btn-outline-primary">Bioconductor</a>
+<a href="https://github.com/sbg/sevenbridges-r" class="btn btn-outline-primary">GitHub</a>
 </p>
 </div>
 </div>
