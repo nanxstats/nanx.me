@@ -16,7 +16,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
 pagetitle = "Nan Xiao"
-copyright = "© 2018 Nan Xiao"
+copyright = "© 2019 Nan Xiao"
 copyrightUrl = "https://nanx.me/"
 faviconfile = "image/favicon.png"
 logofile = "image/nanxiao.jpg"
