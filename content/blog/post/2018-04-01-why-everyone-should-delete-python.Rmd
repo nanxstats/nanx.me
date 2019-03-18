@@ -24,7 +24,7 @@ Recently, people have raised significant concerns regarding Facebook's privacy
 protection practice on their user's data, with the discussions
 on Twitter: [#DeleteFacebook](https://twitter.com/brianacton/status/976231995846963201).
 This inspired me to say something about another spicy topic:
-[#DeletePython](https://twitter.com/road2stat/status/976852015757381632).
+[#DeletePython](https://twitter.com/nanxstats/status/976852015757381632).
 
 Well, I have to admit that "everyone" might be a bit exaggerating.
 The accurate central message would be, everyone who wants to do

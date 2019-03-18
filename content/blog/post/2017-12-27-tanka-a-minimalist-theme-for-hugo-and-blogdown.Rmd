@@ -24,14 +24,14 @@ especially if you love R Markdown.
 Without a hesitation, I decided to revive my blog and build a minimalist theme for it.
 Based on David's awesome [Black & Light](https://github.com/davidhampgonsalves/hugo-black-and-light-theme) theme,
 I made some of my own improvements and built this Hugo theme named
-[Tanka](https://github.com/road2stat/hugo-tanka) for blogdown and Hugo users.
+[Tanka](https://github.com/nanxstats/hugo-tanka) for blogdown and Hugo users.
 
 ![Figure: A screenshot of the Hugo Tanka theme.](/image/hugo-tanka-theme-screenshot.png)
 
 It is straightforward to create your blogdown website and try out the
 Tanka theme in RStudio. Simply click `File` → `New Project` →
 `New Directory` → `Website using blogdown`, then fill the "Hugo theme"
-field with `road2stat/hugo-tanka`.
+field with `nanxstats/hugo-tanka`.
 
 ![Figure: Creating a blogdown site with the Hugo Tanka theme in RStudio.](/image/rstudio-tanka.png)
 

@@ -76,8 +76,8 @@ It loads fast --- there is no more external asset loading required.
 It looks beautiful and renders well on every mainstream operating system.
 The recently released Bootstrap 4 selected such a
 [native font stack](https://getbootstrap.com/docs/4.0/content/reboot/#native-font-stack).
-I have also just [updated](https://github.com/road2stat/hugo-tanka/commit/7bc79daa9ac1071908b3cc0d42863bf4fa3f1e04)
-my blog theme [hugo-tanka](https://github.com/road2stat/hugo-tanka)
+I have also just [updated](https://github.com/nanxstats/hugo-tanka/commit/7bc79daa9ac1071908b3cc0d42863bf4fa3f1e04)
+my blog theme [hugo-tanka](https://github.com/nanxstats/hugo-tanka)
 with this font stack, hoping it could bring better reading experience.
 
 Will the web typography technology evolve again in the next few years? Maybe.

@@ -16,7 +16,7 @@ tags:
   - R
 ---
 
-All the R code for this post is available on GitHub: [road2stat/deep-learning-recipes](https://github.com/road2stat/deep-learning-recipes).
+All the R code for this post is available on GitHub: [nanxstats/deep-learning-recipes](https://github.com/nanxstats/deep-learning-recipes).
 
 ![Photo: [Three Palms](https://unsplash.com/photos/eZt5mvF7RcU) by Jamie Davies](/image/three-palms-jamie-davies.jpg)
 

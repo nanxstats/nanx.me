@@ -34,11 +34,11 @@ To make the transition easier, I built a new Hugo/blogdown theme that allows me
 to write HTML to use Bootstrap 4 components for specific pages,
 and write Markdown for the less complicated pages, such as the blog.
 This theme is named as **Renga** (連歌, linked poem). See more
-screenshots in its [GitHub repo](https://github.com/road2stat/hugo-renga).
+screenshots in its [GitHub repo](https://github.com/nanxstats/hugo-renga).
 Here is a [live preview site](https://nanx.me/hugo-renga/).
 
 ![Figure: A screenshot of the Renga theme.](/image/project-hugo-renga.png)
 
 OK, now we have both [Tanka](https://nanx.me/blog/post/hugo-tanka-theme/)
-and [Renga](https://github.com/road2stat/hugo-renga),
+and [Renga](https://github.com/nanxstats/hugo-renga),
 I'm wondering how Haiku looks. Stay tuned folks.

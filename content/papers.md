@@ -265,7 +265,7 @@ doi: 10.1002/psp4.12002.
 <p>
 <a href="MEF.pdf" class="btn btn-outline-primary">PDF</a>
 <a href="https://doi.org/10.1002/psp4.12002" class="btn btn-outline-primary">DOI</a>
-<a href="https://github.com/road2stat/MEF" class="btn btn-outline-primary">Code and Dataset</a>
+<a href="https://github.com/nanxstats/MEF" class="btn btn-outline-primary">Code and Dataset</a>
 </p>
 </div>
 </div>
@@ -285,7 +285,7 @@ doi: 10.1002/cem.2718.
 <p>
 <a href="logd.pdf" class="btn btn-outline-primary">PDF</a>
 <a href="https://doi.org/10.1002/cem.2718" class="btn btn-outline-primary">DOI</a>
-<a href="https://github.com/road2stat/logd74" class="btn btn-outline-primary">Dataset</a>
+<a href="https://github.com/nanxstats/logd74" class="btn btn-outline-primary">Dataset</a>
 </p>
 </div>
 </div>
