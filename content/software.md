@@ -776,4 +776,6 @@ An archive of some old R related documents.
 </div>
 </div>
 
+<hr>
+
 </div>

@@ -602,4 +602,6 @@ Final project presentation of our group for the 2010' visualization summer schoo
 </div>
 </div>
 
+<hr>
+
 </div>

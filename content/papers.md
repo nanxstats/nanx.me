@@ -29,7 +29,7 @@ description: "Published research papers of Nan Xiao."
 
 <hr>
 
-## Preprints
+## 2019
 
 <div class="pt-3">
 <div class="container">
@@ -37,21 +37,19 @@ description: "Published research papers of Nan Xiao."
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/paper-hdnom.png" class="img-fluid img-thumbnail rounded mx-auto d-block" alt="hdnom"
+<img src="../image/paper-chemometrics-collaboration-network.png" class="img-fluid img-thumbnail rounded mx-auto d-block" alt="collaboration patterns and network in chemometrics"
 width="100%" />
 </div>
 <div class="col-md-9">
 <p>
-<author>Nan Xiao</author>, Qing-Song Xu, and Miao-Zhu Li.
-hdnom: building nomograms for penalized Cox models with high-dimensional survival data.
-<em>bioRxiv</em>.
-doi: 10.1101/065524.
+Chuan-Quan Li, <author>Nan Xiao</author>, Ye Wen, Shi-Hui He, Yuan‐Da Xu, You-Wu Lin, Hong-Dong Li, Qing-Song Xu.
+Collaboration patterns and network in chemometrics.
+<em>Chemometrics and Intelligent Laboratory Systems</em> 2019.
+doi: 10.1016/j.chemolab.2019.05.011.
 </p>
 <p>
-<a href="https://www.biorxiv.org/content/biorxiv/early/2016/08/23/065524.full.pdf" class="btn btn-outline-primary">PDF</a>
-<a href="https://doi.org/10.1101/065524" class="btn btn-outline-primary">DOI</a>
-<a href="https://nanx.me/hdnom/" class="btn btn-outline-primary">Software</a>
-<a href="http://hdnom.io" class="btn btn-outline-primary">Shiny App</a>
+<a href="#" class="btn btn-outline-primary disabled">PDF</a>
+<a href="https://doi.org/10.1016/j.chemolab.2019.05.011" class="btn btn-outline-primary">DOI</a>
 </p>
 </div>
 </div>
@@ -293,5 +291,40 @@ doi: 10.1002/cem.2718.
 </div>
 </div>
 </div>
+
+<hr>
+
+## Preprints
+
+<div class="pt-3">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="row">
+<div class="col-md-3">
+<img src="../image/paper-hdnom.png" class="img-fluid img-thumbnail rounded mx-auto d-block" alt="hdnom"
+width="100%" />
+</div>
+<div class="col-md-9">
+<p>
+<author>Nan Xiao</author>, Qing-Song Xu, and Miao-Zhu Li.
+hdnom: building nomograms for penalized Cox models with high-dimensional survival data.
+<em>bioRxiv</em>.
+doi: 10.1101/065524.
+</p>
+<p>
+<a href="https://www.biorxiv.org/content/biorxiv/early/2016/08/23/065524.full.pdf" class="btn btn-outline-primary">PDF</a>
+<a href="https://doi.org/10.1101/065524" class="btn btn-outline-primary">DOI</a>
+<a href="https://nanx.me/hdnom/" class="btn btn-outline-primary">Software</a>
+<a href="http://hdnom.io" class="btn btn-outline-primary">Shiny App</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
 
 </div>
