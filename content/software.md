@@ -41,15 +41,15 @@ Web applications:
 
 <p>
 R code recipes & awesome lists:
-<a href="#recipes">deep-learning-recipes</a>
-&middot; <a href="#recipes">awesome-shiny-extensions</a>
+<a href="#deep-learning-recipes">deep-learning-recipes</a>
+&middot; <a href="#awesome-shiny-extensions">awesome-shiny-extensions</a>
 </p>
 
 <p>
 R code contributor:
-<a href="#contributor">ashr</a>
-&middot; <a href="#contributor">dml</a>
-&middot; <a href="#contributor">mxnet-r</a>
+<a href="#ashr">ashr</a>
+&middot; <a href="#dml">dml</a>
+&middot; <a href="#mxnet-r">mxnet-r</a>
 </p>
 
 <p>
@@ -79,7 +79,7 @@ A collection of my R packages for machine learning, data visualization, and repr
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-msaenet.png" class="img-fluid" alt="msaenet-icon" />
+<img src="../image/project-msaenet.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>msaenet: Multi-Step Adaptive Estimation Methods for Reducing False Positive Selection in Sparse Regressions</h3>
@@ -88,7 +88,7 @@ Implements the multi-step adaptive elastic-net (MSAENet) algorithm for feature s
 high-dimensional regressions. Also supports multi-step adaptive estimation based on MCP-net/SCAD-net.
 </p>
 <p>
-<a href="/msaenet/" class="btn btn-outline-primary">Website</a>
+<a href="/msaenet/" class="btn btn-outline-primary">Docs</a>
 <a href="https://cran.r-project.org/package=msaenet" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/nanxstats/msaenet" class="btn btn-outline-primary">GitHub</a>
 <a href="../papers/msaenet.pdf" class="btn btn-outline-primary">Paper</a>
@@ -110,7 +110,7 @@ high-dimensional regressions. Also supports multi-step adaptive estimation based
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-ggsci.png" class="img-fluid" alt="ggsci-icon" />
+<img src="../image/project-ggsci.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>ggsci: Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2</h3>
@@ -119,7 +119,7 @@ Offers a collection of ggplot2 color palettes inspired by scientific journals,
 data visualization libraries, science fiction movies, and TV shows.
 </p>
 <p>
-<a href="/ggsci/" class="btn btn-outline-primary">Website</a>
+<a href="/ggsci/" class="btn btn-outline-primary">Docs</a>
 <a href="https://cran.r-project.org/package=ggsci" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/nanxstats/ggsci" class="btn btn-outline-primary">GitHub</a>
 </p>
@@ -140,7 +140,7 @@ data visualization libraries, science fiction movies, and TV shows.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-liftr.png" class="img-fluid" alt="liftr-icon" />
+<img src="../image/project-liftr.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>liftr: Containerize R Markdown Documents</h3>
@@ -150,7 +150,7 @@ To achieve this goal, it extends the R Markdown metadata format,
 and uses Docker to containerize and render R Markdown documents.
 </p>
 <p>
-<a href="/liftr/" class="btn btn-outline-primary">Website</a>
+<a href="/liftr/" class="btn btn-outline-primary">Docs</a>
 <a href="https://cran.r-project.org/package=liftr" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/nanxstats/liftr" class="btn btn-outline-primary">GitHub</a>
 </p>
@@ -171,7 +171,7 @@ and uses Docker to containerize and render R Markdown documents.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-protr.png" class="img-fluid" alt="protr-icon" />
+<img src="../image/project-protr.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>protr: R Package for Generating Various Numerical Representation Schemes of Protein Sequence</h3>
@@ -180,7 +180,7 @@ R package generating various numerical representation schemes of protein sequenc
 and proteochemometrics research.
 </p>
 <p>
-<a href="/protr/" class="btn btn-outline-primary">Website</a>
+<a href="/protr/" class="btn btn-outline-primary">Docs</a>
 <a href="https://cran.r-project.org/package=protr" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/nanxstats/protr" class="btn btn-outline-primary">GitHub</a>
 <a href="../papers/protr.pdf" class="btn btn-outline-primary">Paper</a>
@@ -202,7 +202,7 @@ and proteochemometrics research.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-Rcpi.png" class="img-fluid" alt="Rcpi-icon" />
+<img src="../image/project-Rcpi.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>Rcpi: R/Bioconductor Package for Generating Various Descriptors of Proteins, Compounds, and their Interactions</h3>
@@ -211,7 +211,7 @@ The Rcpi package emphasizes the comprehensive integration of
 bioinformatics and chemoinformatics into a molecular informatics platform for drug discovery.
 </p>
 <p>
-<a href="/Rcpi/" class="btn btn-outline-primary">Website</a>
+<a href="/Rcpi/" class="btn btn-outline-primary">Docs</a>
 <a href="https://bioconductor.org/packages/Rcpi" class="btn btn-outline-primary">Bioconductor</a>
 <a href="https://github.com/nanxstats/Rcpi" class="btn btn-outline-primary">GitHub</a>
 <a href="../papers/Rcpi.pdf" class="btn btn-outline-primary">Paper</a>
@@ -233,7 +233,7 @@ bioinformatics and chemoinformatics into a molecular informatics platform for dr
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-OHPL.png" class="img-fluid" alt="OHPL-icon" />
+<img src="../image/project-OHPL.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>OHPL: Ordered Homogeneity Pursuit Lasso for Group Variable Selection</h3>
@@ -245,7 +245,7 @@ This feature makes it particularly useful for high-dimensional datasets with str
 correlated variables, such as spectroscopic data.
 </p>
 <p>
-<a href="https://OHPL.io/doc/" class="btn btn-outline-primary">Website</a>
+<a href="https://OHPL.io/doc/" class="btn btn-outline-primary">Docs</a>
 <a href="https://cran.r-project.org/package=OHPL" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/nanxstats/OHPL" class="btn btn-outline-primary">GitHub</a>
 <a href="../papers/OHPL.pdf" class="btn btn-outline-primary">Paper</a>
@@ -267,7 +267,7 @@ correlated variables, such as spectroscopic data.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-hdnom.png" class="img-fluid" alt="hdnom-icon" />
+<img src="../image/project-hdnom.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>hdnom: Benchmarking and Visualization Toolkit for Penalized Cox Models</h3>
@@ -277,7 +277,7 @@ with the support of reproducible survival model building, validation, calibratio
 and comparison for high-dimensional data.
 </p>
 <p>
-<a href="/hdnom/" class="btn btn-outline-primary">Website</a>
+<a href="/hdnom/" class="btn btn-outline-primary">Docs</a>
 <a href="https://cran.r-project.org/package=hdnom" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/nanxstats/hdnom" class="btn btn-outline-primary">GitHub</a>
 <a href="https://www.biorxiv.org/content/biorxiv/early/2016/08/23/065524.full.pdf" class="btn btn-outline-primary">Paper</a>
@@ -299,7 +299,7 @@ and comparison for high-dimensional data.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-enpls.png" class="img-fluid" alt="enpls-icon" />
+<img src="../image/project-enpls.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>enpls: R Package for Ensemble Partial Least Squares Regression</h3>
@@ -309,7 +309,7 @@ model applicability evaluation, and ensemble predictive modeling with (sparse)
 partial least squares regressions.
 </p>
 <p>
-<a href="/enpls/" class="btn btn-outline-primary">Website</a>
+<a href="/enpls/" class="btn btn-outline-primary">Docs</a>
 <a href="https://cran.r-project.org/package=enpls" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/nanxstats/enpls" class="btn btn-outline-primary">GitHub</a>
 </p>
@@ -330,7 +330,7 @@ partial least squares regressions.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-RECA.png" class="img-fluid" alt="RECA-icon" />
+<img src="../image/project-RECA.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>RECA: R Package for Relevant Component Analysis (RCA) in Supervised Distance Metric Learning</h3>
@@ -339,7 +339,7 @@ Relevant Component Analysis (RCA) tries to find a linear transformation of the f
 such that the effect of irrelevant variability is reduced in the transformed space.
 </p>
 <p>
-<a href="/RECA/" class="btn btn-outline-primary">Website</a>
+<a href="/RECA/" class="btn btn-outline-primary">Docs</a>
 <a href="https://cran.r-project.org/package=RECA" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/nanxstats/RECA" class="btn btn-outline-primary">GitHub</a>
 </p>
@@ -360,7 +360,7 @@ such that the effect of irrelevant variability is reduced in the transformed spa
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-grex.png" class="img-fluid" alt="grex-icon" />
+<img src="../image/project-grex.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>grex: Gene ID Mapping for Genotype-Tissue Expression (GTEx) Data</h3>
@@ -369,7 +369,7 @@ grex offers a minimal dependency solution for mapping Ensembl gene IDs to
 Entrez IDs, HGNC gene symbols, and UniProt IDs, for Genotype-Tissue Expression (GTEx) data.
 </p>
 <p>
-<a href="/grex/" class="btn btn-outline-primary">Website</a>
+<a href="/grex/" class="btn btn-outline-primary">Docs</a>
 <a href="https://cran.r-project.org/package=grex" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/nanxstats/grex" class="btn btn-outline-primary">GitHub</a>
 </p>
@@ -390,7 +390,7 @@ Entrez IDs, HGNC gene symbols, and UniProt IDs, for Genotype-Tissue Expression (
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-sevenbridges-r.png" class="img-fluid" alt="sevenbridges-r-icon" />
+<img src="../image/project-generic.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>sevenbridges-r: Seven Bridges API Client, CWL Schema, Meta Schema, and SDK Helper in R</h3>
@@ -399,7 +399,7 @@ R client and utilities for Seven Bridges platform API, from Cancer
 Genomics Cloud to other Seven Bridges supported platforms.
 </p>
 <p>
-<a href="https://sbg.github.io/sevenbridges-r/" class="btn btn-outline-primary">Website</a>
+<a href="https://sbg.github.io/sevenbridges-r/" class="btn btn-outline-primary">Docs</a>
 <a href="https://bioconductor.org/packages/sevenbridges" class="btn btn-outline-primary">Bioconductor</a>
 <a href="https://github.com/sbg/sevenbridges-r" class="btn btn-outline-primary">GitHub</a>
 </p>
@@ -428,7 +428,7 @@ Genomics Cloud to other Seven Bridges supported platforms.
 sbgr provides an R client for accessing Seven Bridges Genomics API (v1).
 </p>
 <p>
-<a href="/sbgr/" class="btn btn-outline-primary">Website</a>
+<a href="/sbgr/" class="btn btn-outline-primary">Docs</a>
 <a href="https://github.com/nanxstats/sbgr" class="btn btn-outline-primary">GitHub</a>
 </p>
 </div>
@@ -454,7 +454,7 @@ A collection of my Shiny apps for interactive data analysis.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-dockflow.png" class="img-fluid" alt="dockflow-icon" />
+<img src="../image/project-dockflow.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>DockFlow: Bioconductor Workflow Containerization and Orchestration with liftr</h3>
@@ -485,7 +485,7 @@ All 18 available Bioconductor workflows were containerized.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-hdnom.png" class="img-fluid" alt="hdnom-icon" />
+<img src="../image/project-hdnom.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>hdnom.io: Web Application for Building Nomograms with High-Dimensional Data</h3>
@@ -520,7 +520,7 @@ This app has been selected as one of the
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-targetnet.png" class="img-fluid" alt="targetnet-icon" />
+<img src="../image/project-targetnet.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>TargetNet: Shiny Web Application for Drug Target Identification with Large-Scale Public Binding Affinities Data</h3>
@@ -550,7 +550,7 @@ Driven by machine learning modeling of large-scale public chemogenomics data.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-protr.png" class="img-fluid" alt="protrweb-icon" />
+<img src="../image/project-protr.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>ProtrWeb: Shiny Web Application for Computing Protein Sequence-Derived Descriptors</h3>
@@ -580,7 +580,7 @@ physicochemical features in bioinformatics.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-imgsvd.png" class="img-fluid" alt="imgsvd-icon" />
+<img src="../image/project-imgsvd.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>ImgSVD: Shiny Web Application for Image Compression via Singular Value Decomposition</h3>
@@ -612,7 +612,7 @@ on image compression via singular value decomposition with the R package
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-signify.png" class="img-fluid" alt="signify-icon" />
+<img src="../image/project-signify.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>Signify: Shiny Web Application for Making Your <em>p</em>-value Sound Significant</h3>
@@ -639,26 +639,156 @@ The application is powered by the data from
 
 ## R Code Recipes & Awesome Lists
 
-I contributed some code to the following open source software.
+Code recipes and awesome lists shared with the community.
 
 <hr>
 
-- <a href="https://github.com/nanxstats/deep-learning-recipes">deep-learning-recipes</a> - R implementation for selected machine learning methods with deep learning frameworks (Keras, Tensorflow).
-- <a href="https://github.com/nanxstats/awesome-shiny-extensions">awesome-shiny-extensions</a> - Awesome R packages that offer extended UI or server components for the R web framework Shiny.
+<a class="anchor" id="deep-learning-recipes"></a>
+
+<div class="py-3">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="row">
+<div class="col-md-3">
+<img src="../image/project-generic.png" class="img-fluid" alt="" />
+</div>
+<div class="col-md-9">
+<h3>deep-learning-recipes</h3>
+<p>
+R implementation for selected machine learning methods with deep learning frameworks (Keras, Tensorflow).
+</p>
+<p>
+<a href="https://github.com/nanxstats/deep-learning-recipes" class="btn btn-outline-primary">GitHub</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<a class="anchor" id="awesome-shiny-extensions"></a>
+
+<div class="py-3">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="row">
+<div class="col-md-3">
+<img src="../image/project-awesome-shiny-extensions.png" class="img-fluid" alt="" />
+</div>
+<div class="col-md-9">
+<h3>awesome-shiny-extensions</h3>
+<p>
+Awesome R packages that offer extended UI or server components for the R web framework Shiny.
+</p>
+<p>
+<a href="https://github.com/nanxstats/awesome-shiny-extensions" class="btn btn-outline-primary">GitHub</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <hr>
 
 <a class="anchor" id="contributor"></a>
 
-## Code Contributor
+## R Code Contributor
 
 I contributed some code to the following open source software.
 
 <hr>
 
-- <a href="https://github.com/stephens999/ashr/">ashr</a> - Methods for adaptive shrinkage, using Empirical Bayes.
-- <a href="https://github.com/terrytangyuan/dml">dml</a> - A collection of distance metric learning algorithms in R.
-- <a href="https://github.com/apache/incubator-mxnet/tree/master/R-package">mxnet-r</a> - A flexible and efficient machine learning library for heterogeneous distributed systems.
+<a class="anchor" id="ashr"></a>
+
+<div class="py-3">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="row">
+<div class="col-md-3">
+<img src="../image/project-generic.png" class="img-fluid" alt="" />
+</div>
+<div class="col-md-9">
+<h3>ashr: An R Package for Adaptive Shrinkage</h3>
+<p>
+Methods for adaptive shrinkage using Empirical Bayes.
+</p>
+<p>
+<a href="https://cran.r-project.org/web/packages/ashr/vignettes/adaptive_shrinkage.html" class="btn btn-outline-primary">Docs</a>
+<a href="https://cran.r-project.org/package=ashr" class="btn btn-outline-primary">CRAN</a>
+<a href="https://github.com/stephens999/ashr" class="btn btn-outline-primary">GitHub</a>
+<a href="https://doi.org/10.1093/biostatistics/kxw041" class="btn btn-outline-primary">Paper</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<a class="anchor" id="dml"></a>
+
+<div class="py-3">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="row">
+<div class="col-md-3">
+<img src="../image/project-generic.png" class="img-fluid" alt="" />
+</div>
+<div class="col-md-9">
+<h3>dml: Distance Metric Learning in R</h3>
+<p>
+A collection of distance metric learning algorithms in R.
+</p>
+<p>
+<a href="https://cran.r-project.org/package=dml" class="btn btn-outline-primary">CRAN</a>
+<a href="https://github.com/terrytangyuan/dml" class="btn btn-outline-primary">GitHub</a>
+<a href="https://doi.org/10.21105/joss.01036" class="btn btn-outline-primary">Paper</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<a class="anchor" id="mxnet-r"></a>
+
+<div class="py-3">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="row">
+<div class="col-md-3">
+<img src="../image/project-generic.png" class="img-fluid" alt="" />
+</div>
+<div class="col-md-9">
+<h3>mxnet-r: R Binding for MXNet</h3>
+<p>
+MXNet is a flexible and efficient machine learning library for heterogeneous distributed systems.
+</p>
+<p>
+<a href="https://mxnet.incubator.apache.org/versions/master/api/r/index.html" class="btn btn-outline-primary">Docs</a>
+<a href="https://github.com/apache/incubator-mxnet/tree/master/R-package" class="btn btn-outline-primary">GitHub</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <hr>
 
@@ -676,7 +806,7 @@ Themes for Hugo and Blogdown.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-hugo-renga.png" class="img-fluid" alt="hugo-renga-icon" />
+<img src="../image/project-hugo-renga.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>Renga: A Clean Bootstrap 4 Theme for Hugo and Blogdown</h3>
@@ -706,7 +836,7 @@ HTML with Bootstrap 4.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-hugo-tanka.png" class="img-fluid" alt="hugo-tanka-icon" />
+<img src="../image/project-hugo-tanka.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>Tanka: A Minimalist Theme for Hugo and Blogdown</h3>
@@ -738,7 +868,7 @@ An archive of some old R related documents.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-rapache.png" class="img-fluid" alt="rapache-icon" />
+<img src="../image/project-rapache.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>使用 R 和 Apache 开发 Web 应用程序</h3>
@@ -761,7 +891,7 @@ An archive of some old R related documents.
 <div class="col">
 <div class="row">
 <div class="col-md-3">
-<img src="../image/project-rstyle.png" class="img-fluid" alt="rstyle-icon" />
+<img src="../image/project-rstyle.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
 <h3>来自 Google 的 R 语言编码风格指南</h3>
