@@ -8,7 +8,7 @@ Hi there! This is Nan.
 
 My research focuses on developing scalable statistical machine learning
 methods to detect key signals and reveal meaningful patterns from
-high-dimensional biological/chemical data.
+high-dimensional biological/chemical/financial data.
 My current [Erdős number](https://en.wikipedia.org/wiki/Erd%C5%91s_number) is
 [4](https://mathscinet.ams.org/mathscinet/collaborationFiltered.html?group_target=189017&group_source=1129576).
 
