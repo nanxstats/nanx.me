@@ -10,6 +10,7 @@ tags:
   - future
   - promises
   - scalability
+meta_img: image/zootopia-flash.gif
 ---
 
 Shiny is my favorite web application framework. It is simply awesome. [Shiny 1.1.0](https://shiny.rstudio.com/reference/shiny/1.1.0/upgrade.html) was released to CRAN last week. This update brings probably the most significant feature/improvement in recent years: async execution support. With the help of [future](https://github.com/HenrikBengtsson/future), [promises](https://github.com/rstudio/promises) (computer science people surely knew how to name abstract things...), and this shiny update, you can now write scalable web applications using Shiny.

@@ -7,6 +7,7 @@ categories: []
 tags:
   - open source
   - project management
+meta_img: image/street-art-banksy.jpg
 ---
 
 As programming languages and their ecosystems evolve, we have many

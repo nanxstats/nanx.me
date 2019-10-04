@@ -5,6 +5,7 @@ date: '2018-08-15T21:00:00'
 slug: my-ocd-for-inbox-zero
 categories: []
 tags: []
+meta_img: image/fraser-valley.jpg
 ---
 
 Inbox zero means having zero unread emails in your email's inbox. I have an OCD for it.

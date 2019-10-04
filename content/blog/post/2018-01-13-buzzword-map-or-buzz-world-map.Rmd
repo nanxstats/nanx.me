@@ -9,6 +9,7 @@ tags:
   - artificial intelligence
   - blockchain
   - buzzword
+meta_img: image/buzzword-map-google-trends-2017.png
 ---
 
 I don't always care about popular topics because they usually fade fast.

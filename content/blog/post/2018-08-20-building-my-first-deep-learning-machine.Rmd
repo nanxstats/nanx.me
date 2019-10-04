@@ -8,6 +8,7 @@ categories:
 tags:
   - deep learning
   - buildapc
+meta_img: image/deep-learning-pc-parts.jpg
 ---
 
 Five years ago, GNOME 3's immaturity was one of the reasons for me to switch to a Mac. After finished watching two seasons of [Mr. Robot](https://www.imdb.com/title/tt4158110/), I somehow missed it. With my AWS/GCP bills going up quite a bit recently, I quickly decided to invest a little and build a PC to retry the Linux desktop environment, also, to tackle some personal machine learning projects.

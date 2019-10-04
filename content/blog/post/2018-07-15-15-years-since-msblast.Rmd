@@ -5,6 +5,7 @@ date: '2018-07-15T00:20:00'
 slug: 15-years-since-msblast
 categories: []
 tags: []
+meta_img: image/msblast.png
 ---
 
 It was August 2003, when I was in the 8th grade, enjoying the summer break.

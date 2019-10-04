@@ -6,6 +6,7 @@ slug: papers-in-my-heart-2017
 tags:
   - omnigenic
   - paper
+meta_img: image/he-is-we-skip-to-the-good-part.jpg
 ---
 
 <div class="text-center">
