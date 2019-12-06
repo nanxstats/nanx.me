@@ -24,5 +24,4 @@ data analysis solutions for the leading pharmaceutical & life science
 research organizations in the world.
 By connecting the dots in data science and product engineering,
 my mission is to make genomic data analysis faster, cheaper,
-[collaborative](https://nanx.me/talks/#talk-bostonbiocmeetup),
-and [reproducible](https://nanx.me/talks/#poster-dockflow).
+collaborative, and reproducible.
