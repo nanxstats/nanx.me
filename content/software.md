@@ -158,6 +158,7 @@ and uses Docker to containerize and render R Markdown documents.
 <a href="/liftr/" class="btn btn-outline-primary">Docs</a>
 <a href="https://cran.r-project.org/package=liftr" class="btn btn-outline-primary">CRAN</a>
 <a href="https://github.com/nanxstats/liftr" class="btn btn-outline-primary">GitHub</a>
+<a href="https://arxiv.org/abs/2001.10641" class="btn btn-outline-primary">Preprint</a>
 </p>
 </div>
 </div>
