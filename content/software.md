@@ -37,11 +37,11 @@ R packages:
 Web applications:
 <a href="#gcs">gcs</a>
 &middot; <a href="#DockFlow">dockflow</a>
-&middot; <a href="#hdnomio">hdnom</a>
-&middot; <a href="#TargetNet">targetnet</a>
-&middot; <a href="#ProtrWeb">protr</a>
-&middot; <a href="#ImgSVD">imgsvd</a>
-&middot; <a href="#Signify">signify</a>
+&middot; <a href="#hdnom-app">hdnom</a>
+&middot; <a href="#targetnet">targetnet</a>
+&middot; <a href="#protrweb">protr</a>
+&middot; <a href="#imgsvd">imgsvd</a>
+&middot; <a href="#signify">signify</a>
 </p>
 
 <p>
@@ -627,7 +627,7 @@ All 18 available Bioconductor workflows were containerized.
 
 <hr>
 
-<a class="anchor" id="hdnomio"></a>
+<a class="anchor" id="hdnom-app"></a>
 
 <div class="py-3">
 <div class="container">
@@ -638,9 +638,9 @@ All 18 available Bioconductor workflows were containerized.
 <img src="../image/project-hdnom.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
-<h3>hdnom.io: Web Application for Building Nomograms with High-Dimensional Data</h3>
+<h3>hdnom-app: Web Application for Building Nomograms with High-Dimensional Data</h3>
 <p>
-<a href="http://hdnom.io">hdnom.io</a> is the web application for the hdnom package.
+hdnom-app is a shiny app built on the hdnom package.
 All the 9 model types in the hdnom package are supported.
 It streamlined the process of nomogram building, model validation,
 model calibration, and reproducible report generation.
@@ -650,7 +650,8 @@ This app has been selected as one of the
 <a href="https://www.rstudio.com/products/shiny/shiny-user-showcase/">Shiny User Showcase</a>.
 </p>
 <p>
-<a href="http://hdnom.io" class="btn btn-outline-primary">hdnom.io</a>
+<a href="https://nanx.app/hdnom/" class="btn btn-outline-primary">Mirror 1</a>
+<a href="https://nanx.shinyapps.io/hdnom-app/" class="btn btn-outline-primary">Mirror 2</a>
 <a href="https://github.com/nanxstats/hdnom-app" class="btn btn-outline-primary">GitHub</a>
 <a href="https://www.biorxiv.org/content/biorxiv/early/2016/08/23/065524.full.pdf" class="btn btn-outline-primary">Paper</a>
 </p>
@@ -663,7 +664,7 @@ This app has been selected as one of the
 
 <hr>
 
-<a class="anchor" id="TargetNet"></a>
+<a class="anchor" id="targetnet"></a>
 
 <div class="py-3">
 <div class="container">
@@ -681,7 +682,8 @@ targets for given molecule(s).
 Driven by machine learning modeling of large-scale public chemogenomics data.
 </p>
 <p>
-<a href="http://targetnet.org" class="btn btn-outline-primary">targetnet.org</a>
+<a href="https://nanx.app/targetnet/" class="btn btn-outline-primary">Mirror 1</a>
+<a href="https://nanx.shinyapps.io/targetnet/" class="btn btn-outline-primary">Mirror 2</a>
 <a href="https://github.com/nanxstats/targetnet" class="btn btn-outline-primary">GitHub</a>
 </p>
 </div>
@@ -693,7 +695,7 @@ Driven by machine learning modeling of large-scale public chemogenomics data.
 
 <hr>
 
-<a class="anchor" id="ProtrWeb"></a>
+<a class="anchor" id="protrweb"></a>
 
 <div class="py-3">
 <div class="container">
@@ -710,7 +712,8 @@ Web application for computing 14 types of protein sequence-derived structural an
 physicochemical features in bioinformatics.
 </p>
 <p>
-<a href="http://protr.org" class="btn btn-outline-primary">protr.org</a>
+<a href="https://nanx.app/protr/" class="btn btn-outline-primary">Mirror 1</a>
+<a href="https://nanx.shinyapps.io/protrweb/" class="btn btn-outline-primary">Mirror 2</a>
 <a href="https://github.com/nanxstats/protrweb" class="btn btn-outline-primary">GitHub</a>
 <a href="../papers/protr.pdf" class="btn btn-outline-primary">Paper</a>
 </p>
@@ -723,7 +726,7 @@ physicochemical features in bioinformatics.
 
 <hr>
 
-<a class="anchor" id="ImgSVD"></a>
+<a class="anchor" id="imgsvd"></a>
 
 <div class="py-3">
 <div class="container">
@@ -743,7 +746,8 @@ on image compression via singular value decomposition with the R package
 <a href="https://cran.r-project.org/package=rARPACK">rARPACK</a>.
 </p>
 <p>
-<a href="http://imgsvd.com" class="btn btn-outline-primary">imgsvd.com</a>
+<a href="https://nanx.app/imgsvd/" class="btn btn-outline-primary">Mirror 1</a>
+<a href="https://nanx.shinyapps.io/imgsvd/" class="btn btn-outline-primary">Mirror 2</a>
 <a href="https://github.com/nanxstats/imgsvd" class="btn btn-outline-primary">GitHub</a>
 </p>
 </div>
@@ -755,7 +759,7 @@ on image compression via singular value decomposition with the R package
 
 <hr>
 
-<a class="anchor" id="Signify"></a>
+<a class="anchor" id="signify"></a>
 
 <div class="py-3">
 <div class="container">
@@ -774,7 +778,8 @@ The application is powered by the data from
 <a href="https://mchankins.wordpress.com/2013/04/21/still-not-significant-2/">Matthew Hankins</a>.
 </p>
 <p>
-<a href="http://p-values.org" class="btn btn-outline-primary">p-values.org</a>
+<a href="https://nanx.app/signify/" class="btn btn-outline-primary">Mirror 1</a>
+<a href="https://nanx.shinyapps.io/signify/" class="btn btn-outline-primary">Mirror 2</a>
 <a href="https://github.com/nanxstats/signify" class="btn btn-outline-primary">GitHub</a>
 </p>
 </div>
