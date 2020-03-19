@@ -35,7 +35,7 @@ R packages:
 
 <p>
 Web applications:
-<a href="#gcs">genomics-compliance-suite</a>
+<a href="#bco-app">bco-app</a>
 &middot; <a href="#cwl-upgrader">cwl-upgrader</a>
 &middot; <a href="#protrweb">protrweb</a>
 &middot; <a href="#targetnet">targetnet</a>
@@ -575,7 +575,7 @@ A collection of my shiny apps for interactive data analysis.
 
 <hr>
 
-<a class="anchor" id="gcs"></a>
+<a class="anchor" id="bco-app"></a>
 
 <div class="py-3">
 <div class="container">
@@ -586,13 +586,13 @@ A collection of my shiny apps for interactive data analysis.
 <img src="../image/project-generic.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
-<h3>Genomics Compliance Suite by Seven Bridges</h3>
+<h3>BCO App by Seven Bridges</h3>
 <p>
-The Genomics Compliance Suite (GCS) is a shiny app to create, validate, and browse BioCompute Objects.
+Shiny app to create, validate, and browse BioCompute Objects.
 </p>
 <p>
-<a href="https://github.com/sbg/gcs" class="btn btn-outline-primary">GitHub</a>
-<a href="https://sbg.github.io/gcs/" class="btn btn-outline-primary">Docs</a>
+<a href="https://github.com/sbg/bco-app" class="btn btn-outline-primary">GitHub</a>
+<a href="https://sbg.github.io/bco-app/" class="btn btn-outline-primary">Docs</a>
 </p>
 </div>
 </div>
