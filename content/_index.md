@@ -20,8 +20,8 @@ and [liftr](https://liftr.me/)
 ([John M. Chambers Statistical Software Award](http://stat-computing.org/awards/jmc/index.html), 2018).
 
 My industry experience dedicates to building tailored, cloud-based
-data analysis solutions for the leading pharmaceutical & life science
-research organizations in the world.
+solutions for the most challenging computational problems
+in genomics and precision medicine.
 By connecting the dots in data science and product engineering,
 my mission is to make genomic data analysis faster, cheaper,
 collaborative, and reproducible.
