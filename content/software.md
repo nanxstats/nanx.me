@@ -34,7 +34,7 @@ R packages:
 </p>
 
 <p>
-Web applications:
+Shiny apps:
 <a href="#bco-app">bco-app</a>
 &middot; <a href="#cwl-upgrader">cwl-upgrader</a>
 &middot; <a href="#protrweb">protrweb</a>
@@ -43,6 +43,12 @@ Web applications:
 &middot; <a href="#hdnom-app">hdnom-app</a>
 &middot; <a href="#conjugate-normal-umkv">conjugate-normal-umkv</a>
 &middot; <a href="#signify">signify</a>
+</p>
+
+<p>
+R data analysis pipelines:
+<a href="#bcpm-msaenet">bcpm-msaenet</a>
+&middot; <a href="#rankv">rankv</a>
 </p>
 
 <p>
@@ -569,7 +575,9 @@ sbgr provides an R client for accessing Seven Bridges Genomics API (v1).
 
 <hr> -->
 
-## Web Applications
+<a class="anchor" id="shiny-apps"></a>
+
+## Shiny apps
 
 A collection of my shiny apps for interactive data analysis.
 
@@ -586,9 +594,12 @@ A collection of my shiny apps for interactive data analysis.
 <img src="../image/project-generic.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
-<h3>BCO App by Seven Bridges</h3>
+<h3>BCO App</h3>
 <p>
 Shiny app to create, validate, and browse BioCompute Objects.
+</p>
+<p>
+<a href="https://precision.fda.gov/challenges/7/view/results">Winner</a> of the <a href="https://precision.fda.gov/challenges/7">precisionFDA BioCompute Object app-a-thon</a> (advanced track).
 </p>
 <p>
 <a href="https://github.com/sbg/bco-app" class="btn btn-outline-primary">GitHub</a>
@@ -812,6 +823,75 @@ Powered by the data from
 <a href="https://nanx.app/signify/" class="btn btn-outline-primary">Mirror 1</a>
 <a href="https://nanx.shinyapps.io/signify/" class="btn btn-outline-primary">Mirror 2</a>
 <a href="https://github.com/nanxstats/signify" class="btn btn-outline-primary">GitHub</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<a class="anchor" id="recipes"></a>
+
+## R data analysis pipelines
+
+Reusable R pipelines for analyzing real-world, domain-specific data.
+
+<hr>
+
+<a class="anchor" id="bcpm-msaenet"></a>
+
+<div class="py-3">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="row">
+<div class="col-md-3">
+<img src="../image/project-generic.png" class="img-fluid" alt="" />
+</div>
+<div class="col-md-9">
+<h3>bcpm-msaenet</h3>
+<p>
+Analysis pipeline for the <a href="https://precision.fda.gov/challenges/8">precisionFDA brain cancer predictive modeling and biomarker discovery challenge</a> using msaenet.
+</p>
+<p>
+The pipeline features multi-step adaptive SCAD-net and relaxed stability selection for feature selection, and a two-layer stacking tree model with xgboost, lightgbm, and catboost for predictive modeling.
+</p>
+<p>
+<a href="https://github.com/nanxstats/bcpm-msaenet" class="btn btn-outline-primary">GitHub</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<a class="anchor" id="rankv"></a>
+
+<div class="py-3">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="row">
+<div class="col-md-3">
+<img src="../image/project-generic.png" class="img-fluid" alt="" />
+</div>
+<div class="col-md-9">
+<h3>rankv</h3>
+<p>
+Analysis pipeline for the <a href="https://precision.fda.gov/challenges/9">precisionFDA gaining new insights by detecting adverse event anomalies using FDA open data challenge<a>.
+</p>
+<p>
+The pipeline features rank aggregated signal detection for Vaccine Adverse Event Reporting System (VAERS) data, with base signal detection methods including Gamma Poisson Shrinker (GPS), proportional reporting ratio, reporting odds ratio, and Bayesian confidence propagation neural network.
+</p>
+<p>
+<a href="https://nanx.me/rankv/" class="btn btn-outline-primary">Website</a>
+<a href="https://github.com/nanxstats/rankv" class="btn btn-outline-primary">GitHub</a>
 </p>
 </div>
 </div>
