@@ -35,8 +35,9 @@ R packages:
 
 <p>
 Shiny apps:
-<a href="#bco-app">bco-app</a>
+<a href="#cwl-formatter">cwl-formatter</a>
 &middot; <a href="#cwl-upgrader">cwl-upgrader</a>
+&middot; <a href="#bco-app">bco-app</a>
 &middot; <a href="#protrweb">protrweb</a>
 &middot; <a href="#targetnet">targetnet</a>
 &middot; <a href="#imgsvd">imgsvd</a>
@@ -583,7 +584,7 @@ A collection of my shiny apps for interactive data analysis.
 
 <hr>
 
-<a class="anchor" id="bco-app"></a>
+<a class="anchor" id="cwl-formatter"></a>
 
 <div class="py-3">
 <div class="container">
@@ -594,16 +595,13 @@ A collection of my shiny apps for interactive data analysis.
 <img src="../image/project-generic.png" class="img-fluid" alt="" />
 </div>
 <div class="col-md-9">
-<h3>BCO App</h3>
+<h3>cwl-formatter: format CWL apps</h3>
 <p>
-Shiny app to create, validate, and browse BioCompute Objects.
+A shiny app to format Common Workflow Language (CWL) apps.
 </p>
 <p>
-<a href="https://precision.fda.gov/challenges/7/view/results">Winner</a> of the <a href="https://precision.fda.gov/challenges/7">precisionFDA BioCompute Object app-a-thon</a> (advanced track).
-</p>
-<p>
-<a href="https://github.com/sbg/bco-app" class="btn btn-outline-primary">GitHub</a>
-<a href="https://sbg.github.io/bco-app/" class="btn btn-outline-primary">Docs</a>
+<a href="https://nanx.app/cwl-formatter/" class="btn btn-outline-primary">Mirror 1</a>
+<a href="https://github.com/nanxstats/cwl-formatter" class="btn btn-outline-primary">GitHub</a>
 </p>
 </div>
 </div>
@@ -632,6 +630,37 @@ A shiny app to upgrade Common Workflow Language (CWL) apps from sbg:draft2 to v1
 <p>
 <a href="https://nanx.app/cwl-upgrader/" class="btn btn-outline-primary">Mirror 1</a>
 <a href="https://github.com/nanxstats/cwl-upgrader" class="btn btn-outline-primary">GitHub</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+<a class="anchor" id="bco-app"></a>
+
+<div class="py-3">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="row">
+<div class="col-md-3">
+<img src="../image/project-generic.png" class="img-fluid" alt="" />
+</div>
+<div class="col-md-9">
+<h3>BCO App</h3>
+<p>
+Shiny app to create, validate, and browse BioCompute Objects.
+</p>
+<p>
+<a href="https://precision.fda.gov/challenges/7/view/results">Winner</a> of the <a href="https://precision.fda.gov/challenges/7">precisionFDA BioCompute Object app-a-thon</a> (advanced track).
+</p>
+<p>
+<a href="https://github.com/sbg/bco-app" class="btn btn-outline-primary">GitHub</a>
+<a href="https://sbg.github.io/bco-app/" class="btn btn-outline-primary">Docs</a>
 </p>
 </div>
 </div>
