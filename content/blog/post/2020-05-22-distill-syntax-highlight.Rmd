@@ -12,7 +12,7 @@ meta_img: image/wine-bottles-chuttersnap.jpg
 description: Customize the distill syntax highlighting theme with a few lines of R code.
 ---
 
-![You have more options than you think. Photo by <a href="https://unsplash.com/photos/eKlezhItE5U">@chuttersnap</a>.](/image/wine-bottles-chuttersnap.jpg)
+!["Diversity is essential to happiness, and in Utopia there is hardly any." (Bertrand Russell) <br> Photo by <a href="https://unsplash.com/photos/eKlezhItE5U">@chuttersnap</a>.](/image/wine-bottles-chuttersnap.jpg)
 
 ## The Problem
 
