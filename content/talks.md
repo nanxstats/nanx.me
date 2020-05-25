@@ -13,7 +13,7 @@ description: "Talks and posters of Nan Xiao."
 - [The Deep Connection between Drugs and Side Effects](https://nanx.me/posters/deep-drug-adr-poster-iscb.pdf) (ISCB/ECCB 2017)
 - [DockFlow: Bioconductor Workflow Containerization and Orchestration with liftr](https://nanx.me/posters/dockflow-poster-bioc2017.pdf) ([BioC 2017](https://bioconductor.org/help/course-materials/2017/BioC2017/))
 - [ChromaClust: Latent Color Topic Modeling for Images](https://nanx.me/posters/chromaclust-poster-hg48600.pdf) (HGEN 48600/STAT 35450, Winter 2016)
-- [liftr: Reproducible Bioinformatics and Statistical Data Analysis with Docker, Rabix, and knitr](http://127.0.0.1:4321/posters/liftr-poster-bioc2015.pdf) ([BioC 2015](https://www.bioconductor.org/help/course-materials/2015/BioC2015/))
+- [liftr: Reproducible Bioinformatics and Statistical Data Analysis with Docker, Rabix, and knitr](https://nanx.me/posters/liftr-poster-bioc2015.pdf) ([BioC 2015](https://www.bioconductor.org/help/course-materials/2015/BioC2015/))
 
 ## Talks
 
