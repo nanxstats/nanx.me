@@ -5,29 +5,8 @@ description: "Published books of Nan Xiao."
 ---
 
 <div class="mx-0 mx-md-4">
-
 <hr>
-
-<div class="pt-3">
-<div class="container">
-<div class="row">
-<div class="col">
-
-<p>
-<a href="#apm">应用预测建模</a>
-&middot; <a href="#rgc">R数据可视化手册</a>
-&middot; <a href="#ggplot2">ggplot2: 数据分析与图形艺术</a>
-&middot; <a href="#ria">R语言实战</a>
-</p>
-
 </div>
-</div>
-</div>
-</div>
-
-<hr>
-
-<a class="anchor" id="apm"></a>
 
 ### 应用预测建模
 
@@ -71,8 +50,6 @@ Published by China Machine Press in April, 2016.
 
 <hr>
 
-<a class="anchor" id="rgc"></a>
-
 ### R 数据可视化手册
 
 ### R Graphics Cookbook (Chinese Edition)
@@ -113,8 +90,6 @@ Published by Posts and Telecom Press in April, 2014.
 </div>
 
 <hr>
-
-<a class="anchor" id="ggplot2"></a>
 
 ### ggplot2: 数据分析与图形艺术
 
@@ -160,8 +135,6 @@ Published by Xi'an Jiaotong University Press in May, 2013.
 </div>
 
 <hr>
-
-<a class="anchor" id="ria"></a>
 
 ### R 语言实战
 ### R in Action (Chinese Edition)
