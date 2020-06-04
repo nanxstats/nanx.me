@@ -49,7 +49,7 @@ My shiny apps for interactive data analysis.
 
 Reusable pipelines for analyzing real-world datasets in specific domains.
 
-- [bcpm-msaenet](https://github.com/nanxstats/bcpm-msaenet) - Pipeline for the [precisionFDA challenge](https://precision.fda.gov/challenges/8) on brain cancer predictive modeling and biomarker discovery. Features multi-step adaptive SCAD-net and relaxed stability selection for feature selection, and a two-layer stacking tree model with xgboost, lightgbm, and catboost.
+- [bcpm-msaenet](https://github.com/nanxstats/bcpm-msaenet) - Pipeline for the [precisionFDA challenge](https://precision.fda.gov/challenges/8) on brain cancer predictive modeling and biomarker discovery. The [2nd place solution](https://precision.fda.gov/challenges/8/view/results) by predictive performance. Features multi-step adaptive SCAD-net and relaxed stability selection for feature selection, and a two-layer stacking tree model with xgboost, lightgbm, and catboost.
 - [rankv](https://github.com/nanxstats/rankv) - Pipeline for the [precisionFDA challenge](https://precision.fda.gov/challenges/9) on detecting adverse event anomalies using FDA open data. Features a rank aggregated signal detection method for Vaccine Adverse Event Reporting System (VAERS) data, with base signal detection methods including Gamma Poisson Shrinker, PRR, ROR, and BCPNN. [[Website](https://nanx.me/rankv/)]
 
 ## Code contributor
