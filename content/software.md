@@ -25,6 +25,7 @@ My R packages for statistical machine learning, data visualization, and computat
 [[CRAN](https://cran.r-project.org/package=RECA)] [[GitHub](https://github.com/nanxstats/RECA)]
 - [grex](https://nanx.me/grex/) - Gene ID mapping for Genotype-Tissue Expression (GTEx) data [[CRAN](https://cran.r-project.org/package=grex)] [[GitHub](https://github.com/nanxstats/grex)]
 - [cats](https://nanx.me/cats/) - Joint power analysis for non-symmetric two-stage case-control designs [[GitHub](https://github.com/nanxstats/cats)]
+- [ssw-r](https://nanx.me/ssw-r/) - R interface for SSW, a fast implementation of the Smith-Waterman algorithm using SIMD [[GitHub](https://github.com/nanxstats/ssw-r)]
 - [tidycwl](https://sbg.github.io/tidycwl/) - Tidy Common Workflow Language tools and workflows [[CRAN](https://cran.r-project.org/package=tidycwl)] [[GitHub](https://github.com/sbg/tidycwl)]
 - [biocompute](https://sbg.github.io/biocompute/) - Create and manipulate BioCompute Objects [[CRAN](https://cran.r-project.org/package=biocompute)] [[GitHub](https://github.com/sbg/biocompute)]
 - [sevenbridges-r](https://sbg.github.io/sevenbridges-r/) - Seven Bridges API client [[BioC](https://bioconductor.org/packages/sevenbridges)] [[GitHub](https://github.com/sbg/sevenbridges-r)]
