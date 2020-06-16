@@ -16,6 +16,7 @@ My R packages for statistical machine learning, data visualization, and computat
 - [ggsci](https://nanx.me/ggsci/) - Scientific journal and sci-fi themed color palettes for ggplot2 [[CRAN](https://cran.r-project.org/package=ggsci)] [[GitHub](https://github.com/nanxstats/ggsci)]
 - [liftr](https://nanx.me/liftr/) - Containerize R Markdown documents [[CRAN](https://cran.r-project.org/package=liftr)] [[GitHub](https://github.com/nanxstats/liftr)] [[Preprint](https://arxiv.org/abs/2001.10641)]
 - [logreg](https://nanx.me/logreg/) - Regularized logistic regressions with computational graphs [[GitHub](https://github.com/nanxstats/logreg)]
+- [stackgbm](https://nanx.me/stackgbm/) - Model stacking for gradient boosted tree models built by xgboost, lightgbm, and catboost [[GitHub](https://github.com/nanxstats/stackgbm)]
 - [protr](https://nanx.me/protr/) - Protein sequence feature extraction [[CRAN](https://cran.r-project.org/package=protr)] [[GitHub](https://github.com/nanxstats/protr)] [[Paper](https://nanx.me/papers/protr.pdf)]
 - [Rcpi](https://nanx.me/Rcpi/) - Feature extraction for proteins, compounds, and their interactions [[BioC](https://bioconductor.org/packages/Rcpi)] [[GitHub](https://github.com/nanxstats/Rcpi)] [[Paper](https://nanx.me/papers/Rcpi.pdf)]
 - [OHPL](https://OHPL.io/doc/) - Ordered homogeneity pursuit lasso for group variable selection [[CRAN](https://cran.r-project.org/package=OHPL)] [[GitHub](https://github.com/nanxstats/OHPL)] [[Paper](https://nanx.me/papers/OHPL.pdf)]
