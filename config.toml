@@ -43,13 +43,7 @@ url = "/papers/"
 weight = 2
 
 [[menu.primary]]
-identifier = "talks"
-name = "Talks"
-url = "/talks/"
-weight = 3
-
-[[menu.primary]]
 identifier = "blog"
 name = "Blog"
 url = "/blog/"
-weight = 4
+weight = 3
