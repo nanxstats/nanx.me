@@ -34,8 +34,9 @@ My R packages for statistical machine learning, data visualization, and computat
 
 ## Shiny apps
 
-My shiny apps for interactive data analysis.
+My shiny apps for interactive data analysis and visualization.
 
+- [pdxnet-portal](https://portal.pdxnetwork.org/) - PDXNet Data Portal. [Lead author: Soner Koc]
 - [cwl-formatter](https://github.com/nanxstats/cwl-formatter) - Shiny app to format Common Workflow Language (CWL) apps. [[Mirror 1](https://nanx.app/cwl-formatter/)]
 - [cwl-exploder](https://github.com/nanxstats/cwl-exploder) - Shiny app to unpack monolithic CWL workflows and split them into smaller components. [[Mirror 1](https://nanx.app/cwl-exploder/)]
 - [cwl-upgrader](https://github.com/nanxstats/cwl-upgrader) - Shiny app to upgrade Common Workflow Language apps from sbg:draft2 to v1.0. [[Mirror 1](https://nanx.app/cwl-upgrader/)]
