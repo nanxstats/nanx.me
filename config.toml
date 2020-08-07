@@ -27,6 +27,7 @@ progressively = false
 
 github = "nanxstats"
 twitter = "nanxstats"
+linkedin = "nanxstats"
 email = "me@nanx.me"
 
 [[menu.primary]]
