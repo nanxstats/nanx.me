@@ -10,20 +10,27 @@ description: "Open source software of Nan Xiao. R packages and Shiny apps."
 
 ## R packages
 
-My R packages for statistical machine learning, data visualization, and computational reproducibility.
+I build R packages to improve my skills or my workflow.
+
+**Statistical machine learning**
 
 - [msaenet](https://nanx.me/msaenet/) - Multi-step adaptive estimation for sparse regressions [[CRAN](https://cran.r-project.org/package=msaenet)] [[GitHub](https://github.com/nanxstats/msaenet)] [[Paper](https://nanx.me/papers/msaenet.pdf)]
+- [stackgbm](https://nanx.me/stackgbm/) - Model stacking for gradient boosted tree models built by xgboost, lightgbm, and catboost [[GitHub](https://github.com/nanxstats/stackgbm)]
+- [logreg](https://nanx.me/logreg/) - Regularized logistic regressions with computational graphs [[GitHub](https://github.com/nanxstats/logreg)]
+- [OHPL](https://OHPL.io/doc/) - Ordered homogeneity pursuit lasso for group variable selection [[CRAN](https://cran.r-project.org/package=OHPL)] [[GitHub](https://github.com/nanxstats/OHPL)] [[Paper](https://nanx.me/papers/OHPL.pdf)]
+- [RECA](https://nanx.me/RECA/) - Relevant component analysis for supervised distance metric learning [[CRAN](https://cran.r-project.org/package=RECA)] [[GitHub](https://github.com/nanxstats/RECA)]
+- [enpls](https://nanx.me/enpls/) - Ensemble partial least squares regression [[CRAN](https://cran.r-project.org/package=enpls)] [[GitHub](https://github.com/nanxstats/enpls)]
+
+**Statistical graphics and computing**
+
 - [ggsci](https://nanx.me/ggsci/) - Scientific journal and sci-fi themed color palettes for ggplot2 [[CRAN](https://cran.r-project.org/package=ggsci)] [[GitHub](https://github.com/nanxstats/ggsci)]
 - [liftr](https://nanx.me/liftr/) - Containerize R Markdown documents [[CRAN](https://cran.r-project.org/package=liftr)] [[GitHub](https://github.com/nanxstats/liftr)] [[Preprint](https://arxiv.org/abs/2001.10641)]
-- [logreg](https://nanx.me/logreg/) - Regularized logistic regressions with computational graphs [[GitHub](https://github.com/nanxstats/logreg)]
-- [stackgbm](https://nanx.me/stackgbm/) - Model stacking for gradient boosted tree models built by xgboost, lightgbm, and catboost [[GitHub](https://github.com/nanxstats/stackgbm)]
+- [hdnom](https://nanx.me/hdnom/) - Benchmarking and visualization toolkit for penalized Cox models [[CRAN](https://cran.r-project.org/package=hdnom)] [[GitHub](https://github.com/nanxstats/hdnom)] [[Preprint](https://www.biorxiv.org/content/biorxiv/early/2016/08/23/065524.full.pdf)]
+
+**Bioinformatics**
+
 - [protr](https://nanx.me/protr/) - Protein sequence feature extraction [[CRAN](https://cran.r-project.org/package=protr)] [[GitHub](https://github.com/nanxstats/protr)] [[Paper](https://nanx.me/papers/protr.pdf)]
 - [Rcpi](https://nanx.me/Rcpi/) - Feature extraction for proteins, compounds, and their interactions [[BioC](https://bioconductor.org/packages/Rcpi)] [[GitHub](https://github.com/nanxstats/Rcpi)] [[Paper](https://nanx.me/papers/Rcpi.pdf)]
-- [OHPL](https://OHPL.io/doc/) - Ordered homogeneity pursuit lasso for group variable selection [[CRAN](https://cran.r-project.org/package=OHPL)] [[GitHub](https://github.com/nanxstats/OHPL)] [[Paper](https://nanx.me/papers/OHPL.pdf)]
-- [hdnom](https://nanx.me/hdnom/) - Benchmarking and visualization toolkit for penalized Cox models [[CRAN](https://cran.r-project.org/package=hdnom)] [[GitHub](https://github.com/nanxstats/hdnom)] [[Preprint](https://www.biorxiv.org/content/biorxiv/early/2016/08/23/065524.full.pdf)]
-- [enpls](https://nanx.me/enpls/) - Ensemble partial least squares regression [[CRAN](https://cran.r-project.org/package=enpls)] [[GitHub](https://github.com/nanxstats/enpls)]
-- [RECA](https://nanx.me/RECA/) - Relevant component analysis for supervised distance metric learning
-[[CRAN](https://cran.r-project.org/package=RECA)] [[GitHub](https://github.com/nanxstats/RECA)]
 - [grex](https://nanx.me/grex/) - Gene ID mapping for Genotype-Tissue Expression (GTEx) data [[CRAN](https://cran.r-project.org/package=grex)] [[GitHub](https://github.com/nanxstats/grex)]
 - [cats](https://nanx.me/cats/) - Joint power analysis for non-symmetric two-stage case-control designs [[GitHub](https://github.com/nanxstats/cats)]
 - [ssw-r](https://nanx.me/ssw-r/) - R interface for SSW, a fast implementation of the Smith-Waterman algorithm using SIMD [[GitHub](https://github.com/nanxstats/ssw-r)]
