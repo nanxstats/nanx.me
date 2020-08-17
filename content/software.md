@@ -16,6 +16,7 @@ I build R packages to improve my skills or my workflow.
 
 - [msaenet](https://nanx.me/msaenet/) - Multi-step adaptive estimation for sparse regressions [[CRAN](https://cran.r-project.org/package=msaenet)] [[GitHub](https://github.com/nanxstats/msaenet)] [[Paper](https://nanx.me/papers/msaenet.pdf)]
 - [stackgbm](https://nanx.me/stackgbm/) - Model stacking for gradient boosted tree models built by xgboost, lightgbm, and catboost [[GitHub](https://github.com/nanxstats/stackgbm)]
+- [oneclust](https://nanx.me/oneclust/) - Maximum homogeneity clustering for one-dimensional data [[GitHub](https://github.com/nanxstats/oneclust)]
 - [logreg](https://nanx.me/logreg/) - Regularized logistic regressions with computational graphs [[GitHub](https://github.com/nanxstats/logreg)]
 - [OHPL](https://OHPL.io/doc/) - Ordered homogeneity pursuit lasso for group variable selection [[CRAN](https://cran.r-project.org/package=OHPL)] [[GitHub](https://github.com/nanxstats/OHPL)] [[Paper](https://nanx.me/papers/OHPL.pdf)]
 - [RECA](https://nanx.me/RECA/) - Relevant component analysis for supervised distance metric learning [[CRAN](https://cran.r-project.org/package=RECA)] [[GitHub](https://github.com/nanxstats/RECA)]
@@ -41,7 +42,7 @@ I build R packages to improve my skills or my workflow.
 
 ## Shiny apps
 
-My shiny apps for interactive data analysis and visualization.
+Shiny apps for interactive data analysis and visualization.
 
 - [pdxnet-portal](https://portal.pdxnetwork.org/) - PDXNet Data Portal. [Lead author: Soner Koc]
 - [cwl-formatter](https://github.com/nanxstats/cwl-formatter) - Shiny app to format Common Workflow Language (CWL) apps. [[Mirror 1](https://nanx.app/cwl-formatter/)]
