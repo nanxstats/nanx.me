@@ -17,6 +17,7 @@ description: "Talks and posters of Nan Xiao."
 
 ## Talks
 
+- Winners lightning talk for the precisionFDA biomarker discovery challenge ([9th Annual Health Informatics & Data Science Virtual Symposium](https://icbi.georgetown.edu/symposium/))
 - [liftr: an R Package for Persistent Reproducible Research](https://nanx.me/talks/jsm2018-liftr-nanxiao.pdf) ([JSM 2018](https://ww2.amstat.org/meetings/JSM/2018/onlineprogram/ActivityDetails.cfm?SessionID=215482))
 - [Persistent Reproducible Reporting with Docker and R](https://nanx.me/talks/chinar2017-liftr-nanxiao.pdf) ([China R Conference](http://china-r.org/bj2017/), 2017)
 - [Reproducible Dynamic Report Generation with Docker and R](https://nanx.me/talks/dockercon2017-liftr-nanxiao.pdf) (DockerCon 2017)
