@@ -1,23 +1,14 @@
 ---
 title: "Talks"
 menu: "main"
-description: "Talks and posters of Nan Xiao."
 ---
 
 <div class="mx-0 mx-md-4">
 <hr>
 </div>
 
-## Posters
-
-- [The Deep Connection between Drugs and Side Effects](https://nanx.me/posters/deep-drug-adr-poster-iscb.pdf) (ISCB/ECCB 2017)
-- [DockFlow: Bioconductor Workflow Containerization and Orchestration with liftr](https://nanx.me/posters/dockflow-poster-bioc2017.pdf) ([BioC 2017](https://bioconductor.org/help/course-materials/2017/BioC2017/))
-- [ChromaClust: Latent Color Topic Modeling for Images](https://nanx.me/posters/chromaclust-poster-hg48600.pdf) (HGEN 48600/STAT 35450, Winter 2016)
-- [liftr: Reproducible Bioinformatics and Statistical Data Analysis with Docker, Rabix, and knitr](https://nanx.me/posters/liftr-poster-bioc2015.pdf) ([BioC 2015](https://www.bioconductor.org/help/course-materials/2015/BioC2015/))
-
 ## Talks
 
-- Winners lightning talk for the precisionFDA biomarker discovery challenge ([9th Annual Health Informatics & Data Science Virtual Symposium](https://icbi.georgetown.edu/symposium/))
 - [liftr: an R Package for Persistent Reproducible Research](https://nanx.me/talks/jsm2018-liftr-nanxiao.pdf) ([JSM 2018](https://ww2.amstat.org/meetings/JSM/2018/onlineprogram/ActivityDetails.cfm?SessionID=215482))
 - [Persistent Reproducible Reporting with Docker and R](https://nanx.me/talks/chinar2017-liftr-nanxiao.pdf) ([China R Conference](http://china-r.org/bj2017/), 2017)
 - [Reproducible Dynamic Report Generation with Docker and R](https://nanx.me/talks/dockercon2017-liftr-nanxiao.pdf) (DockerCon 2017)
@@ -29,6 +20,13 @@ description: "Talks and posters of Nan Xiao."
 - [Web Scraping with R](https://nanx.me/talks/web-scraping-with-r-nanxiao.pdf) ([China R Conference](https://cos.name/2013/05/6th-china-r-beijing-summary/), 2013)
 - [Linear and Circular Layouts for Network Visualization](https://nanx.me/talks/linear-and-circular-layouts-for-network-visualization-nanxiao.pdf) (2012)
 - [Visualization of CRAN Package Dependency Network](https://nanx.me/talks/visualization-of-cran-package-dependency-network-nanxiao.pdf) (2010)
+
+## Posters
+
+- [The Deep Connection between Drugs and Side Effects](https://nanx.me/posters/deep-drug-adr-poster-iscb.pdf) (ISCB/ECCB 2017)
+- [DockFlow: Bioconductor Workflow Containerization and Orchestration with liftr](https://nanx.me/posters/dockflow-poster-bioc2017.pdf) ([BioC 2017](https://bioconductor.org/help/course-materials/2017/BioC2017/))
+- [ChromaClust: Latent Color Topic Modeling for Images](https://nanx.me/posters/chromaclust-poster-hg48600.pdf) (HGEN 48600/STAT 35450, Winter 2016)
+- [liftr: Reproducible Bioinformatics and Statistical Data Analysis with Docker, Rabix, and knitr](https://nanx.me/posters/liftr-poster-bioc2015.pdf) ([BioC 2015](https://www.bioconductor.org/help/course-materials/2015/BioC2015/))
 
 <div class="mx-0 mx-md-4">
 <hr>

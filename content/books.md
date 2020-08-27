@@ -1,7 +1,6 @@
 ---
 title: "Books"
 menu: "main"
-description: "Published books of Nan Xiao."
 ---
 
 <div class="mx-0 mx-md-4">

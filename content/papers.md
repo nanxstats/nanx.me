@@ -1,7 +1,6 @@
 ---
 title: "Papers"
 menu: "main"
-description: "Published research papers of Nan Xiao."
 ---
 
 <div class="mx-0 mx-md-4">

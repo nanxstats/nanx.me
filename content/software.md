@@ -1,7 +1,6 @@
 ---
 title: "Software"
 menu: "main"
-description: "Open source software of Nan Xiao. R packages and Shiny apps."
 ---
 
 <div class="mx-0 mx-md-4">
