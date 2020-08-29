@@ -30,31 +30,31 @@ linkedin = "nanxstats"
 contact = "me@nanx.me"
 
 [[menu.primary]]
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
+weight = 1
+
+[[menu.primary]]
 identifier = "software"
 name = "Software"
 url = "/software/"
-weight = 1
+weight = 2
 
 [[menu.primary]]
 identifier = "papers"
 name = "Papers"
 url = "/papers/"
-weight = 2
+weight = 3
 
 [[menu.primary]]
 identifier = "talks"
 name = "Talks"
 url = "/talks/"
-weight = 3
+weight = 4
 
 [[menu.primary]]
 identifier = "books"
 name = "Books"
 url = "/books/"
-weight = 4
-
-[[menu.primary]]
-identifier = "blog"
-name = "Blog"
-url = "/blog/"
 weight = 5
