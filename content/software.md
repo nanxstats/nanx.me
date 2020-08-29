@@ -14,11 +14,11 @@ I build R packages to improve my skills or my workflow.
 **Statistical machine learning**
 
 - [msaenet](https://nanx.me/msaenet/) - Multi-step adaptive estimation for sparse regressions [[CRAN](https://cran.r-project.org/package=msaenet)] [[GitHub](https://github.com/nanxstats/msaenet)] [[Paper](https://nanx.me/papers/msaenet.pdf)]
-- [stackgbm](https://nanx.me/stackgbm/) - Model stacking for gradient boosted tree models built by xgboost, lightgbm, and catboost [[GitHub](https://github.com/nanxstats/stackgbm)]
+- [stackgbm](https://nanx.me/stackgbm/) - Minimalist implementation of model stacking for gradient boosted tree models built by xgboost, lightgbm, and catboost [[GitHub](https://github.com/nanxstats/stackgbm)]
 - [oneclust](https://nanx.me/oneclust/) - Maximum homogeneity clustering for one-dimensional data [[GitHub](https://github.com/nanxstats/oneclust)]
 - [logreg](https://nanx.me/logreg/) - Regularized logistic regressions with computational graphs [[GitHub](https://github.com/nanxstats/logreg)]
-- [OHPL](https://OHPL.io/doc/) - Ordered homogeneity pursuit lasso for group variable selection [[CRAN](https://cran.r-project.org/package=OHPL)] [[GitHub](https://github.com/nanxstats/OHPL)] [[Paper](https://nanx.me/papers/OHPL.pdf)]
-- [RECA](https://nanx.me/RECA/) - Relevant component analysis for supervised distance metric learning [[CRAN](https://cran.r-project.org/package=RECA)] [[GitHub](https://github.com/nanxstats/RECA)]
+- [OHPL](https://OHPL.io/doc/) - Ordered homogeneity pursuit lasso algorithm for group variable selection [[CRAN](https://cran.r-project.org/package=OHPL)] [[GitHub](https://github.com/nanxstats/OHPL)] [[Paper](https://nanx.me/papers/OHPL.pdf)]
+- [RECA](https://nanx.me/RECA/) - Relevant component analysis for distance metric learning [[CRAN](https://cran.r-project.org/package=RECA)] [[GitHub](https://github.com/nanxstats/RECA)]
 - [enpls](https://nanx.me/enpls/) - Ensemble partial least squares regression [[CRAN](https://cran.r-project.org/package=enpls)] [[GitHub](https://github.com/nanxstats/enpls)]
 
 **Statistical graphics and computing**
@@ -44,16 +44,16 @@ I build R packages to improve my skills or my workflow.
 Shiny apps for interactive data analysis and visualization.
 
 - [pdxnet-portal](https://portal.pdxnetwork.org/) - PDXNet Data Portal. [Lead author: Soner Koc]
-- [cwl-formatter](https://github.com/nanxstats/cwl-formatter) - Shiny app to format Common Workflow Language (CWL) apps. [[Mirror 1](https://nanx.app/cwl-formatter/)]
-- [cwl-exploder](https://github.com/nanxstats/cwl-exploder) - Shiny app to unpack monolithic CWL workflows and split them into smaller components. [[Mirror 1](https://nanx.app/cwl-exploder/)]
-- [cwl-upgrader](https://github.com/nanxstats/cwl-upgrader) - Shiny app to upgrade Common Workflow Language apps from sbg:draft2 to v1.0. [[Mirror 1](https://nanx.app/cwl-upgrader/)]
-- [bco-app](https://github.com/sbg/bco-app) - Shiny app to create, validate, and browse BioCompute Objects. [Winner](https://precision.fda.gov/challenges/7/view/results) of the precisionFDA challenge on BioCompute Objects (advanced track). [[Docs](https://sbg.github.io/bco-app/)]
-- [protrweb](https://github.com/nanxstats/protrweb) - Shiny app to compute protein sequence-derived descriptors. [[Mirror 1](https://nanx.app/protr/)] [[Mirror 2](https://nanx.shinyapps.io/protrweb/)] [[Paper](https://nanx.me/papers/protr.pdf)]
-- [targetnet](https://github.com/nanxstats/targetnet) - Shiny app for drug target identification with large-scale binding affinities data. [[Mirror 1](https://nanx.app/targetnet/)] [[Mirror 2](https://nanx.shinyapps.io/targetnet/)]
-- [imgsvd](https://github.com/nanxstats/imgsvd) - Shiny app for image compression via singular value decomposition. [[Mirror 1](https://nanx.app/imgsvd/)] [[Mirror 2](https://nanx.shinyapps.io/imgsvd/)]
+- [cwl-formatter](https://github.com/nanxstats/cwl-formatter) - Format Common Workflow Language (CWL) apps. [[Mirror 1](https://nanx.app/cwl-formatter/)]
+- [cwl-exploder](https://github.com/nanxstats/cwl-exploder) - Unpack monolithic CWL workflows and split them into smaller components. [[Mirror 1](https://nanx.app/cwl-exploder/)]
+- [cwl-upgrader](https://github.com/nanxstats/cwl-upgrader) - Upgrade Common Workflow Language apps from sbg:draft2 to v1.0. [[Mirror 1](https://nanx.app/cwl-upgrader/)]
+- [bco-app](https://github.com/sbg/bco-app) - Create, validate, and browse BioCompute Objects. [Winner](https://precision.fda.gov/challenges/7/view/results) of the precisionFDA challenge on BioCompute Objects (advanced track). [[Docs](https://sbg.github.io/bco-app/)]
+- [protrweb](https://github.com/nanxstats/protrweb) - Compute protein sequence-derived descriptors. [[Mirror 1](https://nanx.app/protr/)] [[Mirror 2](https://nanx.shinyapps.io/protrweb/)] [[Paper](https://nanx.me/papers/protr.pdf)]
+- [targetnet](https://github.com/nanxstats/targetnet) - Drug target identification with large-scale binding affinities data. [[Mirror 1](https://nanx.app/targetnet/)] [[Mirror 2](https://nanx.shinyapps.io/targetnet/)]
+- [imgsvd](https://github.com/nanxstats/imgsvd) - Image compression via singular value decomposition. [[Mirror 1](https://nanx.app/imgsvd/)] [[Mirror 2](https://nanx.shinyapps.io/imgsvd/)]
 - [hdnom-app](https://github.com/nanxstats/hdnom-app) - Interactive benchmarking and visualization of penalized Cox models. [[Mirror 1](https://nanx.app/hdnom/)] [[Mirror 2](https://nanx.shinyapps.io/hdnom-app/)]
 - [conjugate-normal-umkv](https://github.com/nanxstats/conjugate-normal-umkv) - A demo of Bayesian inference for normal mean (known variance). [[Mirror 1](https://nanx.app/conjugate-normal-umkv/)] [[Mirror 2](https://nanx.shinyapps.io/conjugate-normal-umkv/)]
-- [signify](https://github.com/nanxstats/signify) - Shiny app for making your (>0.05) <em>p</em>-values "sound significant". [[Mirror 1](https://nanx.app/signify/)] [[Mirror 2](https://nanx.shinyapps.io/signify/)]
+- [signify](https://github.com/nanxstats/signify) - Make your (>0.05) <em>p</em>-values "sound significant". [[Mirror 1](https://nanx.app/signify/)] [[Mirror 2](https://nanx.shinyapps.io/signify/)]
 
 ## Data analysis pipelines
 
@@ -75,19 +75,16 @@ Reusable pipelines for analyzing real-world datasets in specific domains.
 
 ## Hugo/blogdown themes
 
+- [hugo-nanx2020](https://github.com/nanxstats/hugo-nanx2020) - An opinionated Bootstrap 4 theme for Hugo and blogdown
 - [hugo-renga](https://github.com/nanxstats/hugo-renga) - A clean Bootstrap 4 theme for Hugo and blogdown [[Live Preview](https://nanx.me/hugo-renga/)]
 - [hugo-tanka](https://github.com/nanxstats/hugo-tanka) - A minimalist theme for Hugo and blogdown [[Live Preview](https://nanx.me/hugo-tanka/)]
 
 ## Collections
 
-- [dockflow.org](https://dockflow.org) - Bioconductor workflow containerization and orchestration with liftr [[GitHub](https://github.com/nanxstats/dockflow)]
+- [dockflow.org](https://dockflow.org) - Bioconductor workflow containerization with liftr [[GitHub](https://github.com/nanxstats/dockflow)]
 - [nanx.app](https://nanx.app) - A collection of shiny apps built by me [[GitHub](https://github.com/nanxstats/nanx.app)]
 
 ## Archives
 
 - [使用 R 和 Apache 开发 Web 应用程序](https://nanx.me/rapache/) (2011)
 - [来自 Google 的 R 语言编码风格指南](https://nanx.me/rstyle/) (2011)
-
-<div class="mx-0 mx-md-4">
-<hr>
-</div>

@@ -55,7 +55,3 @@ menu: "main"
 - Dong-Sheng Cao, <author>Nan Xiao</author>, Yuan-Jian Li, Wen-Bin Zeng, Yi-Zeng Liang, Ai-Ping Lu,
 Qing-Song Xu, Alex F. Chen. [Integrating multiple evidence sources to predict adverse drug reactions based on systems pharmacology model](https://doi.org/10.1002/psp4.12002). <em>CPT: Pharmacometrics & Systems Pharmacology</em> 4(9): 498–506, 2015. [[PDF](MEF.pdf)] [[Code and dataset](https://github.com/nanxstats/MEF)]
 - Jian-Bing Wang, Dong-Sheng Cao, Min-Feng Zhu, Yong-Huan Yun, <author>Nan Xiao</author>, Yi-Zeng Liang. [<em>In silico</em> evaluation of logD<sub>7.4</sub> and comparison with other prediction methods](https://doi.org/10.1002/cem.2718). <em>Journal of Chemometrics</em> 29(7): 389-398, 2015. [[PDF](logd.pdf)] [[Dataset](https://github.com/nanxstats/logd74)]
-
-<div class="mx-0 mx-md-4">
-<hr>
-</div>

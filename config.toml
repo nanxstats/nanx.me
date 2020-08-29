@@ -5,7 +5,7 @@ author = "Nan Xiao"
 canonifyurls = true
 languagecode = "en"
 paginate = 3
-theme = "hugo-renga"
+theme = "hugo-nanx2020"
 
 enableEmoji = true
 hasCJKLanguage = true
@@ -17,7 +17,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params]
 pagetitle = "Nan Xiao"
 copyright = "© 2020 Nan Xiao"
-copyrightUrl = "https://nanx.me/"
 faviconfile = "image/favicon.png"
 logofile = "image/nanxiao.jpg"
 posts_navigation = true
@@ -28,7 +27,7 @@ progressively = false
 github = "nanxstats"
 twitter = "nanxstats"
 linkedin = "nanxstats"
-email = "me@nanx.me"
+contact = "me@nanx.me"
 
 [[menu.primary]]
 identifier = "software"

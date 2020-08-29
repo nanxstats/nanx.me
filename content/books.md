@@ -17,7 +17,3 @@ menu: "main"
   - Translated from _[ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)_ by Hadley Wickham.
 - [R语言实战](https://www.ituring.com.cn/book/857). 人民邮电出版社, 2013.
   - Translated from _[R in Action](https://www.manning.com/books/r-in-action)_ by Robert Kabacoff.
-
-<div class="mx-0 mx-md-4">
-<hr>
-</div>
