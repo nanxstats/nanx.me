@@ -6,3 +6,6 @@
 	path = public
 	url = git@github.com:nanxstats/nanxstats.github.io.git
 	branch = master
+[submodule "themes/hugo-nanx2020"]
+	path = themes/hugo-nanx2020
+	url = https://github.com/nanxstats/hugo-nanx2020
