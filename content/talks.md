@@ -16,10 +16,7 @@ menu: "main"
 - [High-Dimensional Survival Modeling with Shiny](https://nanx.me/talks/shinydevcon2016-lightning-nanxiao.pdf) ([Shiny Developer Conference 2016](https://rstudio.com/resources/shiny-dev-con-2016/), [video](https://rstudio.com/resources/shiny-dev-con/survival-modeling/))
 - [Introduction to Reproducible Research in Bioinformatics](https://nanx.me/talks/cri2015-reproducible-research-nanxiao.pdf) ([CRI Bioinformatics Workshop, University of Chicago](http://learn.cri.uchicago.edu/2015-cri-bioinformatics-workshop/), 2015)
 - [liftr & sbgr kickstart](https://www.bioconductor.org/help/course-materials/2015/BioC2015/bioc2015-workshop-nanxiao.pdf) ([BioC 2015](https://bioconductor.org/help/course-materials/2015/BioC2015/))
-- [Supervised Distance Metric Learning: A Retrospective](https://nanx.me/talks/supervised-distance-metric-learning-a-retrospective-nanxiao.pdf) (2013)
 - [Web Scraping with R](https://nanx.me/talks/web-scraping-with-r-nanxiao.pdf) ([China R Conference](https://cos.name/2013/05/6th-china-r-beijing-summary/), 2013)
-- [Linear and Circular Layouts for Network Visualization](https://nanx.me/talks/linear-and-circular-layouts-for-network-visualization-nanxiao.pdf) (2012)
-- [Visualization of CRAN Package Dependency Network](https://nanx.me/talks/visualization-of-cran-package-dependency-network-nanxiao.pdf) (2010)
 
 ## Posters
 
