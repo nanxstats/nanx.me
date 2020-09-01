@@ -15,7 +15,7 @@ I build R packages to improve my workflow.
 
 - [msaenet](https://nanx.me/msaenet/) - Multi-step adaptive estimation for reducing false positive selection in sparse regressions [[CRAN](https://cran.r-project.org/package=msaenet)] [[GitHub](https://github.com/nanxstats/msaenet)] [[Paper](https://nanx.me/papers/msaenet.pdf)]
 - [stackgbm](https://nanx.me/stackgbm/) - Minimalist implementation of model stacking for gradient boosted tree models built by xgboost, lightgbm, and catboost [[GitHub](https://github.com/nanxstats/stackgbm)]
-- [oneclust](https://nanx.me/oneclust/) - Maximum homogeneity clustering for one-dimensional data [[GitHub](https://github.com/nanxstats/oneclust)]
+- [oneclust](https://nanx.me/oneclust/) - Maximum homogeneity clustering for univariate data [[CRAN](https://cran.r-project.org/package=oneclust)] [[GitHub](https://github.com/nanxstats/oneclust)]
 - [logreg](https://nanx.me/logreg/) - Regularized logistic regressions with computational graphs [[GitHub](https://github.com/nanxstats/logreg)]
 - [OHPL](https://OHPL.io/doc/) - Ordered homogeneity pursuit lasso for group variable selection [[CRAN](https://cran.r-project.org/package=OHPL)] [[GitHub](https://github.com/nanxstats/OHPL)] [[Paper](https://nanx.me/papers/OHPL.pdf)]
 - [RECA](https://nanx.me/RECA/) - Relevant component analysis for supervised distance metric learning [[CRAN](https://cran.r-project.org/package=RECA)] [[GitHub](https://github.com/nanxstats/RECA)]
