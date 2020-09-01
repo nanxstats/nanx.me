@@ -13,47 +13,47 @@ I build R packages to improve my workflow.
 
 **Statistical machine learning**
 
-- [msaenet](https://nanx.me/msaenet/) - Multi-step adaptive estimation for reducing false positive selection in sparse regressions [[CRAN](https://cran.r-project.org/package=msaenet)] [[GitHub](https://github.com/nanxstats/msaenet)] [[Paper](https://nanx.me/papers/msaenet.pdf)]
-- [stackgbm](https://nanx.me/stackgbm/) - Minimalist implementation of model stacking for gradient boosted tree models built by xgboost, lightgbm, and catboost [[GitHub](https://github.com/nanxstats/stackgbm)]
-- [oneclust](https://nanx.me/oneclust/) - Maximum homogeneity clustering for univariate data [[CRAN](https://cran.r-project.org/package=oneclust)] [[GitHub](https://github.com/nanxstats/oneclust)]
-- [logreg](https://nanx.me/logreg/) - Regularized logistic regressions with computational graphs [[GitHub](https://github.com/nanxstats/logreg)]
-- [OHPL](https://OHPL.io/doc/) - Ordered homogeneity pursuit lasso for group variable selection [[CRAN](https://cran.r-project.org/package=OHPL)] [[GitHub](https://github.com/nanxstats/OHPL)] [[Paper](https://nanx.me/papers/OHPL.pdf)]
-- [RECA](https://nanx.me/RECA/) - Relevant component analysis for supervised distance metric learning [[CRAN](https://cran.r-project.org/package=RECA)] [[GitHub](https://github.com/nanxstats/RECA)]
-- [enpls](https://nanx.me/enpls/) - Ensemble partial least squares regression [[CRAN](https://cran.r-project.org/package=enpls)] [[GitHub](https://github.com/nanxstats/enpls)]
+- [msaenet](https://nanx.me/msaenet/) - Multi-step adaptive estimation for sparse regressions <br> [[CRAN](https://cran.r-project.org/package=msaenet)] [[GitHub](https://github.com/nanxstats/msaenet)] [[Paper](https://nanx.me/papers/msaenet.pdf)]
+- [stackgbm](https://nanx.me/stackgbm/) - Minimalist implementation of model stacking for gradient boosted tree models built by xgboost, lightgbm, and catboost <br> [[GitHub](https://github.com/nanxstats/stackgbm)]
+- [oneclust](https://nanx.me/oneclust/) - Maximum homogeneity clustering for univariate data <br> [[CRAN](https://cran.r-project.org/package=oneclust)] [[GitHub](https://github.com/nanxstats/oneclust)]
+- [logreg](https://nanx.me/logreg/) - Regularized logistic regressions with computational graphs <br> [[GitHub](https://github.com/nanxstats/logreg)]
+- [OHPL](https://OHPL.io/doc/) - Ordered homogeneity pursuit lasso for group variable selection <br> [[CRAN](https://cran.r-project.org/package=OHPL)] [[GitHub](https://github.com/nanxstats/OHPL)] [[Paper](https://nanx.me/papers/OHPL.pdf)]
+- [RECA](https://nanx.me/RECA/) - Relevant component analysis for supervised distance metric learning <br> [[CRAN](https://cran.r-project.org/package=RECA)] [[GitHub](https://github.com/nanxstats/RECA)]
+- [enpls](https://nanx.me/enpls/) - Ensemble partial least squares regression <br> [[CRAN](https://cran.r-project.org/package=enpls)] [[GitHub](https://github.com/nanxstats/enpls)]
 
 **Statistical graphics and computing**
 
-- [ggsci](https://nanx.me/ggsci/) - Scientific journal and sci-fi themed color palettes for ggplot2 [[CRAN](https://cran.r-project.org/package=ggsci)] [[GitHub](https://github.com/nanxstats/ggsci)]
-- [liftr](https://nanx.me/liftr/) - Containerize R Markdown documents [[CRAN](https://cran.r-project.org/package=liftr)] [[GitHub](https://github.com/nanxstats/liftr)] [[Preprint](https://arxiv.org/abs/2001.10641)]
-- [hdnom](https://nanx.me/hdnom/) - Benchmarking and visualization toolkit for penalized Cox models [[CRAN](https://cran.r-project.org/package=hdnom)] [[GitHub](https://github.com/nanxstats/hdnom)] [[Preprint](https://www.biorxiv.org/content/biorxiv/early/2016/08/23/065524.full.pdf)]
+- [ggsci](https://nanx.me/ggsci/) - Scientific journal and sci-fi themed color palettes for ggplot2 <br> [[CRAN](https://cran.r-project.org/package=ggsci)] [[GitHub](https://github.com/nanxstats/ggsci)]
+- [liftr](https://nanx.me/liftr/) - Containerize R Markdown documents <br> [[CRAN](https://cran.r-project.org/package=liftr)] [[GitHub](https://github.com/nanxstats/liftr)] [[Preprint](https://arxiv.org/abs/2001.10641)]
+- [hdnom](https://nanx.me/hdnom/) - Benchmarking and visualization toolkit for penalized Cox models <br> [[CRAN](https://cran.r-project.org/package=hdnom)] [[GitHub](https://github.com/nanxstats/hdnom)] [[Preprint](https://www.biorxiv.org/content/biorxiv/early/2016/08/23/065524.full.pdf)]
 
 **Bioinformatics**
 
-- [protr](https://nanx.me/protr/) - Protein sequence feature extraction [[CRAN](https://cran.r-project.org/package=protr)] [[GitHub](https://github.com/nanxstats/protr)] [[Paper](https://nanx.me/papers/protr.pdf)]
-- [Rcpi](https://nanx.me/Rcpi/) - Feature extraction for proteins, compounds, and their interactions [[BioC](https://bioconductor.org/packages/Rcpi)] [[GitHub](https://github.com/nanxstats/Rcpi)] [[Paper](https://nanx.me/papers/Rcpi.pdf)]
-- [grex](https://nanx.me/grex/) - Gene ID mapping for Genotype-Tissue Expression (GTEx) data [[CRAN](https://cran.r-project.org/package=grex)] [[GitHub](https://github.com/nanxstats/grex)]
-- [cats](https://nanx.me/cats/) - Joint power analysis for non-symmetric two-stage case-control designs [[GitHub](https://github.com/nanxstats/cats)]
-- [ssw-r](https://nanx.me/ssw-r/) - R interface for SSW, a fast implementation of the Smith-Waterman algorithm using SIMD [[GitHub](https://github.com/nanxstats/ssw-r)]
-- [tidycwl](https://sbg.github.io/tidycwl/) - Tidy Common Workflow Language tools and workflows [[CRAN](https://cran.r-project.org/package=tidycwl)] [[GitHub](https://github.com/sbg/tidycwl)]
-- [biocompute](https://sbg.github.io/biocompute/) - Create and manipulate BioCompute Objects [[CRAN](https://cran.r-project.org/package=biocompute)] [[GitHub](https://github.com/sbg/biocompute)]
-- [sevenbridges-r](https://sbg.github.io/sevenbridges-r/) - Seven Bridges API client [[BioC](https://bioconductor.org/packages/sevenbridges)] [[GitHub](https://github.com/sbg/sevenbridges-r)]
-- [sbpack-r](https://nanx.me/sbpack-r/) - Pack and upload CWL apps to Seven Bridges powered platforms [[GitHub](https://github.com/nanxstats/sbpack-r)]
+- [protr](https://nanx.me/protr/) - Protein sequence feature extraction <br> [[CRAN](https://cran.r-project.org/package=protr)] [[GitHub](https://github.com/nanxstats/protr)] [[Paper](https://nanx.me/papers/protr.pdf)]
+- [Rcpi](https://nanx.me/Rcpi/) - Feature extraction for proteins, compounds, and their interactions <br> [[Bioconductor](https://bioconductor.org/packages/Rcpi)] [[GitHub](https://github.com/nanxstats/Rcpi)] [[Paper](https://nanx.me/papers/Rcpi.pdf)]
+- [grex](https://nanx.me/grex/) - Gene ID mapping for Genotype-Tissue Expression (GTEx) data <br> [[CRAN](https://cran.r-project.org/package=grex)] [[GitHub](https://github.com/nanxstats/grex)]
+- [cats](https://nanx.me/cats/) - Joint power analysis for non-symmetric two-stage case-control designs <br> [[GitHub](https://github.com/nanxstats/cats)]
+- [ssw-r](https://nanx.me/ssw-r/) - R interface for SSW, a fast implementation of the Smith-Waterman algorithm using SIMD <br> [[GitHub](https://github.com/nanxstats/ssw-r)]
+- [tidycwl](https://sbg.github.io/tidycwl/) - Tidy Common Workflow Language tools and workflows <br> [[CRAN](https://cran.r-project.org/package=tidycwl)] [[GitHub](https://github.com/sbg/tidycwl)]
+- [biocompute](https://sbg.github.io/biocompute/) - Create and manipulate BioCompute Objects <br> [[CRAN](https://cran.r-project.org/package=biocompute)] [[GitHub](https://github.com/sbg/biocompute)]
+- [sevenbridges-r](https://sbg.github.io/sevenbridges-r/) - Seven Bridges API client <br> [[Bioconductor](https://bioconductor.org/packages/sevenbridges)] [[GitHub](https://github.com/sbg/sevenbridges-r)]
+- [sbpack-r](https://nanx.me/sbpack-r/) - Pack and upload CWL apps to Seven Bridges powered platforms <br> [[GitHub](https://github.com/nanxstats/sbpack-r)]
 
 ## Shiny apps
 
 Shiny apps for interactive data analysis and visualization.
 
-- [pdxnet-portal](https://portal.pdxnetwork.org/) - PDXNet Data Portal. [Lead author: Soner Koc]
-- [cwl-formatter](https://github.com/nanxstats/cwl-formatter) - Format Common Workflow Language (CWL) apps. [[Mirror 1](https://nanx.app/cwl-formatter/)]
-- [cwl-exploder](https://github.com/nanxstats/cwl-exploder) - Unpack monolithic CWL workflows and split them into smaller components. [[Mirror 1](https://nanx.app/cwl-exploder/)]
-- [cwl-upgrader](https://github.com/nanxstats/cwl-upgrader) - Upgrade Common Workflow Language apps from sbg:draft2 to v1.0. [[Mirror 1](https://nanx.app/cwl-upgrader/)]
-- [bco-app](https://github.com/sbg/bco-app) - Create, validate, and browse BioCompute Objects. [Winner](https://precision.fda.gov/challenges/7/view/results) of the precisionFDA challenge on BioCompute Objects (advanced track). [[Docs](https://sbg.github.io/bco-app/)]
-- [protrweb](https://github.com/nanxstats/protrweb) - Compute protein sequence-derived descriptors. [[Mirror 1](https://nanx.app/protr/)] [[Mirror 2](https://nanx.shinyapps.io/protrweb/)] [[Paper](https://nanx.me/papers/protr.pdf)]
-- [targetnet](https://github.com/nanxstats/targetnet) - Drug target identification with large-scale binding affinities data. [[Mirror 1](https://nanx.app/targetnet/)] [[Mirror 2](https://nanx.shinyapps.io/targetnet/)]
-- [imgsvd](https://github.com/nanxstats/imgsvd) - Image compression via singular value decomposition. [[Mirror 1](https://nanx.app/imgsvd/)] [[Mirror 2](https://nanx.shinyapps.io/imgsvd/)]
-- [hdnom-app](https://github.com/nanxstats/hdnom-app) - Interactive benchmarking and visualization of penalized Cox models. [[Mirror 1](https://nanx.app/hdnom/)] [[Mirror 2](https://nanx.shinyapps.io/hdnom-app/)]
-- [conjugate-normal-umkv](https://github.com/nanxstats/conjugate-normal-umkv) - A demo of Bayesian inference for normal mean (known variance). [[Mirror 1](https://nanx.app/conjugate-normal-umkv/)] [[Mirror 2](https://nanx.shinyapps.io/conjugate-normal-umkv/)]
-- [signify](https://github.com/nanxstats/signify) - Make your (>0.05) <em>p</em>-values "sound significant". [[Mirror 1](https://nanx.app/signify/)] [[Mirror 2](https://nanx.shinyapps.io/signify/)]
+- [pdxnet-portal](https://portal.pdxnetwork.org/) - PDXNet Data Portal [Lead author: Soner Koc]
+- [cwl-formatter](https://github.com/nanxstats/cwl-formatter) - Format Common Workflow Language (CWL) apps <br> [[Mirror 1](https://nanx.app/cwl-formatter/)]
+- [cwl-exploder](https://github.com/nanxstats/cwl-exploder) - Unpack monolithic CWL workflows <br> [[Mirror 1](https://nanx.app/cwl-exploder/)]
+- [cwl-upgrader](https://github.com/nanxstats/cwl-upgrader) - Upgrade CWL apps from sbg:draft2 to v1.0 <br> [[Mirror 1](https://nanx.app/cwl-upgrader/)]
+- [bco-app](https://github.com/sbg/bco-app) - Create, validate, and browse BioCompute Objects. [Winner](https://precision.fda.gov/challenges/7/view/results) of the precisionFDA challenge on BioCompute Objects (advanced track). <br> [[Docs](https://sbg.github.io/bco-app/)]
+- [protrweb](https://github.com/nanxstats/protrweb) - Compute protein sequence-derived descriptors <br> [[Mirror 1](https://nanx.app/protr/)] [[Mirror 2](https://nanx.shinyapps.io/protrweb/)] [[Paper](https://nanx.me/papers/protr.pdf)]
+- [targetnet](https://github.com/nanxstats/targetnet) - Drug target identification with large-scale binding affinities data <br> [[Mirror 1](https://nanx.app/targetnet/)] [[Mirror 2](https://nanx.shinyapps.io/targetnet/)]
+- [imgsvd](https://github.com/nanxstats/imgsvd) - Image compression via singular value decomposition <br> [[Mirror 1](https://nanx.app/imgsvd/)] [[Mirror 2](https://nanx.shinyapps.io/imgsvd/)]
+- [hdnom-app](https://github.com/nanxstats/hdnom-app) - Benchmarking and visualization of penalized Cox models <br> [[Mirror 1](https://nanx.app/hdnom/)] [[Mirror 2](https://nanx.shinyapps.io/hdnom-app/)]
+- [conjugate-normal-umkv](https://github.com/nanxstats/conjugate-normal-umkv) - A demo of [Bayesian inference for normal mean (known variance)](https://stephens999.github.io/fiveMinuteStats/shiny_normal_example.html) <br> [[Mirror 1](https://nanx.app/conjugate-normal-umkv/)] [[Mirror 2](https://nanx.shinyapps.io/conjugate-normal-umkv/)]
+- [signify](https://github.com/nanxstats/signify) - Make your (>0.05) <em>p</em>-values "sound significant" <br> [[Mirror 1](https://nanx.app/signify/)] [[Mirror 2](https://nanx.shinyapps.io/signify/)]
 
 ## Data analysis pipelines
 
