@@ -80,7 +80,9 @@ convert <- function(fns, idx) {
   callr::r(function(fns, idx) {
     smiles <- c()
     for (i in idx) {
-      Rcpi::convMolFormat(infile = fns[i], outfile = "temp.smi", from = "sdf", to = "smiles")
+      Rcpi::convMolFormat(
+        infile = fns[i], outfile = "temp.smi", from = "sdf", to = "smiles"
+      )
       smiles <- c(smiles, Rcpi::readMolFromSmi(smifile = "temp.smi", type = "text")[1])
     }
     smiles

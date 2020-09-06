@@ -38,7 +38,7 @@ In my opinion, the main technical reasons to create a self-hosting server may in
 
 In brief, it looks like this:
 
-```{mermaid, echo=FALSE, eval=FALSE}
+```{asis, echo=FALSE, eval=FALSE}
 graph LR
 	A(Domain <br> Nameserver) -->
   |point to| B("Cloudflare" )
