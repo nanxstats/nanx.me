@@ -7,11 +7,7 @@ categories: []
 tags: []
 ---
 
-<div class="py-3 col-10 offset-1">
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oOiCukjpD0c?rel=0" allowfullscreen></iframe>
-</div>
-</div>
+![Photo by <a href="https://unsplash.com/photos/6yjAC0-OwkA">Esteban Lopez</a>.](/image/esteban-lopez-6yjAC0-OwkA-unsplash.jpg)
 
 Sometimes I feel guilty that I have not been able to do some real impactful research during my PhD studies. Although, I feel blessed that I have super cool advisors, who have taught me things that are even more important than doing good research. One particular thing I learned, is about saying no -- I was terrible at it, and honestly, still learning more about it.
 
