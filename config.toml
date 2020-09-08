@@ -12,6 +12,11 @@ hasCJKLanguage = true
 
 disqusShortname = "nan-xiao-blog"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
