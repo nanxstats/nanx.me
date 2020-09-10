@@ -27,6 +27,7 @@ logofile = "image/nanxiao.jpg"
 posts_navigation = true
 uselatex = true
 highlightjs = true
+highlightjslanguages = ["r"]
 progressively = false
 
 github = "nanxstats"
