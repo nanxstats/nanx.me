@@ -10,9 +10,9 @@ menu: "main"
 <p>
 <a href="https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en">Google Scholar</a>
 <span class="text-muted">&middot;</span>
-<a href="https://www.researchgate.net/profile/Nan_Xiao3">ResearchGate</a>
-<span class="text-muted">&middot;</span>
 <a href="https://orcid.org/0000-0002-0250-5673">ORCID</a>
+<span class="text-muted">&middot;</span>
+<a href="https://www.researchgate.net/profile/Nan_Xiao3">ResearchGate</a>
 <span class="text-muted">&middot;</span>
 <a href="https://publons.com/researcher/278188/nan-xiao/">Publons</a>
 <span class="text-muted">&middot;</span>
@@ -27,6 +27,7 @@ menu: "main"
 
 ## 2020
 
+- <author>Nan Xiao</author>, Soner Koc, David Roberson, Phillip Brooks, Manisha Ray, Dennis Dean. [BCO App: tools for generating BioCompute Objects from next-generation sequencing workflows and computations](https://doi.org/10.12688/f1000research.25902.1) [version 1; peer review: awaiting peer review]. <em>F1000Research</em>, 9:1144, 2020.
 - Daniel Nüst, Dirk Eddelbuettel, Dom Bennett, Robrecht Cannoodt, Dav Clark, Gergely Daroczi, Mark Edmondson, Colin Fay, Ellis Hughes, Lars Kjeldgaard, Sean Lopp, Ben Marwick, Heather Nolis, Jacqueline Nolis, Hong Ooi, Karthik Ram, Noam Ross, Lori Shepherd, Péter Sólymos, Tyson Lee Swetnam, Nitesh Turaga, Charlotte Van Petegem, Jason Williams, Craig Willis, <author>Nan Xiao</author>. [The Rockerverse: packages and applications for containerization with R](https://arxiv.org/abs/2001.10641). <em>arXiv preprint arXiv:2001.10641</em>, 2020.
 
 ## 2019
