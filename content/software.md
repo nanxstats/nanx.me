@@ -27,10 +27,11 @@ I build R packages to improve my workflow.
 - [liftr](https://nanx.me/liftr/) - Containerize R Markdown documents <br> [[CRAN](https://cran.r-project.org/package=liftr)] [[GitHub](https://github.com/nanxstats/liftr)] [[Preprint](https://arxiv.org/abs/2001.10641)]
 - [hdnom](https://nanx.me/hdnom/) - Benchmarking and visualization toolkit for penalized Cox models <br> [[CRAN](https://cran.r-project.org/package=hdnom)] [[GitHub](https://github.com/nanxstats/hdnom)] [[Preprint](https://www.biorxiv.org/content/biorxiv/early/2016/08/23/065524.full.pdf)]
 
-**Bioinformatics**
+**Bioinformatics and cheminformatics**
 
 - [protr](https://nanx.me/protr/) - Protein sequence feature extraction <br> [[CRAN](https://cran.r-project.org/package=protr)] [[GitHub](https://github.com/nanxstats/protr)] [[Paper](https://nanx.me/papers/protr.pdf)]
 - [Rcpi](https://nanx.me/Rcpi/) - Feature extraction for proteins, compounds, and their interactions <br> [[Bioconductor](https://bioconductor.org/packages/Rcpi)] [[GitHub](https://github.com/nanxstats/Rcpi)] [[Paper](https://nanx.me/papers/Rcpi.pdf)]
+- [tidychem](https://nanx.me/tidychem/) - Read, preprocess, and featurize chemical data using RDKit <br> [[GitHub](https://github.com/nanxstats/tidychem)]
 - [grex](https://nanx.me/grex/) - Gene ID mapping for Genotype-Tissue Expression (GTEx) data <br> [[CRAN](https://cran.r-project.org/package=grex)] [[GitHub](https://github.com/nanxstats/grex)]
 - [cats](https://nanx.me/cats/) - Joint power analysis for non-symmetric two-stage case-control designs <br> [[GitHub](https://github.com/nanxstats/cats)]
 - [ssw-r](https://nanx.me/ssw-r/) - R interface for SSW, a fast implementation of the Smith-Waterman algorithm using SIMD <br> [[GitHub](https://github.com/nanxstats/ssw-r)]
