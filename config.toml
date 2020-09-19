@@ -10,8 +10,6 @@ theme = "hugo-nanx2020"
 enableEmoji = true
 hasCJKLanguage = true
 
-disqusShortname = "nan-xiao-blog"
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -29,6 +27,7 @@ uselatex = true
 highlightjs = true
 highlightjslanguages = ["r"]
 progressively = false
+commentsrepo = "nanxstats/blog-comments"
 
 github = "nanxstats"
 twitter = "nanxstats"
