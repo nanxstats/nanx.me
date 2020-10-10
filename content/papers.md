@@ -28,7 +28,7 @@ menu: "main"
 ## 2020
 
 - <author>Nan Xiao</author>, Soner Koc, David Roberson, Phillip Brooks, Manisha Ray, Dennis Dean. [BCO App: tools for generating BioCompute Objects from next-generation sequencing workflows and computations](https://doi.org/10.12688/f1000research.25902.1) [version 1; peer review: 1 approved]. <em>F1000Research</em>, 9:1144, 2020.
-- Daniel Nüst, Dirk Eddelbuettel, Dom Bennett, Robrecht Cannoodt, Dav Clark, Gergely Daroczi, Mark Edmondson, Colin Fay, Ellis Hughes, Lars Kjeldgaard, Sean Lopp, Ben Marwick, Heather Nolis, Jacqueline Nolis, Hong Ooi, Karthik Ram, Noam Ross, Lori Shepherd, Péter Sólymos, Tyson Lee Swetnam, Nitesh Turaga, Charlotte Van Petegem, Jason Williams, Craig Willis, <author>Nan Xiao</author>. [The Rockerverse: packages and applications for containerization with R](https://arxiv.org/abs/2001.10641). <em>arXiv preprint arXiv:2001.10641</em>, 2020.
+- Daniel Nüst, Dirk Eddelbuettel, Dom Bennett, Robrecht Cannoodt, Dav Clark, Gergely Daróczi, Mark Edmondson, Colin Fay, Ellis Hughes, Lars Kjeldgaard, Sean Lopp, Ben Marwick, Heather Nolis, Jacqueline Nolis, Hong Ooi, Karthik Ram, Noam Ross, Lori Shepherd, Péter Sólymos, Tyson Lee Swetnam, Nitesh Turaga, Charlotte Van Petegem, Jason Williams, Craig Willis, <author>Nan Xiao</author>. [The Rockerverse: packages and applications for containerization with R](https://journal.r-project.org/archive/2020/RJ-2020-007/index.html). <em>The R Journal</em> 12(1): 437-461, 2020.
 
 ## 2019
 
@@ -36,7 +36,7 @@ menu: "main"
 
 ## 2018
 
-- Yuan Tang, Tao Gao, <author>Nan Xiao</author>. [dml: Distance Metric Learning in R](https://doi.org/10.21105/joss.01036). <em>Journal of Open Source Software</em> 3(30), 1036, 2018.
+- Yuan Tang, Tao Gao, <author>Nan Xiao</author>. [dml: Distance Metric Learning in R](https://doi.org/10.21105/joss.01036). <em>Journal of Open Source Software</em> 3(30): 1036, 2018.
 - Li-Li Wang, You-Wu Lin, Xu-Fei Wang, <author>Nan Xiao</author>, Yuan-Da Xu, Hong-Dong Li, Qing-Song Xu. [A selective review and comparison for interval variable selection in spectroscopic modeling](https://doi.org/10.1016/j.chemolab.2017.11.008). <em>Chemometrics and Intelligent Laboratory Systems</em> 172: 229-240, 2018. [[PDF](interval-variable-selection.pdf)]
 
 ## 2017
