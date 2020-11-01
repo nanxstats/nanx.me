@@ -6,7 +6,7 @@ description: "Data scientist based in Cambridge, Massachusetts."
 
 Hi! I'm **Nan Xiao**, a working statistician.
 I have a PhD degree in statistics.
-My [research](https://nanx.me/papers/) has focused on developing statistical machine learning methods to analyze high-dimensional data.
+My [research](https://nanx.me/papers/) has focused on developing statistical machine learning methods for high-dimensional data analysis.
 My [Erdős number](https://mathscinet.ams.org/mathscinet/collaborationFiltered.html?group_target=189017&group_source=1129576) is 4.
 
 I'm interested in discovering the connections between things.
