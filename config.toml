@@ -15,7 +15,7 @@ hasCJKLanguage = true
     [markup.goldmark.renderer]
       unsafe = true
 
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
 [params]
 pagetitle = "Nan Xiao"
