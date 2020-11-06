@@ -25,7 +25,7 @@ I build R packages to improve my workflow.
 
 - [ggsci](https://nanx.me/ggsci/) <br> Scientific journal and sci-fi themed color palettes for ggplot2 <br> [CRAN](https://cran.r-project.org/package=ggsci) | [GitHub](https://github.com/nanxstats/ggsci)
 - [liftr](https://nanx.me/liftr/) <br> Containerize R Markdown documents <br> [CRAN](https://cran.r-project.org/package=liftr) | [GitHub](https://github.com/nanxstats/liftr) | [Paper](https://doi.org/10.32614/RJ-2020-007)
-- [hdnom](https://nanx.me/hdnom/) <br> Benchmarking and visualization toolkit for penalized Cox models <br> [CRAN](https://cran.r-project.org/package=hdnom) | [GitHub](https://github.com/nanxstats/hdnom) | [Preprint](https://doi.org/10.1101/065524)
+- [hdnom](https://nanx.me/hdnom/) <br> Benchmarking and visualization toolkit for penalized Cox models <br> [CRAN](https://cran.r-project.org/package=hdnom) | [GitHub](https://github.com/nanxstats/hdnom) | [Paper](https://doi.org/10.1101/065524)
 
 **Bioinformatics and cheminformatics**
 
@@ -35,8 +35,8 @@ I build R packages to improve my workflow.
 - [grex](https://nanx.me/grex/) <br> Gene ID mapping for Genotype-Tissue Expression (GTEx) data <br> [CRAN](https://cran.r-project.org/package=grex) | [GitHub](https://github.com/nanxstats/grex)
 - [cats](https://nanx.me/cats/) <br> Joint power analysis for non-symmetric two-stage case-control designs <br> [GitHub](https://github.com/nanxstats/cats)
 - [ssw-r](https://nanx.me/ssw-r/) <br> R interface for SSW, a fast implementation of the Smith-Waterman algorithm using SIMD <br> [GitHub](https://github.com/nanxstats/ssw-r)
-- [tidycwl](https://sbg.github.io/tidycwl/) <br> Tidy Common Workflow Language tools and workflows <br> [CRAN](https://cran.r-project.org/package=tidycwl) | [GitHub](https://github.com/sbg/tidycwl)
-- [biocompute](https://sbg.github.io/biocompute/) <br> Create and manipulate BioCompute Objects <br> [CRAN](https://cran.r-project.org/package=biocompute) | [GitHub](https://github.com/sbg/biocompute)
+- [tidycwl](https://sbg.github.io/tidycwl/) <br> Tidy Common Workflow Language tools and workflows <br> [CRAN](https://cran.r-project.org/package=tidycwl) | [GitHub](https://github.com/sbg/tidycwl) | [Paper](https://doi.org/10.12688/f1000research.25902.1)
+- [biocompute](https://sbg.github.io/biocompute/) <br> Create and manipulate BioCompute Objects <br> [CRAN](https://cran.r-project.org/package=biocompute) | [GitHub](https://github.com/sbg/biocompute) | [Paper](https://doi.org/10.12688/f1000research.25902.1)
 - [sevenbridges-r](https://sbg.github.io/sevenbridges-r/) <br> Seven Bridges API client <br> [Bioconductor](https://bioconductor.org/packages/sevenbridges) | [GitHub](https://github.com/sbg/sevenbridges-r)
 - [sbpack-r](https://nanx.me/sbpack-r/) <br> Pack and upload CWL apps to Seven Bridges powered platforms <br> [GitHub](https://github.com/nanxstats/sbpack-r)
 
@@ -45,16 +45,16 @@ I build R packages to improve my workflow.
 Shiny apps for interactive data analysis and visualization.
 
 - [pdxnet-portal](https://portal.pdxnetwork.org/) <br> PDXNet Data Portal (Lead author: [Soner Koc](https://github.com/skoc))
-- [cwl-formatter](https://github.com/nanxstats/cwl-formatter) <br> Format Common Workflow Language (CWL) apps <br> [Mirror 1](https://nanx.app/cwl-formatter/)
-- [cwl-exploder](https://github.com/nanxstats/cwl-exploder) <br> Unpack monolithic CWL workflows <br> [Mirror 1](https://nanx.app/cwl-exploder/)
-- [cwl-upgrader](https://github.com/nanxstats/cwl-upgrader) <br> Upgrade CWL apps from sbg:draft2 to v1.0 <br> [Mirror 1](https://nanx.app/cwl-upgrader/)
-- [bco-app](https://github.com/sbg/bco-app) <br> Create, validate, and browse BioCompute Objects. [Winner](https://precision.fda.gov/challenges/7/view/results) of the precisionFDA challenge on BioCompute Objects (advanced track). <br> [Documentation](https://sbg.github.io/bco-app/)
+- [bco-app](https://github.com/sbg/bco-app) <br> Create, validate, and browse BioCompute Objects. [Winner](https://precision.fda.gov/challenges/7/view/results) of the precisionFDA challenge on BioCompute Objects (advanced track). <br> [Documentation](https://sbg.github.io/bco-app/) | [Paper](https://doi.org/10.12688/f1000research.25902.1)
 - [protrweb](https://github.com/nanxstats/protrweb) <br> Compute protein sequence-derived descriptors <br> [Mirror 1](https://nanx.app/protr/) | [Mirror 2](https://nanx.shinyapps.io/protrweb/) | [Paper](https://nanx.me/papers/protr.pdf)
 - [targetnet](https://github.com/nanxstats/targetnet) <br> Drug target identification with large-scale binding affinities data <br> [Mirror 1](https://nanx.app/targetnet/) | [Mirror 2](https://nanx.shinyapps.io/targetnet/)
 - [imgsvd](https://github.com/nanxstats/imgsvd) <br> Image compression via singular value decomposition <br> [Mirror 1](https://nanx.app/imgsvd/) | [Mirror 2](https://nanx.shinyapps.io/imgsvd/)
 - [hdnom-app](https://github.com/nanxstats/hdnom-app) <br> Benchmarking and visualization of penalized Cox models <br> [Mirror 1](https://nanx.app/hdnom/) | [Mirror 2](https://nanx.shinyapps.io/hdnom-app/)
 - [conjugate-normal-umkv](https://github.com/nanxstats/conjugate-normal-umkv) <br> A demo of [Bayesian inference for normal mean (known variance)](https://stephens999.github.io/fiveMinuteStats/shiny_normal_example.html) <br> [Mirror 1](https://nanx.app/conjugate-normal-umkv/) | [Mirror 2](https://nanx.shinyapps.io/conjugate-normal-umkv/)
 - [signify](https://github.com/nanxstats/signify) <br> Make your (>0.05) <em>p</em>-values "sound significant" <br> [Mirror 1](https://nanx.app/signify/) | [Mirror 2](https://nanx.shinyapps.io/signify/)
+- [cwl-formatter](https://github.com/nanxstats/cwl-formatter) <br> Format Common Workflow Language (CWL) apps <br> [Mirror 1](https://nanx.app/cwl-formatter/)
+- [cwl-exploder](https://github.com/nanxstats/cwl-exploder) <br> Unpack monolithic CWL workflows <br> [Mirror 1](https://nanx.app/cwl-exploder/)
+- [cwl-upgrader](https://github.com/nanxstats/cwl-upgrader) <br> Upgrade CWL apps from sbg:draft2 to v1.0 <br> [Mirror 1](https://nanx.app/cwl-upgrader/)
 
 ## Data analysis pipelines
 
