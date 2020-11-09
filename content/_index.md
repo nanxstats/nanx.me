@@ -4,9 +4,8 @@ menu: "main"
 description: "Data scientist based in Cambridge, Massachusetts."
 ---
 
-Hi! I'm **Nan Xiao**, a working data scientist.
-I have a PhD degree in statistics.
-My [research](https://nanx.me/papers/) has focused on developing statistical machine learning methods for high-dimensional data.
+Hi! I'm **Nan Xiao**, a biostatistician working at [Merck](https://www.merck.com/).
+My PhD [research](https://nanx.me/papers/) focused on developing statistical machine learning methods for high-dimensional data analysis.
 My [Erdős number](https://mathscinet.ams.org/mathscinet/collaborationFiltered.html?group_target=189017&group_source=1129576) is 4.
 
 I'm interested in discovering the connections between things.
