@@ -16,8 +16,6 @@ menu: "main"
 <span class="text-muted">&middot;</span>
 <a href="https://publons.com/researcher/278188/nan-xiao/">Publons</a>
 <span class="text-muted">&middot;</span>
-<a href="https://www.mendeley.com/profiles/nan-xiao/">Mendeley</a>
-<span class="text-muted">&middot;</span>
 <a href="https://profiles.impactstory.org/u/0000-0002-0250-5673">Impactstory</a>
 </p>
 
