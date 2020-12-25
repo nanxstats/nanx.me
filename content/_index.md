@@ -10,7 +10,8 @@ My current research focus is on group sequential design methods for late-phase o
 
 Earlier in my career, I studied Human Genetics in [Matthew Stephens Lab](https://stephenslab.uchicago.edu/) at the University of Chicago.
 I earned my PhD degree in Statistics from Central South University, China.
-Advised by [Prof. Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en), my [research](https://nanx.me/papers/) focused on developing statistical machine learning methods for high-dimensional data.
+My thesis focused on developing statistical machine learning methods for high-dimensional data analysis,
+advised by [Prof. Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en).
 My [Erdős number](https://mathscinet.ams.org/mathscinet/collaborationFiltered.html?group_target=189017&group_source=1129576) is 4.
 
 I'm interested in discovering the connections between things.
