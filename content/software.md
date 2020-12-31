@@ -76,9 +76,9 @@ Reusable pipelines for analyzing real-world datasets in specific domains.
 
 ## Hugo/blogdown themes
 
-- [hugo-nanx2020](https://github.com/nanxstats/hugo-nanx2020) <br> An opinionated Bootstrap 4 theme for Hugo and blogdown
+- [hugo-tanka](https://github.com/nanxstats/hugo-tanka) <br> A minimalist theme for Hugo and blogdown <br> [Live Preview](https://nanx.me/hugo-tanka/) | [Hugo Themes](https://themes.gohugo.io/hugo-tanka/) | [blogdown book](https://bookdown.org/yihui/blogdown/other-themes.html)
 - [hugo-renga](https://github.com/nanxstats/hugo-renga) <br> A clean Bootstrap 4 theme for Hugo and blogdown <br> [Live Preview](https://nanx.me/hugo-renga/)
-- [hugo-tanka](https://github.com/nanxstats/hugo-tanka) <br> A minimalist theme for Hugo and blogdown <br> [Live Preview](https://nanx.me/hugo-tanka/)
+- [hugo-nanx2020](https://github.com/nanxstats/hugo-nanx2020) <br> An opinionated Bootstrap 4 theme for Hugo and blogdown
 
 ## Collections
 
