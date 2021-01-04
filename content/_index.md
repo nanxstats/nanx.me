@@ -4,10 +4,10 @@ menu: "main"
 description: "Statistician based in Cambridge, Massachusetts."
 ---
 
-Hi! I'm **Nan Xiao**, a biostatistician working at [Merck](https://www.merck.com/).
-Previously, I worked as a data scientist at [Seven Bridges](https://www.sevenbridges.com/).
-My current research focus is on group sequential design methods for late-phase oncology clinical trials.
+Hi! I'm **Nan Xiao**, a statistician working at [Merck](https://www.merck.com/).
+My current research focus is on group sequential design methods for late-phase oncology trials.
 
+Previously, I worked as a genomic data scientist at [Seven Bridges](https://www.sevenbridges.com/) in Boston, Massachusetts.
 Earlier in my career, I studied Human Genetics in [Matthew Stephens Lab](https://stephenslab.uchicago.edu/) at the University of Chicago.
 I earned my PhD degree in Statistics from Central South University, China.
 My thesis focused on developing statistical machine learning methods for high-dimensional data analysis,
@@ -18,5 +18,5 @@ I'm interested in discovering the connections between things.
 I build [software](https://nanx.me/software/) to improve my computational workflow.
 My favorite works include [msaenet](https://nanx.me/msaenet/), [stackgbm](https://nanx.me/stackgbm/), [oneclust](https://nanx.me/oneclust/), [liftr](https://liftr.me/), and [ggsci](https://nanx.me/ggsci/).
 
-I live in Cambridge, Massachusetts.
+I currently live in Cambridge, Massachusetts.
 When I'm not working, I enjoy playing squash and running along the [Charles River](https://unsplash.com/photos/Npxns5Xj2YQ).
