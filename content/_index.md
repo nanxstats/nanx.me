@@ -5,13 +5,13 @@ description: "Statistician based in Cambridge, Massachusetts."
 ---
 
 Hi! I'm **Nan Xiao**, a statistician working at [Merck](https://www.merck.com/).
-My current research focus is on group sequential design methods for late-phase oncology trials.
+My current research interests include sparse regression, matrix factorization, and group sequential design methods for clinical trials.
 
-Previously, I worked as a genomic data scientist at [Seven Bridges](https://www.sevenbridges.com/) in Boston, Massachusetts.
+Previously, I worked as a data scientist at [Seven Bridges](https://www.sevenbridges.com/) in Boston, Massachusetts.
 Earlier in my career, I studied Human Genetics in [Matthew Stephens Lab](https://stephenslab.uchicago.edu/) at the University of Chicago.
 I earned my PhD degree in Statistics from Central South University, China.
 My thesis focused on developing statistical machine learning methods for high-dimensional data analysis,
-advised by [Prof. Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en).
+advised by [Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en).
 My [Erdős number](https://mathscinet.ams.org/mathscinet/collaborationFiltered.html?group_target=189017&group_source=1129576) is 4.
 
 I'm interested in discovering the connections between things.
