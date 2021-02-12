@@ -5,7 +5,8 @@ description: "Statistician based in Cambridge, Massachusetts."
 ---
 
 Hi! I'm **Nan Xiao**, a statistician working at [Merck](https://www.merck.com/).
-My current research interests include sparse regression, matrix factorization, and group sequential design methods for clinical trials.
+My current research interests include sparse linear models,
+group sequential design, and computational reproducibility.
 
 Previously, I worked as a data scientist at [Seven Bridges](https://www.sevenbridges.com/) in Boston, Massachusetts.
 Earlier in my career, I studied Human Genetics in [Matthew Stephens Lab](https://stephenslab.uchicago.edu/) at the University of Chicago.
