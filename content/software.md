@@ -21,6 +21,10 @@ I build R packages to improve my workflow.
 - [RECA](https://nanx.me/RECA/) <br> Relevant component analysis for supervised distance metric learning <br> [CRAN](https://cran.r-project.org/package=RECA) | [GitHub](https://github.com/nanxstats/RECA)
 - [enpls](https://nanx.me/enpls/) <br> Ensemble partial least squares regression <br> [CRAN](https://cran.r-project.org/package=enpls) | [GitHub](https://github.com/nanxstats/enpls)
 
+**Infrastructure and automation**
+
+- [pkglite](https://merck.github.io/pkglite/) <br> Compact package representations <br> [GitHub](https://github.com/Merck/pkglite)
+
 **Statistical graphics and computing**
 
 - [ggsci](https://nanx.me/ggsci/) <br> Scientific journal and sci-fi themed color palettes for ggplot2 <br> [CRAN](https://cran.r-project.org/package=ggsci) | [GitHub](https://github.com/nanxstats/ggsci)
