@@ -9,6 +9,7 @@ menu: "main"
 
 ## Talks
 
+- [pkglite: compact package representations](https://nanx.me/talks/pkglite-r-consortium/) <br> R Consortium R Submissions Working Group, 2021
 - [Old Methods with New Tricks: Our Solution for the PrecisionFDA Brain Cancer Predictive Modeling & Biomarker Discovery Challenge](https://nanx.me/talks/icbi-symposium-precisionfda-nanxiao.pdf) <br> 9th Annual Health Informatics & Data Science Virtual Symposium at Georgetown University, 2020 <br> [Video recording - starts at 03:07:30](https://georgetown.zoom.us/rec/share/mskhYwAX4v_SI8Oa9pCyeagHV_r5KIgyY1wPVOtHkH7qAdwgoXnWjy_iLCtTm7Vk.sPOR1AqLGlMZR2xd)
 - [liftr: an R Package for Persistent Reproducible Research](https://nanx.me/talks/jsm2018-liftr-nanxiao.pdf) <br> Joint Statistical Meetings 2018
 - [Persistent Reproducible Reporting with Docker and R](https://nanx.me/talks/chinar2017-liftr-nanxiao.pdf) <br> China R Conference 2017
