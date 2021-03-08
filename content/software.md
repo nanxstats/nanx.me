@@ -11,6 +11,10 @@ menu: "main"
 
 I build R packages to improve my workflow.
 
+**Infrastructure and automation**
+
+- [pkglite](https://merck.github.io/pkglite/) <br> Compact package representations <br> [CRAN](https://cran.r-project.org/package=pkglite) | [GitHub](https://github.com/Merck/pkglite)
+
 **Statistical machine learning**
 
 - [msaenet](https://nanx.me/msaenet/) <br> Multi-step adaptive estimation for sparse regressions <br> [CRAN](https://cran.r-project.org/package=msaenet) | [GitHub](https://github.com/nanxstats/msaenet) | [Paper](https://nanx.me/papers/msaenet.pdf)
@@ -20,10 +24,6 @@ I build R packages to improve my workflow.
 - [OHPL](https://OHPL.io/doc/) <br> Ordered homogeneity pursuit lasso for group variable selection <br> [CRAN](https://cran.r-project.org/package=OHPL) | [GitHub](https://github.com/nanxstats/OHPL) | [Paper](https://nanx.me/papers/OHPL.pdf)
 - [RECA](https://nanx.me/RECA/) <br> Relevant component analysis for supervised distance metric learning <br> [CRAN](https://cran.r-project.org/package=RECA) | [GitHub](https://github.com/nanxstats/RECA)
 - [enpls](https://nanx.me/enpls/) <br> Ensemble partial least squares regression <br> [CRAN](https://cran.r-project.org/package=enpls) | [GitHub](https://github.com/nanxstats/enpls)
-
-**Infrastructure and automation**
-
-- [pkglite](https://merck.github.io/pkglite/) <br> Compact package representations <br> [GitHub](https://github.com/Merck/pkglite)
 
 **Statistical graphics and computing**
 
