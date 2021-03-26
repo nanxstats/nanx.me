@@ -32,7 +32,6 @@ commentsrepo = "nanxstats/blog-comments"
 github = "nanxstats"
 twitter = "nanxstats"
 linkedin = "nanxstats"
-contact = "me@nanx.me"
 
 [[menu.primary]]
 identifier = "blog"
