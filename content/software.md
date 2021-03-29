@@ -49,7 +49,7 @@ I build R packages to improve my workflow.
 Shiny apps for interactive data analysis and visualization.
 
 - [pdxnet-portal](https://portal.pdxnetwork.org/) <br> PDXNet Data Portal (Lead author: [Soner Koc](https://github.com/skoc))
-- [bco-app](https://github.com/sbg/bco-app) <br> Create, validate, and browse BioCompute Objects. Advanced track winner of the [precisionFDA challenge on BioCompute Objects](https://perma.cc/DT2X-JMM9). <br> [Documentation](https://sbg.github.io/bco-app/) | [Paper](https://doi.org/10.12688/f1000research.25902.1)
+- [bco-app](https://github.com/sbg/bco-app) <br> Create, validate, and browse BioCompute Objects. Advanced track winner of the [precisionFDA challenge on BioCompute Objects](https://precision.fda.gov/challenges/7/view/results). <br> [Documentation](https://sbg.github.io/bco-app/) | [Paper](https://doi.org/10.12688/f1000research.25902.1)
 - [protrweb](https://github.com/nanxstats/protrweb) <br> Compute protein sequence-derived descriptors <br> [Mirror 1](https://nanx.app/protr/) | [Mirror 2](https://nanx.shinyapps.io/protrweb/) | [Paper](https://nanx.me/papers/protr.pdf)
 - [targetnet](https://github.com/nanxstats/targetnet) <br> Drug target identification with large-scale binding affinities data <br> [Mirror 1](https://nanx.app/targetnet/) | [Mirror 2](https://nanx.shinyapps.io/targetnet/)
 - [imgsvd](https://github.com/nanxstats/imgsvd) <br> Image compression via singular value decomposition <br> [Mirror 1](https://nanx.app/imgsvd/) | [Mirror 2](https://nanx.shinyapps.io/imgsvd/)
@@ -64,8 +64,8 @@ Shiny apps for interactive data analysis and visualization.
 
 Reusable pipelines for analyzing real-world datasets in specific domains.
 
-- [bcpm-msaenet](https://github.com/nanxstats/bcpm-msaenet) <br> Pipeline for the [precisionFDA challenge on brain cancer predictive modeling and biomarker discovery](https://perma.cc/WV59-2AJD). The 2nd place solution by predictive performance. Features multi-step adaptive SCAD-net and relaxed stability selection for feature selection, and a two-layer stacking tree model with xgboost, lightgbm, and catboost.
-- [rankv](https://github.com/nanxstats/rankv) <br> Pipeline for the [precisionFDA challenge on detecting adverse event anomalies using FDA open data](https://web.archive.org/web/20201204111659/https://precision.fda.gov/challenges/9). Features a rank aggregated signal detection method for Vaccine Adverse Event Reporting System (VAERS) data, with base signal detection methods including Gamma Poisson Shrinker, PRR, ROR, and BCPNN. <br> [Website](https://nanx.me/rankv/)
+- [bcpm-msaenet](https://github.com/nanxstats/bcpm-msaenet) <br> Pipeline for the [precisionFDA challenge on brain cancer predictive modeling and biomarker discovery](https://precision.fda.gov/challenges/8/view/results). The 2nd place solution by predictive performance. Features multi-step adaptive SCAD-net and relaxed stability selection for feature selection, and a two-layer stacking tree model with xgboost, lightgbm, and catboost.
+- [rankv](https://github.com/nanxstats/rankv) <br> Pipeline for the [precisionFDA challenge on detecting adverse event anomalies using FDA open data](https://precision.fda.gov/challenges/9). Features a rank aggregated signal detection method for Vaccine Adverse Event Reporting System (VAERS) data, with base signal detection methods including Gamma Poisson Shrinker, PRR, ROR, and BCPNN. <br> [Website](https://nanx.me/rankv/)
 
 ## Code contributor
 
