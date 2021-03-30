@@ -23,6 +23,10 @@ menu: "main"
 <hr>
 </div>
 
+## 2021
+
+- Janisha A Patel, Dennis A Dean, Charles Hadley King, <author>Nan Xiao</author>, Soner Koc, Ekaterina Minina, Anton Golikov, Phillip Brooks, Robel Kahsay, Rahi Navelkar, Manisha Ray, Dave Roberson, Chris Armstrong, Raja Mazumder, Jonathon Keeney. [Bioinformatics tools developed to support BioCompute Objects](https://doi.org/10.1093/database/baab008). <em>Database</em> 2021: 1--13, 2021.
+
 ## 2020
 
 - <author>Nan Xiao</author>, Soner Koc, David Roberson, Phillip Brooks, Manisha Ray, Dennis Dean. [BCO App: tools for generating BioCompute Objects from next-generation sequencing workflows and computations](https://doi.org/10.12688/f1000research.25902.1) [version 1; peer review: 2 approved]. <em>F1000Research</em>, 9:1144, 2020.
