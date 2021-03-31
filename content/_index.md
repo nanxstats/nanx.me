@@ -6,7 +6,7 @@ description: "Statistician based in Cambridge, Massachusetts."
 
 Hi! I'm **Nan Xiao**, a statistician working at [Merck](https://www.merck.com/).
 My research interests include sparse linear models,
-computational reproducibility, and group sequential design.
+translational bioinformatics, and computational reproducibility.
 I enjoy discovering the serendipitous connections between things.
 I build [software](https://nanx.me/software/) to improve my workflow.
 My favorites include [msaenet](https://nanx.me/msaenet/),
