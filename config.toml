@@ -32,6 +32,7 @@ commentsrepo = "nanxstats/blog-comments"
 github = "nanxstats"
 twitter = "nanxstats"
 linkedin = "nanxstats"
+colophon = "/colophon/"
 
 [[menu.primary]]
 identifier = "blog"
