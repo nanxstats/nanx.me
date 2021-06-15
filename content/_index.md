@@ -1,7 +1,7 @@
 ---
 title: "Home"
 menu: "main"
-description: "Statistician based in Cambridge, Massachusetts."
+description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
 Hi! I'm **Nan Xiao**, a statistician working at [Merck](https://www.merck.com/).
@@ -22,8 +22,3 @@ high-dimensional data analysis, advised by
 [Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en).
 My [Erdős number](https://mathscinet.ams.org/mathscinet/collaborationFiltered.html?group_target=189017&group_source=1129576)
 is 4.
-
-I currently live in Cambridge, MA.
-In my free time, I love playing squash, running along the
-[Charles River](https://unsplash.com/photos/Npxns5Xj2YQ),
-and exploring downtown Boston.
