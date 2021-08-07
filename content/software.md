@@ -48,7 +48,7 @@ I build R packages to improve my workflow.
 
 Shiny apps for interactive data analysis and visualization.
 
-- [shiny-highlight-rmarkdown](https://github.com/nanxstats/shiny-highlight-rmarkdown) <br> Syntax highlighting for R Markdown output in Shiny based on highlight.js
+- [shiny-highlight-rmarkdown](https://github.com/nanxstats/shiny-highlight-rmarkdown) <br> Syntax highlighting for R Markdown output in Shiny based on highlight.js <br> [Demo](https://nanx.shinyapps.io/shiny-highlight-rmarkdown/)
 - [pdxnet-portal](https://portal.pdxnetwork.org/) <br> PDXNet Data Portal (Lead author: [Soner Koc](https://github.com/skoc))
 - [bco-app](https://github.com/sbg/bco-app) <br> Create, validate, and browse BioCompute Objects. Advanced track winner of the [precisionFDA challenge on BioCompute Objects](https://precision.fda.gov/challenges/7/results). <br> [Documentation](https://sbg.github.io/bco-app/) | [Paper](https://doi.org/10.12688/f1000research.25902.1)
 - [protrweb](https://github.com/nanxstats/protrweb) <br> Compute protein sequence-derived descriptors <br> [Mirror 1](https://nanx.app/protr/) | [Mirror 2](https://nanx.shinyapps.io/protrweb/) | [Paper](https://nanx.me/papers/protr.pdf)
