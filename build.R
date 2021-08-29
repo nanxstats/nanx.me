@@ -1,9 +1,5 @@
-# housekeeping
-unlink("content/blog/post/*.html")
-unlink("public/*", recursive = TRUE)
+# Preview
+blogdown::build_site(local = TRUE); blogdown::serve_site()
 
-# preview
-blogdown::hugo_build(local = TRUE); blogdown::serve_site()
-
-# deploy
-blogdown::hugo_build(local = FALSE)
+# Deploy
+blogdown::build_site(local = FALSE)
