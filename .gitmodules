@@ -9,3 +9,6 @@
 [submodule "themes/hugo-nanx2020"]
 	path = themes/hugo-nanx2020
 	url = https://github.com/nanxstats/hugo-nanx2020
+[submodule "themes/hugo-nanx2021"]
+	path = themes/hugo-nanx2021
+	url = https://github.com/nanxstats/hugo-nanx2021.git

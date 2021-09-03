@@ -4,7 +4,7 @@ menu: "main"
 description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
-Hi! I'm **Nan Xiao**, a statistician working at [Merck](https://www.merck.com/).
+I am a statistician working at [Merck](https://www.merck.com/).
 My research interests include sparse linear models,
 representation learning, and computational reproducibility.
 I enjoy discovering the serendipitous connections between things.

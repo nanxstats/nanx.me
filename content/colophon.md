@@ -3,18 +3,16 @@ title: "Colophon"
 menu: "main"
 ---
 
-<div class="mx-0 mx-md-4">
 <hr>
-</div>
 
 ## Typography
 
-- [Lyon Text](https://commercialtype.com/catalog/lyon_text) and [Lyon Display](https://commercialtype.com/catalog/lyon_display) designed by Kai Bernau
+- [Source Sans Pro](https://github.com/adobe-fonts/source-sans) designed by Paul D. Hunt
 
 ## Content
 
 - Site generator: [blogdown](https://github.com/rstudio/blogdown), driven by [Hugo](https://gohugo.io/)
-- Theme: [hugo-nanx2020](https://github.com/nanxstats/hugo-nanx2020), built on [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- Theme: [hugo-nanx2021](https://github.com/nanxstats/hugo-nanx2021), built on [Bootstrap 5](https://getbootstrap.com/docs/5.1/)
 - Commenting: [utterances](https://utteranc.es/)
 
 ## Editing

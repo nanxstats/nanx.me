@@ -3,9 +3,7 @@ title: "Papers"
 menu: "main"
 ---
 
-<div class="mx-0 mx-md-4">
 <hr>
-</div>
 
 <p>
 <a href="https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en">Google Scholar</a>
@@ -19,9 +17,7 @@ menu: "main"
 <a href="https://profiles.impactstory.org/u/0000-0002-0250-5673">Impactstory</a>
 </p>
 
-<div class="mx-0 mx-md-4">
 <hr>
-</div>
 
 ## 2021
 

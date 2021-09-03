@@ -3,9 +3,7 @@ title: "Talks"
 menu: "main"
 ---
 
-<div class="mx-0 mx-md-4">
 <hr>
-</div>
 
 ## Talks
 
