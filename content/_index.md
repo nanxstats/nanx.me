@@ -26,7 +26,3 @@ I earned my PhD degree in statistics from Central South University, China.
 My thesis focused on developing statistical machine learning methods for
 high-dimensional data analysis, advised by
 [Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en).
-
-I currently live in Lansdale, Pennsylvania.
-In my free time, I enjoy expanding and curating my Steam game collection,
-and (actually) playing some of them with friends.
