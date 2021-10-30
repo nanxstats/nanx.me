@@ -5,17 +5,14 @@ menu: "main"
 
 <hr>
 
-<p>
-<a href="https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en">Google Scholar</a>
-<span class="text-muted">&middot;</span>
-<a href="https://orcid.org/0000-0002-0250-5673">ORCID</a>
-<span class="text-muted">&middot;</span>
-<a href="https://www.researchgate.net/profile/Nan_Xiao3">ResearchGate</a>
-<span class="text-muted">&middot;</span>
-<a href="https://mathscinet.ams.org/mathscinet/collaborationFiltered.html?group_target=189017&group_source=1129576">Erdős number</a>
-</p>
+## Profiles
 
-<hr>
+- [Google Scholar](https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en)
+- [ORCID](https://orcid.org/0000-0002-0250-5673)
+- [ResearchGate](https://www.researchgate.net/profile/Nan_Xiao3)
+- [Erdős number](https://mathscinet.ams.org/mathscinet/collaborationFiltered.html?group_target=189017&group_source=1129576)
+
+<br>
 
 ## 2021
 
