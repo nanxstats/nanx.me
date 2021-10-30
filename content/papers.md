@@ -12,10 +12,6 @@ menu: "main"
 <span class="text-muted">&middot;</span>
 <a href="https://www.researchgate.net/profile/Nan_Xiao3">ResearchGate</a>
 <span class="text-muted">&middot;</span>
-<a href="https://publons.com/researcher/278188/nan-xiao/">Publons</a>
-<span class="text-muted">&middot;</span>
-<a href="https://profiles.impactstory.org/u/0000-0002-0250-5673">Impactstory</a>
-<span class="text-muted">&middot;</span>
 <a href="https://mathscinet.ams.org/mathscinet/collaborationFiltered.html?group_target=189017&group_source=1129576">Erdős number</a>
 </p>
 
