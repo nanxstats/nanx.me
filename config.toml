@@ -22,6 +22,7 @@ pagetitle = "Nan Xiao"
 copyright = "© 2021 Nan Xiao"
 faviconfile = "image/favicon.png"
 logofile = "image/nanxiao.jpg"
+logoalt = "Portrait of Nan Xiao"
 posts_navigation = true
 uselatex = true
 highlightjs = true
