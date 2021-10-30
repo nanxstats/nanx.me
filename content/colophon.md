@@ -7,7 +7,7 @@ menu: "main"
 
 ## Typography
 
-- [Source Sans Pro](https://github.com/adobe-fonts/source-sans) designed by Paul D. Hunt
+- [Inter](https://github.com/rsms/inter/) designed by Rasmus Andersson
 
 ## Content
 
