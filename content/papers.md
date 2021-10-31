@@ -9,10 +9,8 @@ menu: "main"
 
 - [Google Scholar](https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en)
 - [ORCID](https://orcid.org/0000-0002-0250-5673)
-- [ResearchGate](https://www.researchgate.net/profile/Nan_Xiao3)
-- [Erdős number](https://mathscinet.ams.org/mathscinet/collaborationFiltered.html?group_target=189017&group_source=1129576)
 
-<br>
+<div class="mt-4"></div>
 
 ## 2021
 
