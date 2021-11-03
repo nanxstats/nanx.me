@@ -7,6 +7,8 @@ menu: "main"
 
 ## 2021
 
+- [Reimagine the R package distribution system for reproducible research and submissions](https://rinpharma.com/publication/rinpharma_232/) <br> R/Pharma Conference
+- [R for clinical study reports and submission](https://r4csr.org/) <br> R/Pharma Conference (workshop)
 - [pkglite: compact package representations](https://nanx.me/talks/pkglite-r-consortium/) <br> R Consortium R Submissions Working Group
 
 ## 2020
