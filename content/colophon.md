@@ -7,7 +7,7 @@ menu: "main"
 
 ## Typography
 
-- [Inter](https://github.com/rsms/inter/) designed by [Rasmus Andersson](https://rsms.me/)
+- [DM Sans](https://github.com/googlefonts/dm-fonts) designed by Colophon Foundry
 
 ## Content
 
