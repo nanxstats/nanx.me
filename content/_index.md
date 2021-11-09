@@ -5,13 +5,14 @@ description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
 I am a statistician working at [Merck](https://www.merck.com/).
+My work is at the intersection of statistical methodology research
+and computing infrastructure innovation.
+
 My research interests include sparse linear models,
 representation learning, and computational reproducibility.
-
 I build [software](https://nanx.me/software/) in R to automate my workflow.
 My favorites include
 [msaenet](https://nanx.me/msaenet/),
-[stackgbm](https://nanx.me/stackgbm/),
 [oneclust](https://nanx.me/oneclust/),
 [liftr](https://liftr.me/),
 [ggsci](https://nanx.me/ggsci/),
