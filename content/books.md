@@ -5,11 +5,12 @@ menu: "main"
 
 <hr>
 
-## Original
+## Bookdown projects
 
-- [R for Clinical Study Reports and Submission](https://r4csr.org/) (2021, work in progress)
+- [R for Clinical Study Reports and Submission](https://r4csr.org/)
+- [Group Sequential Design Under Non-Proportional Hazards](https://keaven.github.io/gsd-deming/)
 
-## Translation
+## Translation projects
 
 - [应用预测建模](https://book.douban.com/subject/26800150/) (2016)<br>
 Translated from [Applied Predictive Modeling](http://appliedpredictivemodeling.com/) (2013)
