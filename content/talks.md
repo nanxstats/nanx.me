@@ -9,7 +9,7 @@ menu: "main"
 
 - [Reimagine the R package distribution system for reproducible research and submissions](https://nanx.me/talks/reimagine-rpkgs/) <br>
   R/Pharma Conference <br>
-  [Video recording (to be posted)](https://rinpharma.com/publication/rinpharma_232/)
+  [Video recording](https://www.youtube.com/watch?v=uqe8mFvOjUA)
 - [R for clinical study reports and submission](https://r4csr.org/) <br>
   R/Pharma Conference (workshop)
 - [pkglite: compact package representations](https://nanx.me/talks/pkglite-r-consortium/) <br>
