@@ -7,9 +7,7 @@ menu: "main"
 
 ## Typography
 
-- [DM Sans](https://fonts.google.com/specimen/DM+Sans) and
-  [DM Mono](https://fonts.google.com/specimen/DM+Mono)
-  designed by Colophon Foundry
+- Native font stack
 
 ## Content
 
