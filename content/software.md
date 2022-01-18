@@ -63,8 +63,13 @@ Shiny apps for interactive data analysis and visualization.
 
 Reusable pipelines for analyzing real-world datasets in specific domains.
 
-- [bcpm-msaenet](https://github.com/nanxstats/bcpm-msaenet) <br> Pipeline for the [precisionFDA challenge on brain cancer predictive modeling and biomarker discovery](https://precision.fda.gov/challenges/8/results). The 2nd place solution by predictive performance. Features multi-step adaptive SCAD-net and relaxed stability selection for feature selection, and a two-layer stacking tree model with xgboost, lightgbm, and catboost.
-- [rankv](https://github.com/nanxstats/rankv) <br> Pipeline for the [precisionFDA challenge on detecting adverse event anomalies using FDA open data](https://precision.fda.gov/challenges/9). Features a rank aggregated signal detection method for Vaccine Adverse Event Reporting System (VAERS) data, with base signal detection methods including Gamma Poisson Shrinker, PRR, ROR, and BCPNN. <br> [Website](https://nanx.me/rankv/)
+- [exp2vec](https://github.com/nanxstats/exp2vec) <br>
+Pipeline for training tissue-specific gene embeddings on GTEx data.
+- [bcpm-msaenet](https://github.com/nanxstats/bcpm-msaenet) <br>
+Pipeline for the [precisionFDA challenge on brain cancer predictive modeling and biomarker discovery](https://precision.fda.gov/challenges/8/results). The 2nd place solution by predictive performance. Features multi-step adaptive SCAD-net and relaxed stability selection for feature selection, and a two-layer stacking tree model with xgboost, lightgbm, and catboost.
+- [rankv](https://github.com/nanxstats/rankv) <br>
+Pipeline for the [precisionFDA challenge on detecting adverse event anomalies using FDA open data](https://precision.fda.gov/challenges/9). Features a rank aggregated signal detection method for Vaccine Adverse Event Reporting System (VAERS) data, with base signal detection methods including Gamma Poisson Shrinker, PRR, ROR, and BCPNN. <br>
+[Website](https://nanx.me/rankv/)
 
 ## Code contributor
 
