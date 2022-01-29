@@ -1,0 +1,80 @@
+---
+title: "Rebranding R Packages with Hexagon Stickers: A Minimalist Approach"
+author: "Nan Xiao"
+date: "2021-02-08T01:30:00"
+slug: rebranding-r-packages-with-hexagon-stickers
+categories: []
+tags:
+  - R
+  - open source
+meta_img: image/hex-stickers-nanxiao.png
+description: "Rebranding my R packages with hexagon stickers."
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div class="figure">
+<img src="/image/hex-stickers-nanxiao.png" alt="" />
+<p class="caption">A new hex sticker wall of my R packages.</p>
+</div>
+<p>I have built <a href="https://nanx.me/software/">a few R packages</a> over the years.
+I have always been adding some forms of an ad hoc logo to them, trying to
+make a visual impression. As the portfolio size grows larger, I realized
+that I would need a principled way to create the logos and refresh my
+packages’ look. Hexagon stickers seem to be an acceptable form
+of logos that are <a href="https://github.com/search?q=hex+sticker">heavily used</a>
+by the R community. So I decided to give it a try.</p>
+<p>Limited by the fact that I am not a professional graphic designer while still
+trying to do it myself, I set two goals:</p>
+<ol style="list-style-type: decimal">
+<li>Show strong visual consistency across the board, but also display clear
+hierarchy and variation.</li>
+<li>Create any future stickers without thinking. Ideally, I should be able to
+make a new sticker in under a minute.</li>
+</ol>
+<p>Following these parameters, my plan looks like this:</p>
+<ul>
+<li><strong>Elements</strong>. The sticker will be text-only and not contain any subplots.</li>
+<li><strong>Typography</strong>. Use a consistent
+<a href="https://fuckyeahtypefacedesign.tumblr.com/post/42119630673/so-you-draw-fonts-anonymously-submitted">typeface</a> for the package names. Zilla Slab at weight 500 is my choice
+as it has a sturdy feel and more details than a sans serif.
+Adjust the size as needed.</li>
+<li><strong>Color</strong>. Since trying to find any (new) color combinations that work well
+will add extra work, I simplified things a bit. I use beige as the fill color,
+with the text and the sticker border sharing the same color. This color is decided by
+the category of the package and comes from a single color palette.
+I selected a low-saturated color palette
+<a href="https://color.adobe.com/Kopia-vintage-card-color-theme-11990015/">vintage card</a>
+to convey a mild, sophisticated message.</li>
+</ul>
+<div class="figure">
+<img src="/image/kopia-vintage-card.png" alt="" />
+<p class="caption">Vintage card color palette.</p>
+</div>
+<p>The rest is easy:</p>
+<ol style="list-style-type: decimal">
+<li>Write the R code. There might be a lack of convention on where to put the code.
+I chose to use <code>inst/logo/logo.R</code> to match the image name.</li>
+<li>Generate the hex sticker image. It is placed as <code>man/figures/logo.png</code>.
+This follows the guidelines in
+<a href="https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Figures">Writing R Extensions</a>
+and makes roxygen2 and pkgdown happy.</li>
+<li>Link the sticker in the <code>README.md</code> title. The wonderful <code>usethis::use_logo()</code>
+helps this process when the logo is ready.</li>
+</ol>
+<p>Finally, the R script for generating the hex stickers is quite simple, thanks to
+the incredible authors of sysfonts, hexSticker, and magick.</p>
+<pre class="r"><code>sysfonts::font_add_google(&quot;Zilla Slab&quot;, &quot;pf&quot;, regular.wt = 500)
+
+hexSticker::sticker(
+  subplot = ~ plot.new(), s_x = 1, s_y = 1, s_width = 0.1, s_height = 0.1,
+  package = &quot;pkgname&quot;, p_x = 1, p_y = 1, p_size = 8, h_size = 1.2, p_family = &quot;pf&quot;,
+  p_color = &quot;#3F8CCC&quot;, h_fill = &quot;#FFF9F2&quot;, h_color = &quot;#3F8CCC&quot;,
+  dpi = 320, filename = &quot;man/figures/logo.png&quot;
+)
+
+magick::image_read(&quot;man/figures/logo.png&quot;)
+
+rstudioapi::restartSession()</code></pre>
+<p>That’s all, folks.</p>

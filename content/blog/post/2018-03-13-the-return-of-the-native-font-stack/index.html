@@ -1,0 +1,74 @@
+---
+title: The Return of the Native Font Stack
+author: Nan Xiao
+date: '2018-03-13T02:20:00'
+slug: the-return-of-the-native-font-stack
+categories: []
+tags:
+  - web typography
+  - css
+  - native font stack
+  - system font stack
+  - bootstrap 4
+meta_img: image/lead-set-printing.jpg
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div class="figure">
+<img src="/image/lead-set-printing.jpg" alt="" />
+<p class="caption">Photo: Lead type</p>
+</div>
+<p>As people said, <a href="https://ia.net/topics/the-web-is-all-about-typography-period/">web design is 95% typography</a>.
+Once upon a time, people who care about the typography of their website
+define their font stack using CSS like this:</p>
+<pre class="css"><code>font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif;</code></pre>
+<p>They secretly wish their website could look different from the mortal
+websites which use Times New Roman, Arial, or Georgia with the
+<a href="https://nedbatchelder.com/blog/200805/bad_web_type_georgias_numerals.html">funny-looking numerals</a>.</p>
+<p>Until one day, their sincerity impressed the god of typography,
+who granted them a technology named
+<a href="https://en.wikipedia.org/wiki/Web_typography#Web_fonts">web fonts</a>.
+They can finally use their favorite fonts on the web:</p>
+<pre class="css"><code>@font-face {
+  font-family: &#39;Popular Sans&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://server-address/popular-sans.woff2) format(&#39;woff2&#39;);
+}
+
+font-family: &quot;Popular Sans&quot;, sans-serif;</code></pre>
+<p>With the blessing of some free web font services, people do not
+worry if their website will look different across devices anymore.</p>
+<p>Time flies, they eventually realized that many of the available free
+web fonts are only designed with “acceptable” quality, while the high-quality
+fonts like <a href="http://www.latofonts.com/">Lato</a>, are overused way too much.
+In the same time, some commercial web font services who have
+high-qualify fonts, are often utterly expensive with a ridiculous
+subscription model.</p>
+<p>Some other people decided to serve their own web fonts with CDN.
+They encountered issues with names they never heard before, such as
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>
+and <a href="https://github.com/typekit/webfontloader">FOUT</a>.
+Readers from some regions of the world complained that
+the content was loading slowly, even worse, the rendering
+was sometimes entirely blocked since the CDN server was not reachable.</p>
+<p>It’s now 2018. The latest devices usually come with beautiful
+system fonts. People rethought the core value of a good web font stack:
+the fonts should 1. look beautiful, and 2. feel performant.
+As a trade-off, the website does not need always to look the
+same across all devices, not necessarily. The
+<a href="https://bitsofco.de/the-new-system-font-stack/">new system font stack</a>
+thus returns. It looks like this:</p>
+<pre class="css"><code>font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;</code></pre>
+<p>It loads fast — there is no more external asset loading required.
+It looks beautiful and renders well on every mainstream operating system.
+The recently released Bootstrap 4 selected such a
+<a href="https://getbootstrap.com/docs/4.0/content/reboot/#native-font-stack">native font stack</a>.
+I have also just <a href="https://github.com/nanxstats/hugo-tanka/commit/7bc79daa9ac1071908b3cc0d42863bf4fa3f1e04">updated</a>
+my blog theme <a href="https://github.com/nanxstats/hugo-tanka">hugo-tanka</a>
+with this font stack, hoping it could bring better reading experience.</p>
+<p>Will the web typography technology evolve again in the next few years? Maybe.
+Will people change their font stack to the trending one again?
+Yes, we will probably often do that. Because we enjoy change, we really do.</p>
