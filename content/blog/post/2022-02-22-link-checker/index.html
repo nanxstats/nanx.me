@@ -1,0 +1,164 @@
+---
+title: "A Simple Link Checker for Hugo and Blogdown Websites"
+author: "Nan Xiao"
+date: "2022-02-22T20:00:00"
+slug: link-checker
+categories: []
+tags:
+  - R
+  - link checker
+  - automation
+  - Hugo
+  - blogdown
+  - urlchecker
+meta_img: "image/katie-treadway-EwE4tBYh3ms-unsplash.jpg"
+description: "How to create a broken link checker for Hugo and blogdown websites."
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div class="figure">
+<img src="/image/katie-treadway-EwE4tBYh3ms-unsplash.jpg" alt="" />
+<p class="caption">Photo by <a href="https://unsplash.com/photos/EwE4tBYh3ms">Katie Treadway</a>.</p>
+</div>
+<div id="some-background" class="section level2">
+<h2>Some background</h2>
+<p>I have been blogging with Hugo/blogdown for a while.
+One housekeeping task I have always wanted to <a href="https://nanx.me/blog/post/general-purpose-programming-with-r/">automate with R</a>
+is scanning the entire website to ensure that all the links are still working.
+It is essential for maintaining an enjoyable reading experience without
+<a href="https://nanx.me/blog/post/save-the-link-like-a-boss/">archiving</a> too many
+external links.</p>
+<p>Conceptually, the requirement for a generic broken link checker is quite simple:</p>
+<ul>
+<li>Get the links to all pages on the site.</li>
+<li>Scrape and parse the pages to get the links contained.</li>
+<li>Check the link status.</li>
+</ul>
+<p>However, getting the links to all pages may involve recursive scraping and
+parsing of a site. It could make the program behavior unpredictable and
+add too many lines for exception handling.</p>
+<p>It is dramatically easier if we consider a more specific checker for
+Hugo and blogdown websites with certain configurations. For example,
+the <a href="https://gohugo.io/templates/sitemap-template/">built-in sitemap in Hugo</a>
+allows us to discover the links to all internal pages with one simple
+step of XML parsing.</p>
+<p>We also have a decent infrastructure in R for page parsing and link checking:</p>
+<ul>
+<li><a href="https://xml2.r-lib.org/">xml2</a> and <a href="https://rvest.tidyverse.org/">rvest</a>
+to parse and extract elements from the XML and HTML;</li>
+<li><a href="https://cran.r-project.org/package=urlchecker">urlchecker</a> to check
+links in parallel, with informative feedback.
+It was initially built for checking the links in R packages before
+submitting to CRAN but can be easily repurposed.</li>
+</ul>
+<p>Let’s try building a minimum viable link checker with these in mind.</p>
+</div>
+<div id="get-the-links" class="section level2">
+<h2>Get the links</h2>
+<p>We first use the sitemap to get the links to all internal pages,
+then parse every internal page to extract the links contained.
+With the help of xml2 and rvest, we only need a few lines of code:</p>
+<pre class="r"><code>#&#39; Get all links on Hugo/blogdown site
+#&#39;
+#&#39; @param sitemap Sitemap URL of a Hugo/blogdown site
+#&#39; @return Character vector of links from all pages
+get_blogdown_links &lt;- function(sitemap) {
+  lst &lt;- sitemap |&gt;
+    xml2::read_xml() |&gt;
+    xml2::as_list()
+  urlset &lt;- lst[[&quot;urlset&quot;]] |&gt;
+    sapply(&quot;[[&quot;, &quot;loc&quot;) |&gt;
+    unlist(use.names = FALSE) |&gt;
+    unique()
+
+  content &lt;- lapply(urlset, xml2::read_html)
+  extract_links &lt;- function(x, tag, attr) {
+    x |&gt;
+      rvest::html_elements(tag) |&gt;
+      rvest::html_attr(attr)
+  }
+
+  lapply(content, extract_links, tag = &quot;a&quot;, attr = &quot;href&quot;) |&gt;
+    unlist() |&gt;
+    unique()
+}</code></pre>
+<p>The returned vector will contain both internal and external links.</p>
+</div>
+<div id="check-link-status" class="section level2">
+<h2>Check link status</h2>
+<p>We can write the links into a file under a minimally sufficient R package
+format so that <code>urlchecker::url_check()</code> thinks this is an R package
+and can proceed to check them.</p>
+<pre class="r"><code>#&#39; Create a mockup package containing all links to check
+#&#39;
+#&#39; @param links Character vector of links to check
+#&#39; @return Path to the package
+use_mockup_pkg &lt;- function(links) {
+  pkgname &lt;- paste(sample(letters, size = 10, replace = TRUE), collapse = &quot;&quot;)
+  pkgpath &lt;- file.path(tempdir(), pkgname)
+  dir.create(pkgpath)
+  writeLines(paste0(&quot;&lt;&quot;, links, &quot;&gt;&quot;), con = file.path(pkgpath, &quot;README.md&quot;))
+  writeLines(c(&quot;Package: placeholder&quot;), con = file.path(pkgpath, &quot;DESCRIPTION&quot;))
+  pkgpath
+}</code></pre>
+<p>Connect the pipes:</p>
+<pre class="r"><code>&quot;https://nanx.me/sitemap.xml&quot; |&gt;
+  get_blogdown_links() |&gt;
+  use_mockup_pkg() |&gt;
+  urlchecker::url_check()</code></pre>
+<p>The outputs are self-explanatory. Most of the data points for my site
+are graceful <a href="https://yihui.org/en/2017/11/301-redirect/">301 redirects</a>,
+including common patterns such as HTTP to HTTPS migration,
+change of host domain names, and change of URL path scheme.
+Sometimes, there is a straightforward 404 that should be fixed.</p>
+<pre class="text"><code>! Warning: README.md:286:2 Moved
+&lt;http://jmlr.csail.mit.edu/papers/volume10/weinberger09a/weinberger09a.pdf&gt;
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ https://jmlr.csail.mit.edu/papers/volume10/weinberger09a/weinberger09a.pdf
+
+...
+
+! Warning: README.md:352:2 Moved
+&lt;https://blog.github.com/2018-05-01-github-pages-custom-domains-https/&gt;
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ https://github.blog/2018-05-01-github-pages-custom-domains-https/
+
+...
+
+! Warning: README.md:285:2 Moved
+&lt;https://dl.acm.org/citation.cfm?id=2968618.2968683&gt;
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ https://dl.acm.org/doi/10.5555/2968618.2968683
+
+...
+
+x Error: README.md:404:2 404: Not Found
+&lt;https://www.math.ualberta.ca/mss/misc/A%20Mathematician&#39;s%20Apology.pdf&gt;
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</code></pre>
+</div>
+<div id="limitations" class="section level2">
+<h2>Limitations</h2>
+<p>A few limitations of this simple checker:</p>
+<ul>
+<li>This checker did not handle the case where relative URLs are used for
+linking internal pages. It worked for me because
+<ul>
+<li>I use absolute URLs to link all pages when
+creating content, even if it is an internal resource;</li>
+<li>I also did not enable <code>relativeURLs</code> in the
+<a href="https://gohugo.io/content-management/urls/#relative-urls">Hugo configuration</a>.
+Therefore, all rendered links to internal pages are absolute URLs.</li>
+</ul></li>
+<li>This checker did not check resources linked using a tag other than <code>&lt;a&gt;</code>,
+such as images linked with <code>&lt;img src="..."&gt;</code>.
+<ul>
+<li>It is trivial to extend it to handle resources linked with other
+HTML tags and attributes.</li>
+<li>For external resources such as images, I have the habit of saving
+and serving a local copy while explicitly linking the source with
+<code>&lt;a&gt;</code> whenever possible.</li>
+</ul></li>
+</ul>
+</div>
