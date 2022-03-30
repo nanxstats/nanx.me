@@ -46,8 +46,8 @@ I build R packages to improve my workflow.
 
 Shiny apps for interactive data analysis and visualization.
 
+- [shiny-fcp-loader](https://github.com/nanxstats/shiny-fcp-loader) <br> Shiny app skeleton with a loading screen that aims to minimize the time to first contentful paint (FCP). <br> [Demo](https://nanx.shinyapps.io/shiny-fcp-loader/)
 - [shiny-highlight-rmarkdown](https://github.com/nanxstats/shiny-highlight-rmarkdown) <br> Syntax highlighting for R Markdown output in Shiny based on highlight.js <br> [Demo](https://nanx.shinyapps.io/shiny-highlight-rmarkdown/)
-- [pdxnet-portal](https://portal.pdxnetwork.org/) <br> PDXNet Data Portal (Lead author: [Soner Koc](https://github.com/skoc))
 - [bco-app](https://github.com/sbg/bco-app) <br> Create, validate, and browse BioCompute Objects. Advanced track winner of the [precisionFDA challenge on BioCompute Objects](https://precision.fda.gov/challenges/7/results). <br> [Documentation](https://sbg.github.io/bco-app/) | [Paper](https://doi.org/10.12688/f1000research.25902.1)
 - [protrweb](https://github.com/nanxstats/protrweb) <br> Compute protein sequence-derived descriptors <br> [Mirror 1](https://nanx.app/protr/) | [Mirror 2](https://nanx.shinyapps.io/protrweb/) | [Paper](https://nanx.me/papers/protr.pdf)
 - [targetnet](https://github.com/nanxstats/targetnet) <br> Drug target identification with large-scale binding affinities data <br> [Mirror 1](https://nanx.app/targetnet/) | [Mirror 2](https://nanx.shinyapps.io/targetnet/)
