@@ -1,0 +1,125 @@
+---
+title: "Architecting Large Shiny Apps with Minimal First Contentful Paint Time"
+author: "Nan Xiao"
+date: "2022-03-30T22:00:00"
+slug: shiny-fcp-loader
+categories: []
+tags:
+  - R
+  - shiny
+  - software architecture
+  - loading screen
+  - first contentful paint
+meta_img: "image/emma-fabbri-Vfs_zlhQr0o-unsplash.jpg"
+description: "How to create a Shiny app with a loading screen that aims to minimize the first contentful paint (FCP) time."
+---
+
+
+
+<blockquote>
+<p>The Shiny app skeleton is available from
+<a href="https://github.com/nanxstats/shiny-fcp-loader">nanxstats/shiny-fcp-loader</a>.</p>
+</blockquote>
+<div class="figure">
+<img src="/image/emma-fabbri-Vfs_zlhQr0o-unsplash.jpg" alt="" />
+<p class="caption">Pantheon, Roma, Italy. Photo by <a href="https://unsplash.com/photos/Vfs_zlhQr0o">Emma Fabbri</a>.</p>
+</div>
+<p>More than a few people asked me similar questions about this when building
+large shiny apps. Therefore, it might be time to formulate a simple solution
+with a minimalist yet extensible code demo.</p>
+<div id="ux-side-effects-of-large-shiny-apps" class="section level2">
+<h2>UX side effects of large Shiny apps</h2>
+<p>For larger Shiny apps, users could wait a long time (in terms of 10s of seconds)
+with an embarrassing blank screen before seeing the rendered app content.
+There are many possible reasons, but the common ones are:</p>
+<ul>
+<li>Loading a considerable number of render-blocking CSS/JS dependencies.</li>
+<li>Initializing the app state with some intensive computation.</li>
+<li>Connecting to servers with bandwidth and response time limitations.</li>
+</ul>
+</div>
+<div id="the-solution" class="section level2">
+<h2>The solution</h2>
+<p>I created an example app at <a href="https://github.com/nanxstats/shiny-fcp-loader" class="uri">https://github.com/nanxstats/shiny-fcp-loader</a>,
+with a demo deployed at <a href="https://nanx.shinyapps.io/shiny-fcp-loader/" class="uri">https://nanx.shinyapps.io/shiny-fcp-loader/</a>.
+The goal is to minimize the <a href="https://web.dev/fcp/">First Contentful Paint (FCP)</a> time.</p>
+<p>This Shiny app solves the problems on the app code level by:</p>
+<ul>
+<li>Implementing a loading screen (loader); hiding it after the main UI resources
+are loaded + the state initialization is finished.</li>
+<li>Prioritizing loading the loader-related code (mostly CSS, maybe JS) so it can
+render before the main UI assets.</li>
+<li>Loading and rendering the main UI assets later separately without blocking
+the rendering of the loader.</li>
+</ul>
+</div>
+<div id="technical-details" class="section level2">
+<h2>Technical details</h2>
+<p>Here is how the logic looks at the entry point of the Shiny app (<code>app.R</code>):</p>
+<pre class="r"><code>ui &lt;- function(request) {
+  tagList(
+    useLoader(),
+    shinyjs::useShinyjs(),
+    uiOutput(&quot;ui_main&quot;)
+  )
+}
+
+server &lt;- function(input, output, session) {
+  output$ui_main &lt;- renderUI(source(&quot;ui/main.R&quot;, local = TRUE)$value)
+  source(&quot;server/main.R&quot;, local = TRUE)$value
+  shinyjs::delay(15000, shinyjs::hide(&quot;loading&quot;))
+}
+
+shinyApp(ui, server)</code></pre>
+<ul>
+<li>The CSS loader is formally defined by using <code>htmltools::htmlDependencies()</code>
+and then attached so that it can be loaded first as an isolated dependency.</li>
+<li>Instead of defining the main UI directly in the UI function, we render the UI
+using <code>renderUI()</code> on the server side and used <code>uiOutput()</code> to output it.
+This makes the main UI loaded and rendered separately after the loader.</li>
+<li>The loader should be hidden when the main UI assets are loaded,
+while we also want to cover the case where the lengthy initialization is
+from computing. Therefore, we added a delay as another safeguard.
+One can tune the delay parameter (in ms) if they have a rough estimate for
+the computation to finish based on where the app is deployed.</li>
+</ul>
+<p>I also applied the idea of <a href="https://atomicdesign.bradfrost.com/">Atomic Design</a>
+to decouple the UI and server components so that the app structure is easy to
+understand and scale.</p>
+</div>
+<div id="waterfall-chart" class="section level2">
+<h2>Waterfall chart</h2>
+<p>Let’s check how the app is loaded using the waterfall chart in Chrome DevTools
+under the Network tab:</p>
+<p><img src="waterfall-chart.jpg" width="100%" /></p>
+<p>We can see that our loader is loaded and rendered at the very beginning, way
+before the XHR requests (which could be WebSocket requests in other cases)
+in the middle. These requests would trigger the rendering and loading of
+the main UI assets.</p>
+<p>To see how a minimal first contentful paint time helps more dramatically,
+you can simulate a limited bandwidth scenario by selecting Chrome DevTools →
+Network → Throttle → Fast 3G. This limits the loading speed of all resources.</p>
+</div>
+<div id="lighthouse" class="section level2">
+<h2>Lighthouse</h2>
+<p>We can also measure the page loading performance using
+<a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>.</p>
+<p>It took 0.4 seconds (locally) to achieve First Contentful Paint.
+We only have 4 render-blocking resources: two from the loader,
+two from Shiny essentials.</p>
+<p><img src="lighthouse.jpg" width="100%" /></p>
+<p>I hope this example could help you build large Shiny apps with a
+better user experience in the future.</p>
+</div>
+<div id="bonus-thoughts" class="section level2">
+<h2>Bonus thoughts</h2>
+<p>The <code>-&gt;</code> assignment operator makes more sense logically and aesthetically
+if we write the server code like below, especially if you use a coding font
+with programming ligatures for <code>|&gt;</code> and <code>-&gt;</code>:</p>
+<pre class="r"><code>server &lt;- function(input, output, session) {
+  source(&quot;uiuiui/main.R&quot;, local = TRUE)$value |&gt; renderUI() -&gt; output$ui_main
+  source(&quot;server/main.R&quot;, local = TRUE)$value
+}</code></pre>
+<p>I guess this feeling was also discussed
+<a href="https://win-vector.com/2016/12/12/the-case-for-using-in-r/">here</a> by John Mount.</p>
+</div>
