@@ -1,0 +1,108 @@
+---
+title: "Five Minute Shiny: Implement the Missing Switch Input with Bootstrap 5"
+author: "Nan Xiao"
+date: "2022-04-14T00:30:00"
+slug: shiny-bs5-switches
+categories: []
+tags:
+  - R
+  - Shiny
+  - "Bootstrap 5"
+meta_img: "image/zonduurzaam-deventer-BFNi3TWB2fw-unsplash.jpg"
+description: "Implement the Bootstrap 5 switch input for Shiny in five minutes."
+---
+
+
+
+<blockquote>
+<p>The R code in this post is also available as <a href="https://gist.github.com/nanxstats/e43c1f207dc8b727f6c832d3226d1d16">this GitHub Gist</a>.</p>
+</blockquote>
+<div class="figure">
+<img src="/image/zonduurzaam-deventer-BFNi3TWB2fw-unsplash.jpg" alt="" />
+<p class="caption">Photo by <a href="https://unsplash.com/photos/BFNi3TWB2fw">Zonduurzaam Deventer</a>.</p>
+</div>
+<p>Bootstrap 4 and 5 have expanded the types of UI components compared to
+version 3. On the other hand, the available UI inputs and outputs in Shiny have
+been relatively stable while being carefully made compatible across
+different Bootstrap versions through bslib.</p>
+<p>Since we can already leverage the native UI components in Bootstrap 5 via bslib,
+it would be fun to create the R wrappers for the “missing” inputs that
+were not available in Bootstrap 3.
+One of the most straightforward examples is the switch input.</p>
+<p>A toggle switch input is a checkbox input, with only binary values and
+<a href="https://uxplanet.org/checkbox-vs-toggle-switch-7fc6e83f10b8">different use cases</a>.
+Therefore, we can borrow <code>shiny::checkboxInput()</code> and apply the necessary changes based on
+<a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#switches">Bootstrap 5 switches</a>
+without creating custom input bindings in JavaScript.
+To update the switch inputs, we can even reuse <code>shiny::updateCheckboxInput()</code>.</p>
+<pre class="r"><code>switchInput &lt;- function(inputId, label, value = FALSE, disabled = FALSE, width = NULL) {
+  value &lt;- shiny::restoreInput(id = inputId, default = value)
+  inputTag &lt;- htmltools::tags$input(id = inputId, type = &quot;checkbox&quot;, role = &quot;switch&quot;, class = &quot;form-check-input&quot;)
+  if (!is.null(value) &amp;&amp; value) {
+    inputTag$attribs$checked &lt;- NA
+  }
+  if (!is.null(disabled) &amp;&amp; disabled) {
+    inputTag$attribs$disabled &lt;- NA
+  }
+  htmltools::tags$div(
+    class = &quot;form-group shiny-input-container&quot;, style = htmltools::css(width = shiny::validateCssUnit(width)),
+    htmltools::tags$div(
+      class = &quot;from-check form-switch&quot;,
+      inputTag,
+      htmltools::tags$label(label, class = &quot;form-check-label&quot;)
+    ),
+  )
+}
+
+updateSwitchInput &lt;- shiny::updateCheckboxInput</code></pre>
+<p>Try it out (preview at <a href="https://nanx.shinyapps.io/shiny-bs5-switches/" class="uri">https://nanx.shinyapps.io/shiny-bs5-switches/</a>):</p>
+<pre class="r"><code>card &lt;- function(title, ...) {
+  htmltools::tags$div(
+    class = &quot;card&quot;,
+    htmltools::tags$div(class = &quot;card-header&quot;, title),
+    htmltools::tags$div(class = &quot;card-body&quot;, ...)
+  )
+}
+
+ui &lt;- shiny::fluidPage(
+  title = &quot;Bootstrap 5 Switches for Shiny&quot;,
+  theme = bslib::bs_theme(
+    version = 5,
+    primary = &quot;#002FA7&quot;,
+    `form-check-input-checked-bg-color` = &quot;#002FA7&quot;
+  ),
+  lang = &quot;en&quot;,
+  shiny::fluidRow(
+    style = &quot;margin-top: 20px;&quot;,
+    shiny::column(
+      width = 8, offset = 2,
+      card(
+        title = &quot;Bootstrap 5 Switches for Shiny&quot;,
+        switchInput(&quot;input1&quot;, label = &quot;Default switch checkbox input&quot;, width = &quot;100%&quot;),
+        verbatimTextOutput(&quot;value1&quot;),
+        switchInput(&quot;input2&quot;, label = &quot;Checked switch checkbox input&quot;, value = TRUE, width = &quot;100%&quot;),
+        verbatimTextOutput(&quot;value2&quot;),
+        switchInput(&quot;input3&quot;, label = &quot;Disabled switch checkbox input&quot;, disabled = TRUE, width = &quot;100%&quot;),
+        verbatimTextOutput(&quot;value3&quot;),
+        switchInput(&quot;input4&quot;, label = &quot;Disabled checked switch checkbox input&quot;, value = TRUE, disabled = TRUE, width = &quot;100%&quot;),
+        verbatimTextOutput(&quot;value4&quot;),
+        sliderInput(&quot;controller&quot;, &quot;Controller&quot;, min = 0, max = 4, value = 0, step = 1),
+        switchInput(&quot;input5&quot;, &quot;Input switch that can be updated&quot;)
+      )
+    )
+  )
+)
+
+server &lt;- function(input, output, session) {
+  output$value1 &lt;- renderText(input$input1)
+  output$value2 &lt;- renderText(input$input2)
+  output$value3 &lt;- renderText(input$input3)
+  output$value4 &lt;- renderText(input$input4)
+  observe({
+    # TRUE if input$controller is odd, FALSE if even.
+    x_even &lt;- input$controller %% 2 == 1
+    updateSwitchInput(session, &quot;input5&quot;, value = x_even)
+  })
+}
+
+shiny::shinyApp(ui, server)</code></pre>
