@@ -12,6 +12,11 @@ menu: "main"
 
 <div class="mt-4"></div>
 
+## 2022
+
+- [PDXNet portal: patient-derived Xenograft model, data, workflow and tool discovery](https://doi.org/10.1093/narcan/zcac014).<br>
+Soner Koc, Michael W Lloyd, Jeffrey W Grover, <author>Nan Xiao</author>, Sara Seepo, Sai Lakshmi Subramanian, Manisha Ray, Christian Frech, John DiGiovanna, Phillip Webster, Steven Neuhauser, Anuj Srivastava, Xing Yi Woo, Brian J Sanderson, Brian White, Paul Lott, Lacey E Dobrolecki, Heidi Dowst, PDXNet Consortium , Yvonne A Evrard, Tiffany A Wallace, Jeffrey A Moscow, James H Doroshow, Nicholas Mitsiades, Salma Kaochar, Chong-xian Pan, Moon S Chen, Luis Carvajal-Carmona, Alana L Welm, Bryan E Welm, Michael T Lewis, Ramaswamy Govindan, Li Ding, Shunqiang Li, Meenhard Herlyn, Michael A Davies, Jack Roth, Funda Meric-Bernstam, Peter N Robinson, Carol J Bult, Brandi Davis-Dusenbery, Dennis A Dean, II, Jeffrey H Chuang. <em>NAR Cancer</em> 4(2), 2022.
+
 ## 2021
 
 - [Bioinformatics tools developed to support BioCompute Objects](https://doi.org/10.1093/database/baab008). <br>
