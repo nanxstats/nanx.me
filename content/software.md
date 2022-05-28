@@ -74,6 +74,8 @@ Pipeline for the [precisionFDA challenge on detecting adverse event anomalies us
 
 ## Code contributor
 
+- [gsDesign Shiny app](https://rinpharma.shinyapps.io/gsdesign/) <br> Group sequential clinical trial design <br> [Mirror 1](https://gsdesign.shinyapps.io/prod/) | [Mirror 2](https://gsdesign.shinyapps.io/devel/)
+- [PDXNet Portal](https://portal.pdxnetwork.org/) <br> Patient-derived xenograft (PDX) model, data, workflow, and tool discovery <br> [Paper](https://doi.org/10.1093/narcan/zcac014)
 - [ashr](https://github.com/stephens999/ashr) <br> Methods for adaptive shrinkage, using Empirical Bayes <br> [CRAN](https://cran.r-project.org/package=ashr) | [Paper](https://doi.org/10.1093/biostatistics/kxw041)
 - [dml](https://github.com/terrytangyuan/dml) <br> Distance metric learning in R <br> [CRAN](https://cran.r-project.org/package=dml) | [Paper](https://doi.org/10.21105/joss.01036)
 
