@@ -6,7 +6,7 @@ description: "Personal website of Nan Xiao; 肖楠的个人网站"
 
 I am a statistician working at [Merck](https://www.merck.com/).
 My work is at the intersection of statistical methodology research
-and computing infrastructure innovation.
+and software architecture innovation.
 
 My research interests include sparse linear models,
 representation learning, and computational reproducibility.
