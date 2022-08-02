@@ -1,0 +1,235 @@
+---
+title: "Parsing Human-Readable Text Data from the Web with Readbility.js and R"
+author: "Nan Xiao"
+date: "2022-08-02T01:30:00"
+slug: "r-readability-parser"
+categories: []
+tags:
+  - R
+  - JavaScript
+  - Readability
+  - V8
+meta_img: "image/nick-hillier-IEkMMvdZFc0-unsplash.jpg"
+description: "In this post, I show how to implement an R wrapper for the JavaScript library Readability.js using the R package V8. The parser allows extracting human-readable text data from any web page."
+---
+
+
+
+<blockquote>
+<p>The R and JavaScript code to reproduce the results in this post is available from
+<a href="https://github.com/nanxstats/r-readability-parser" class="uri">https://github.com/nanxstats/r-readability-parser</a>.</p>
+</blockquote>
+<div class="figure">
+<img src="/image/nick-hillier-IEkMMvdZFc0-unsplash.jpg" alt="" />
+<p class="caption">Photo by <a href="https://unsplash.com/photos/IEkMMvdZFc0">Nick Hillier</a>.</p>
+</div>
+<div id="readability.js" class="section level2">
+<h2>Readability.js</h2>
+<p>Maybe you have used tools like <a href="https://rvest.tidyverse.org/">rvest</a> to
+harvest <strong>text data</strong> from web pages. Naturally, this often requires
+elaborated human efforts in the front to understand the structure of
+the target website.</p>
+<p>The picture looks quite different when we think at the web scale.
+To parse the content of many more sites and many more types of pages,
+we need to make our tool adaptive enough to extract the most relevant
+text instead of purely relying on manually crafted logic.
+We might tolerate missing some useful text and including some
+irrelevant text, which is acceptable because they probably won’t matter
+when the text data we collect is big enough.</p>
+<p>Fortunately, <a href="https://github.com/mozilla/readability">Readability.js</a>
+offers a tool for parsing human-readable text from any web page.
+It was built for the <a href="https://support.mozilla.org/en-US/kb/firefox-reader-view-clutter-free-web-pages">Reader View</a> feature in Firefox but
+is also usable as an open source, standalone JavaScript library.</p>
+<p>In this post, I will create an R wrapper for Readability.js using the
+R package <a href="https://github.com/jeroen/V8">V8</a>.</p>
+</div>
+<div id="packing-js-dependencies" class="section level2">
+<h2>Packing JS dependencies</h2>
+<p>Before we write the wrapper, the first step is identifying and packing the
+JavaScript dependencies to run in the V8 engine. The three key dependencies
+are <a href="https://www.npmjs.com/package/@mozilla/readability"><span class="citation">@mozilla/readability</span></a>,
+<a href="https://www.npmjs.com/package/jsdom">jsdom</a>,
+and <a href="https://www.npmjs.com/package/dompurify">dompurify</a>.</p>
+<p>Following the vignette
+<a href="https://cran.r-project.org/web/packages/V8/vignettes/npm.html">using NPM packages in V8</a>,
+we pack them as follows.</p>
+<pre class="bash"><code>brew install node
+npm install -g browserify</code></pre>
+<p>Pack Readability.js:</p>
+<pre class="bash"><code>npm install @mozilla/readability
+echo &quot;window.Readability = require(&#39;@mozilla/readability&#39;);&quot; &gt; in.js
+browserify in.js -o readability.js</code></pre>
+<p>Pack jsdom for converting HTML into operable DOM document objects:</p>
+<pre class="bash"><code>npm install jsdom
+echo &quot;window.jsdom = require(&#39;jsdom&#39;);&quot; &gt; in.js
+browserify in.js -o jsdom.js</code></pre>
+<p>Pack DOMPurify mentioned in the readability.js
+<a href="https://github.com/mozilla/readability#security">security recommendation</a>
+for sanitizing output to avoid script injection:</p>
+<pre class="bash"><code>npm install dompurify
+echo &quot;window.dompurify = require(&#39;dompurify&#39;);&quot; &gt; in.js
+browserify in.js -o dompurify.js</code></pre>
+</div>
+<div id="writing-an-r-binding" class="section level2">
+<h2>Writing an R binding</h2>
+<p>We will write some wrapper JavaScript functions to implement the workflow
+that uses all three JS libraries above.</p>
+<pre class="js"><code>function readabilityParser(html, url, candidates, threshold) {
+  // Parse jsdom with readability.js
+  let doc = new jsdom.JSDOM(
+    html,
+    { url: url }
+  );
+  let reader = new Readability.Readability(
+    doc.window.document,
+    { nbTopCandidates: candidates, charThreshold: threshold }
+  );
+  let res = reader.parse();
+
+  // Sanitize results to avoid script injection
+  const purifyWindow = new jsdom.JSDOM(&#39;&#39;).window;
+  const DOMPurify = dompurify(purifyWindow);
+
+  let clean = DOMPurify.sanitize(res.content);
+  res.content = clean;
+
+  return res;
+}
+
+function isReadable(html, min_content_length, min_score) {
+  let doc = new jsdom.JSDOM(html);
+  return Readability.isProbablyReaderable(
+    doc.window.document,
+    { minContentLength: min_content_length, minScore: min_score }
+  );
+}</code></pre>
+<p>The R wrapper is quite straightforward if you follow the
+<a href="https://cran.r-project.org/web/packages/V8/vignettes/v8_intro.html">V8 introduction vignette</a>.
+As is suggested, the interactive JavaScript console via <code>ct$console()</code>
+is both fun and useful to play with when debugging.</p>
+<pre class="r"><code>readability &lt;- function(html, url, candidates = 5L, threshold = 500L) {
+  ct &lt;- V8::v8(global = &quot;window&quot;)
+
+  ct$eval(&quot;function setTimeout(){}&quot;)
+  ct$eval(&quot;function clearInterval(){}&quot;)
+  ct$source(&quot;js/encoding.min.js&quot;)
+  ct$source(&quot;js/jsdom.js&quot;)
+  ct$source(&quot;js/dompurify.js&quot;)
+  ct$source(&quot;js/readability.js&quot;)
+  ct$eval(readLines(&quot;js/readability-parser.js&quot;))
+
+  # ct$get(V8::JS(&quot;Object.keys(window)&quot;))
+  ct$call(&quot;readabilityParser&quot;, html, url, candidates, threshold)
+}
+
+is_readable &lt;- function(html, min_content_length = 140, min_score = 20) {
+  ct &lt;- V8::v8(global = &quot;window&quot;)
+
+  ct$eval(&quot;function setTimeout(){}&quot;)
+  ct$eval(&quot;function clearInterval(){}&quot;)
+  ct$source(&quot;js/encoding.min.js&quot;)
+  ct$source(&quot;js/jsdom.js&quot;)
+  ct$source(&quot;js/readability.js&quot;)
+  ct$eval(readLines(&quot;js/readability-parser.js&quot;))
+
+  # ct$get(V8::JS(&quot;Object.keys(window)&quot;))
+  ct$call(&quot;isReadable&quot;, html, min_content_length, min_score)
+}</code></pre>
+</div>
+<div id="example" class="section level2">
+<h2>Example</h2>
+<p>Let’s parse a recipe page
+(<a href="https://cooking.nytimes.com/recipes/1021246-pasta-with-caramelized-peppers-anchovies-and-ricotta">pasta with caramelized peppers, anchovies, and ricotta</a>)
+from NYT Cooking.</p>
+<p>Check if it is likely that the page is suitable for readability parsing:</p>
+<pre class="r"><code>url &lt;- &quot;https://cooking.nytimes.com/recipes/1021246-pasta-with-caramelized-peppers-anchovies-and-ricotta&quot;
+
+html &lt;- url |&gt;
+  rvest::read_html() |&gt;
+  as.character()
+
+html |&gt; is_readable()</code></pre>
+<pre><code>#&gt; [1] TRUE</code></pre>
+<p>We can get the title and the clean, plain text corpus, usable for
+downstream text data modeling:</p>
+<pre class="r"><code>lst &lt;- html |&gt; readability(url = url)
+cat(lst$title)</code></pre>
+<pre><code>#&gt; Pasta With Caramelized Peppers, Anchovies and Ricotta Recipe</code></pre>
+<pre class="r"><code>lst$textContent |&gt;
+  gsub(&quot;\\n&quot;, &quot; &quot;, x = _, perl = TRUE) |&gt;
+  gsub(&quot;^\\s+|\\s+$|\\s+(?=\\s)&quot;, &quot;&quot;, x = _, perl = TRUE) |&gt;
+  stringr::str_wrap(width = 74) |&gt;
+  cat()</code></pre>
+<details>
+<summary>
+<strong>Click here to expand the output</strong>
+</summary>
+<style type="text/css">
+details > summary {
+    border: 1px solid #6c757d;
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+</style>
+<pre><code>#&gt; Ingredients Kosher salt 12 ounces short pasta, such as radiatori,
+#&gt; fusilli or campanelle 3 tablespoons extra-virgin olive oil, plus more
+#&gt; for drizzling 8 to 10 anchovy fillets, chopped, or use a dash or two of
+#&gt; soy sauce 2 large rosemary sprigs 6 garlic cloves, smashed and peeled
+#&gt; Large pinch of red-pepper flakes 2 sweet bell peppers (red, orange
+#&gt; or yellow), thinly sliced 2 tablespoons dry red, white or rosé wine,
+#&gt; or use dry vermouth or water 1 tablespoon unsalted butter Fresh lemon
+#&gt; juice ½ cup fresh ricotta 2 scallions, thinly sliced, or 1/4 cup sliced
+#&gt; red onion Freshly ground black pepper ¼ cup finely chopped fresh mint,
+#&gt; basil or thyme, plus torn mint or basil leaves and tender sprigs, for
+#&gt; garnish Freshly grated Parmesan (optional) Preparation Bring a large pot
+#&gt; of heavily salted water to a boil. Add the pasta and cook, according to
+#&gt; package instructions, until the pasta is just al dente. As pasta cooks,
+#&gt; heat a large sauté pan over medium-high, and add 3 tablespoons olive oil.
+#&gt; When the oil is hot, add the anchovies and rosemary, and sauté until the
+#&gt; anchovies start to dissolve, about 1 minute. Add the garlic and red-pepper
+#&gt; flakes, and sauté until the garlic turns pale golden in spots, about 1 to
+#&gt; 2 minutes. Add the bell peppers and a large pinch of salt to the pan, and
+#&gt; sauté until the bell peppers are very soft and well caramelized, 10 to 15
+#&gt; minutes, lowering the heat if the peppers start becoming too dark. Add the
+#&gt; wine (or water) and the butter, and sauté, scraping up the browned bits on
+#&gt; the bottom of the pan. Taste and season with lemon juice and more salt as
+#&gt; needed. Put 1/4 cup ricotta and the scallions in a large serving bowl, and
+#&gt; season aggressively with black pepper. Use a coffee mug or measuring cup
+#&gt; to scoop about 1/2 cup pasta water from the pot. Drain the pasta, then add
+#&gt; it to the bowl with the ricotta and scallions, tossing well. Add the bell
+#&gt; pepper mixture and the herbs, and toss well, adding a splash or two of
+#&gt; pasta water if the mixture looks dry. Taste and season with more salt if
+#&gt; needed. Spoon pasta into bowls, and top with dollops of the remaining 1/4
+#&gt; cup ricotta, a drizzle of oil and a little Parmesan, if you like. Shower
+#&gt; torn herb leaves over all.</code></pre>
+</details>
+<p>
+</p>
+<p>We also got the clean HTML that preserves more structural information.
+We can process it further, for example, using xml2 or pandoc.</p>
+<pre class="r"><code>lst$content |&gt;
+  htmltools::HTML() |&gt;
+  htmltools::browsable()</code></pre>
+<p>You can preview the <a href="example.html">clean HTML here</a>.</p>
+</div>
+<div id="common-issues" class="section level2">
+<h2>Common issues</h2>
+<p>I encountered and resolved two common issues when using the JS libraries.</p>
+<div id="textencoder-is-not-defined" class="section level3">
+<h3>TextEncoder is not defined</h3>
+<p>I used the hints
+<a href="https://gist.github.com/tim-salabim/a9740baae9ab879b0c79893132d959a3">here</a>
+and saved <a href="https://cdn.jsdelivr.net/npm/text-encoding@0.7.0/lib/encoding.min.js">text-encoding</a>
+explicitly as another dependency. Doing this will eliminate the error
+<code>ReferenceError: TextEncoder is not defined</code>
+when sourcing <code>jsdom.js</code> with <code>ct$source()</code>.</p>
+</div>
+<div id="settimeoutclearinterval-is-not-defined" class="section level3">
+<h3>setTimeout/clearInterval is not defined</h3>
+<p>It seems some web APIs are not available in the V8 standard library.
+I followed the suggestions <a href="https://github.com/jeroen/V8/issues/18">here</a>
+and defined stubs for <code>setTimeout()</code> and <code>clearInterval()</code>
+to avoid errors like <code>ReferenceError: setTimeout is not defined</code>
+when running jsdom.</p>
+</div>
+</div>
