@@ -42,13 +42,14 @@ I build R packages to improve my workflow.
 - [sevenbridges-r](https://sbg.github.io/sevenbridges-r/) <br> Seven Bridges API client <br> [Bioconductor](https://bioconductor.org/packages/sevenbridges) | [GitHub](https://github.com/sbg/sevenbridges-r)
 - [sbpack-r](https://nanx.me/sbpack-r/) <br> Pack and upload CWL apps to Seven Bridges powered platforms <br> [GitHub](https://github.com/nanxstats/sbpack-r)
 
-## R Shiny content
+## Shiny apps
 
 Shiny apps, widgets, and templates for interactive data analysis.
 
 - [shiny-loading-skeleton](https://github.com/nanxstats/shiny-loading-skeleton) <br> Shiny app template with an animated, fully customizable skeleton loader. <br> [Demo](https://nanx.shinyapps.io/shiny-loading-skeleton/)
 - [shiny-fcp-loader](https://github.com/nanxstats/shiny-fcp-loader) <br> Shiny app template with a loading screen that aims to minimize the time to first contentful paint (FCP). <br> [Demo](https://nanx.shinyapps.io/shiny-fcp-loader/)
 - [shiny-highlight-rmarkdown](https://github.com/nanxstats/shiny-highlight-rmarkdown) <br> Syntax highlighting for R Markdown output in Shiny based on highlight.js <br> [Demo](https://nanx.shinyapps.io/shiny-highlight-rmarkdown/)
+- [exp2vec-shiny](https://github.com/nanxstats/exp2vec-shiny) <br> Shiny app for gene neighbors and gene analogies discovery with tissue-specific gene embeddings training on GTEx data. <br> [Demo](https://nanx.shinyapps.io/exp2vec/)
 - [bco-app](https://github.com/sbg/bco-app) <br> Create, validate, and browse BioCompute Objects. Advanced track winner of the [precisionFDA challenge on BioCompute Objects](https://precision.fda.gov/challenges/7/results). <br> [Documentation](https://sbg.github.io/bco-app/) | [Paper](https://doi.org/10.12688/f1000research.25902.1)
 - [protrweb](https://github.com/nanxstats/protrweb) <br> Compute protein sequence-derived descriptors <br> [Mirror 1](https://nanx.app/protr/) | [Mirror 2](https://nanx.shinyapps.io/protrweb/) | [Paper](https://nanx.me/papers/protr.pdf)
 - [targetnet](https://github.com/nanxstats/targetnet) <br> Drug target identification with large-scale binding affinities data <br> [Mirror 1](https://nanx.app/targetnet/) | [Mirror 2](https://nanx.shinyapps.io/targetnet/)
