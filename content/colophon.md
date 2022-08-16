@@ -7,7 +7,8 @@ menu: "main"
 
 ## Typography
 
-- Native font stack
+- [FiraGO](https://github.com/bBoxType/FiraGO)
+- [IBM Plex Mono](https://github.com/IBM/plex)
 
 ## Content
 
