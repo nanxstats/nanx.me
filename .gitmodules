@@ -12,3 +12,6 @@
 [submodule "themes/hugo-nanx2021"]
 	path = themes/hugo-nanx2021
 	url = https://github.com/nanxstats/hugo-nanx2021.git
+[submodule "themes/hugo-nanx2022"]
+	path = themes/hugo-nanx2022
+	url = https://github.com/nanxstats/hugo-nanx2022.git
