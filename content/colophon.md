@@ -7,7 +7,7 @@ menu: "main"
 
 ## Typography
 
-- [FiraGO](https://github.com/bBoxType/FiraGO)
+- [FiraGO](https://github.com/bBoxType/FiraGO) (ss05)
 - [IBM Plex Mono](https://github.com/IBM/plex)
 
 ## Content
