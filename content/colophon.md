@@ -13,7 +13,7 @@ menu: "main"
 ## Content
 
 - Site generator: [blogdown](https://github.com/rstudio/blogdown), driven by [Hugo](https://gohugo.io/)
-- Theme: [hugo-nanx2021](https://github.com/nanxstats/hugo-nanx2021), built on [Bootstrap 5](https://getbootstrap.com/)
+- Theme: [hugo-nanx2022](https://github.com/nanxstats/hugo-nanx2022), built on [Bootstrap 5](https://getbootstrap.com/)
 - Commenting: [utterances](https://utteranc.es/)
 
 ## Editing

@@ -91,6 +91,7 @@ Pipeline for the [precisionFDA challenge on detecting adverse event anomalies us
 - [hugo-renga](https://github.com/nanxstats/hugo-renga) <br> A clean Bootstrap 4 theme for Hugo and blogdown <br> [Live Preview](https://nanx.me/hugo-renga/)
 - [hugo-nanx2020](https://github.com/nanxstats/hugo-nanx2020) <br> An opinionated Bootstrap 4 theme for Hugo and blogdown
 - [hugo-nanx2021](https://github.com/nanxstats/hugo-nanx2021) <br> A minimalist Bootstrap 5 theme for Hugo and blogdown
+- [hugo-nanx2022](https://github.com/nanxstats/hugo-nanx2022) <br> A minimalist Bootstrap 5 theme for Hugo and blogdown
 
 ## Collections
 
