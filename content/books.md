@@ -8,6 +8,7 @@ menu: "main"
 ## Bookdown projects
 
 - [R for Clinical Study Reports and Submission](https://r4csr.org/)
+- [Group Sequential Design Web Interface](https://keaven.github.io/gsd-shiny/)
 - [Group Sequential Design Under Non-Proportional Hazards](https://keaven.github.io/gsd-deming/)
 
 ## Translation projects
