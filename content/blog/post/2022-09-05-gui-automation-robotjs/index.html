@@ -1,0 +1,168 @@
+---
+title: "GUI Automation with RobotJS"
+author: "Nan Xiao"
+date: "2022-09-05T20:30:00"
+slug: "gui-automation-robotjs"
+categories: []
+tags:
+  - automation
+  - JavaScript
+  - RobotJS
+meta_img: "image/martin-reisch-1b3Ix12HlkM-unsplash.jpg"
+description: >
+  In this post, I use RobotJS to implement a simple GUI automation workflow
+  that updates a browser extension from a Git repository.
+---
+
+
+
+<blockquote>
+<p>The code in this post is also available in
+this <a href="https://gist.github.com/nanxstats/2e307097b7dd0171bcfae2be8edebdfd">GitHub Gist</a>.</p>
+</blockquote>
+<blockquote>
+<p>Disclaimer: the tools and configurations mentioned in this post are only
+discussed as technical examples; they do not constitute an endorsement.
+Use at your own risk.</p>
+</blockquote>
+<div class="figure">
+<img src="/image/martin-reisch-1b3Ix12HlkM-unsplash.jpg" alt="" />
+<p class="caption">Photo by <a href="https://unsplash.com/photos/1b3Ix12HlkM">Martin Reisch</a>.</p>
+</div>
+<p>Today’s internet is not like it was 20 years ago for an older millennial like me.
+Only judging by its appearance, the internet today is plagued with
+cookie consent popups and paywalls. Well, maybe they exist for good
+(commercial) reasons, but I constantly feel that they are designed
+to be intrusive and break my reading flow. To me, that is counterproductive.</p>
+<p>I find the “Annoyances” filters under the uBlock Origin filters list adequate
+to block cookie notices. However, for paywalls, we need something more
+specifically built. One possibility is the
+<a href="https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean">bypass-paywalls-chrome-clean</a>
+extension. For reasons explained in its repo, such extensions are not allowed
+on the Chrome web store, so it needs to be installed and updated manually
+under developer mode on the extensions page.</p>
+<div id="the-task" class="section level2">
+<h2>The task</h2>
+<p>The general steps to update the extension are:</p>
+<ol style="list-style-type: decimal">
+<li>Open the extensions page in the browser.</li>
+<li>Click the “Remove” button to remove the old version.</li>
+<li>Click the “Remove” button in the popup dialog to confirm.</li>
+<li>Open the terminal, and pull the latest version from the Git repository.</li>
+<li>Drag and drop the updated extension directory into the extensions page.</li>
+<li>Close the opened browser tabs and terminal.</li>
+</ol>
+<p>Since these steps are repetitive and there is no obvious CLI or API
+available for the actions involved, I find it a good exercise for GUI automation.
+I choose <a href="https://www.npmjs.com/package/robotjs">RobotJS</a> to implement it
+and will run the automation script using Node.js,
+although there seem to be more modern JavaScript libraries for GUI automation,
+for example, <a href="https://www.npmjs.com/package/@nut-tree/nut-js">nut.js</a>.</p>
+<p>I have not tested the cross-platform compatibility of such libraries
+besides running on macOS. Conceptually, the workflow can be easily
+ported to more desktop environments.</p>
+</div>
+<div id="automate-with-robotjs" class="section level2">
+<h2>Automate with RobotJS</h2>
+<p>My implementation looks like this:</p>
+<pre class="js"><code>const robot = require(&quot;robotjs&quot;);
+const { execSync } = require(&quot;child_process&quot;);
+
+const updateExtension = (coordRemove) =&gt; {
+  // Open in extensions page in browser
+  execSync(&#39;open -a &quot;Google Chrome&quot; chrome://extensions&#39;);
+
+  // Move to and click &quot;Remove&quot; button of the extension
+  robot.setMouseDelay(1000);
+  robot.moveMouseSmooth(coordRemove[0], coordRemove[1]);
+  robot.mouseClick();
+
+  // Click &quot;Remove&quot; button in the confirm dialog
+  robot.keyTap(&quot;enter&quot;);
+
+  // Open iTerm (new tab) and do git pull
+  execSync(&quot;open -a iTerm .&quot;);
+  robot.typeStringDelayed(&quot;cd bpc &amp;&amp; git pull&quot;, 800);
+  robot.keyTap(&quot;enter&quot;);
+
+  // Open Finder and highlight the directory
+  execSync(&quot;open -a Finder&quot;);
+  robot.typeStringDelayed(&quot;bpc&quot;, 1000);
+
+  // Get selected directory position by its highlighted color
+  let screen = robot.getScreenSize();
+  let img = robot.screen.capture(0, 0, screen.width, screen.height);
+
+  // Support for higher density screens
+  let multiplier = img.width / screen.width;
+
+  // Find the x coordinate: likely covers the center of the screen
+  let coordFinderX = screen.width / 2;
+
+  // Find the y coordinate
+  let colors = [];
+  for (let i = 0; i &lt; screen.height; i++) {
+    colors[i] = img.colorAt(coordFinderX * multiplier, i * multiplier);
+  }
+
+  let bluepixel = colors.indexOf(&quot;2961d9&quot;);
+  robot.moveMouseSmooth(coordFinderX, bluepixel + 10);
+  robot.mouseToggle(&quot;down&quot;);
+
+  // Drag and drop into extensions tab
+  robot.dragMouse(30, bluepixel + 50);
+  setTimeout(() =&gt; {
+    robot.mouseToggle(&quot;up&quot;);
+  }, 500);
+
+  // Close the popup options tabs, extension tab, Finder, and iTerm tabs
+  setTimeout(() =&gt; {
+    robot.keyTap(&quot;w&quot;, &quot;command&quot;);
+  }, 5000);
+
+  setTimeout(() =&gt; {
+    robot.keyTap(&quot;w&quot;, &quot;command&quot;);
+  }, 6000);
+
+  setTimeout(() =&gt; {
+    robot.keyTap(&quot;w&quot;, &quot;command&quot;);
+  }, 7000);
+
+  setTimeout(() =&gt; {
+    execSync(&quot;open -a Finder&quot;);
+    robot.keyTap(&quot;w&quot;, &quot;command&quot;);
+  }, 8000);
+
+  setTimeout(() =&gt; {
+    execSync(&quot;open -a iTerm&quot;);
+    robot.keyTap(&quot;w&quot;, &quot;command&quot;);
+    robot.keyTap(&quot;w&quot;, &quot;command&quot;);
+  }, 9000);
+};</code></pre>
+<p>After finding the coordinates of the “Remove” button after trial and error,
+plug it into the function call. Perhaps this step can also be automated,
+but I find it better to keep the code simple.</p>
+<pre class="js"><code>updateExtension([235, 425]);</code></pre>
+<p>We can then save the lines above in a <code>.js</code> file and run it with <code>node</code>:</p>
+<div class="figure">
+<img src="robotjs.gif" alt="" />
+<p class="caption">A demo run of the RobotJS GUI automation</p>
+</div>
+</div>
+<div id="notes" class="section level2">
+<h2>Notes</h2>
+<p>Not surprisingly, the automation has a few essential prerequisites and assumptions.
+The important ones are:</p>
+<ol style="list-style-type: decimal">
+<li>NodeJS and RobotJS are installed.</li>
+<li>On the extensions page, Developer Mode is switched on.</li>
+<li>The extension Git repo is cloned to a local directory.</li>
+<li>The extension is already installed.</li>
+<li>You are using the List view in Finder and using the default blue accent
+color to correctly locate the folder when highlighted.</li>
+<li>iTerm will require permissions when running this for the first time
+to control the mouse/keyboard and take screenshots.
+It will involve enabling iTerm in two categories, “Accessibility” and
+“Screen Recording”, under System Preferences → Security &amp; Privacy → Privacy.</li>
+</ol>
+</div>
