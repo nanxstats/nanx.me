@@ -4,8 +4,9 @@ menu: "main"
 description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
-I am a statistician working at [Merck](https://www.merck.com/).
-My work is at the intersection of statistical methodology research
+I am a statistician from [Merck & Co.](https://www.merck.com/)
+I work in the Methodology Research group led by [Keaven M. Anderson](https://keaven.github.io/).
+My focus is at the intersection of statistical methodology research
 and software architecture innovation.
 
 My research interests include sparse linear models,
