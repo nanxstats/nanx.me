@@ -14,6 +14,8 @@ menu: "main"
 
 ## 2022
 
+- [Electronic common technical document submission with analysis using R](https://doi.org/10.1177/17407745221123244).<br>
+Yujie Zhao, Nan Xiao, Keaven Anderson, Yilong Zhang. <em>Clinical Trials</em>, 2022.
 - [A multilingual Shiny app for drug labelling in worldwide submission](https://www.pharmasug.org/proceedings/2022/AD/PharmaSUG-2022-AD-062.pdf).<br>
 Jinchun Zhang, Aiming Yang, Yiwen Luo, <author>Nan Xiao</author>, Yilong Zhang. PharmaSUG 2022.
 - [PDXNet portal: patient-derived Xenograft model, data, workflow and tool discovery](https://doi.org/10.1093/narcan/zcac014).<br>
