@@ -11,7 +11,7 @@ I build R packages to improve my workflow.
 
 **Infrastructure and automation**
 
-- [pkglite](https://merck.github.io/pkglite/) <br> Compact package representations <br> [CRAN](https://cran.r-project.org/package=pkglite) | [GitHub](https://github.com/Merck/pkglite)
+- [pkglite](https://merck.github.io/pkglite/) <br> Compact package representations <br> [CRAN](https://cran.r-project.org/package=pkglite) | [GitHub](https://github.com/Merck/pkglite) | [Paper](https://doi.org/10.1177/17407745221123244)
 
 **Statistical machine learning**
 
