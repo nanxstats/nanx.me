@@ -5,8 +5,24 @@ menu: "main"
 
 <hr>
 
+## 2022
+
+- [Asynchronous processing of long-running tasks in Shiny](https://rinpharma.com/publication/rinpharma_290/) <br>
+  Nicole Jones, Nan Xiao, Shuqi Zhao, Lawrence A. Gould <br>
+  R/Pharma Conference
+- [R for clinical study reports and submission](https://ww2.amstat.org/meetings/biop/2022/shortcourses.cfm) (short course) <br>
+  Yilong Zhang, Nan Xiao, Keaven M. Anderson <br>
+  2022 ASA Biopharmaceutical Section Regulatory-Industry Statistics Workshop, Rockville, MD.
+- [Grammar of group sequential design](https://keaven.github.io/talks/grammar-of-gsd-bremen/) <br>
+  Keaven M. Anderson, Yilong Zhang, Nan Xiao, Yujie Zhao <br>
+  MCP Conference 2022: The 12th International Conference on Multiple Comparison Procedures, Bremen, Germany. <br>
+  Joint Statistical Meetings, Washington, DC.
+
 ## 2021
 
+- [Group sequential design under non-proportional hazards](https://keaven.github.io/gsd-deming/) (short course, [slides](https://keaven.github.io/gsd-deming/slides/)) <br>
+  Keaven M. Anderson, Yilong Zhang, Nan Xiao, Yujie Zhao <br>
+  The 77th Annual Deming Conference on Applied Statistics
 - [Reimagine the R package distribution system for reproducible research and submissions](https://nanx.me/talks/reimagine-rpkgs/) <br>
   R/Pharma Conference <br>
   [Video recording](https://www.youtube.com/watch?v=uqe8mFvOjUA)
