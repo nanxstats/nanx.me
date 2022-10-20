@@ -10,7 +10,7 @@ menu: "main"
 - [Asynchronous processing of long-running tasks in Shiny](https://rinpharma.com/publication/rinpharma_290/) <br>
   Nicole Jones, Nan Xiao, Shuqi Zhao, Lawrence A. Gould <br>
   R/Pharma Conference
-- [R for clinical study reports and submission](https://ww2.amstat.org/meetings/biop/2022/shortcourses.cfm) (short course) <br>
+- [R for clinical study reports and submission](https://ww2.amstat.org/meetings/biop/2022/shortcourses.cfm) (short course, [slides](https://r4csr.org/slides/fda-workshop-slides.html)) <br>
   Yilong Zhang, Nan Xiao, Keaven M. Anderson <br>
   2022 ASA Biopharmaceutical Section Regulatory-Industry Statistics Workshop, Rockville, MD.
 - [Grammar of group sequential design](https://keaven.github.io/talks/grammar-of-gsd-bremen/) <br>
