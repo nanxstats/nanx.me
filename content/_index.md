@@ -10,6 +10,10 @@ I work in the Methodology Research group led by
 [BARDS](https://jobs.merck.com/bards).
 My focus is at the intersection of statistical methodology research
 and software architecture innovation.
+I currently serve on the R Consortium
+[Infrastructure Steering Committee](https://www.r-consortium.org/about/governance)
+as a representative of Merck & Co., as well as on the
+[R Submission Working Group](https://rconsortium.github.io/submissions-wg/).
 
 My research interests include sparse linear models,
 representation learning, and computational reproducibility.
