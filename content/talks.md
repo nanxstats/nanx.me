@@ -7,9 +7,10 @@ menu: "main"
 
 ## 2022
 
-- [Asynchronous processing of long-running tasks in Shiny](https://rinpharma.com/publication/rinpharma_290/) <br>
+- [Asynchronous processing of long-running tasks in Shiny](https://rinpharma.com/publication/rinpharma_291/) <br>
   Nicole Jones, Nan Xiao, Shuqi Zhao, Lawrence A. Gould <br>
-  R/Pharma Conference
+  R/Pharma Conference <br>
+  [Video recording](https://www.youtube.com/watch?v=G1JVt0m9qOo)
 - [R for clinical study reports and submission](https://ww2.amstat.org/meetings/biop/2022/shortcourses.cfm) (short course, [slides](https://r4csr.org/slides/fda-workshop-slides.html)) <br>
   Yilong Zhang, Nan Xiao, Keaven M. Anderson <br>
   2022 ASA Biopharmaceutical Section Regulatory-Industry Statistics Workshop, Rockville, MD.
