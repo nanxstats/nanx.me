@@ -28,7 +28,7 @@ and
 
 Previously, I worked as a data scientist at
 [Seven Bridges](https://www.sevenbridges.com/) in Boston.
-Earlier in my career, I studied human genetics in
+Earlier in my career, I studied [human genetics](https://genes.uchicago.edu/) in
 [Matthew Stephens Lab](https://stephenslab.uchicago.edu/)
 at the University of Chicago.
 I earned my PhD degree in statistics from Central South University, China.
