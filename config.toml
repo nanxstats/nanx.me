@@ -19,7 +19,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
 
 [params]
 pagetitle = "Nan Xiao"
-copyright = "© 2011–2022 Nan Xiao"
+copyright = "© 2011–2023 Nan Xiao"
 faviconfile = "image/favicon.png"
 logofile = "image/nanxiao.jpg"
 logoalt = "Portrait of Nan Xiao"
