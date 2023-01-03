@@ -1,0 +1,79 @@
+---
+title: "Announcing My First VS Code Extension: textmate.rstheme"
+author: "Nan Xiao"
+date: "2023-01-02T20:00:00"
+slug: vscode-textmate-rstheme
+categories: []
+tags:
+  - VS Code
+  - Theme
+  - RStudio IDE
+  - Ace
+  - TextMate
+meta_img: "image/vscode-textmate-rstheme-screenshot-rmd.png"
+description: >
+  I published a light theme for VS Code inspired by the TextMate (default)
+  theme in RStudio IDE.
+---
+
+
+
+<blockquote>
+<p>TL;DR: I published my first <a href="https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme">VS Code extension/theme</a> on Visual Studio Marketplace, with the source hosted on <a href="https://github.com/nanxstats/vscode-textmate-rstheme">GitHub</a>. Try it out today.</p>
+</blockquote>
+<div class="figure">
+<img src="/image/vscode-textmate-rstheme-screenshot-rmd.png" alt="" />
+<p class="caption">A screenshot for editing R Markdown documents with the theme. Syntax highlighting provided by vscode-R. Captured with IBM Plex Mono at 18px.</p>
+</div>
+<p>It was not until late in my life that I realized my eyes were sensitive
+to the visual aesthetics of things. To make things worse, I care about
+them very much, at least in the name of productivity and inspiration.
+This probably explains why I have been rotating and “exhausting” the popular
+code editor syntax highlighting themes, light or dark, old or new,
+native or third-party, trying to find the perfect one in the past ten years.
+Eventually, for RStudio IDE/Workbench, my daily driver for writing
+R code, I returned to its default syntax highlighting theme (textmate)
+and stayed there.</p>
+<p>For a long time after that, I wanted to have a consistent
+syntax highlighting experience in Visual Studio Code, my default choice for
+coding with other languages. Still, I cannot find a functionally similar theme.
+The situation motivates me to create the VS Code extension
+<a href="https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme">textmate.rstheme</a>.
+You can install it by searching <code>textmate.rstheme</code> in VS Code “Extensions” panel
+or by visiting the above marketplace link and clicking the “Install” button.</p>
+<p>So far, I have added preliminary
+<a href="https://github.com/nanxstats/vscode-textmate-rstheme/tree/main/tests">test cases</a>
+for about 20 programming languages and file formats.
+In many cases, one would need to install additional extensions
+to add specific language support where syntax highlighting is provided.
+For example, extensions like
+<a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r">vscode-R</a>,
+<a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto</a>,
+<a href="https://marketplace.visualstudio.com/items?itemName=rstudio.pyshiny">Shiny for Python</a>,
+<a href="https://marketplace.visualstudio.com/items?itemName=ivan-bocharov.stan-vscode">stan-vscode</a>, and
+<a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">markdownlint</a>
+are all excellent options for daily data science development workflows.</p>
+<p>I had a lot of fun developing the extension.
+Writing a minimal, theme-only extension for VS Code is like curating
+a small key-value database stored in JSON.
+One only needs to know what files to edit and what color values to use.
+No knowledge of TypeScript or another language is required unless the
+key-value pairs need to be generated programmatically.
+The <a href="https://github.com/nanxstats/vscode-textmate-rstheme/blob/main/contributing.md">contributing guide</a>
+details the essential steps to develop and test the extension locally.
+Pull requests are welcomed.</p>
+<div id="credits" class="section level2">
+<h2>Credits</h2>
+<p>I want to thank the authors of the following software:</p>
+<ul>
+<li><p>Code highlighting colors were taken from
+<a href="https://github.com/rstudio/rstudio/blob/785be459684006f95e947fe4e6f13f6a91db6762/src/cpp/session/resources/themes/textmate.rstheme">RStudio IDE</a>,
+which was originally from the
+<a href="https://github.com/ajaxorg/ace/blob/f1f6517a30d6819d1c8ca045744cdeb2925ccf0a/src/theme/textmate.css.js">textmate theme in Ace</a>.
+The results are not identical because of the subtle differences between
+the language tokenizers, but they are similar.</p></li>
+<li><p>Outer UI colors were remixed from the <code>GitHub Light Default</code> theme in
+<a href="https://github.com/primer/github-vscode-theme">github-vscode-theme</a>
+and <a href="https://www.shinyapps.io/">shinyapps.io</a>.</p></li>
+</ul>
+</div>
