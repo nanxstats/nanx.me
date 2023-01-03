@@ -86,6 +86,10 @@ Pipeline for the [precisionFDA challenge on detecting adverse event anomalies us
 - [awesome-shiny-extensions](https://github.com/nanxstats/awesome-shiny-extensions) <br> A curated list of R packages that offer extended UI or server components for Shiny.
 - [deep-learning-recipes](https://github.com/nanxstats/deep-learning-recipes) <br> R implementation for selected machine learning methods with deep learning frameworks.
 
+## Visual Studio Code extensions
+
+- [vscode-textmate-rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme) <br> A light theme for Visual Studio Code inspired by the TextMate (default) theme in RStudio IDE. <br> [GitHub repository](https://github.com/nanxstats/vscode-textmate-rstheme)
+
 ## Hugo/blogdown themes
 
 - [hugo-tanka](https://github.com/nanxstats/hugo-tanka) <br> A minimalist theme for Hugo and blogdown <br> [Live Preview](https://nanx.me/hugo-tanka/) | [Hugo Themes](https://themes.gohugo.io/hugo-tanka/) | [blogdown book](https://bookdown.org/yihui/blogdown/other-themes.html)
