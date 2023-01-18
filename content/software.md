@@ -26,7 +26,7 @@ I build R packages to improve my workflow.
 **Statistical graphics and computing**
 
 - [ggsci](https://nanx.me/ggsci/) <br> Scientific journal and sci-fi themed color palettes for ggplot2 <br> [CRAN](https://cran.r-project.org/package=ggsci) | [GitHub](https://github.com/nanxstats/ggsci)
-- [liftr](https://nanx.me/liftr/) <br> Containerize R Markdown documents <br> [CRAN](https://cran.r-project.org/package=liftr) | [GitHub](https://github.com/nanxstats/liftr) | [Paper](https://doi.org/10.32614/RJ-2020-007)
+- [liftr](https://liftr.me/) <br> Containerize R Markdown documents <br> [CRAN](https://cran.r-project.org/package=liftr) | [GitHub](https://github.com/nanxstats/liftr) | [Paper](https://doi.org/10.32614/RJ-2020-007)
 - [hdnom](https://nanx.me/hdnom/) <br> Benchmarking and visualization toolkit for penalized Cox models <br> [CRAN](https://cran.r-project.org/package=hdnom) | [GitHub](https://github.com/nanxstats/hdnom) | [Paper](https://doi.org/10.1101/065524)
 
 **Bioinformatics and cheminformatics**

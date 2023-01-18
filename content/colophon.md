@@ -18,5 +18,5 @@ menu: "main"
 
 ## Editing
 
-- R Markdown: [RStudio Desktop](https://www.rstudio.com/products/rstudio/)
+- R Markdown: [RStudio IDE](https://posit.co/products/open-source/rstudio/)
 - HTML, CSS, JavaScript: [Visual Studio Code](https://code.visualstudio.com/)
