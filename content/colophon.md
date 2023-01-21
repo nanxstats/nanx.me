@@ -18,5 +18,6 @@ menu: "main"
 
 ## Editing
 
-- R Markdown: [RStudio IDE](https://posit.co/products/open-source/rstudio/)
-- HTML, CSS, JavaScript: [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/) with
+  [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)
+- [RStudio IDE](https://posit.co/products/open-source/rstudio/)

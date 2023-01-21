@@ -6,15 +6,15 @@ description: "Personal website of Nan Xiao; 肖楠的个人网站"
 
 I am a statistician from [Merck & Co.](https://www.merck.com/)
 I work in the Methodology Research group led by
-[Keaven M. Anderson](https://keaven.github.io/) in
-[BARDS](https://jobs.merck.com/bards).
-My focus is at the intersection of statistical methodology research
-and software architecture innovation.
+[Keaven M. Anderson](https://keaven.github.io/)
+in the [Biostatistics and Research Decision Sciences](https://jobs.merck.com/bards) (BARDS) department.
 I currently serve on the
 [R Consortium Infrastructure Steering Committee](https://www.r-consortium.org/about/governance)
 as a representative of Merck & Co., as well as on the
 [R Submission Working Group](https://rconsortium.github.io/submissions-wg/).
 
+In my daily work, I focus on tackling challenges at the intersection of
+statistical methodology research and software architecture innovation.
 My research interests include sparse linear models,
 representation learning, and computational reproducibility.
 I build [software](https://nanx.me/software/) in R to automate my workflow.
