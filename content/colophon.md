@@ -3,7 +3,7 @@ title: "Colophon"
 menu: "main"
 ---
 
-<hr>
+*  *  *  *
 
 ## Typography
 
