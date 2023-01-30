@@ -12,7 +12,10 @@ menu: "main"
 
 <div class="mt-4"></div>
 
-<!-- Building an internal R package for statistical analysis and reporting in clinical trials: a SAS user's perspective -->
+## 2023
+
+- [Building an internal R Package for statistical analysis and reporting in clinical trials: A SAS user's perspective](https://www.pharmasug.org/us/2023/papers.html#SD-122).<br>
+Huei-Ling Chen, Heng Zhou, <author>Nan Xiao</author>. PharmaSUG 2023.
 
 ## 2022
 
