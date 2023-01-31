@@ -5,6 +5,12 @@ menu: "main"
 
 *  *  *  *
 
+[YouTube](https://www.youtube.com/channel/UCYQrcaPfHRdSPrUwK6RD_KA) |
+[Vimeo](https://vimeo.com/nanxstats)
+
+[2022](#2022) | [2021](#2021) | [2020](#2020) |
+[2018](#2018) | [2017](#2017) | [2016](#2016) | [2015](#2015) | [2013](#2013)
+
 ## 2022
 
 - [Asynchronous processing of long-running tasks in Shiny](https://rinpharma.com/publication/rinpharma_291/)\

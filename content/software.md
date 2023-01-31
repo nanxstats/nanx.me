@@ -213,7 +213,7 @@ Reusable pipelines for analyzing real-world datasets in specific domains.
   [CRAN](https://cran.r-project.org/package=dml) |
   [Paper](https://doi.org/10.21105/joss.01036)
 
-## Code recipes & awesome lists
+## Awesome lists and code recipes
 
 - [awesome-shiny-extensions](https://github.com/nanxstats/awesome-shiny-extensions)\
   A curated list of R packages that offer extended UI or server components for Shiny.
