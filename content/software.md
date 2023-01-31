@@ -41,7 +41,7 @@ I build R packages to improve my workflow.
   [GitHub](https://github.com/nanxstats/OHPL) |
   [Paper](https://nanx.me/papers/OHPL.pdf)
 - [RECA](https://nanx.me/RECA/)\
-- Relevant component analysis for supervised distance metric learning\
+  Relevant component analysis for supervised distance metric learning\
   [CRAN](https://cran.r-project.org/package=RECA) |
   [GitHub](https://github.com/nanxstats/RECA)
 - [enpls](https://nanx.me/enpls/)\
