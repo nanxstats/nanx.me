@@ -94,7 +94,7 @@ writeLines(
 #
 # - Scale: n
 # - 2 orientations from -90 to 0
-# - Number of words: 250
+# - Number of words: 125
 # - Font: Avenir Next Condensed Medium
 #
 # - Try different until getting a comfortable layout
