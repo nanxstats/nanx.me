@@ -5,6 +5,16 @@ menu: "main"
 
 *  *  *  *
 
+[R packages](#r-packages) |
+[Web applications](#web-applications) |
+[Data analysis pipelines](#data-analysis-pipelines)\
+[Code contributor](#code-contributor) |
+[Awesome lists and code recipes](#awesome-lists-and-code-recipes)\
+[VS Code extensions](#visual-studio-code-extensions) |
+[Hugo/blogdown themes](#hugoblogdown-themes)\
+[Collections](#collections) |
+[Archives](#archives)
+
 ## R packages
 
 I build R packages to improve my workflow.
