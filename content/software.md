@@ -5,15 +5,25 @@ menu: "main"
 
 *  *  *  *
 
+<div class="figure">
+<img src="/image/bcpm-msaenet-flow.png" alt="">
+</div>
+
+<div class="mt-4"></div>
+
+<div class="text-center">
+
 [R packages](#r-packages) |
 [Web applications](#web-applications) |
 [Data analysis pipelines](#data-analysis-pipelines)\
 [Code contributor](#code-contributor) |
 [Awesome lists and code recipes](#awesome-lists-and-code-recipes)\
 [VS Code extensions](#visual-studio-code-extensions) |
-[Hugo/blogdown themes](#hugoblogdown-themes)\
-[Collections](#collections) |
-[Archives](#archives)
+[Hugo/blogdown themes](#hugoblogdown-themes)
+
+</div>
+
+<div class="mt-5"></div>
 
 ## R packages
 
