@@ -9,8 +9,11 @@ menu: "main"
 <img src="/image/wordcloud.png" alt="">
 </div>
 
+<div class="mt-3"></div>
+
 [Google Scholar](https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en) |
-[ORCID](https://orcid.org/0000-0002-0250-5673)
+[ORCID](https://orcid.org/0000-0002-0250-5673) |
+[ResearchGate](https://www.researchgate.net/profile/Nan-Xiao-9)
 
 [2023](#2023) | [2022](#2022) | [2021](#2021) | [2020](#2020) |
 [2019](#2019) | [2018](#2018) | [2017](#2017) | [2016](#2016) | [2015](#2015)
