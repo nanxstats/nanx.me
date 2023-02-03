@@ -7,6 +7,7 @@ menu: "main"
 
 <div class="figure">
 <img src="/image/bcpm-msaenet-flow.png" alt="">
+<p class="caption">Architecture of a msaenet pipeline for biomarker discovery and predictive modeling.</p>
 </div>
 
 <div class="mt-4"></div>

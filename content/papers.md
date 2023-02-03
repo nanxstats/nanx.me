@@ -7,9 +7,10 @@ menu: "main"
 
 <div class="figure">
 <img src="/image/wordcloud.png" alt="">
+<p class="caption">Word cloud visualization of the keywords in my publications.</p>
 </div>
 
-<div class="mt-3"></div>
+<div class="mt-4"></div>
 
 <div class="text-center">
 
@@ -22,7 +23,7 @@ menu: "main"
 
 </div>
 
-<div class="mt-4"></div>
+<div class="mt-5"></div>
 
 ## 2023
 
