@@ -210,6 +210,12 @@ Reusable pipelines for analyzing real-world datasets in specific domains.
 
 ## Code contributor
 
+- [metalite](https://github.com/Merck/metalite)\
+  Unified data structure for metadata information in clinical
+  analysis & reporting (A&R), leveraging the
+  Analysis Data Model (ADaM) datasets for consistent and
+  accurate metadata representation.\
+  [CRAN](https://cran.r-project.org/package=metalite)
 - [gMCPLite](https://github.com/Merck/gMCPLite)\
   Lightweight fork of gMCP for graph-based multiple comparison procedures\
   [CRAN](https://cran.r-project.org/package=gMCPLite)
