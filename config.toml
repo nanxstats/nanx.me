@@ -5,7 +5,7 @@ author = "Nan Xiao"
 canonifyurls = true
 languagecode = "en"
 paginate = 3
-theme = "hugo-nanx2022"
+theme = "hugo-nanx2023"
 
 enableEmoji = true
 hasCJKLanguage = true
