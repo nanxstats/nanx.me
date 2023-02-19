@@ -27,15 +27,15 @@ menu: "main"
 
 ## 2023
 
+- [Electronic common technical document submission with analysis using R](https://doi.org/10.1177/17407745221123244).\
+  Yujie Zhao, **Nan Xiao**, Keaven Anderson, Yilong Zhang.
+  *Clinical Trials* 20(1): 89--92, 2023.
 - [Building an internal R Package for statistical analysis and reporting in clinical trials: A SAS user's perspective](https://www.pharmasug.org/us/2023/papers.html#SD-122).\
   Huei-Ling Chen, Heng Zhou, **Nan Xiao**.
   PharmaSUG 2023.
 
 ## 2022
 
-- [Electronic common technical document submission with analysis using R](https://doi.org/10.1177/17407745221123244).\
-  Yujie Zhao, **Nan Xiao**, Keaven Anderson, Yilong Zhang.
-  *Clinical Trials*, 2022.
 - [Asymptotic calculations evaluating robustness of power for alternative time-to-event tests: software innovations in clinical trial design](https://ww2.amstat.org/cgi-bin/fileviewer.cfm?filename=AbstractPresentations%5Cjsm2022presentations%5C320465%2Epdf&Outputfile=320465).\
   Keaven M. Anderson, Yujie Zhao, **Nan Xiao**, Yilong Zhang.
   In *JSM Proceedings*. Alexandria, VA: American Statistical Association, 2022.
