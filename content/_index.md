@@ -17,7 +17,7 @@ In my daily work, I focus on tackling challenges at the intersection of
 statistical methodology research and software architecture innovation.
 My research interests include sparse linear models,
 representation learning, and computational reproducibility.
-I build [software](https://nanx.me/software/) in R to automate my workflow.
+I build [software](https://nanx.me/software/) in R.
 My favorites include
 [msaenet](https://nanx.me/msaenet/),
 [oneclust](https://nanx.me/oneclust/),
