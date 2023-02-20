@@ -264,6 +264,8 @@ Reusable pipelines for analyzing real-world datasets in specific domains.
   A minimalist Bootstrap 5 theme for Hugo and blogdown
 - [hugo-nanx2022](https://github.com/nanxstats/hugo-nanx2022)\
   A minimalist Bootstrap 5 theme for Hugo and blogdown
+- [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023)\
+  A minimalist Bootstrap 5 theme for Hugo and blogdown
 
 ## Collections
 

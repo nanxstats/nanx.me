@@ -20,5 +20,6 @@ menu: "main"
 ## Editing
 
 - [Visual Studio Code](https://code.visualstudio.com/) with
-  [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)
+  [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
+  and [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)
 - [RStudio IDE](https://posit.co/products/open-source/rstudio/)
