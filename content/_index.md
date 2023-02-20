@@ -13,7 +13,7 @@ I currently serve on the
 as a representative of Merck & Co., as well as on the
 [R Submission Working Group](https://rconsortium.github.io/submissions-wg/).
 
-In my daily work, I focus on tackling challenges at the intersection of
+In my daily work, I solve challenges at the intersection of
 statistical methodology research and software architecture innovation.
 My research interests include sparse linear models,
 representation learning, and computational reproducibility.
