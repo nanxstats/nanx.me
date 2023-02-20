@@ -11,7 +11,7 @@ menu: "main"
 - [DM Serif Text](https://github.com/googlefonts/dm-fonts)
 - [IBM Plex Mono](https://github.com/IBM/plex)
 
-## Content
+## Publishing
 
 - Site generator: [blogdown](https://github.com/rstudio/blogdown), driven by [Hugo](https://gohugo.io/)
 - Theme: [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023), built on [Bootstrap 5](https://getbootstrap.com/)
