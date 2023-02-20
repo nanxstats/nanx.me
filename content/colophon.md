@@ -8,7 +8,7 @@ menu: "main"
 ## Typography
 
 - [Source Sans 3](https://github.com/adobe-fonts/source-sans)
-- [DM Serif Display](https://github.com/googlefonts/dm-fonts)
+- [DM Serif Text](https://github.com/googlefonts/dm-fonts)
 - [IBM Plex Mono](https://github.com/IBM/plex)
 
 ## Content
