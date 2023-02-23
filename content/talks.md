@@ -13,11 +13,11 @@ menu: "main"
   [Video recording](https://www.youtube.com/watch?v=G1JVt0m9qOo)
 - [R for clinical study reports and submission](https://ww2.amstat.org/meetings/biop/2022/shortcourses.cfm) (short course, [slides](https://r4csr.org/slides/fda-workshop-slides.html))\
   Yilong Zhang, Nan Xiao, Keaven M. Anderson\
-  2022 ASA Biopharmaceutical Section Regulatory-Industry Statistics Workshop, Rockville, MD.
+  2022 ASA Biopharmaceutical Section Regulatory-Industry Statistics Workshop
 - [Grammar of group sequential design](https://keaven.github.io/talks/grammar-of-gsd-bremen/)\
   Keaven M. Anderson, Yilong Zhang, Nan Xiao, Yujie Zhao\
-  MCP Conference 2022: The 12th International Conference on Multiple Comparison Procedures, Bremen, Germany.\
-  Joint Statistical Meetings, Washington, DC.
+  The 12th International Conference on Multiple Comparison Procedures\
+  Joint Statistical Meetings
 
 ## 2021
 
@@ -35,7 +35,7 @@ menu: "main"
 ## 2020
 
 - [Old Methods with New Tricks: Our Solution for the PrecisionFDA Brain Cancer Predictive Modeling & Biomarker Discovery Challenge](https://nanx.me/talks/icbi-symposium-precisionfda-nanxiao.pdf)\
-  9th Annual Health Informatics & Data Science Virtual Symposium at Georgetown University\
+  The 9th Annual Health Informatics & Data Science Virtual Symposium at Georgetown University\
   [Video recording](https://vimeo.com/645442190)
 
 ## 2018
