@@ -5,6 +5,13 @@ menu: "main"
 
 *  *  *  *
 
+<div class="float">
+<img src="/image/hex-stickers-nanxiao.png" alt="Hex sticker wall for some of my R packages.">
+<div class="figcaption">
+Hex sticker wall for some of my R packages.
+</div>
+</div>
+
 <div class="mt-5"></div>
 
 <div class="text-center">
