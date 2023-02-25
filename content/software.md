@@ -223,6 +223,12 @@ Reusable pipelines for analyzing real-world datasets in specific domains.
   Analysis Data Model (ADaM) datasets for consistent and
   accurate metadata representation.\
   [CRAN](https://cran.r-project.org/package=metalite)
+- [metalite.ae](https://github.com/Merck/metalite.ae)\
+  Analyzes adverse events in clinical trials using the metalite data structure.
+  Simplifies the workflow to create production-ready tables, listings,
+  and figures discussed in the adverse events analysis chapters of
+  _R for Clinical Study Reports and Submission_.\
+  [CRAN](https://cran.r-project.org/package=metalite.ae)
 - [gMCPLite](https://github.com/Merck/gMCPLite)\
   Lightweight fork of gMCP for graph-based multiple comparison procedures\
   [CRAN](https://cran.r-project.org/package=gMCPLite)
