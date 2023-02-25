@@ -33,18 +33,18 @@ menu: "main"
   [Video](https://www.youtube.com/watch?v=uqe8mFvOjUA)
 - [R for clinical study reports and submission](https://r4csr.org/).
   R/Pharma Conference. (workshop)
-- [pkglite: Compact package representations](https://nanx.me/talks/pkglite-r-consortium/).
+- [pkglite: compact package representations](https://nanx.me/talks/pkglite-r-consortium/).
   R Consortium R Submissions Working Group.
 
 ## 2020
 
-- [Old methods with new tricks: Our solution for the PrecisionFDA brain cancer predictive modeling & biomarker discovery challenge](https://nanx.me/talks/icbi-symposium-precisionfda-nanxiao.pdf).
+- [Old methods with new tricks: our solution for the PrecisionFDA brain cancer predictive modeling & biomarker discovery challenge](https://nanx.me/talks/icbi-symposium-precisionfda-nanxiao.pdf).
   The 9th Annual Health Informatics & Data Science Virtual Symposium at Georgetown University.
   [Video](https://vimeo.com/645442190)
 
 ## 2018
 
-- [liftr: An R package for persistent reproducible research](https://nanx.me/talks/jsm2018-liftr-nanxiao.pdf).
+- [liftr: an R package for persistent reproducible research](https://nanx.me/talks/jsm2018-liftr-nanxiao.pdf).
   Joint Statistical Meetings.
 
 ## 2017
@@ -65,7 +65,7 @@ menu: "main"
 - [High-dimensional survival modeling with Shiny](https://nanx.me/talks/shinydevcon2016-lightning-nanxiao.pdf).
   Shiny Developer Conference.
   [Video](https://www.rstudio.com/resources/shiny-dev-con/survival-modeling/)
-- [ChromaClust: Latent color topic modeling for images](https://nanx.me/posters/chromaclust-poster-hg48600.pdf).
+- [ChromaClust: latent color topic modeling for images](https://nanx.me/posters/chromaclust-poster-hg48600.pdf).
   HGEN 48600/STAT 35450. (poster)
 
 ## 2015
@@ -74,7 +74,7 @@ menu: "main"
   CRI Bioinformatics Workshop, Center for Research Informatics, University of Chicago.
 - [liftr & sbgr kickstart](https://www.bioconductor.org/help/course-materials/2015/BioC2015/bioc2015-workshop-nanxiao.pdf).
   BioC 2015. (workshop)
-- [liftr: Reproducible bioinformatics and statistical data analysis with Docker, Rabix, and knitr](https://nanx.me/posters/liftr-poster-bioc2015.pdf).
+- [liftr: reproducible bioinformatics and statistical data analysis with Docker, Rabix, and knitr](https://nanx.me/posters/liftr-poster-bioc2015.pdf).
   BioC 2015. (poster)
 
 ## 2013
