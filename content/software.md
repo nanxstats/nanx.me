@@ -18,9 +18,9 @@ Hex sticker wall for some of my R packages.
 
 [R packages](#r-packages) |
 [Web applications](#web-applications) |
-[Data analysis pipelines](#data-analysis-pipelines)\
+[ML workflows](#ml-workflows)\
 [Code contributor](#code-contributor) |
-[Awesome lists and code recipes](#awesome-lists-and-code-recipes)\
+[Awesome lists and recipes](#awesome-lists-and-recipes)\
 [VS Code extensions](#visual-studio-code-extensions) |
 [Hugo/blogdown themes](#hugoblogdown-themes)
 
@@ -196,20 +196,20 @@ Shiny apps, widgets, and templates for interactive data analysis.
   Upgrade CWL apps from sbg:draft2 to v1.0\
   [Mirror 1](https://nanx.app/cwl-upgrader/)
 
-## Data analysis pipelines
+## ML workflows
 
-Reusable pipelines for analyzing real-world datasets in specific domains.
+Reusable workflows for analyzing real-world datasets in specific domains.
 
 - [exp2vec](https://github.com/nanxstats/exp2vec)\
-  Pipeline for training tissue-specific gene embeddings on GTEx data.
+  Workflow for training tissue-specific gene embeddings on GTEx data.
 - [bcpm-msaenet](https://github.com/nanxstats/bcpm-msaenet)\
-  Pipeline for the [precisionFDA challenge on brain cancer predictive modeling and biomarker discovery](https://precision.fda.gov/challenges/8/results).
+  Workflow for the [precisionFDA challenge on brain cancer predictive modeling and biomarker discovery](https://precision.fda.gov/challenges/8/results).
   The 2nd place solution by predictive performance.
   Features multi-step adaptive SCAD-net and relaxed stability selection
   for feature selection, and a two-layer stacking tree model with xgboost,
   lightgbm, and catboost.
 - [rankv](https://github.com/nanxstats/rankv)\
-  Pipeline for the [precisionFDA challenge on detecting adverse event anomalies using FDA open data](https://precision.fda.gov/challenges/9).
+  Workflow for the [precisionFDA challenge on detecting adverse event anomalies using FDA open data](https://precision.fda.gov/challenges/9).
   Features a rank aggregated signal detection method for
   Vaccine Adverse Event Reporting System (VAERS) data,
   with base signal detection methods including Gamma Poisson Shrinker,
@@ -248,7 +248,7 @@ Reusable pipelines for analyzing real-world datasets in specific domains.
   [CRAN](https://cran.r-project.org/package=dml) |
   [Paper](https://doi.org/10.21105/joss.01036)
 
-## Awesome lists and code recipes
+## Awesome lists and recipes
 
 - [awesome-shiny-extensions](https://github.com/nanxstats/awesome-shiny-extensions)\
   A curated list of R packages that offer extended UI or server components for Shiny.
