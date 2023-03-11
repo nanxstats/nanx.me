@@ -252,6 +252,9 @@ Reusable pipelines for analyzing real-world datasets in specific domains.
 
 - [awesome-shiny-extensions](https://github.com/nanxstats/awesome-shiny-extensions)\
   A curated list of R packages that offer extended UI or server components for Shiny.
+- [awesome-webr](https://github.com/nanxstats/awesome-webr)\
+  A curated list of awesome resources for learning WebR, a version of the
+  statistical language R compiled for the browser and Node.js using WebAssembly.
 - [deep-learning-recipes](https://github.com/nanxstats/deep-learning-recipes)\
   R implementation for selected machine learning methods with deep learning frameworks.
 
