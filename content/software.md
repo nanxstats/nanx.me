@@ -18,9 +18,9 @@ Hex sticker wall for some of my R packages.
 
 [R packages](#r-packages) |
 [Web applications](#web-applications) |
-[ML workflows](#ml-workflows)\
-[Code contributor](#code-contributor) |
-[Awesome lists and recipes](#awesome-lists-and-recipes)\
+[ML workflows](#machine-learning-workflows)\
+[Open source code contributions](#open-source-contributions) |
+[Awesome lists](#awesome-lists-and-code-recipes)\
 [VS Code extensions](#visual-studio-code-extensions) |
 [Hugo/blogdown themes](#hugoblogdown-themes)
 
@@ -29,8 +29,6 @@ Hex sticker wall for some of my R packages.
 <div class="mt-5"></div>
 
 ## R packages
-
-I build R packages to improve my workflow.
 
 ### Infrastructure and automation
 
@@ -196,9 +194,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
   Upgrade CWL apps from sbg:draft2 to v1.0\
   [Mirror 1](https://nanx.app/cwl-upgrader/)
 
-## ML workflows
-
-Reusable workflows for analyzing real-world datasets in specific domains.
+## Machine learning workflows
 
 - [exp2vec](https://github.com/nanxstats/exp2vec)\
   Workflow for training tissue-specific gene embeddings on GTEx data.
@@ -215,7 +211,7 @@ Reusable workflows for analyzing real-world datasets in specific domains.
   with base signal detection methods including Gamma Poisson Shrinker,
   PRR, ROR, and BCPNN. [Website](https://nanx.me/rankv/).
 
-## Code contributor
+## Open source contributions
 
 - [metalite](https://github.com/Merck/metalite)\
   Unified data structure for metadata information in clinical
@@ -227,7 +223,7 @@ Reusable workflows for analyzing real-world datasets in specific domains.
   Analyzes adverse events in clinical trials using the metalite data structure.
   Simplifies the workflow to create production-ready tables, listings,
   and figures discussed in the adverse events analysis chapters of
-  _R for Clinical Study Reports and Submission_.\
+  *R for Clinical Study Reports and Submission*.\
   [CRAN](https://cran.r-project.org/package=metalite.ae)
 - [gMCPLite](https://github.com/Merck/gMCPLite)\
   Lightweight fork of gMCP for graph-based multiple comparison procedures\
@@ -248,7 +244,7 @@ Reusable workflows for analyzing real-world datasets in specific domains.
   [CRAN](https://cran.r-project.org/package=dml) |
   [Paper](https://doi.org/10.21105/joss.01036)
 
-## Awesome lists and recipes
+## Awesome lists and code recipes
 
 - [awesome-shiny-extensions](https://github.com/nanxstats/awesome-shiny-extensions)\
   A curated list of R packages that offer extended UI or server components for Shiny.
