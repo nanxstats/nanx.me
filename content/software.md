@@ -213,6 +213,16 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 ## Open source contributions
 
+- [gsDesign2](https://github.com/Merck/gsDesign2)\
+  Group sequential design with non-constant effect\
+  [CRAN](https://cran.r-project.org/package=gsDesign2)
+- [gMCPLite](https://github.com/Merck/gMCPLite)\
+  Lightweight fork of gMCP for graph-based multiple comparison procedures\
+  [CRAN](https://cran.r-project.org/package=gMCPLite)
+- [gsDesign Shiny app](https://rinpharma.shinyapps.io/gsdesign/)\
+  Group sequential clinical trial design\
+  [Mirror 1](https://gsdesign.shinyapps.io/prod/) |
+  [Mirror 2](https://gsdesign.shinyapps.io/devel/)
 - [metalite](https://github.com/Merck/metalite)\
   Unified data structure for metadata information in clinical
   analysis & reporting (A&R), leveraging the
@@ -225,13 +235,6 @@ Shiny apps, widgets, and templates for interactive data analysis.
   and figures discussed in the adverse events analysis chapters of
   *R for Clinical Study Reports and Submission*.\
   [CRAN](https://cran.r-project.org/package=metalite.ae)
-- [gMCPLite](https://github.com/Merck/gMCPLite)\
-  Lightweight fork of gMCP for graph-based multiple comparison procedures\
-  [CRAN](https://cran.r-project.org/package=gMCPLite)
-- [gsDesign Shiny app](https://rinpharma.shinyapps.io/gsdesign/)\
-  Group sequential clinical trial design\
-  [Mirror 1](https://gsdesign.shinyapps.io/prod/) |
-  [Mirror 2](https://gsdesign.shinyapps.io/devel/)
 - [PDXNet Portal](https://portal.pdxnetwork.org/)\
   Patient-derived xenograft (PDX) model, data, workflow, and tool discovery\
   [Paper](https://doi.org/10.1093/narcan/zcac014)
