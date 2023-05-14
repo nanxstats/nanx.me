@@ -210,6 +210,12 @@ Shiny apps, widgets, and templates for interactive data analysis.
   Vaccine Adverse Event Reporting System (VAERS) data,
   with base signal detection methods including Gamma Poisson Shrinker,
   PRR, ROR, and BCPNN. [Website](https://nanx.me/rankv/).
+- [ChromaClust](https://github.com/nanxstats/ChromaClust)\
+  Image color topic modeling using
+  [fastTopics](https://github.com/stephenslab/fastTopics).
+  The original idea was from my final project
+  ([poster](https://nanx.me/posters/chromaclust-poster-hg48600.pdf))
+  for the course HGEN 48600/STAT 35450.
 
 ## Open source contributions
 

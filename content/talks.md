@@ -65,8 +65,6 @@ menu: "main"
 - [High-dimensional survival modeling with Shiny](https://nanx.me/talks/shinydevcon2016-lightning-nanxiao.pdf).
   Shiny Developer Conference.
   [Video](https://posit.co/resources/videos/survival-modeling/)
-- [ChromaClust: latent color topic modeling for images](https://nanx.me/posters/chromaclust-poster-hg48600.pdf).
-  HGEN 48600/STAT 35450. (poster)
 
 ## 2015
 
