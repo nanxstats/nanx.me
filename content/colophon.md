@@ -9,7 +9,7 @@ menu: "main"
 
 - [Source Sans 3](https://github.com/adobe-fonts/source-sans)
 - [DM Serif Text](https://github.com/googlefonts/dm-fonts)
-- [Fira Code](https://github.com/tonsky/FiraCode)
+- [Hasklig](https://github.com/i-tu/Hasklig)
 - [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
 ## Publishing
