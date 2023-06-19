@@ -1,0 +1,115 @@
+---
+title: "Rethinking the Word Cloud Generator"
+author: "Nan Xiao"
+date: "2023-06-19T18:00:00"
+slug: rethinking-word-cloud-generator
+categories: []
+tags:
+  - word cloud
+  - data visualization
+  - color scales
+  - software architecture
+meta_img: "image/chatgpt-release-notes-wordcloud.png"
+description: >
+  Discover the interactive word cloud generator, an enhanced fork of
+  Jason Davies' original project. Learn how the tool enables improved
+  word cloud visualizations with additional features like color palettes,
+  operating system-specific fonts, and sensible default values.
+  Explore a streamlined, quality-focused SVG to PNG conversion workflow.
+---
+
+
+
+<p>As part of my JavaScript learning journey, I created a fork of
+<a href="https://www.jasondavies.com/wordcloud/">Jason Davies’ word cloud generator</a>
+and added some new features with a few adjustments to the default parameters.
+The fork is hosted at <a href="https://nanx.me/wordcloud/">nanx.me/wordcloud/</a> and
+the source code is available on <a href="https://github.com/nanxstats/wordcloud">GitHub</a>.
+Here is an example word cloud produced by the generator:</p>
+<div class="float">
+<img src="/image/chatgpt-release-notes-wordcloud.png" alt="A word cloud visualization for ChatGPT release notes produced by the generator with default parameters. Font: Founders Grotesk Condensed Regular (included with macOS)." />
+<div class="figcaption">A word cloud visualization for <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">ChatGPT release notes</a> produced by the generator with default parameters. Font: Founders Grotesk Condensed Regular (included with macOS).</div>
+</div>
+<p>You can use this tool to create word cloud visualizations by simply pasting
+text and clicking the “Go” button until a satisfactory layout is produced,
+then export the result as a SVG image for further editing.
+Like the <a href="https://nanx.me/blog/post/gpu-selector/">deep learning GPU selector</a>,
+it is a pure client-side JavaScript solution and does not require any
+server-side processing.</p>
+<div id="motivation" class="section level2">
+<h2>Motivation</h2>
+<p>Text data is more challenging to visualize without
+<a href="https://doi.org/10.3115/v1/W14-3110">explicit modeling</a>
+because of its unstructured nature compared to tabular data.
+Although sometimes controversial, word clouds are a common visualization
+method for text data. Owing to their popularity, you can find implementations
+for drawing word clouds in practically any programming language or
+visualization library. However, many of the existing implementations
+do not have the layout quality or aesthetic appeal that I am looking for,
+at least not without extensive parameter tuning efforts.</p>
+</div>
+<div id="solution" class="section level2">
+<h2>Solution</h2>
+<p>A few years back, Jason Davies launched an outstanding
+<a href="https://www.jasondavies.com/wordcloud/">word cloud generator</a> built on D3.js,
+a JavaScript library for creating dynamic, interactive data visualizations.
+Its layout algorithm, input parameter design, and user interface details
+make it one of the most satisfactory implementations in my opinion.
+However, as the original application has matured over the years,
+it appeared to be missing some essential options and a few default values
+could use an update.</p>
+<p>With this in mind, I created the forked version. The most visible changes
+are on colors, typefaces, and default values:</p>
+<ul>
+<li>Add a color palette selection feature, offering a wide range of options
+from Tableau, Viridis, ColorBrewer, ggplot2, D3, Okabe-Ito, and Gephi.</li>
+<li>Use a default font based on user’s operating system.
+<ul>
+<li>macOS: Avenir Next Condensed Medium</li>
+<li>Windows: Franklin Gothic Medium</li>
+<li>Linux: Liberation Sans Bold</li>
+</ul></li>
+<li>Update the default values for graphical parameter inputs.
+<ul>
+<li>Number of text orientations: from 5 to 2.</li>
+<li>Text angle range (from): from -60° to -90°.</li>
+<li>Text angle range (to): from 60° to 0°.</li>
+</ul></li>
+</ul>
+<p>For the detailed changeset, check out the GitHub repository.</p>
+</div>
+<div id="appendix-command-line-workflow-to-convert-svg-to-png" class="section level2">
+<h2>Appendix: Command-line workflow to convert SVG to PNG</h2>
+<p>Once you have tried different layouts and downloaded the result as
+<code>wordcloud.svg</code>, it is useful to convert the SVG image to a high-quality,
+optimized PNG image for further use because not all applications can render or
+embed SVG images consistently. Note that this workflow might not be the one
+with the least number of steps or most automated, but emphasizes conversion
+quality and robustness.</p>
+<ol style="list-style-type: decimal">
+<li><p>Convert SVG to PDF.</p>
+<p>Open the SVG file in the web browser and print it into a PDF file
+<code>wordcloud.pdf</code>. For large-scale conversion tasks, you can automate
+this step by using headless browsers, for example, via tools like
+<a href="https://nanx.me/blog/post/chromote-pdf-automation/">chromote</a>.</p>
+<p>To accurately print the SVG with the preferred typeface, make sure
+that your operating system has the specified font installed.
+The SVG image, in this case, does not embed the font as data or polygons.</p></li>
+<li><p>Crop the PDF.</p>
+<p>Use <code>pdfcrop</code> to crop the PDF image to remove the white margins:</p>
+<pre class="bash"><code>pdfcrop wordcloud.pdf</code></pre>
+<p>This will create a cropped PDF file <code>wordcloud-crop.pdf</code>.
+<code>pdfcrop</code> is a command-line tool that comes with TeX Live.</p></li>
+<li><p>Convert PDF to PNG.</p>
+<p>Use ImageMagick to convert the PDF image to a PNG image in 300 DPI:</p>
+<pre class="bash"><code>convert -density 300 wordcloud-crop.pdf wordcloud.png</code></pre></li>
+<li><p>Compress the PNG image.</p>
+<p>Use <code>pngquant</code> to compress the PNG image:</p>
+<pre class="bash"><code>pngquant wordcloud.png</code></pre>
+<p>This will create a compressed PNG file <code>wordcloud-fs8.png</code>.</p></li>
+</ol>
+<p>Finally, for macOS users, you can install all the mentioned command-line tools
+using Homebrew with the following commands:</p>
+<pre class="bash"><code>brew install imagemagick pngquant
+brew install --cask mactex</code></pre>
+</div>
