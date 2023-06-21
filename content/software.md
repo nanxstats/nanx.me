@@ -138,6 +138,10 @@ Hex sticker wall for some of my R packages.
   Discover the best GPU for your deep learning needs by answering a few yes/no questions.\
   [GitHub](https://github.com/nanxstats/gpu) |
   [Blog post](https://nanx.me/blog/post/gpu-selector/)
+- [Word Cloud Generator (Batteries Included)](https://nanx.me/wordcloud/)\
+  A fork version of Jason Davies' word cloud generator with color palette selection and updated default values.\
+  [GitHub](https://github.com/nanxstats/wordcloud) |
+  [Blog post](https://nanx.me/blog/post/rethinking-word-cloud-generator/)
 
 ### Shiny apps
 
