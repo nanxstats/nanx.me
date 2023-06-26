@@ -264,6 +264,9 @@ Shiny apps, widgets, and templates for interactive data analysis.
 - [awesome-webr](https://github.com/nanxstats/awesome-webr)\
   A curated list of awesome resources for learning WebR, a version of the
   statistical language R compiled for the browser and Node.js using WebAssembly.
+- [r-base-shortcuts](https://github.com/nanxstats/r-base-shortcuts)\
+  A collection of lesser-known but powerful base R idioms and shortcuts for
+  writing concise and fast base R code.
 - [deep-learning-recipes](https://github.com/nanxstats/deep-learning-recipes)\
   R implementation for selected machine learning methods with deep learning frameworks.
 
