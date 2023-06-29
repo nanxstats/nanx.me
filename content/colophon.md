@@ -7,10 +7,10 @@ menu: "main"
 
 ## Typography
 
-- [Source Sans 3](https://github.com/adobe-fonts/source-sans)
-- [DM Serif Text](https://github.com/googlefonts/dm-fonts)
-- [Hasklig](https://github.com/i-tu/Hasklig)
-- [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)
+- Body text: [Source Sans 3](https://github.com/adobe-fonts/source-sans)
+- Headline: [DM Serif Text](https://github.com/googlefonts/dm-fonts)
+- Monospace: [Hasklig](https://github.com/i-tu/Hasklig)
+- Theme style: [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
 ## Publishing
 
@@ -23,4 +23,12 @@ menu: "main"
 - [Visual Studio Code](https://code.visualstudio.com/) with
   [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
   and [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)
-- [RStudio IDE](https://posit.co/products/open-source/rstudio/)
+
+<style>
+.markdown ul {
+  list-style: none;
+  padding-left: 3ch;
+  border-left: 1px solid var(--tw-prose-hr);
+  margin-left: 3ch;
+}
+</style>

@@ -126,8 +126,10 @@ Word cloud visualization of the keywords in my publications
 
 <style>
 .markdown ul {
-  padding-left: 0;
   list-style: none;
+  padding-left: 4ch;
+  border-left: 1px solid var(--tw-prose-hr);
+  margin-left: 3ch;
 }
 
 .markdown ul li a:first-child {

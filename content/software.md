@@ -313,8 +313,10 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 <style>
 .markdown ul {
-  padding-left: 0;
   list-style: none;
+  padding-left: 3ch;
+  border-left: 1px solid var(--tw-prose-hr);
+  margin-left: 3ch;
 }
 
 .markdown ul li a:first-child {
