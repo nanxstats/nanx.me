@@ -8,7 +8,7 @@ menu: "main"
 <div class="float">
 <img src="/image/hex-stickers-nanxiao.png" alt="Hex sticker wall for some of my R packages.">
 <div class="figcaption">
-Hex sticker wall for some of my R packages.
+Hex sticker wall for some of my R packages
 </div>
 </div>
 
@@ -135,11 +135,11 @@ Hex sticker wall for some of my R packages.
 ### JavaScript apps
 
 - [Deep Learning GPU Selector](https://nanx.me/gpu/)\
-  Discover the best GPU for your deep learning needs by answering a few yes/no questions.\
+  Discover the best GPU for your deep learning needs by answering a few yes/no questions\
   [GitHub](https://github.com/nanxstats/gpu) |
   [Blog post](https://nanx.me/blog/post/gpu-selector/)
 - [Word Cloud Generator (Batteries Included)](https://nanx.me/wordcloud/)\
-  A fork version of Jason Davies' word cloud generator with color palette selection and updated default values.\
+  A fork version of Jason Davies' word cloud generator with color palette selection and updated default values\
   [GitHub](https://github.com/nanxstats/wordcloud) |
   [Blog post](https://nanx.me/blog/post/rethinking-word-cloud-generator/)
 
@@ -148,20 +148,20 @@ Hex sticker wall for some of my R packages.
 Shiny apps, widgets, and templates for interactive data analysis.
 
 - [shiny-loading-skeleton](https://github.com/nanxstats/shiny-loading-skeleton)\
-  Shiny app template with an animated, fully customizable skeleton loader.\
+  Shiny app template with an animated, fully customizable skeleton loader\
   [Demo](https://nanx.shinyapps.io/shiny-loading-skeleton/)
 - [shiny-fcp-loader](https://github.com/nanxstats/shiny-fcp-loader)\
-  Shiny app template with a loading screen that aims to minimize the time to first contentful paint (FCP).\
+  Shiny app template with a loading screen that aims to minimize the time to first contentful paint (FCP)\
   [Demo](https://nanx.shinyapps.io/shiny-fcp-loader/)
 - [shiny-highlight-rmarkdown](https://github.com/nanxstats/shiny-highlight-rmarkdown)\
   Syntax highlighting for R Markdown output in Shiny based on highlight.js\
   [Demo](https://nanx.shinyapps.io/shiny-highlight-rmarkdown/)
 - [exp2vec-shiny](https://github.com/nanxstats/exp2vec-shiny)\
-  Shiny app for gene neighbors and gene analogies discovery with tissue-specific gene embeddings training on GTEx data.\
+  Shiny app for gene neighbors and gene analogies discovery with tissue-specific gene embeddings training on GTEx data\
   [Demo](https://nanx.shinyapps.io/exp2vec/)
 - [bco-app](https://github.com/sbg/bco-app)\
-  Create, validate, and browse BioCompute Objects.\
-  Advanced track winner of the [precisionFDA challenge on BioCompute Objects](https://precision.fda.gov/challenges/7/results).\
+  Create, validate, and browse BioCompute Objects\
+  Advanced track winner of the [precisionFDA challenge on BioCompute Objects](https://precision.fda.gov/challenges/7/results)\
   [Documentation](https://sbg.github.io/bco-app/) |
   [Paper](https://doi.org/10.12688/f1000research.25902.1)
 - [protrweb](https://github.com/nanxstats/protrweb)\
@@ -202,7 +202,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 ## Machine learning workflows
 
 - [exp2vec](https://github.com/nanxstats/exp2vec)\
-  Workflow for training tissue-specific gene embeddings on GTEx data.
+  Workflow for training tissue-specific gene embeddings on GTEx data
 - [bcpm-msaenet](https://github.com/nanxstats/bcpm-msaenet)\
   Workflow for the [precisionFDA challenge on brain cancer predictive modeling and biomarker discovery](https://precision.fda.gov/challenges/8/results).
   The 2nd place solution by predictive performance.
@@ -214,7 +214,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
   Features a rank aggregated signal detection method for
   Vaccine Adverse Event Reporting System (VAERS) data,
   with base signal detection methods including Gamma Poisson Shrinker,
-  PRR, ROR, and BCPNN. [Website](https://nanx.me/rankv/).
+  PRR, ROR, and BCPNN.\
+  [Website](https://nanx.me/rankv/)
 - [ChromaClust](https://github.com/nanxstats/ChromaClust)\
   Image color topic modeling using
   [fastTopics](https://github.com/stephenslab/fastTopics).\
@@ -238,7 +239,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
   Unified data structure for metadata information in clinical
   analysis & reporting (A&R), leveraging the
   Analysis Data Model (ADaM) datasets for consistent and
-  accurate metadata representation.\
+  accurate metadata representation\
   [CRAN](https://cran.r-project.org/package=metalite)
 - [metalite.ae](https://github.com/Merck/metalite.ae)\
   Analyzes adverse events in clinical trials using the metalite data structure.
@@ -261,20 +262,20 @@ Shiny apps, widgets, and templates for interactive data analysis.
 ## Awesome lists and code recipes
 
 - [awesome-shiny-extensions](https://github.com/nanxstats/awesome-shiny-extensions)\
-  A curated list of R packages that offer extended UI or server components for Shiny.
+  A curated list of R packages that offer extended UI or server components for Shiny
 - [awesome-webr](https://github.com/nanxstats/awesome-webr)\
   A curated list of awesome resources for learning WebR, a version of the
-  statistical language R compiled for the browser and Node.js using WebAssembly.
+  statistical language R compiled for the browser and Node.js using WebAssembly
 - [r-base-shortcuts](https://github.com/nanxstats/r-base-shortcuts)\
-  A collection of lesser-known but powerful base R idioms and shortcuts for
-  writing concise and fast base R code.
+  A collection of lesser-known base R idioms and shortcuts for
+  writing concise and fast base R code
 - [deep-learning-recipes](https://github.com/nanxstats/deep-learning-recipes)\
-  R implementation for selected machine learning methods with deep learning frameworks.
+  R implementation for selected machine learning methods with deep learning frameworks
 
 ## Visual Studio Code extensions
 
 - [vscode-textmate-rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)\
-  A light theme for Visual Studio Code inspired by the TextMate (default) theme in RStudio IDE.\
+  A light theme for Visual Studio Code inspired by the TextMate (default) theme in RStudio IDE\
   [GitHub repository](https://github.com/nanxstats/vscode-textmate-rstheme)
 
 ## Hugo/blogdown themes
