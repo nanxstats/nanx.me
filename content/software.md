@@ -160,7 +160,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
   Shiny app for gene neighbors and gene analogies discovery with tissue-specific gene embeddings training on GTEx data.\
   [Demo](https://nanx.shinyapps.io/exp2vec/)
 - [bco-app](https://github.com/sbg/bco-app)\
-  Create, validate, and browse BioCompute Objects. Advanced track winner of the [precisionFDA challenge on BioCompute Objects](https://precision.fda.gov/challenges/7/results).\
+  Create, validate, and browse BioCompute Objects.\
+  Advanced track winner of the [precisionFDA challenge on BioCompute Objects](https://precision.fda.gov/challenges/7/results).\
   [Documentation](https://sbg.github.io/bco-app/) |
   [Paper](https://doi.org/10.12688/f1000research.25902.1)
 - [protrweb](https://github.com/nanxstats/protrweb)\
@@ -216,7 +217,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
   PRR, ROR, and BCPNN. [Website](https://nanx.me/rankv/).
 - [ChromaClust](https://github.com/nanxstats/ChromaClust)\
   Image color topic modeling using
-  [fastTopics](https://github.com/stephenslab/fastTopics).
+  [fastTopics](https://github.com/stephenslab/fastTopics).\
   The original idea was from my final project
   ([poster](https://nanx.me/posters/chromaclust-poster-hg48600.pdf))
   for the course HGEN 48600/STAT 35450.
@@ -308,3 +309,19 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 - [使用 R 和 Apache 开发 Web 应用程序](https://nanx.me/rapache/) (2011)
 - [来自 Google 的 R 语言编码风格指南](https://nanx.me/rstyle/) (2011)
+
+<style>
+.markdown ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.markdown ul li a:first-child {
+  font-size: 1.25rem;
+}
+
+.markdown ul li {
+  color: var(--tw-prose-captions);
+  font-size: 1rem;
+}
+</style>
