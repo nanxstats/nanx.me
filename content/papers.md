@@ -39,9 +39,6 @@ Word cloud visualization of the keywords in my publications
 
 ## 2022
 
-- [Asymptotic Calculations Evaluating Robustness of Power for Alternative Time-to-Event Tests: Software Innovations in Clinical Trial Design](https://ww2.amstat.org/cgi-bin/fileviewer.cfm?filename=AbstractPresentations%5Cjsm2022presentations%5C320465%2Epdf&Outputfile=320465)\
-  Keaven M. Anderson, Yujie Zhao, Nan Xiao, Yilong Zhang\
-  In *JSM Proceedings*. Alexandria, VA: American Statistical Association, 2022
 - [A Multilingual Shiny App for Drug Labelling in Worldwide Submission](https://www.pharmasug.org/proceedings/2022/AD/PharmaSUG-2022-AD-062.pdf)\
   Jinchun Zhang, Aiming Yang, Yiwen Luo, Nan Xiao, Yilong Zhang\
   PharmaSUG 2022
