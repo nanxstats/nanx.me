@@ -7,7 +7,7 @@ menu: "main"
 
 ## Typography
 
-- Body text: [Source Sans 3](https://github.com/adobe-fonts/source-sans)
+- Body text: [Hanken Grotesk](https://github.com/marcologous/hanken-grotesk) (ss01)
 - Headline: [DM Serif Text](https://github.com/googlefonts/dm-fonts)
 - Monospace: [Hasklig](https://github.com/i-tu/Hasklig)
 - Theme style: [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)

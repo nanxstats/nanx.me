@@ -36,11 +36,11 @@ menu: "main"
 }
 
 .markdown ul li a:first-child {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 </style>
