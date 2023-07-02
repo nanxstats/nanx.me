@@ -4,35 +4,18 @@ menu: "main"
 description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
-I am a statistician from [Merck & Co.](https://www.merck.com/)
-I work in the Methodology Research group led by
-[Keaven M. Anderson](https://keaven.github.io/)
-in the [Biostatistics and Research Decision Sciences](https://jobs.merck.com/bards) (BARDS) department.
-I currently serve on the
-[R Consortium Infrastructure Steering Committee](https://www.r-consortium.org/about/governance)
-as a representative of Merck & Co., as well as on the
-[R Submission Working Group](https://rconsortium.github.io/submissions-wg/).
+<p class="fs-2" style="line-height:1.5;">
+👋 Hi, I'm Nan. I build statistical software to
+help data scientists tackle real-world problems.
+</p>
 
-In my daily work, I solve challenges at the intersection of
-statistical methodology research and software architecture innovation.
-My research interests include sparse linear models,
-representation learning, and computational reproducibility.
-I build [software](https://nanx.me/software/) in R.
-My favorites include
-[msaenet](https://nanx.me/msaenet/),
-[oneclust](https://nanx.me/oneclust/),
-[liftr](https://liftr.me/),
-[ggsci](https://nanx.me/ggsci/),
-and
-[pkglite](https://merck.github.io/pkglite/).
+Whether it's developing new statistical methods, analyzing complex datasets,
+or architecting software solutions in R and Python, I thrive on confronting
+challenging problems. My deepest passion lies in creatively bridging the gap
+between statistics, computing, and human decision-making, all while
+maintaining a personal touch.
 
-Previously, I worked as a data scientist at
-[Seven Bridges](https://www.sevenbridges.com/)
-(now acquired by Summa Equity) in Boston, Massachusetts.
-Earlier in my career, I studied [human genetics](https://genes.uchicago.edu/) in
-[Matthew Stephens Lab](https://stephenslab.uchicago.edu/)
-at the University of Chicago.
-I earned my Ph.D. degree in statistics from Central South University, China.
-My thesis focused on developing statistical machine learning methods for
-high-dimensional data analysis, advised by
-[Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en).
+Read my [blog](blog/) to discover my thoughts on data science and software.
+You can also explore my [software](software/), [papers](papers/),
+[talks](talks/), and [books](books/).
+Curious about my journey? Visit my [about page](about/).

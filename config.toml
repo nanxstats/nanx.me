@@ -64,3 +64,9 @@ identifier = "books"
 name = "Books"
 url = "/books/"
 weight = 5
+
+[[menu.primary]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 6
