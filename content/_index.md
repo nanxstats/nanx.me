@@ -4,7 +4,7 @@ menu: "main"
 description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
-<p class="fs-2" style="line-height:1.5;">
+<p class="fs-2" style="font-family:var(--tw-prose-font-headings);line-height:1.4;">
 👋 Hi, I'm Nan. I build statistical software to
 help data scientists tackle real-world problems.
 </p>
