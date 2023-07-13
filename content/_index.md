@@ -10,12 +10,18 @@ help data scientists tackle real-world problems.
 </p>
 
 Whether it's developing new statistical methods, analyzing complex datasets,
-or architecting software solutions in R and Python, I thrive on confronting
-challenging problems. My deepest passion lies in creatively bridging the gap
+or architecting software solutions, I thrive on confronting
+challenging problems. My passion lies in creatively bridging the gap
 between statistics, computing, and human decision-making, all while
 maintaining a personal touch.
 
-Read my [blog](blog/) to discover my thoughts on data science and software.
-You can also explore my [software](software/), [papers](papers/),
-[talks](talks/), and [books](books/).
+Read my [blog](blog/) to discover my thoughts on data science and
+statistical software design. You can also explore my
+[software](software/), [papers](papers/), [talks](talks/), and [books](books/).
 Curious about my journey? Visit my [about page](about/).
+
+<style>
+.landing {
+    font-size: 1rem;
+}
+</style>
