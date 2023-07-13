@@ -40,6 +40,6 @@ high-dimensional data analysis, advised by
 
 <style>
 .content .markdown {
-  font-size: 1.0625rem;
+  font-size: 1.15625rem;
 }
 </style>
