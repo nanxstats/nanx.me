@@ -22,6 +22,6 @@ Curious about my journey? Visit my [about page](about/).
 
 <style>
 .landing {
-    font-size: 0.90625rem;
+    font-size: 0.875rem;
 }
 </style>
