@@ -7,8 +7,7 @@ menu: "main"
 
 ## Typography
 
-- Body text: [Source Sans 3](https://github.com/adobe-fonts/source-sans)
-- Headline: [DM Serif Text](https://github.com/googlefonts/dm-fonts)
+- Body text and headline: [Mona Sans](https://github.com/github/mona-sans)
 - Page title: [Freehand](https://github.com/danhhong/Freehand)
 - Monospace: [Hasklig](https://github.com/i-tu/Hasklig)
 - Theme style: [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)

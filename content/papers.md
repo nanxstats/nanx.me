@@ -130,11 +130,11 @@ Word cloud visualization of the keywords in my publications
 }
 
 .markdown ul li a:first-child {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 </style>
