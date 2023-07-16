@@ -15,13 +15,8 @@ challenging problems. My passion lies in creatively bridging the gap
 between statistics, computing, and human decision-making, all while
 maintaining a personal touch.
 
-Read my [blog](blog/) to discover my thoughts on data science and
-statistical software design. You can also explore my
-[software](software/), [papers](papers/), [talks](talks/), and [books](books/).
-Curious about my journey? Visit my [about page](about/).
-
 <style>
 .landing {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
 }
 </style>

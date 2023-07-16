@@ -325,6 +325,6 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 </style>
