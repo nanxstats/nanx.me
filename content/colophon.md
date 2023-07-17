@@ -8,7 +8,6 @@ menu: "main"
 ## Typography
 
 - Body text and headline: [Mona Sans](https://github.com/github/mona-sans) (ss01)
-- Page title: [Freehand](https://github.com/danhhong/Freehand)
 - Monospace: [Hasklig](https://github.com/i-tu/Hasklig)
 - Theme style: [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
