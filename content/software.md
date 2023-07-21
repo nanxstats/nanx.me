@@ -225,16 +225,25 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 ## Open source contributions
 
+- [gsDesign](https://github.com/keaven/gsDesign)\
+  Group sequential clinical trial design,
+  largely as presented in Jennison and Turnbull (2000)\
+  [CRAN](https://cran.r-project.org/package=gsDesign)
+- [gsDesign Shiny app](https://rinpharma.shinyapps.io/gsdesign/)\
+  Web application for group sequential clinical trial design\
+  [Mirror 1](https://gsdesign.shinyapps.io/prod/) |
+  [Mirror 2](https://gsdesign.shinyapps.io/devel/)
 - [gsDesign2](https://github.com/Merck/gsDesign2)\
   Group sequential design with non-constant effect\
   [CRAN](https://cran.r-project.org/package=gsDesign2)
+- [simtrial](https://github.com/Merck/simtrial)\
+  Clinical trial simulation
 - [gMCPLite](https://github.com/Merck/gMCPLite)\
   Lightweight fork of gMCP for graph-based multiple comparison procedures\
   [CRAN](https://cran.r-project.org/package=gMCPLite)
-- [gsDesign Shiny app](https://rinpharma.shinyapps.io/gsdesign/)\
-  Group sequential clinical trial design\
-  [Mirror 1](https://gsdesign.shinyapps.io/prod/) |
-  [Mirror 2](https://gsdesign.shinyapps.io/devel/)
+- [r2rtf](https://github.com/Merck/r2rtf)\
+  Create production-ready Rich Text Format (RTF) tables and figures\
+  [CRAN](https://cran.r-project.org/package=r2rtf)
 - [metalite](https://github.com/Merck/metalite)\
   Unified data structure for metadata information in clinical
   analysis & reporting (A&R), leveraging the
@@ -247,6 +256,13 @@ Shiny apps, widgets, and templates for interactive data analysis.
   and figures discussed in the adverse events analysis chapters of
   *R for Clinical Study Reports and Submission*.\
   [CRAN](https://cran.r-project.org/package=metalite.ae)
+- [boxly](https://github.com/Merck/boxly)\
+  Interactive box plot using plotly for clinical data analysis\
+  [CRAN](https://cran.r-project.org/package=boxly)
+- [forestly](https://github.com/Merck/forestly)\
+  Interactive forest plot for clinical trial safety analysis
+  using metalite, reactable, plotly, and Analysis Data Model (ADaM) datasets\
+  [CRAN](https://cran.r-project.org/package=forestly)
 - [PDXNet Portal](https://portal.pdxnetwork.org/)\
   Patient-derived xenograft (PDX) model, data, workflow, and tool discovery\
   [Paper](https://doi.org/10.1093/narcan/zcac014)
