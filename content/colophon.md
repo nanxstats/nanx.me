@@ -26,8 +26,9 @@ menu: "main"
 <style>
 .markdown ul {
   list-style: none;
-  padding-left: 3ch;
+  padding-left: 2.5ch;
   border-left: 1px solid var(--tw-prose-hr);
   margin-left: 3ch;
+  line-height: 1.875rem;
 }
 </style>
