@@ -241,6 +241,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
 - [gMCPLite](https://github.com/Merck/gMCPLite)\
   Lightweight fork of gMCP for graph-based multiple comparison procedures\
   [CRAN](https://cran.r-project.org/package=gMCPLite)
+- [gMCPShiny](https://github.com/Merck/gMCPShiny)\
+  Shiny app for graphical multiplicity control
 - [r2rtf](https://github.com/Merck/r2rtf)\
   Create production-ready Rich Text Format (RTF) tables and figures\
   [CRAN](https://cran.r-project.org/package=r2rtf)
