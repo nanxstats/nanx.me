@@ -9,6 +9,7 @@ menu: "main"
 
 - Body text and headline: [Mona Sans](https://github.com/github/mona-sans) (ss01)
 - Monospace: [Hasklig](https://github.com/i-tu/Hasklig)
+- Favicon: [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed)
 - Theme style: [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
 ## Publishing
