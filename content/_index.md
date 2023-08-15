@@ -4,9 +4,9 @@ menu: "main"
 description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
-<p style="font-family:var(--tw-prose-font-headings);font-weight:500;font-size:30px;color:var(--tw-prose-headings);line-height:1.4;">
-👋 Hi, I'm Nan. I build statistical software to
-help data scientists tackle real-world problems.
+<p style="font-family:var(--tw-prose-font-headings);font-weight:500;font-size:28px;color:var(--tw-prose-headings);line-height:1.4;">
+👋 Hi, I'm Nan. I build open source statistical software to
+help scientists tackle real-world problems.
 </p>
 
 Whether it's developing new statistical methods, analyzing complex datasets,
