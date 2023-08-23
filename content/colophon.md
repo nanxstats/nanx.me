@@ -7,7 +7,7 @@ menu: "main"
 
 ## Typography
 
-- Body text and headline: [Mona Sans](https://github.com/github/mona-sans) (ss01)
+- Body text and headline: [Instrument Sans](https://github.com/Instrument/instrument-sans)
 - Monospace: [Hasklig](https://github.com/i-tu/Hasklig)
 - Favicon: [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed)
 - Theme style: [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)
