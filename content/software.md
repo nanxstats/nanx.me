@@ -287,6 +287,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
 - [r-base-shortcuts](https://github.com/nanxstats/r-base-shortcuts)\
   A collection of lesser-known base R idioms and shortcuts for
   writing concise and fast base R code
+- [r-future-recipes](https://github.com/nanxstats/r-future-recipes)\
+  Guides and examples for the R future framework for parallel computing
 - [deep-learning-recipes](https://github.com/nanxstats/deep-learning-recipes)\
   R implementation for selected machine learning methods with deep learning frameworks
 
