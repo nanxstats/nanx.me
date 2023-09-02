@@ -228,7 +228,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
 - [gsDesign](https://github.com/keaven/gsDesign)\
   Group sequential clinical trial design,
   largely as presented in Jennison and Turnbull (2000)\
-  [CRAN](https://cran.r-project.org/package=gsDesign)
+  [CRAN](https://cran.r-project.org/package=gsDesign) |
+  [gsDesign: 15 Years of Development in 5 Minutes (4K 60fps)](https://www.youtube.com/watch?v=_ZUddQAhPFw)
 - [gsDesign Shiny app](https://rinpharma.shinyapps.io/gsdesign/)\
   Web application for group sequential clinical trial design\
   [Mirror 1](https://gsdesign.shinyapps.io/prod/) |
