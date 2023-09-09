@@ -31,7 +31,6 @@ progressively = false
 commentsrepo = "nanxstats/blog-comments"
 
 github = "nanxstats"
-mastodon = "https://fosstodon.org/@nanxstats"
 twitter = "nanxstats"
 linkedin = "nanxstats"
 colophon = "/colophon/"
