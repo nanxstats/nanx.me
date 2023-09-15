@@ -21,7 +21,7 @@ maintaining a personal touch.
 }
 
 .tagline {
-    font-family: var(--tw-prose-font-headings);
+    font-family: var(--tw-prose-font-sans-serif);
     font-weight: 500;
     font-size: 26px;
     color: var(--tw-prose-headings);
