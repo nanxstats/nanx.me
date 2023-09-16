@@ -12,7 +12,7 @@ in the [Biostatistics and Research Decision Sciences](https://jobs.merck.com/bar
 I currently serve on the R Consortium
 [Infrastructure Steering Committee](https://www.r-consortium.org/about/governance)
 as a representative of Merck & Co., as well as on the
-[R Submission Working Group](https://rconsortium.github.io/submissions-wg/).
+[R Submissions Working Group](https://rconsortium.github.io/submissions-wg/).
 
 In my daily work, I solve challenges at the intersection of
 statistical methodology research and software architecture innovation.
