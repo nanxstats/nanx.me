@@ -17,7 +17,7 @@ maintaining a personal touch.
 
 <style>
 .landing {
-    font-size: 1.125rem;
+    font-size: 1.1875rem;
 }
 
 .tagline {

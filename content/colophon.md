@@ -8,7 +8,7 @@ menu: "main"
 ## Typography
 
 - Headline: [Instrument Sans](https://nanx.me/ost/instrument-sans.html)
-- Body text: [IBM Plex Serif](https://nanx.me/ost/ibm-plex-serif.html)
+- Body text: [Source Serif 4](https://nanx.me/ost/source-serif.html)
 - Monospace: [Hasklig](https://github.com/i-tu/Hasklig)
 - Favicon: [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed)
 - Theme style: [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)
