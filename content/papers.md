@@ -14,7 +14,7 @@ Word cloud visualization of the keywords in my publications
 
 <div class="mt-4"></div>
 
-<div class="text-center">
+<div class="text-center toc">
 
 [Google Scholar](https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en) |
 [ORCID](https://orcid.org/0000-0002-0250-5673) |
@@ -128,6 +128,11 @@ Word cloud visualization of the keywords in my publications
   border-left: 1px solid var(--tw-prose-hr);
   margin-left: 3ch;
   line-height: 1.875rem;
+}
+
+.markdown ul li a, .toc a {
+  font-family: var(--tw-prose-font-sans-serif);
+  font-feature-settings: "ss01", "ss04", "ss07", "ss08", "ss09", "ss12";
 }
 
 .markdown ul li a:first-child {

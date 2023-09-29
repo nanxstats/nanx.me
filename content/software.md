@@ -14,7 +14,7 @@ Hex sticker wall for some of my R packages
 
 <div class="mt-5"></div>
 
-<div class="text-center">
+<div class="text-center toc">
 
 [R packages](#r-packages) |
 [Web applications](#web-applications) |
@@ -339,6 +339,11 @@ Shiny apps, widgets, and templates for interactive data analysis.
   border-left: 1px solid var(--tw-prose-hr);
   margin-left: 3ch;
   line-height: 1.875rem;
+}
+
+.markdown ul li a, .toc a {
+  font-family: var(--tw-prose-font-sans-serif);
+  font-feature-settings: "ss01", "ss04", "ss07", "ss08", "ss09", "ss12";
 }
 
 .markdown ul li a:first-child {

@@ -91,6 +91,11 @@ menu: "main"
   line-height: 1.875rem;
 }
 
+.markdown ul li a {
+  font-family: var(--tw-prose-font-sans-serif);
+  font-feature-settings: "ss01", "ss04", "ss07", "ss08", "ss09", "ss12";
+}
+
 .markdown ul li a:first-child {
   font-weight: 500;
   font-size: 1.125rem;
