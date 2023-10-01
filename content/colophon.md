@@ -5,6 +5,17 @@ menu: "main"
 
 *  *  *  *
 
+I launched this website in 2009, initially as a personal blog,
+before later expanding it to include a professional portfolio.
+Throughout the years, I have explored different publishing platforms:
+from WordPress and OpenScholar to hand-written HTML. My journey led me
+to adopt the static website generator: blogdown, driven by Hugo.
+
+This page lists the tools I use to build the site today.
+The entire stack is free and open source, and can be found on GitHub.
+The source code for this site itself is available at
+<https://github.com/nanxstats/nanx.me>.
+
 ## Typography
 
 {{< bootstrap-table "table table-hover table-responsive table-lg" >}}
@@ -38,6 +49,14 @@ menu: "main"
 {{< /bootstrap-table >}}
 
 <style>
+.content .markdown h2 {
+  margin-top: 2.5rem;
+}
+
+.content .markdown p {
+  font-size: 1.09375rem;
+}
+
 .table {
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: "ss01", "ss04", "ss07", "ss08", "ss09", "ss12";
