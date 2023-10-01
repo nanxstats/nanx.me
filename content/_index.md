@@ -5,7 +5,7 @@ description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
 <p class="tagline">
-👋 Hi, I'm Nan. I build open source statistical software to
+👋 Hi, I’m Nan. I build open source statistical software to
 help scientists tackle real-world problems.
 </p>
 
