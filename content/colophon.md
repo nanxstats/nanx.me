@@ -18,19 +18,19 @@ The source code for this site itself is available at
 
 ## Typography
 
-{{< bootstrap-table "table table-hover table-responsive table-lg" >}}
+{{< bootstrap-table "table table-responsive" >}}
 | Usage         | Name                                                                                     | Description                                                         |
 |---------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | Headline      | [Libre Franklin](https://github.com/impallari/Libre-Franklin)                            | Friendly and robust grotesque sans-serif typeface.                  |
 | Body text     | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  | Transitional style serif typeface optimized for readability.        |
 | Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               | Monospace font based on Source Code Pro with programming ligatures. |
-| Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) | Legible condensed humanist typeface for tight spaces.               |
-| Theme style   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        | Beautiful typographic defaults for HTML you don't control.          |
+| Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) | Legible condensed humanist typeface.                                |
+| Theme style   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        | Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
 
 ## Publishing
 
-{{< bootstrap-table "table table-hover table-responsive" >}}
+{{< bootstrap-table "table table-responsive" >}}
 | Usage      | Name                                                        | Description                                                              |
 |------------|-------------------------------------------------------------|--------------------------------------------------------------------------|
 | Generator  | [blogdown](https://github.com/rstudio/blogdown)             | Static site generator for R, driven by [Hugo](https://gohugo.io/).       |
@@ -40,7 +40,7 @@ The source code for this site itself is available at
 
 ## Editing
 
-{{< bootstrap-table "table table-hover table-responsive" >}}
+{{< bootstrap-table "table table-responsive" >}}
 | Usage         | Name                                                                                               | Description                                                            |
 |---------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
 | Editor        | [Visual Studio Code](https://code.visualstudio.com/)                                               | Code editor from Microsoft.                                            |
@@ -59,14 +59,11 @@ The source code for this site itself is available at
 
 .table {
   font-family: var(--tw-prose-font-sans-serif);
+  font-size: 0.875rem;
 }
 
 .table tr {
   border-color: var(--tw-prose-hr);
-}
-
-.table-hover tbody tr:hover td {
-  background-color: #f1f5f9;
 }
 
 .table td {
