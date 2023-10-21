@@ -21,7 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-hover table-responsive table-lg" >}}
 | Usage         | Name                                                                                     | Description                                                         |
 |---------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Headline      | [Instrument Sans](https://nanx.me/ost/instrument-sans.html)                              | Contemporary and versatile neo-grotesque sans-serif typeface.       |
+| Headline      | [Libre Franklin](https://github.com/impallari/Libre-Franklin)                            | Friendly and robust grotesque sans-serif typeface.                  |
 | Body text     | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  | Transitional style serif typeface optimized for readability.        |
 | Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               | Monospace font based on Source Code Pro with programming ligatures. |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) | Legible condensed humanist typeface for tight spaces.               |
@@ -59,7 +59,6 @@ The source code for this site itself is available at
 
 .table {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss04", "ss07", "ss08", "ss09", "ss12";
 }
 
 .table tr {

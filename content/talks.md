@@ -93,7 +93,6 @@ menu: "main"
 
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss04", "ss07", "ss08", "ss09", "ss12";
 }
 
 .markdown ul li a:first-child {
