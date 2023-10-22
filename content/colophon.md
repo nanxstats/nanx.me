@@ -21,7 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 | Usage         | Name                                                                                     | Description                                                         |
 |---------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Headline      | [Libre Franklin](https://github.com/impallari/Libre-Franklin)                            | Friendly and robust grotesque sans-serif typeface.                  |
+| Headline      | [Figtree](https://nanx.me/ost/figtree.html)                                              | Friendly and simple geometric sans serif typeface.                  |
 | Body text     | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  | Transitional style serif typeface optimized for readability.        |
 | Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               | Monospace font based on Source Code Pro with programming ligatures. |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) | Legible condensed humanist typeface.                                |
