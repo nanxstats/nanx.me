@@ -25,7 +25,7 @@ The source code for this site itself is available at
 | Body text     | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  | Transitional style serif typeface optimized for readability.        |
 | Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               | Monospace font based on Source Code Pro with programming ligatures. |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) | Legible condensed humanist typeface.                                |
-| Theme style   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        | Beautiful typographic defaults.                                     |
+| Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        | Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
 
 ## Publishing
@@ -59,7 +59,7 @@ The source code for this site itself is available at
 
 .table {
   font-family: var(--tw-prose-font-sans-serif);
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .table tr {
@@ -75,13 +75,13 @@ The source code for this site itself is available at
   padding-left: 1px;
 }
 
-@media (min-width: 540px) {
-  .table td:nth-child(1), table th:nth-child(1) {
-    min-width: 15ch;
-  }
+.table td:nth-child(1),
+table th:nth-child(1) {
+  width: 25%;
+}
 
-  .table td:nth-child(2), table th:nth-child(2) {
-    min-width: 20ch;
-  }
+.table td:nth-child(2),
+table th:nth-child(2) {
+  width: 25%;
 }
 </style>
