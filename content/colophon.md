@@ -19,33 +19,33 @@ The source code for this site itself is available at
 ## Typography
 
 {{< bootstrap-table "table table-responsive" >}}
-| Usage         | Name                                                                                     | Description                                                         |
-|---------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Headline      | [Figtree](https://nanx.me/ost/figtree.html)                                              | Friendly and simple geometric sans serif typeface.                  |
-| Body text     | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  | Transitional style serif typeface optimized for readability.        |
-| Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               | Monospace font based on Source Code Pro with programming ligatures. |
-| Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) | Legible condensed humanist typeface.                                |
-| Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        | Beautiful typographic defaults.                                     |
+| Usage         | Name                                                                                                                                                              |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Headline      | [Figtree](https://nanx.me/ost/figtree.html)                                              <br> Friendly and simple geometric sans serif typeface.                  |
+| Body text     | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  <br> Transitional style serif typeface optimized for readability.        |
+| Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               <br> Monospace font based on Source Code Pro with programming ligatures. |
+| Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
+| Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
 
 ## Publishing
 
 {{< bootstrap-table "table table-responsive" >}}
-| Usage      | Name                                                        | Description                                                              |
-|------------|-------------------------------------------------------------|--------------------------------------------------------------------------|
-| Generator  | [blogdown](https://github.com/rstudio/blogdown)             | Static site generator for R, driven by [Hugo](https://gohugo.io/).       |
-| Theme      | [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023) | Responsive Hugo theme built on [Bootstrap 5](https://getbootstrap.com/). |
-| Commenting | [utterances](https://utteranc.es/)                          | Lightweight commenting system using GitHub issues.                       |
+| Usage      | Name                                                                                                                                      |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Generator  | [blogdown](https://github.com/rstudio/blogdown)             <br> Static site generator for R, driven by [Hugo](https://gohugo.io/).       |
+| Theme      | [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023) <br> Responsive Hugo theme built on [Bootstrap 5](https://getbootstrap.com/). |
+| Commenting | [utterances](https://utteranc.es/)                          <br> Lightweight commenting system using GitHub issues.                       |
 {{< /bootstrap-table >}}
 
 ## Editing
 
 {{< bootstrap-table "table table-responsive" >}}
-| Usage         | Name                                                                                               | Description                                                            |
-|---------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| Editor        | [Visual Studio Code](https://code.visualstudio.com/)                                               | Code editor from Microsoft.                                            |
-| Extension     | [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)                | R language support in VS Code.                                         |
-| Theme         | [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme) | Light VS Code theme optimized for R and R Markdown syntax highlighting.|
+| Usage         | Name                                                                                                                                                                            |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Editor        | [Visual Studio Code](https://code.visualstudio.com/)                                               <br> Code editor from Microsoft.                                             |
+| Extension     | [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)                <br> R language support in VS Code.                                          |
+| Theme         | [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme) <br> Light VS Code theme optimized for R and R Markdown syntax highlighting. |
 {{< /bootstrap-table >}}
 
 <style>
@@ -69,6 +69,7 @@ The source code for this site itself is available at
 .table td {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  line-height: 2rem;
 }
 
 .table>:not(caption)>*>* {
@@ -77,11 +78,6 @@ The source code for this site itself is available at
 
 .table td:nth-child(1),
 table th:nth-child(1) {
-  width: 25%;
-}
-
-.table td:nth-child(2),
-table th:nth-child(2) {
-  width: 25%;
+  width: 20%;
 }
 </style>
