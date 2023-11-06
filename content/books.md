@@ -8,7 +8,7 @@ menu: "main"
 ## Bookdown and Quarto book projects
 
 - [R for Clinical Study Reports and Submission](https://r4csr.org/)\
-  Prepare tables, listings, and figures for clinical study report and submit to regulatory agencies
+  Prepare tables, listings, and figures for clinical study report and submission
 - [Group Sequential Design Web Interface](https://keaven.github.io/gsd-shiny/)\
   Technical manual of the group sequential design web interface
 - [Group Sequential Design Under Non-Proportional Hazards](https://keaven.github.io/gsd-deming/)\

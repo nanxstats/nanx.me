@@ -21,8 +21,8 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 | Usage         | Name                                                                                                                                                              |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Headline      | [Figtree](https://nanx.me/ost/figtree.html)                                              <br> Friendly and simple geometric sans serif typeface.                  |
-| Body text     | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  <br> Transitional style serif typeface optimized for readability.        |
+| Headline      | [DM Sans](https://nanx.me/ost/dm-sans.html)                                              <br> Low-contrast geometric sans serif typeface.                         |
+| Body text     | [Besley](https://nanx.me/ost/besley.html)                                                <br> Contemporary antique slab serif typeface.                           |
 | Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               <br> Monospace font based on Source Code Pro with programming ligatures. |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
@@ -54,7 +54,7 @@ The source code for this site itself is available at
 }
 
 .content .markdown p {
-  font-size: 1.09375rem;
+  font-size: 1rem;
 }
 
 .table {
