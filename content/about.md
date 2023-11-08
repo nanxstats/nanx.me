@@ -29,7 +29,7 @@ and
 
 Previously, I worked as a data scientist at
 [Seven Bridges](https://www.sevenbridges.com/)
-(now acquired by Summa Equity) in Boston, Massachusetts.
+(now acquired by Summa Equity) in Boston, MA.
 Earlier in my career, I studied [human genetics](https://genes.uchicago.edu/) in
 [Matthew Stephens Lab](https://stephenslab.uchicago.edu/)
 at the University of Chicago.
@@ -40,6 +40,6 @@ high-dimensional data analysis, advised by
 
 <style>
 .content .markdown {
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
 }
 </style>
