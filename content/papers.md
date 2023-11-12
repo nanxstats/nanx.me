@@ -8,7 +8,9 @@ menu: "main"
 <div class="float">
 <img src="/image/wordcloud.png" alt="Word cloud visualization of the keywords in my publications.">
 <div class="figcaption">
-Word cloud visualization of the keywords in my publications
+Word cloud visualization of the keywords in my publications.
+
+[How to make it](https://nanx.me/blog/post/research-word-cloud/).
 </div>
 </div>
 
