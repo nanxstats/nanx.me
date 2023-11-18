@@ -134,6 +134,7 @@ Word cloud visualization of the keywords in my publications.
 
 .markdown ul li a, .toc a {
   font-family: var(--tw-prose-font-sans-serif);
+  font-feature-settings: "ss03";
 }
 
 .markdown ul li a:first-child {
