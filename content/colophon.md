@@ -21,9 +21,9 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 | Usage         | Name                                                                                                                                                              |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Headline      | [DM Sans](https://nanx.me/ost/dm-sans.html)                                              <br> Low-contrast geometric sans serif typeface.                         |
-| Body text     | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  <br> Transitional style serif typeface optimized for readability.        |
-| Code          | [IBM Plex Mono](https://nanx.me/ost/ibm-plex-mono.html)                                  <br> Monospace font to show code snippets.                               |
+| Headline      | [IBM Plex Sans](https://nanx.me/ost/ibm-plex-sans.html)                                  <br> Grotesque sans-serif typeface inspired by Franklin Gothic.          |
+| Body text     | [IBM Plex Serif](https://nanx.me/ost/ibm-plex-serif.html)                                <br> Transitional style serif typeface inspired by Bodoni and Janson.    |
+| Code          | [IBM Plex Mono](https://nanx.me/ost/ibm-plex-mono.html)                                  <br> Monospaced typeface based on IBM Plex Sans.                         |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
@@ -54,11 +54,11 @@ The source code for this site itself is available at
 }
 
 .content .markdown p {
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
 }
 
 .table {
-  font-size: 1rem;
+  font-size: 0.9375rem;
 }
 
 .table tr {
