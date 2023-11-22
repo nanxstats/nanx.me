@@ -21,8 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 | Usage         | Name                                                                                                                                                              |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Headline      | [IBM Plex Sans](https://nanx.me/ost/ibm-plex-sans.html)                                  <br> Grotesque sans-serif typeface inspired by Franklin Gothic.          |
-| Body text     | [IBM Plex Serif](https://nanx.me/ost/ibm-plex-serif.html)                                <br> Transitional style serif typeface inspired by Bodoni and Janson.    |
+| Text          | [IBM Plex Sans](https://nanx.me/ost/ibm-plex-sans.html)                                  <br> Grotesque sans-serif typeface inspired by Franklin Gothic.          |
 | Code          | [IBM Plex Mono](https://nanx.me/ost/ibm-plex-mono.html)                                  <br> Monospaced typeface based on IBM Plex Sans.                         |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
@@ -54,11 +53,11 @@ The source code for this site itself is available at
 }
 
 .content .markdown p {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
 }
 
 .table {
-  font-size: 0.9375rem;
+  font-size: 1rem;
 }
 
 .table tr {
