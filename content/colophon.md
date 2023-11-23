@@ -19,7 +19,7 @@ The source code for this site itself is available at
 ## Typography
 
 {{< bootstrap-table "table table-responsive" >}}
-| Usage         | Name                                                                                                                                                              |
+|               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text          | [IBM Plex Sans](https://nanx.me/ost/ibm-plex-sans.html)                                  <br> Grotesque sans-serif typeface inspired by Franklin Gothic.          |
 | Code          | [IBM Plex Mono](https://nanx.me/ost/ibm-plex-mono.html)                                  <br> Monospaced typeface based on IBM Plex Sans.                         |
@@ -30,7 +30,7 @@ The source code for this site itself is available at
 ## Publishing
 
 {{< bootstrap-table "table table-responsive" >}}
-| Usage      | Name                                                                                                                                      |
+|            |                                                                                                                                           |
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Generator  | [blogdown](https://github.com/rstudio/blogdown)             <br> Static site generator for R, driven by [Hugo](https://gohugo.io/).       |
 | Theme      | [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023) <br> Responsive Hugo theme built on [Bootstrap 5](https://getbootstrap.com/). |
@@ -40,7 +40,7 @@ The source code for this site itself is available at
 ## Editing
 
 {{< bootstrap-table "table table-responsive" >}}
-| Usage         | Name                                                                                                                                                                            |
+|               |                                                                                                                                                                                 |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Editor        | [Visual Studio Code](https://code.visualstudio.com/)                                               <br> Code editor from Microsoft.                                             |
 | Extension     | [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)                <br> R language support in VS Code.                                          |
