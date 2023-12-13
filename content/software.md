@@ -238,7 +238,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
   Group sequential design with non-constant effect\
   [CRAN](https://cran.r-project.org/package=gsDesign2)
 - [simtrial](https://github.com/Merck/simtrial)\
-  Clinical trial simulation
+  Clinical trial simulation\
+  [CRAN](https://cran.r-project.org/package=simtrial)
 - [gMCPLite](https://github.com/Merck/gMCPLite)\
   Lightweight fork of gMCP for graph-based multiple comparison procedures\
   [CRAN](https://cran.r-project.org/package=gMCPLite)
