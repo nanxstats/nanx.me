@@ -347,12 +347,12 @@ Shiny apps, widgets, and templates for interactive data analysis.
 }
 
 .markdown ul li a:first-child {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.125rem;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 </style>
