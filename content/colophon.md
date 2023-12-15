@@ -21,7 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text          | [STIX Two Text](https://fonts.google.com/specimen/STIX+Two+Text)                         <br> Transitional serif typeface.                                        |
+| Text          | [STIX Two Text](https://nanx.me/ost/stix-two-text.html)                                  <br> Transitional serif typeface.                                        |
 | Code          | [Commit Mono](https://nanx.me/ost/commit-mono.html)                                      <br> Anonymous and neutral coding font.                                  |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
@@ -44,7 +44,7 @@ The source code for this site itself is available at
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Editor        | [Visual Studio Code](https://code.visualstudio.com/)                                               <br> Code editor from Microsoft.                                             |
 | Extension     | [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)                <br> R language support in VS Code.                                          |
-| Theme         | [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme) <br> Light VS Code theme optimized for R and R Markdown syntax highlighting. |
+| Theme         | [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme) <br> Light VS Code theme optimized for R and R Markdown.                     |
 {{< /bootstrap-table >}}
 
 <style>
@@ -57,7 +57,7 @@ The source code for this site itself is available at
 }
 
 .table {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
 }
 
 .table tr {
