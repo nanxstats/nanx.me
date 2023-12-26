@@ -20,7 +20,8 @@ Word cloud visualization of the keywords in my publications.
 
 [Google Scholar](https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en) |
 [ORCID](https://orcid.org/0000-0002-0250-5673) |
-[ResearchGate](https://www.researchgate.net/profile/Nan-Xiao-9)
+[ResearchGate](https://www.researchgate.net/profile/Nan-Xiao-9) |
+[Download BibTeX file](nanx.bib)
 
 [2023](#2023) | [2022](#2022) | [2021](#2021) | [2020](#2020) |
 [2019](#2019) | [2018](#2018) | [2017](#2017) | [2016](#2016) | [2015](#2015)
