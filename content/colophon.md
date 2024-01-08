@@ -21,8 +21,9 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text          | [STIX Two Text](https://nanx.me/ost/stix-two-text.html)                                  <br> Transitional serif typeface.                                        |
-| Code          | [Commit Mono](https://nanx.me/ost/commit-mono.html)                                      <br> Anonymous and neutral coding font.                                  |
+| Headings      | [Source Sans 3](https://nanx.me/ost/source-sans.html)                                    <br> Humanist sans-serif typeface.                                       |
+| Text          | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  <br> Transitional style serif typeface.                                  |
+| Code          | [JetBrains Mono](https://nanx.me/ost/jetbrains-mono.html)                                <br> Monospaced typeface made for developers.                            |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
@@ -53,7 +54,7 @@ The source code for this site itself is available at
 }
 
 .content .markdown p {
-  font-size: 1.1875rem;
+  font-size: 1.125rem;
 }
 
 .table {
