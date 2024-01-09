@@ -21,7 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Headings      | [Source Sans 3](https://nanx.me/ost/source-sans.html)                                    <br> Humanist sans-serif typeface.                                       |
+| Headings      | [Mona Sans](https://nanx.me/ost/mona-sans.html)                                          <br> Grotesque sans-serif typeface.                                      |
 | Text          | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  <br> Transitional style serif typeface.                                  |
 | Code          | [JetBrains Mono](https://nanx.me/ost/jetbrains-mono.html)                                <br> Monospaced typeface made for developers.                            |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
