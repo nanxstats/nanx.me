@@ -18,6 +18,8 @@ maintaining a personal touch.
 <style>
 .landing {
     font-size: 0.9375rem;
+    font-family: var(--tw-prose-font-sans-serif);
+    font-feature-settings: "ss01";
 }
 
 .tagline {
