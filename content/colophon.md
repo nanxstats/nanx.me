@@ -23,7 +23,7 @@ The source code for this site itself is available at
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Headings      | [Mona Sans](https://nanx.me/ost/mona-sans.html)                                          <br> Grotesque sans-serif typeface.                                      |
 | Text          | [Source Serif 4](https://nanx.me/ost/source-serif.html)                                  <br> Transitional style serif typeface.                                  |
-| Code          | [JetBrains Mono](https://nanx.me/ost/jetbrains-mono.html)                                <br> Monospaced typeface made for developers.                            |
+| Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               <br> Source Code Pro with programming ligatures.                         |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
