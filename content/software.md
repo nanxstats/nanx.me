@@ -344,7 +344,6 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 .markdown ul li a, .toc a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01";
   font-size: 1rem;
 }
 

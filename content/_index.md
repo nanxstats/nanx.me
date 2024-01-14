@@ -17,14 +17,13 @@ maintaining a personal touch.
 
 <style>
 .landing {
+    font-family: var(--tw-prose-font-serif);
+    font-weight: 450;
     font-size: 0.9375rem;
-    font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "ss01";
 }
 
 .tagline {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "ss01";
     font-weight: 600;
     font-size: 27px;
     color: var(--tw-prose-headings);
