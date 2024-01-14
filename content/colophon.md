@@ -23,7 +23,7 @@ The source code for this site itself is available at
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Headings      | [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)                       <br> Humanist sans serif typeface.                                       |
 | Text          | [STIX Two Text](https://nanx.me/ost/stix-two-text.html)                                  <br> Transitional style serif typeface.                                  |
-| Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               <br> Source Code Pro with programming ligatures.                         |
+| Code          | [Roboto Mono](https://nanx.me/ost/roboto-mono.html)                                      <br> Monospace font from the Roboto type family.                         |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
