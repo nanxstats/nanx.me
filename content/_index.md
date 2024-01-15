@@ -6,7 +6,7 @@ description: "Personal website of Nan Xiao; 肖楠的个人网站"
 
 <p class="tagline">
 👋 Hi, I’m Nan. I build open source statistical software to
-help scientists tackle real-world problems.
+help scientists solve real-world problems.
 </p>
 
 Whether it's developing new statistical methods, analyzing complex datasets,
@@ -24,8 +24,8 @@ maintaining a personal touch.
 
 .tagline {
     font-family: var(--tw-prose-font-sans-serif);
-    font-weight: 600;
-    font-size: 27px;
+    font-weight: 200;
+    font-size: 30px;
     color: var(--tw-prose-headings);
     line-height: 1.4;
 }

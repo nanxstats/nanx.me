@@ -21,9 +21,9 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Headings      | [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)                       <br> Humanist sans serif typeface.                                       |
+| Headings      | [Inter](https://nanx.me/ost/inter.html)                                                  <br> Neo-grotesque sans serif typeface.                                  |
 | Text          | [STIX Two Text](https://nanx.me/ost/stix-two-text.html)                                  <br> Transitional style serif typeface.                                  |
-| Code          | [Roboto Mono](https://nanx.me/ost/roboto-mono.html)                                      <br> Monospace font from the Roboto type family.                         |
+| Code          | [IBM Plex Mono](https://nanx.me/ost/ibm-plex-mono.html)                                  <br> Monospaced typeface based on IBM Plex Sans.                         |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
