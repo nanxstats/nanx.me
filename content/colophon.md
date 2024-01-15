@@ -59,7 +59,7 @@ The source code for this site itself is available at
 
 .table {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 450;
+  font-weight: 400;
   font-size: 1rem;
 }
 
@@ -79,6 +79,8 @@ The source code for this site itself is available at
 
 .table td:nth-child(1),
 table th:nth-child(1) {
-  width: 20%;
+  font-family: var(--tw-prose-font-sans-serif);
+  font-weight: 550;
+  width: 30%;
 }
 </style>
