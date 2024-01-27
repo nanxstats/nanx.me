@@ -23,7 +23,7 @@ The source code for this site itself is available at
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Headings      | [Inter](https://nanx.me/ost/inter.html)                                                  <br> Neo-grotesque sans serif typeface.                                  |
 | Text          | [STIX Two Text](https://nanx.me/ost/stix-two-text.html)                                  <br> Transitional style serif typeface.                                  |
-| Code          | [IBM Plex Mono](https://nanx.me/ost/ibm-plex-mono.html)                                  <br> Monospaced typeface based on IBM Plex Sans.                         |
+| Code          | [Inconsolata](https://nanx.me/ost/inconsolata.html)                                      <br> Humanist monospaced typeface influenced by Consolas.                |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
