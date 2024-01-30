@@ -96,7 +96,7 @@ menu: "main"
 }
 
 .markdown ul li a:first-child {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
 }
 

@@ -348,7 +348,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 }
 
 .markdown ul li a:first-child {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
 }
 

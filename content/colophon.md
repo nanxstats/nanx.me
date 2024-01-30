@@ -21,7 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Headings      | [Inter](https://nanx.me/ost/inter.html)                                                  <br> Neo-grotesque sans serif typeface.                                  |
+| Headings      | [Rubik](https://fonts.google.com/specimen/Rubik)                                         <br> Neutral, humanist sans serif typeface.                              |
 | Text          | [STIX Two Text](https://nanx.me/ost/stix-two-text.html)                                  <br> Transitional style serif typeface.                                  |
 | Code          | [Inconsolata](https://nanx.me/ost/inconsolata.html)                                      <br> Humanist monospaced typeface influenced by Consolas.                |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
@@ -80,7 +80,7 @@ The source code for this site itself is available at
 .table td:nth-child(1),
 table th:nth-child(1) {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 600;
+  font-weight: 500;
   width: 30%;
 }
 </style>
