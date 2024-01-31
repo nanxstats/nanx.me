@@ -17,8 +17,8 @@ maintaining a personal touch.
 
 <style>
 .landing {
-    font-family: var(--tw-prose-font-serif);
-    font-weight: 450;
+    font-family: var(--tw-prose-font-sans-serif);
+    font-weight: 400;
     font-size: 0.9375rem;
 }
 
