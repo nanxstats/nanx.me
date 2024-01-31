@@ -21,7 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Headings      | [Rubik](https://fonts.google.com/specimen/Rubik)                                         <br> Neutral, humanist sans serif typeface.                              |
+| Headings      | [FiraGO](https://github.com/bBoxType/FiraGO)                                             <br> Legible humanist sans serif typeface.                               |
 | Text          | [STIX Two Text](https://nanx.me/ost/stix-two-text.html)                                  <br> Transitional style serif typeface.                                  |
 | Code          | [Inconsolata](https://nanx.me/ost/inconsolata.html)                                      <br> Humanist monospaced typeface influenced by Consolas.                |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
