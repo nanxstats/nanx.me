@@ -21,9 +21,8 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Headings      | [FiraGO](https://github.com/bBoxType/FiraGO)                                             <br> Legible humanist sans serif typeface.                               |
-| Text          | [STIX Two Text](https://nanx.me/ost/stix-two-text.html)                                  <br> Transitional style serif typeface.                                  |
-| Code          | [Inconsolata](https://nanx.me/ost/inconsolata.html)                                      <br> Humanist monospaced typeface influenced by Consolas.                |
+| Text          | [Spline Sans](https://github.com/SorkinType/SplineSans)                                  <br> Grotesque sans serif typeface.                                      |
+| Code          | [Spline Sans Mono](https://github.com/SorkinType/SplineSansMono)                         <br> Grotesque monospaced typeface.                                      |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
