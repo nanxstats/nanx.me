@@ -21,8 +21,8 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text          | [Spline Sans](https://github.com/SorkinType/SplineSans)                                  <br> Grotesque sans serif typeface.                                      |
-| Code          | [Spline Sans Mono](https://github.com/SorkinType/SplineSansMono)                         <br> Grotesque monospaced typeface.                                      |
+| Text          | [Spline Sans](https://nanx.me/ost/spline-sans.html)                                      <br> Grotesque sans serif typeface.                                      |
+| Code          | [Spline Sans Mono](https://nanx.me/ost/spline-sans-mono.html)                            <br> Grotesque monospaced typeface.                                      |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
