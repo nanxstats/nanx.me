@@ -21,8 +21,9 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text          | [Spline Sans](https://nanx.me/ost/spline-sans.html)                                      <br> Grotesque sans serif typeface.                                      |
-| Code          | [Spline Sans Mono](https://nanx.me/ost/spline-sans-mono.html)                            <br> Grotesque monospaced typeface.                                      |
+| Heading       | [Geologica](https://fonts.google.com/specimen/Geologica)                                 <br> Sober humanist sans serif with a rational finish.                   |
+| Text          | [Roboto Serif](https://nanx.me/ost/roboto-serif.html)                                    <br> Serif designed for comfortable reading on screen.                   |
+| Code          | [IBM Plex Mono](https://nanx.me/ost/ibm-plex-mono.html)                                  <br> Monospaced typeface based on IBM Plex Sans.                         |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
@@ -53,12 +54,12 @@ The source code for this site itself is available at
 }
 
 .content .markdown p {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .table {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1rem;
 }
 
@@ -79,7 +80,7 @@ The source code for this site itself is available at
 .table td:nth-child(1),
 table th:nth-child(1) {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 500;
+  font-weight: 300;
   width: 30%;
 }
 </style>
