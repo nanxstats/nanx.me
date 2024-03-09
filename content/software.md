@@ -341,6 +341,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 400;
   font-size: 1rem;
+  letter-spacing: -0.03em;
 }
 
 .markdown ul li a:first-child {

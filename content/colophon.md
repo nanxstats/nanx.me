@@ -61,6 +61,7 @@ The source code for this site itself is available at
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 400;
   font-size: 1rem;
+  letter-spacing: -0.03em;
 }
 
 .table tr {
@@ -81,6 +82,7 @@ The source code for this site itself is available at
 table th:nth-child(1) {
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 550;
+  letter-spacing: -0.03em;
   width: 30%;
 }
 </style>
