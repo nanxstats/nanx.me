@@ -38,13 +38,13 @@ menu: "main"
 
 .markdown ul li a:first-child {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 0.9375rem;
+  font-size: 1rem;
   padding: 0.5rem 0;
 }
 </style>

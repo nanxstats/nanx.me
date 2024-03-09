@@ -135,18 +135,18 @@ Word cloud visualization of the keywords in my publications.
 
 .markdown ul li a, .toc a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
 }
 
 .markdown ul li a:first-child {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 0.9375rem;
+  font-size: 1rem;
   padding: 0.5rem 0;
 }
 </style>
