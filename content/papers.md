@@ -137,7 +137,8 @@ Word cloud visualization of the keywords in my publications.
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 400;
   font-size: 1rem;
-  letter-spacing: -0.03em;
+  font-feature-settings: "ss02", "ss05";
+  letter-spacing: -0.01em;
 }
 
 .markdown ul li a:first-child {

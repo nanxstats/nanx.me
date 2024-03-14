@@ -21,7 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Heading       | [Work Sans](https://github.com/weiweihuanghuang/Work-Sans)                               <br> Friendly sans serif inspired by early grotesques.                   |
+| Heading       | [Albert Sans](https://github.com/usted/Albert-Sans)                                      <br> Modern geometric sans serif typeface.                               |
 | Text          | [Source Serif](https://nanx.me/ost/source-serif.html)                                    <br> Transitional style serif designed for readability.                  |
 | Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               <br> Source Code Pro with programming ligatures.                         |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
@@ -61,7 +61,8 @@ The source code for this site itself is available at
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 400;
   font-size: 1rem;
-  letter-spacing: -0.03em;
+  font-feature-settings: "ss02", "ss05";
+  letter-spacing: -0.01em;
 }
 
 .table tr {
@@ -82,7 +83,8 @@ The source code for this site itself is available at
 table th:nth-child(1) {
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 550;
-  letter-spacing: -0.03em;
+  font-feature-settings: "ss02", "ss05";
+  letter-spacing: -0.01em;
   width: 30%;
 }
 </style>
