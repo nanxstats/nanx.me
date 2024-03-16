@@ -22,8 +22,8 @@ The source code for this site itself is available at
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Heading       | [Albert Sans](https://github.com/usted/Albert-Sans)                                      <br> Modern geometric sans serif typeface.                               |
-| Text          | [Source Serif](https://nanx.me/ost/source-serif.html)                                    <br> Transitional style serif designed for readability.                  |
-| Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               <br> Source Code Pro with programming ligatures.                         |
+| Text          | [Castoro](https://github.com/TiroTypeworks/Castoro) + [STIX Two Text](https://nanx.me/ost/stix-two-text.html) <br> Transitional style serif.                      |
+| Code          | [Ligalex Mono](https://github.com/ToxicFrog/Ligaturizer)                                 <br> IBM Plex Mono with programming ligatures.                           |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
 {{< /bootstrap-table >}}
