@@ -135,7 +135,7 @@ Word cloud visualization of the keywords in my publications.
 
 .markdown ul li a, .toc a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 400;
+  font-weight: 450;
   font-size: 1rem;
   font-feature-settings: "ss02", "ss05";
   letter-spacing: -0.01em;
