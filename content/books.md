@@ -40,8 +40,7 @@ menu: "main"
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 500;
   font-size: 1rem;
-  font-feature-settings: "ss02", "ss05";
-  letter-spacing: -0.01em;
+  font-feature-settings: "ss03";
 }
 
 .markdown ul li {

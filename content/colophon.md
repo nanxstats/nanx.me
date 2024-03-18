@@ -21,11 +21,11 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Heading       | [Albert Sans](https://nanx.me/ost/albert-sans.html)                                      <br> Modern geometric sans serif typeface.                               |
-| Text          | [Castoro](https://nanx.me/ost/castoro.html) + [STIX Two Text](https://nanx.me/ost/stix-two-text.html) <br> Transitional style serif.                              |
-| Code          | [Ligalex Mono](https://github.com/ToxicFrog/Ligaturizer)                                 <br> IBM Plex Mono with programming ligatures.                           |
-| Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface.                                |
-| Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults.                                     |
+| Heading       | [DM Sans](https://nanx.me/ost/dm-sans.html)                                              <br> Geometric sans serif typeface                                       |
+| Text          | [Castoro](https://nanx.me/ost/castoro.html) + [STIX Two Text](https://nanx.me/ost/stix-two-text.html) <br> Transitional style serif typefaces                     |
+| Code          | [Ligalex Mono](https://github.com/ToxicFrog/Ligaturizer)                                 <br> IBM Plex Mono with programming ligatures                            |
+| Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                 |
+| Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                      |
 {{< /bootstrap-table >}}
 
 ## Publishing
@@ -33,9 +33,9 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |            |                                                                                                                                           |
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Generator  | [blogdown](https://github.com/rstudio/blogdown)             <br> Static site generator for R, driven by [Hugo](https://gohugo.io/).       |
-| Theme      | [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023) <br> Responsive Hugo theme built on [Bootstrap 5](https://getbootstrap.com/). |
-| Commenting | [utterances](https://utteranc.es/)                          <br> Lightweight commenting system using GitHub issues.                       |
+| Generator  | [blogdown](https://github.com/rstudio/blogdown)             <br> Static site generator for R, driven by [Hugo](https://gohugo.io/)        |
+| Theme      | [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023) <br> Responsive Hugo theme built on [Bootstrap 5](https://getbootstrap.com/)  |
+| Commenting | [utterances](https://utteranc.es/)                          <br> Lightweight commenting system using GitHub issues                        |
 {{< /bootstrap-table >}}
 
 ## Editing
@@ -43,9 +43,9 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                                 |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Editor        | [Visual Studio Code](https://code.visualstudio.com/)                                               <br> Code editor from Microsoft.                                             |
-| Extension     | [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)                <br> R language support in VS Code.                                          |
-| Theme         | [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme) <br> Light VS Code theme optimized for R and R Markdown.                     |
+| Editor        | [Visual Studio Code](https://code.visualstudio.com/)                                               <br> Code editor from Microsoft                                              |
+| Extension     | [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)                <br> R language support in VS Code                                           |
+| Theme         | [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme) <br> Light VS Code theme optimized for R and R Markdown                      |
 {{< /bootstrap-table >}}
 
 <style>
@@ -61,8 +61,7 @@ The source code for this site itself is available at
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 450;
   font-size: 1rem;
-  font-feature-settings: "ss02", "ss05";
-  letter-spacing: -0.01em;
+  font-feature-settings: "ss03";
 }
 
 .table tr {
@@ -82,9 +81,8 @@ The source code for this site itself is available at
 .table td:nth-child(1),
 table th:nth-child(1) {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 550;
-  font-feature-settings: "ss02", "ss05";
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  font-feature-settings: "ss03";
   width: 30%;
 }
 </style>
