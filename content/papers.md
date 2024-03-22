@@ -133,16 +133,23 @@ Word cloud visualization of the keywords in my publications.
   line-height: 1.875rem;
 }
 
-.markdown ul li a, .toc a {
+.toc a {
+  font-family: var(--tw-prose-font-sans-serif);
+  font-weight: 450;
+  font-size: 1.125rem;
+  font-feature-settings: "ss03", "ss05";
+}
+
+.markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 450;
   font-size: 1rem;
-  font-feature-settings: "ss03";
+  font-feature-settings: "ss03", "ss05";
 }
 
 .markdown ul li a:first-child {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.0625rem;
 }
 
 .markdown ul li {

@@ -39,8 +39,8 @@ menu: "main"
 .markdown ul li a:first-child {
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 500;
-  font-size: 1rem;
-  font-feature-settings: "ss03";
+  font-size: 1.0625rem;
+  font-feature-settings: "ss03", "ss05";
 }
 
 .markdown ul li {

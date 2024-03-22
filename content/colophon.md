@@ -21,8 +21,8 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Heading       | [DM Sans](https://nanx.me/ost/dm-sans.html)                                              <br> Geometric sans serif typeface                                       |
-| Text          | [Castoro](https://nanx.me/ost/castoro.html) + [STIX Two Text](https://nanx.me/ost/stix-two-text.html) <br> Transitional style serif typefaces                     |
+| Headings      | [Overused Grotesk](https://nanx.me/ost/overused-grotesk.html)                            <br> Neo-grotesque sans serif typeface                                   |
+| Body text     | [Castoro](https://nanx.me/ost/castoro.html) + [STIX Two Text](https://nanx.me/ost/stix-two-text.html) <br> Transitional style serif typefaces                     |
 | Code          | [Ligalex Mono](https://github.com/ToxicFrog/Ligaturizer)                                 <br> IBM Plex Mono with programming ligatures                            |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                 |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                      |
