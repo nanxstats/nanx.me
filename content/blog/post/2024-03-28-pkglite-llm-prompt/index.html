@@ -1,0 +1,217 @@
+---
+title: "Prompt LLMs with R Package Source Code Using pkglite"
+author: "Nan Xiao"
+date: "2024-03-28T20:00:00"
+slug: pkglite-llm-prompt
+categories: []
+tags:
+  - Large Language Model
+  - prompt engineering
+  - R
+  - R packages
+  - pkglite
+  - gptstudio
+meta_img: "image/google-deepmind-zyXg8_OOww8-unsplash.jpg"
+description: >
+  Learn how to prompt large language models with complete R package source code
+  using pkglite. pkglite automates the process of converting R packages
+  to plain text files, making it easier to provide accurate context
+  for coding questions and minimize hallucination problems in LLM responses.
+  This post demonstrates how pkglite, originally designed for regulatory
+  submissions, can be leveraged for effective prompt engineering.
+---
+
+
+
+<div class="float">
+<img src="/image/google-deepmind-zyXg8_OOww8-unsplash.jpg" alt="Illustration from Google DeepMind. Artist: Martina Stiftinger." />
+<div class="figcaption">Illustration from <a href="https://unsplash.com/photos/zyXg8_OOww8">Google DeepMind</a>. Artist: Martina Stiftinger.</div>
+</div>
+<p>Sometimes, large language models (LLMs) answer coding questions by
+making up software behaviors or APIs that don’t exist.
+A simple but effective strategy to minimize such hallucination problems is to
+feed the exact, complete source code as context in the prompt.
+For code organized in R packages, it is tedious to copy the file contents
+and construct them into prompts manually.
+Fortunately, you can use <a href="https://merck.github.io/pkglite/">pkglite</a>
+to automate this process.</p>
+<p>pkglite was originally <a href="https://nanx.me/blog/post/ectd-pkglite-paper/">designed</a>
+to convert R packages to plain text files for regulatory submissions.
+Here is an minimal example that shows how it can also help prompting LLMs
+with the full source code of R packages.</p>
+<pre class="r"><code>library(pkglite)
+
+# Download and extract package source tarball
+url &lt;- &quot;https://cran.r-project.org/src/contrib/ggsci_3.0.3.tar.gz&quot;
+tarball &lt;- tempfile(fileext = &quot;.tar.gz&quot;)
+
+curl::curl_download(url, destfile = tarball)
+untar(tarball, exdir = tempdir())
+
+# Set source package and output text file paths
+pkg &lt;- file.path(tempdir(), &quot;ggsci&quot;)
+txt &lt;- tempfile(fileext = &quot;.txt&quot;)
+
+# Collate all source files under `R/` and `vignettes/`,
+# exclude binary files and CSS files, and pack into a `.txt` file.
+pkg |&gt;
+  collate(file_r(), file_vignettes()) |&gt;
+  prune(path = c(&quot;R/sysdata.rda&quot;, &quot;vignettes/custom.css&quot;)) |&gt;
+  pack(output = txt)
+
+# Read the `.txt` file and remove the metadata lines
+pkg_content &lt;- readLines(txt)[-c(1:3)]
+
+# Estimate # of tokens (1 token ~= 4 chars in English)
+sum(nchar(pkg_content)) / 4</code></pre>
+<p>In essence, three lines of code… is all you need.
+For regular users, you can open the txt file and copy the content into the
+chat application.
+If too long, you can also split the file into multiple chunks and
+send it in multiple prompts.</p>
+<p>For developers, you can send it via the LLM vendor’s API. Example:</p>
+<pre class="r"><code>library(gptstudio)
+
+# Configure API key first
+# &lt;https://github.com/JamesHWade/gpttools/#configuring-openai-api-key&gt;
+
+prompt &lt;- paste0(
+  &quot;Act as a senior R software engineer. &quot;,
+  &quot;Below is the R package source for ggsci &quot;,
+  &quot;in DCF (Debian Control File) format with the file path and content. &quot;,
+  &quot;Based on the code and documentation, &quot;,
+  &quot;build a custom discrete ggplot2 color scale that implements the &quot;,
+  &quot;Bootstrap 5 color palette and allows custom color ordering.\n\n&quot;,
+  paste0(pkg_content, collapse = &quot;\n&quot;)
+)
+
+result &lt;- chat(
+  prompt,
+  service = &quot;openai&quot;,
+  model = &quot;gpt-4-turbo-preview&quot;,
+  skill = &quot;advanced&quot;,
+  task = &quot;coding&quot;
+)
+
+cat(result)</code></pre>
+<style type="text/css">
+details > summary {
+    border: 1px solid #cbd5e1;
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+</style>
+<details>
+<summary>
+Click here to expand a sample response from LLM
+</summary>
+<pre class="text"><code>To create a custom discrete ggplot2 color scale that implements the Bootstrap 5
+color palette and allows for custom color ordering based on the `ggsci` DCF
+description and codebase, we can follow a similar pattern to the existing
+discrete scales in `ggsci`. Bootstrap 5 provides a set of color palettes
+primarily intended for web development, including colors like primary,
+secondary, success, danger, warning, info, light, and dark.
+
+Assuming we&#39;d like to incorporate these colors directly from Bootstrap 5 into
+a ggplot2 scale, we first need to define the Bootstrap 5 color codes.
+For simplicity, let&#39;s stick to a subset: primary, danger, and success.
+Bootstrap 5 color codes (at the time of my last knowledge update) are
+as follows (assuming standard Bootstrap theme colors):
+
+```r
+bootstrap5_colors &lt;- c(
+  &quot;primary&quot; = &quot;#0d6efd&quot;,
+  &quot;danger&quot; = &quot;#dc3545&quot;,
+  &quot;success&quot; = &quot;#198754&quot;
+)
+```
+
+Now, we&#39;ll create a function that generates a custom palette function
+incorporating Bootstrap 5 colors and allows for color reordering.
+This function will be modelled after the structure of palette functions
+provided in the `ggsci` package, for example, `pal_aaas()`, `pal_d3()`, etc.
+
+```r
+pal_bootstrap5 &lt;- function(palette = &quot;default&quot;, n = 3, alpha = 1, reverse = FALSE) {
+  if(alpha &lt;= 0 | alpha &gt; 1) stop(&quot;alpha must be in (0, 1]&quot;)
+
+  colors &lt;- bootstrap5_colors
+  if(palette != &quot;default&quot;) {
+    stop(&quot;Currently, only &#39;default&#39; palette is implemented.&quot;)
+  }
+
+  if(reverse) {
+    colors &lt;- rev(colors)
+  }
+
+  if (length(colors) &gt; n) {
+    colors &lt;- colors[seq_len(n)]
+  }
+
+  # Applying alpha transparency
+  colors &lt;- grDevices::adjustcolor(colors, alpha.f = alpha)
+
+  unname(colors)
+}
+```
+
+Next, we create the `scale_color_` and `scale_fill_` functions to incorporate
+these colors into ggplot2 plots.
+
+```r
+scale_color_bootstrap5 &lt;- function(..., palette = &quot;default&quot;, reverse = FALSE, alpha = 1) {
+  discrete_scale(
+    aesthetics = &quot;colour&quot;,
+    scale_name = &quot;bootstrap5&quot;,
+    palette = pal_bootstrap5(palette = palette, alpha = alpha, reverse = reverse),
+    ...
+  )
+}
+
+scale_fill_bootstrap5 &lt;- function(..., palette = &quot;default&quot;, reverse = FALSE, alpha = 1) {
+  discrete_scale(
+    aesthetics = &quot;fill&quot;,
+    scale_name = &quot;bootstrap5&quot;,
+    palette = pal_bootstrap5(palette = palette, alpha = alpha, reverse = reverse),
+    ...
+  )
+}
+```
+
+This will enable the use of the Bootstrap 5 color palette in ggplot2,
+with options for reverse ordering and adjusting transparency levels.
+To use these scales, simply add them to a ggplot object with the
+respective `scale_color_bootstrap5()` or `scale_fill_bootstrap5()` function.
+
+This custom implementation takes inspiration from the structure and methodology
+observed in the `ggsci` package, tailored for the Bootstrap 5 palette and
+additional features like reversing the order and customizing transparency.</code></pre>
+</details>
+<p>
+</p>
+<p>Remember to check out the <a href="https://merck.github.io/pkglite/articles/">pkglite vignettes</a>.
+They covered defining file packing scope specifications, curating file collections,
+and more details on the output text file format. I wanted to make it as easy as
+possible to run bidirectional R packages to plain text file conversion workflows
+at scale.</p>
+<div id="how-to-cite-pkglite" class="section level2">
+<h2>How to cite pkglite</h2>
+<p>If you find pkglite useful, you can cite it as below.</p>
+<blockquote>
+<p>Zhao, Y., Xiao, N., Anderson, K., &amp; Zhang, Y. (2023).
+Electronic common technical document submission with analysis using R.
+<em>Clinical Trials</em>, <strong>20</strong>(1), 89–92.
+<a href="https://doi.org/10.1177/17407745221123244" class="uri">https://doi.org/10.1177/17407745221123244</a></p>
+</blockquote>
+<p>A BibTeX entry for LaTeX users is</p>
+<pre class="text"><code>@article{zhao2023electronic,
+  title   = {Electronic common technical document submission with analysis using {R}},
+  author  = {Zhao, Yujie and Xiao, Nan and Anderson, Keaven and Zhang, Yilong},
+  journal = {Clinical Trials},
+  volume  = {20},
+  number  = {1},
+  pages   = {89--92},
+  year    = {2023},
+  doi     = {10.1177/17407745221123244}
+}</code></pre>
+</div>
