@@ -7,10 +7,12 @@ menu: "main"
 
 ## Bookdown and Quarto book projects
 
+- [Group Sequential Designs Made Easy: A Web Interface Handbook](https://keaven.github.io/gsd-shiny/)\
+  Learn how to use a web interface to design, explore, and optimize
+  group sequential clinical trials leveraging the flexible capabilities of
+  the R package gsDesign.
 - [R for Clinical Study Reports and Submission](https://r4csr.org/)\
   Prepare tables, listings, and figures for clinical study report and submission
-- [Group Sequential Design Web Interface](https://keaven.github.io/gsd-shiny/)\
-  Technical manual of the group sequential design web interface
 - [Group Sequential Design Under Non-Proportional Hazards](https://keaven.github.io/gsd-deming/)\
   2021 Deming Conference course on group sequential design
 - [Open Source Typography: A Curated Lookbook for Creative Expression](https://nanx.me/ost/)\
