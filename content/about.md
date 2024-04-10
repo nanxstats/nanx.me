@@ -5,12 +5,13 @@ menu: "main"
 
 *  *  *  *
 
-I am a statistician at [Merck & Co.](https://www.merck.com/)
+I am a statistician at [Merck & Co., Inc.](https://www.merck.com/),
+Rahway, NJ, USA.
 I am part of the Methodology Research group led by
-[Keaven M. Anderson](https://keaven.github.io/) within the
+[Keaven M. Anderson](https://keaven.github.io/) within
 [Biostatistics and Research Decision Sciences](https://jobs.merck.com/bards)
-(BARDS) department.
-I also represent Merck & Co. on the R Consortium
+(BARDS).
+I also represent our company on the R Consortium
 [Infrastructure Steering Committee](https://www.r-consortium.org/about/governance)
 and contribute to the
 [R Submissions Working Group](https://rconsortium.github.io/submissions-wg/).
