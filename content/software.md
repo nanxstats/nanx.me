@@ -220,48 +220,58 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 ## Open source contributions
 
-- [gsDesign](https://github.com/keaven/gsDesign)\
+- [gsDesign](https://keaven.github.io/gsDesign/)\
   Group sequential clinical trial design,
   largely as presented in Jennison and Turnbull (2000)\
   [CRAN](https://cran.r-project.org/package=gsDesign) |
+  [GitHub](https://github.com/keaven/gsDesign) |
   [gsDesign: 15 Years of Development in 5 Minutes (4K 60fps)](https://www.youtube.com/watch?v=_ZUddQAhPFw)
 - [gsDesign Shiny app](https://rinpharma.shinyapps.io/gsdesign/)\
   Web application for group sequential clinical trial design\
   [Mirror 1](https://gsdesign.shinyapps.io/prod/) |
   [Mirror 2](https://gsdesign.shinyapps.io/devel/)
-- [gsDesign2](https://github.com/Merck/gsDesign2)\
+- [gsDesign2](https://merck.github.io/gsDesign2/)\
   Group sequential design with non-constant effect\
-  [CRAN](https://cran.r-project.org/package=gsDesign2)
-- [simtrial](https://github.com/Merck/simtrial)\
+  [CRAN](https://cran.r-project.org/package=gsDesign2) |
+  [GitHub](https://github.com/Merck/gsDesign2)
+- [simtrial](https://merck.github.io/simtrial/)\
   Clinical trial simulation\
-  [CRAN](https://cran.r-project.org/package=simtrial)
-- [gMCPLite](https://github.com/Merck/gMCPLite)\
+  [CRAN](https://cran.r-project.org/package=simtrial) |
+  [GitHub](https://github.com/Merck/simtrial)
+- [gMCPLite](https://merck.github.io/gMCPLite/)\
   Lightweight fork of gMCP for graph-based multiple comparison procedures\
-  [CRAN](https://cran.r-project.org/package=gMCPLite)
-- [gMCPShiny](https://github.com/Merck/gMCPShiny)\
-  Shiny app for graphical multiplicity control
-- [r2rtf](https://github.com/Merck/r2rtf)\
+  [CRAN](https://cran.r-project.org/package=gMCPLite) |
+  [GitHub](https://github.com/Merck/gMCPLite)
+- [gMCPShiny](https://merck.github.io/gMCPShiny/)\
+  Shiny app for graphical multiplicity control\
+  [GitHub](https://github.com/Merck/gMCPShiny)
+- [r2rtf](https://merck.github.io/r2rtf/)\
   Create production-ready Rich Text Format (RTF) tables and figures\
-  [CRAN](https://cran.r-project.org/package=r2rtf)
-- [metalite](https://github.com/Merck/metalite)\
+  [CRAN](https://cran.r-project.org/package=r2rtf) |
+  [GitHub](https://github.com/Merck/r2rtf)
+- [metalite](https://merck.github.io/metalite/)\
   Unified data structure for metadata information in clinical
   analysis & reporting (A&R), leveraging the
   Analysis Data Model (ADaM) datasets for consistent and
   accurate metadata representation\
-  [CRAN](https://cran.r-project.org/package=metalite)
-- [metalite.ae](https://github.com/Merck/metalite.ae)\
+  [CRAN](https://cran.r-project.org/package=metalite) |
+  [GitHub](https://github.com/Merck/metalite)
+- [metalite.ae](https://merck.github.io/metalite.ae/)\
   Analyzes adverse events in clinical trials using the metalite data structure.
   Simplifies the workflow to create production-ready tables, listings,
   and figures discussed in the adverse events analysis chapters of
   *R for Clinical Study Reports and Submission*.\
-  [CRAN](https://cran.r-project.org/package=metalite.ae)
-- [boxly](https://github.com/Merck/boxly)\
+  [CRAN](https://cran.r-project.org/package=metalite.ae) |
+  [GitHub](https://github.com/Merck/metalite.ae)
+- [boxly](https://merck.github.io/boxly/)\
   Interactive box plot using plotly for clinical data analysis\
-  [CRAN](https://cran.r-project.org/package=boxly)
-- [forestly](https://github.com/Merck/forestly)\
+  [CRAN](https://cran.r-project.org/package=boxly) |
+  [GitHub](https://github.com/Merck/boxly)
+- [forestly](https://merck.github.io/forestly/)\
   Interactive forest plot for clinical trial safety analysis
   using metalite, reactable, plotly, and Analysis Data Model (ADaM) datasets\
-  [CRAN](https://cran.r-project.org/package=forestly)
+  [CRAN](https://cran.r-project.org/package=forestly) |
+  [GitHub](https://github.com/Merck/forestly)
 - [PDXNet Portal](https://portal.pdxnetwork.org/)\
   Patient-derived xenograft (PDX) model, data, workflow, and tool discovery\
   [Paper](https://doi.org/10.1093/narcan/zcac014)
