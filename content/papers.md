@@ -135,21 +135,21 @@ Word cloud visualization of the keywords in my publications.
 
 .toc a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 450;
-  font-size: 1.125rem;
-  font-feature-settings: "ss03", "ss05";
+  font-weight: 400;
+  font-size: 1rem;
+  font-feature-settings: normal;
 }
 
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 450;
-  font-size: 1rem;
-  font-feature-settings: "ss03", "ss05";
+  font-weight: 400;
+  font-size: 0.9375rem;
+  font-feature-settings: normal;
 }
 
 .markdown ul li a:first-child {
   font-weight: 500;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
 }
 
 .markdown ul li {
