@@ -42,7 +42,7 @@ menu: "main"
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 500;
   font-size: 0.9375rem;
-  font-feature-settings: normal;
+  font-feature-settings: "ss01";
 }
 
 .markdown ul li {
