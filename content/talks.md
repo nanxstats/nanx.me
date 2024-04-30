@@ -95,7 +95,7 @@ menu: "main"
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 500;
   font-size: 0.9375rem;
-  font-feature-settings: "ss01";
+  font-feature-settings: normal;
 }
 
 .markdown ul li a:first-child {

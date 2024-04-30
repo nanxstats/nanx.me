@@ -143,14 +143,14 @@ Word cloud visualization of the keywords in my publications.
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 500;
   font-size: 1rem;
-  font-feature-settings: "ss01";
+  font-feature-settings: normal;
 }
 
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 500;
   font-size: 0.9375rem;
-  font-feature-settings: "ss01";
+  font-feature-settings: normal;
 }
 
 .markdown ul li a:first-child {
