@@ -43,6 +43,7 @@ menu: "main"
 - [stackgbm](https://nanx.me/stackgbm/)\
   Minimalist implementation of model stacking for gradient boosted tree models
   built by xgboost, lightgbm, and catboost\
+  [CRAN](https://cran.r-project.org/package=stackgbm) |
   [GitHub](https://github.com/nanxstats/stackgbm)
 - [oneclust](https://nanx.me/oneclust/)\
   Maximum homogeneity clustering for univariate data\
