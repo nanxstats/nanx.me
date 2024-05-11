@@ -13,9 +13,9 @@ menu: "main"
 
 [R packages](#r-packages) |
 [Web applications](#web-applications) |
-[Analysis workflows](#data-analysis-workflows)\
+[Machine learning workflows](#machine-learning-workflows) |
 [Open source code contributions](#open-source-contributions) |
-[Awesome lists](#awesome-lists-and-code-recipes)\
+[Awesome lists](#awesome-lists-and-code-recipes) |
 [VS Code extensions](#visual-studio-code-extensions) |
 [Hugo/blogdown themes](#hugoblogdown-themes)
 
@@ -195,7 +195,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
   Upgrade CWL apps from sbg:draft2 to v1.0\
   [Mirror 1](https://nanx.app/cwl-upgrader/)
 
-## Data analysis workflows
+## Machine learning workflows
 
 - [exp2vec](https://github.com/nanxstats/exp2vec)\
   Workflow for training tissue-specific gene embeddings on GTEx data
@@ -350,21 +350,21 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 .toc a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.125rem;
   font-feature-settings: normal;
 }
 
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 500;
-  font-size: 0.9375rem;
+  font-weight: 400;
+  font-size: 1rem;
   font-feature-settings: normal;
 }
 
 .markdown ul li a:first-child {
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.0625rem;
 }
 
 .markdown ul li {

@@ -21,7 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Headings      | [Inter](https://nanx.me/ost/inter.html)                                                  <br> Geometric neo-grotesque sans serif typeface                         |
+| Headings      | [Radio Canada Big](https://fonts.google.com/specimen/Radio+Canada+Big)                   <br> Neo-grotesque sans serif typeface                                   |
 | Body text     | [Castoro](https://nanx.me/ost/castoro.html) + [STIX Two Text](https://nanx.me/ost/stix-two-text.html) <br> Transitional style serif typefaces                     |
 | Code          | [Ligalex Mono](https://github.com/ToxicFrog/Ligaturizer)                                 <br> IBM Plex Mono with programming ligatures                            |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                 |
