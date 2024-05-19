@@ -10,7 +10,7 @@ menu: "main"
 <div class="figcaption">
 Word cloud visualization of the keywords in my publications.
 
-[How to make it](https://nanx.me/blog/post/research-word-cloud/).
+[Make yours!](https://nanx.me/blog/post/research-word-cloud/)
 </div>
 </div>
 
