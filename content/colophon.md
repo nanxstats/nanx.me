@@ -23,7 +23,7 @@ The source code for this site itself is available at
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Headings      | [Radio Canada Big](https://fonts.google.com/specimen/Radio+Canada+Big)                   <br> Neo-grotesque sans serif typeface                                   |
 | Body text     | [Castoro](https://nanx.me/ost/castoro.html) + [STIX Two Text](https://nanx.me/ost/stix-two-text.html) <br> Transitional style serif typefaces                     |
-| Code          | [Hasklig](https://github.com/i-tu/Hasklig)                                               <br> Source Code Pro with programming ligatures                          |
+| Code          | [Monaspace Argon](https://github.com/githubnext/monaspace)                               <br> Monospace typeface with humanist sans serif design                  |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                 |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                      |
 {{< /bootstrap-table >}}
