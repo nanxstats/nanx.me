@@ -1,0 +1,181 @@
+---
+title: "You should (maybe) enable font ligatures when building with GPT models"
+author: "Nan Xiao"
+date: "2024-06-19T03:30:00"
+slug: gpt-models-font-ligatures
+categories: []
+tags:
+  - GPT models
+  - OpenAI
+  - large language model
+  - tokenization
+  - special tokens
+  - readability
+  - coding fonts
+  - programming ligatures
+meta_img: "image/florian-klauer--K6JMRMj4x4-unsplash.jpg"
+description: >
+  Explore the prevalence of the special token in GPT models and how programming
+  ligatures in coding fonts may improve code readability using this convention.
+  Discover popular monospace typefaces with ligature support that could improve
+  developer experience when working with special tokens in large language models
+  via the OpenAI API, LangChain, and text-generation-webui.
+---
+
+
+
+<div class="float">
+<img src="/image/florian-klauer--K6JMRMj4x4-unsplash.jpg" alt="Parts of a typewriter. Photo by Florian Klauer." />
+<div class="figcaption">Parts of a typewriter. Photo by <a href="https://unsplash.com/photos/-K6JMRMj4x4">Florian Klauer</a>.</div>
+</div>
+<p>The token <strong>&lt;|endoftext|&gt;</strong> is a special token used as a document separator
+for OpenAI GPT models. It has become quite prevalent if you look closely:</p>
+<ul>
+<li>It has been used since <a href="https://huggingface.co/docs/transformers/model_doc/gpt2">GPT-2</a>
+and remains present in the OpenAI API for their latest models.
+Their tokenizer package, tiktoken, includes logic to process text with these
+<a href="https://github.com/openai/tiktoken/blob/c0ba74c238d18b4824c25f3c27fc8698055b9a76/tiktoken_ext/openai_public.py#L3-L7">special tokens</a>.</li>
+<li>The markup <strong>&lt;|</strong> and <strong>|&gt;</strong> is widely used in the code bases of LangChain
+and text-generation-webui. It usually serves as a lightweight templating
+syntax to mark particular text sections for replacement.</li>
+<li>Improper handling of this special token has led to <a href="https://www.lesswrong.com/posts/HvmhZR6EJEi7bEqBh/less-than-or-endoftext-or-greater-than-is-a-vanishing-text">interesting
+results</a>
+in chatbot interfaces.</li>
+</ul>
+<p>The use of <strong>&lt;|</strong> and <strong>|&gt;</strong> might seem random. My theory is that people who
+introduced this convention use a coding font with programming ligatures.
+As shown in the figures below, it makes more visual sense with
+the ligatures enabled, as the cognitive load is greatly reduced when
+distinguishing them. I find my brain finally starting to understand what
+the code is trying to say.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="images/special-token-no-ligature.png" alt="Code snippet from text-generation-webui, ligatures off." width="100%" />
+<p class="caption">
+Figure 1: Code snippet from text-generation-webui, ligatures off.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<img src="images/special-token-ligature.png" alt="Code snippet from text-generation-webui, ligatures on." width="100%" />
+<p class="caption">
+Figure 2: Code snippet from text-generation-webui, ligatures on.
+</p>
+</div>
+<p>Now, here are five popular typefaces with original ligature designs
+that I often use as my main coding font, displayed in regular weight (400).
+You can find many more alternatives in the
+<a href="https://github.com/ToxicFrog/Ligaturizer">ToxicFrog/Ligaturizer</a>
+repository, where regular monospaced fonts are patched with Fira Code ligatures.</p>
+<style type="text/css">
+@font-face {
+    font-display: swap;
+    font-family: "Cascadia Code Regular";
+    src: url("fonts/CascadiaCode-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Fira Code Regular";
+    src: url("fonts/FiraCode-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Hasklig Regular";
+    src: url("fonts/Hasklig-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "JetBrains Mono Regular";
+    src: url("fonts/JetBrainsMono-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Monaspace Argon Regular";
+    src: url("fonts/MonaspaceArgon-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+.font-cascadia-code pre code {
+    font-family: "Cascadia Code Regular" !important;
+    font-feature-settings: normal !important;
+}
+.font-fira-code pre code {
+    font-family: "Fira Code Regular" !important;
+    font-feature-settings: normal !important;
+}
+.font-hasklig pre code {
+    font-family: "Hasklig Regular" !important;
+    font-feature-settings: normal !important;
+}
+.font-jetbrains-mono pre code {
+    font-family: "JetBrains Mono Regular" !important;
+    font-feature-settings: normal !important;
+}
+.font-monaspace-argon pre code {
+    font-family: "Monaspace Argon Regular" !important;
+    font-feature-settings: "ss01", "ss02", "ss03", "ss05", "ss07", "ss09" !important;
+}
+</style>
+<div id="cascadia-code" class="section level2">
+<h2>Cascadia Code</h2>
+<div class="font-cascadia-code">
+<pre class="python"><code>ENDOFTEXT = &quot;&lt;|endoftext|&gt;&quot;
+FIM_PREFIX = &quot;&lt;|fim_prefix|&gt;&quot;
+FIM_MIDDLE = &quot;&lt;|fim_middle|&gt;&quot;
+FIM_SUFFIX = &quot;&lt;|fim_suffix|&gt;&quot;
+ENDOFPROMPT = &quot;&lt;|endofprompt|&gt;&quot;
+## :: := =&gt; &lt;- -&gt; == != &lt;= &gt;= ++ || &amp;&amp;</code></pre>
+</div>
+</div>
+<div id="fira-code" class="section level2">
+<h2>Fira Code</h2>
+<div class="font-fira-code">
+<pre class="python"><code>ENDOFTEXT = &quot;&lt;|endoftext|&gt;&quot;
+FIM_PREFIX = &quot;&lt;|fim_prefix|&gt;&quot;
+FIM_MIDDLE = &quot;&lt;|fim_middle|&gt;&quot;
+FIM_SUFFIX = &quot;&lt;|fim_suffix|&gt;&quot;
+ENDOFPROMPT = &quot;&lt;|endofprompt|&gt;&quot;
+## :: := =&gt; &lt;- -&gt; == != &lt;= &gt;= ++ || &amp;&amp;</code></pre>
+</div>
+</div>
+<div id="hasklig" class="section level2">
+<h2>Hasklig</h2>
+<div class="font-hasklig">
+<pre class="python"><code>ENDOFTEXT = &quot;&lt;|endoftext|&gt;&quot;
+FIM_PREFIX = &quot;&lt;|fim_prefix|&gt;&quot;
+FIM_MIDDLE = &quot;&lt;|fim_middle|&gt;&quot;
+FIM_SUFFIX = &quot;&lt;|fim_suffix|&gt;&quot;
+ENDOFPROMPT = &quot;&lt;|endofprompt|&gt;&quot;
+## :: := =&gt; &lt;- -&gt; == != &lt;= &gt;= ++ || &amp;&amp;</code></pre>
+</div>
+</div>
+<div id="jetbrains-mono" class="section level2">
+<h2>JetBrains Mono</h2>
+<div class="font-jetbrains-mono">
+<pre class="python"><code>ENDOFTEXT = &quot;&lt;|endoftext|&gt;&quot;
+FIM_PREFIX = &quot;&lt;|fim_prefix|&gt;&quot;
+FIM_MIDDLE = &quot;&lt;|fim_middle|&gt;&quot;
+FIM_SUFFIX = &quot;&lt;|fim_suffix|&gt;&quot;
+ENDOFPROMPT = &quot;&lt;|endofprompt|&gt;&quot;
+## :: := =&gt; &lt;- -&gt; == != &lt;= &gt;= ++ || &amp;&amp;</code></pre>
+</div>
+</div>
+<div id="monaspace-argon" class="section level2">
+<h2>Monaspace Argon</h2>
+<div class="font-monaspace-argon">
+<pre class="python"><code>ENDOFTEXT = &quot;&lt;|endoftext|&gt;&quot;
+FIM_PREFIX = &quot;&lt;|fim_prefix|&gt;&quot;
+FIM_MIDDLE = &quot;&lt;|fim_middle|&gt;&quot;
+FIM_SUFFIX = &quot;&lt;|fim_suffix|&gt;&quot;
+ENDOFPROMPT = &quot;&lt;|endofprompt|&gt;&quot;
+## :: := =&gt; &lt;- -&gt; == != &lt;= &gt;= ++ || &amp;&amp;</code></pre>
+</div>
+<p>Of course, this post should end with a proper…</p>
+<p><code>&lt;|endoftext|&gt;</code></p>
+</div>
