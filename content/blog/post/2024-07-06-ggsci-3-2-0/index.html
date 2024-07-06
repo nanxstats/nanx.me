@@ -1,0 +1,116 @@
+---
+title: "ggsci 3.2.0: new color palettes from Observable, Bootstrap, and Tailwind CSS"
+author: "Nan Xiao"
+date: "2024-07-06T00:20:00"
+slug: ggsci-3-2-0
+categories: []
+tags:
+  - R
+  - R packages
+  - ggplot2
+  - ggsci
+  - color scales
+  - data visualization
+  - Observable
+  - Bootstrap
+  - Tailwind CSS
+meta_img: "image/europeana--HoDFUBpLrA-unsplash.jpg"
+description: >
+  ggsci 3.2.0 brings the Observable 10, Bootstrap, and Tailwind CSS color
+  palettes to R. Create more effective and visually appealing ggplot2
+  visualizations using these modern, accessible color scales.
+---
+
+
+
+<div class="float">
+<img src="/image/europeana--HoDFUBpLrA-unsplash.jpg" alt="Villa in Zurich, perspective view. From “Moderne Architektur” (Modern Architecture), edited by Lambert &amp; Stahl, Stuttgart, 1891. Scan from Europeana." />
+<div class="figcaption">Villa in Zurich, perspective view. From <em>“Moderne Architektur”</em> (Modern Architecture), edited by Lambert &amp; Stahl, Stuttgart, 1891. Scan from <a href="https://unsplash.com/photos/-HoDFUBpLrA">Europeana</a>.</div>
+</div>
+<p>I am delighted to announce the release of <a href="https://nanx.me/ggsci/">ggsci</a> 3.2.0.
+The R package ggsci was first released in 2016.
+It offers a range of ggplot2 color scales drawn from various sources,
+including scientific publications, data visualization tools,
+sci-fi movies, and television series.</p>
+<p>To install ggsci from CRAN, use:</p>
+<pre class="r"><code>install.packages(&quot;ggsci&quot;)</code></pre>
+<p>As a follow-up to the <a href="https://nanx.me/blog/post/ggsci-3-1-0/">ggsci 3.1.0 release</a>,
+ggsci 3.2.0 introduces three new color scales and continues to improve the
+package engineering details.</p>
+<div id="observable-10" class="section level2">
+<h2>Observable 10</h2>
+<p>The Observable 10 palette was
+<a href="https://observablehq.com/blog/crafting-data-colors">officially announced</a>
+in April 2024. It was designed as the new default categorical color scheme for
+Observable Plot, the JavaScript library for tabular data visualization.
+To me, this new color palette offers a fresh and clean aesthetic while
+maintaining accessibility and robustness for data visualization purposes.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig-ggsci-observable-color-palette"></span>
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-ggsci-observable-color-palette-1.png" alt="The Observable 10 palette added in ggsci 3.2.0." width="100%" />
+<p class="caption">
+Figure 1: The Observable 10 palette added in ggsci 3.2.0.
+</p>
+</div>
+<p>In ggsci, this palette is made available via the new color scale functions
+<a href="https://nanx.me/ggsci/reference/scale_observable.html"><code>scale_color_observable()</code> and <code>scale_fill_observable()</code></a>.
+Here is a ggplot2 example that uses this color palette to visualize five categories.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig-ggsci-observable-color-scale"></span>
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-ggsci-observable-color-scale-1.png" alt="ggplot2 example using the Observable 10 color scales." width="100%" />
+<p class="caption">
+Figure 2: ggplot2 example using the Observable 10 color scales.
+</p>
+</div>
+</div>
+<div id="bootstrap-and-tailwind-css-palettes" class="section level2">
+<h2>Bootstrap and Tailwind CSS palettes</h2>
+<p>It has been quite a while since we expanded continuous color scales in ggsci.
+For a new start, I have chosen to implement the default color systems from
+Bootstrap 5 and Tailwind CSS 3, the two most popular front-end frameworks.
+These palettes have been refined over years of development, making them
+possible choices for data visualization.</p>
+<p>Using ColorBrewer’s terminology, these color systems contain multiple
+single-hue sequential color schemes.
+They are suitable for representing values in ordered or numeric data,
+such as heatmap visualizations.</p>
+<p>In ggsci, these are made available via
+<a href="https://nanx.me/ggsci/reference/scale_bs5.html"><code>scale_color_bs5()</code>/<code>scale_fill_bs5()</code></a>
+and <a href="https://nanx.me/ggsci/reference/scale_tw3.html"><code>scale_color_tw3()</code>/<code>scale_fill_tw3()</code></a>.
+We can easily visualize them using
+<a href="https://colorspace.r-forge.r-project.org/reference/swatchplot.html"><code>colorspace::swatchplot()</code></a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig-ggsci-bootstrap-color-palette"></span>
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-ggsci-bootstrap-color-palette-1.png" alt="The 11 Bootstrap 5 continuous palettes added in ggsci 3.2.0." width="100%" />
+<p class="caption">
+Figure 3: The 11 Bootstrap 5 continuous palettes added in ggsci 3.2.0.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig-ggsci-tailwind-color-palette"></span>
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-ggsci-tailwind-color-palette-1.png" alt="The 22 Tailwind CSS continuous palettes added in ggsci 3.2.0." width="100%" />
+<p class="caption">
+Figure 4: The 22 Tailwind CSS continuous palettes added in ggsci 3.2.0.
+</p>
+</div>
+</div>
+<div id="other-improvements" class="section level2">
+<h2>Other improvements</h2>
+<p>As the package grows, it is even more important to keep things light
+so that we have enough space to expand to even more color scales comfortably.</p>
+<p>I first
+<a href="https://github.com/nanxstats/ggsci/pull/43">moved the internal color palette data</a>
+out of the binary file <code>R/sysdata.rda</code> and moved it into <code>R/palettes.R</code> instead.
+This change makes everything plain text
+(which is <a href="https://www.youtube.com/watch?v=WgV6M1LyfNY">unreasonably effective</a>).
+I hope this simplifies third-party contributions by eliminating the
+tedious <code>.rda</code> file generation step with the previous R script in <code>data-raw/</code>.</p>
+<p>The other set of optimizations was applied to the continuous color scale
+code examples. Besides removing the soft dependency reshape2 from the code,
+I fine-tuned the layout with a more compact grid to reduce the output
+image size in <a href="https://github.com/nanxstats/ggsci/pull/46">#46</a>, reducing the
+package size concerns described in the
+<a href="https://nanx.me/blog/post/rpkgs-pngquant-ragg/">previous post</a>.</p>
+</div>
+<div id="whats-next" class="section level2">
+<h2>What’s next?</h2>
+<p>I’m open to new ideas on the next color palettes to add.
+If you have a suggestion, please submit them by
+<a href="https://github.com/nanxstats/ggsci/issues">creating an issue</a>.</p>
+</div>
