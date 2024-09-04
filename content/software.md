@@ -297,6 +297,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
   writing concise and fast base R code
 - [r-future-recipes](https://github.com/nanxstats/r-future-recipes)\
   Guides and examples for the R future framework for parallel computing
+- [r-windows-paths](https://github.com/nanxstats/r-windows-paths)\
+  Key R toolchain paths for Windows systems
 - [deep-learning-recipes](https://github.com/nanxstats/deep-learning-recipes)\
   R implementation for selected machine learning methods with deep learning frameworks
 
