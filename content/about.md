@@ -12,7 +12,7 @@ I am part of the Methodology Research group led by
 [Biostatistics and Research Decision Sciences](https://jobs.merck.com/bards)
 (BARDS).
 I also represent our company on the R Consortium
-[Infrastructure Steering Committee](https://www.r-consortium.org/about/governance)
+[Infrastructure Steering Committee](https://r-consortium.org/about/governance.html)
 and contribute to the
 [R Submissions Working Group](https://rconsortium.github.io/submissions-wg/).
 
