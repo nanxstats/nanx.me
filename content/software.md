@@ -302,6 +302,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
   Key R toolchain paths for Windows systems
 - [deep-learning-recipes](https://github.com/nanxstats/deep-learning-recipes)\
   R implementation for selected machine learning methods with deep learning frameworks
+- [llm-cliches](https://github.com/nanxstats/llm-cliches)\
+  A collection of commonly used clichés and phrases in Large Language Models (LLMs) outputs.
 
 ## Visual Studio Code extensions
 
