@@ -34,7 +34,7 @@ Word cloud visualization of the keywords in my publications.
 
 - [Some Group Sequential Trials From Industry Over the Last 30 Years](https://doi.org/10.1080/19466315.2024.2334354)\
   Keaven M. Anderson, Yujie Zhao, Nan Xiao, Joy Ge, Harlan F. Weisman\
-  *Statistics in Biopharmaceutical Research*, 2024\
+  *Statistics in Biopharmaceutical Research* 16(3): 281--293, 2024\
   [PDF](group-sequential-trials-industry-30-years.pdf) (Accepted Manuscript)
 
 ## 2023
