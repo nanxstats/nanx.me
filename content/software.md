@@ -12,10 +12,11 @@ menu: "main"
 <div class="text-center toc">
 
 [R packages](#r-packages) |
+[Python packages](#python-packages)\
 [Web applications](#web-applications) |
-[Machine learning workflows](#machine-learning-workflows) |
+[Machine learning workflows](#machine-learning-workflows)\
 [Open source code contributions](#open-source-contributions) |
-[Awesome lists](#awesome-lists-and-code-recipes) |
+[Awesome lists](#awesome-lists-and-code-recipes)\
 [VS Code extensions](#visual-studio-code-extensions) |
 [Hugo/blogdown themes](#hugoblogdown-themes)
 
@@ -126,6 +127,13 @@ menu: "main"
 - [sbpack-r](https://nanx.me/sbpack-r/)\
   Pack and upload CWL apps to Seven Bridges powered platforms\
   [GitHub](https://github.com/nanxstats/sbpack-r)
+
+## Python packages
+
+- [tinytopics](https://nanx.me/tinytopics/)\
+  GPU-accelerated topic modeling via sum-to-one constrained
+  Poisson non-negative matrix factorization (NMF).\
+  [GitHub](https://github.com/nanxstats/tinytopics)
 
 ## Web applications
 
