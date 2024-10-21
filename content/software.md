@@ -133,6 +133,7 @@ menu: "main"
 - [tinytopics](https://nanx.me/tinytopics/)\
   GPU-accelerated topic modeling via sum-to-one constrained
   Poisson non-negative matrix factorization (NMF).\
+  [PyPI](https://pypi.org/project/tinytopics/) |
   [GitHub](https://github.com/nanxstats/tinytopics)
 
 ## Web applications
