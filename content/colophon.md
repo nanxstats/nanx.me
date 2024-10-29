@@ -22,7 +22,7 @@ The source code for this site itself is available at
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text          | [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)                       <br> Open source spinoff of Franklin Gothic                              |
-| Code          | [Monaspace Argon](https://github.com/githubnext/monaspace)                               <br> Monospace typeface with humanist sans serif design                  |
+| Code          | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)                             <br> Monospace typeface made for developers                              |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                 |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                      |
 {{< /bootstrap-table >}}
