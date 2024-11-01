@@ -20,11 +20,10 @@ In my daily work, I solve challenges at the intersection of
 statistical methodology research and software architecture innovation.
 My research interests include sparse linear models,
 representation learning, and computational reproducibility.
-I build [software](https://nanx.me/software/) in R.
+I build [software](https://nanx.me/software/) in R and Python.
 My favorites include
+[tinytopics](https://nanx.me/tinytopics/),
 [msaenet](https://nanx.me/msaenet/),
-[oneclust](https://nanx.me/oneclust/),
-[liftr](https://liftr.me/),
 [ggsci](https://nanx.me/ggsci/),
 and
 [pkglite](https://merck.github.io/pkglite/).
