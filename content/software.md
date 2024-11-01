@@ -11,8 +11,8 @@ menu: "main"
 
 <div class="text-center toc">
 
-[R packages](#r-packages) |
-[Python packages](#python-packages)\
+[Python packages](#python-packages) |
+[R packages](#r-packages)\
 [Web applications](#web-applications) |
 [Machine learning workflows](#machine-learning-workflows)\
 [Open source code contributions](#open-source-contributions) |
@@ -23,6 +23,14 @@ menu: "main"
 </div>
 
 <div class="mt-5"></div>
+
+## Python packages
+
+- [tinytopics](https://nanx.me/tinytopics/)\
+  GPU-accelerated topic modeling via sum-to-one constrained
+  neural Poisson NMF.\
+  [PyPI](https://pypi.org/project/tinytopics/) |
+  [GitHub](https://github.com/nanxstats/tinytopics)
 
 ## R packages
 
@@ -127,14 +135,6 @@ menu: "main"
 - [sbpack-r](https://nanx.me/sbpack-r/)\
   Pack and upload CWL apps to Seven Bridges powered platforms\
   [GitHub](https://github.com/nanxstats/sbpack-r)
-
-## Python packages
-
-- [tinytopics](https://nanx.me/tinytopics/)\
-  GPU-accelerated topic modeling via sum-to-one constrained
-  neural Poisson NMF.\
-  [PyPI](https://pypi.org/project/tinytopics/) |
-  [GitHub](https://github.com/nanxstats/tinytopics)
 
 ## Web applications
 
