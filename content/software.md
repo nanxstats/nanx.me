@@ -28,7 +28,7 @@ menu: "main"
 
 - [tinytopics](https://nanx.me/tinytopics/)\
   GPU-accelerated topic modeling via sum-to-one constrained
-  neural Poisson NMF.\
+  neural Poisson NMF\
   [PyPI](https://pypi.org/project/tinytopics/) |
   [GitHub](https://github.com/nanxstats/tinytopics)
 
