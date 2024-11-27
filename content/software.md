@@ -31,7 +31,7 @@ menu: "main"
   neural Poisson NMF\
   [PyPI](https://pypi.org/project/tinytopics/) |
   [GitHub](https://github.com/nanxstats/tinytopics)
-- [tinyvdiff](#)\
+- [tinyvdiff](https://nanx.me/tinyvdiff/)\
   Minimalist visual regression testing helpers\
   [PyPI](https://pypi.org/project/tinyvdiff/) |
   [GitHub](https://github.com/nanxstats/tinyvdiff)
