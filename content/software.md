@@ -32,7 +32,7 @@ menu: "main"
   [PyPI](https://pypi.org/project/tinytopics/) |
   [GitHub](https://github.com/nanxstats/tinytopics)
 - [tinyvdiff](https://nanx.me/tinyvdiff/)\
-  Minimalist visual regression testing helpers\
+  Minimalist visual regression testing plugin for pytest\
   [PyPI](https://pypi.org/project/tinyvdiff/) |
   [GitHub](https://github.com/nanxstats/tinyvdiff)
 
