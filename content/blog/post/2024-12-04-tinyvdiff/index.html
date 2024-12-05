@@ -1,0 +1,109 @@
+---
+title: "tinyvdiff: Minimalist visual regression testing plugin for pytest"
+author: "Nan Xiao"
+date: "2024-12-04T21:53:00"
+slug: tinyvdiff
+categories: []
+tags:
+  - Python
+  - Python packages
+  - pytest
+  - visual regression testing
+  - software engineering
+meta_img: "image/zdenek-machacek-RiM-wOomC6w-unsplash.jpg"
+description: >
+  Introducing tinyvdiff, a minimalist pytest plugin for visual regression
+  testing in Python. Designed for reproducible workflows, tinyvdiff converts
+  PDFs into SVG snapshots for comparing appearance changes in graphics and
+  documents. This post explores its motivation, methodology, and use cases.
+---
+
+
+
+<div class="float">
+<img src="/image/zdenek-machacek-RiM-wOomC6w-unsplash.jpg" alt="Hummingbirds. Photo by Zdeněk Macháček." />
+<div class="figcaption">Hummingbirds.
+Photo by <a href="https://unsplash.com/photos/RiM-wOomC6w">Zdeněk Macháček</a>.</div>
+</div>
+<p>I’m delighted to announce my second Python package,
+<a href="https://nanx.me/tinyvdiff/">tinyvdiff</a>, now available on PyPI.
+It offers a lightweight pytest plugin for detecting appearance changes
+in visual content, such as figures or documents. You can install it with:</p>
+<pre class="bash"><code>pip install tinyvdiff</code></pre>
+<div id="setup-and-usage" class="section level2">
+<h2>Setup and usage</h2>
+<p>Here is an example test for matplotlib graphics,
+from the <a href="https://github.com/nanxstats/tinyvdiff-demo">tinyvdiff demo project</a>:</p>
+<pre class="python"><code>import pytest
+
+from tinyvdiff_demo.matplotlib import generate_plot
+
+
+@pytest.fixture
+def temp_pdf(tmp_path):
+    &quot;&quot;&quot;Fixture to create a temporary PDF file path&quot;&quot;&quot;
+    return tmp_path / &quot;test.pdf&quot;
+
+
+def test_matplotlib_visual(tinyvdiff, temp_pdf):
+    &quot;&quot;&quot;Test visual regression with PDF generated with matplotlib&quot;&quot;&quot;
+    pdf_path = generate_plot(temp_pdf)
+    tinyvdiff.assert_pdf_snapshot(pdf_path, &quot;snapshot_matplotlib.svg&quot;)</code></pre>
+<p>See the <a href="https://nanx.me/tinyvdiff/articles/setup/">setup guide</a> to learn
+how to integrate tinyvdiff into your Python project and use it
+in CI/CD systems like GitHub Actions.</p>
+</div>
+<div id="motivation" class="section level2">
+<h2>Motivation</h2>
+<p>While transitioning parts of my toolchain to Python, I encountered a need
+for a unified approach to test the visual appearance of rendered outputs,
+such as graphics and documents.
+In R, tools like <a href="https://testthat.r-lib.org/articles/snapshotting.html">testthat snapshot
+tests</a> and
+<a href="https://vdiffr.r-lib.org/">vdiffr</a> address similar needs effectively.
+However, with all the flexibility, I saw an opportunity to explore this
+space a bit more in Python.</p>
+</div>
+<div id="the-trilemma" class="section level2">
+<h2>The trilemma</h2>
+<p>The design considerations for tinyvdiff are detailed in its
+<a href="https://nanx.me/tinyvdiff/articles/design/">design document</a>.
+In brief, I identified three key requirements that define a trilemma
+for visual regression testing:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Support for diverse input formats</strong>:
+Handle graphics and documents produced by different backends.</li>
+<li><strong>Bitwise reproducibility of snapshots</strong>:
+Store snapshots in plain text for easy version control and comparison.</li>
+<li><strong>Environment consistency</strong>:
+Generate consistent snapshots across operating systems.</li>
+</ol>
+</div>
+<div id="my-solution" class="section level2">
+<h2>My solution</h2>
+<p>Given the constraints of this trilemma:</p>
+<ul>
+<li>Dropping constraints 2 and 3 leads to testthat “whole file snapshotting”.</li>
+<li>Dropping constraint 1 while keeping 2 and 3 leads to vdiffr.</li>
+<li>Dropping constraint 3 while keeping 1 and 2 gives tinyvdiff.</li>
+</ul>
+<p>tinyvdiff operates on the assumption that visual regression tests will be
+running on a single platform. Developers are also trusted to prepare
+reproducible PDF inputs in their preferred way.
+The package then uses <code>pdf2svg</code> (built on Poppler and Cairo) to
+convert PDF files into SVG snapshots for comparison.</p>
+</div>
+<div id="use-cases" class="section level2">
+<h2>Use cases</h2>
+<p>tinyvdiff may be a good fit for projects where:</p>
+<ul>
+<li>Visual tests can be sufficiently done on a single platform.</li>
+<li>Multiple types of visual content require appearance testing.</li>
+<li>PDF inputs are reproducible and contain mostly vector elements.</li>
+<li>Snapshots remain manageable in size and complexity.</li>
+</ul>
+<p>If any of these conditions are not met, other more focused approaches
+might better suit your needs. For example, matplotlib has built-in
+<a href="https://matplotlib.org/stable/api/testing_api.html">testing helpers for image comparison</a>,
+which works great for testing the appearance of its outputs.</p>
+</div>
