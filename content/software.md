@@ -35,6 +35,9 @@ menu: "main"
   Minimalist visual regression testing plugin for pytest\
   [PyPI](https://pypi.org/project/tinyvdiff/) |
   [GitHub](https://github.com/nanxstats/tinyvdiff)
+- [py-pkglite](https://pharmaverse.github.io/py-pkglite/)\
+  Pack and unpack source packages written in any programming language into text file\
+  [GitHub](https://github.com/pharmaverse/py-pkglite)
 
 ## R packages
 
