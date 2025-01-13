@@ -36,7 +36,10 @@ menu: "main"
   [PyPI](https://pypi.org/project/tinyvdiff/) |
   [GitHub](https://github.com/nanxstats/tinyvdiff)
 - [py-pkglite](https://pharmaverse.github.io/py-pkglite/)\
-  Pack and unpack source packages written in any programming language into text file\
+  A simple framework for packing source packages written in any programming
+  language into a text file and restoring them into the original directory
+  structure\
+  [PyPI](https://pypi.org/project/pkglite/) |
   [GitHub](https://github.com/pharmaverse/py-pkglite)
 
 ## R packages
