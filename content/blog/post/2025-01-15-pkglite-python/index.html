@@ -1,0 +1,121 @@
+---
+title: "Introducing pkglite for Python"
+author: "Nan Xiao"
+date: "2025-01-16T02:11:00"
+slug: pkglite-python
+categories: []
+tags:
+  - Python
+  - Python packages
+  - pkglite
+  - clinical trials
+  - regulatory submission
+  - reproducible research
+  - retrieval-augmented generation
+bibliography: "pkglite.bib"
+meta_img: "image/yann-allegre-yGprtDYbyoE-unsplash.jpg"
+description: >
+  pkglite for Python is a simple framework to pack source packages
+  written in any language into a text file and restore them,
+  supporting reproducible research and standard engineering workflows
+  across different environments.
+---
+
+
+
+<div class="float">
+<img src="/image/yann-allegre-yGprtDYbyoE-unsplash.jpg" alt="Les Menuires, France. Photo by Yann Allegre." />
+<div class="figcaption">Les Menuires, France. Photo by <a href="https://unsplash.com/photos/yGprtDYbyoE">Yann Allegre</a>.</div>
+</div>
+<p>I am pleased to introduce
+<a href="https://pharmaverse.github.io/py-pkglite/">pkglite for Python</a>,
+now available on PyPI.
+pkglite for Python provides a minimalist framework for packing source packages
+written in any programming language into a text file and restoring them to
+their original directory structure. You can install it with:</p>
+<pre class="bash"><code>pip install pkglite</code></pre>
+<p>For installation as a global command-line tool,
+<a href="https://packaging.python.org/en/latest/guides/installing-stand-alone-command-line-tools/">use pipx</a>:</p>
+<pre class="bash"><code>pipx install pkglite</code></pre>
+<div id="context" class="section level2">
+<h2>Context</h2>
+<p>Four years ago, we released the R package pkglite,
+designed for bidirectional conversion of R packages.
+The motivation behind pkglite for R, including its role in supporting eCTD
+submissions, was summarized in our
+<a href="https://nanx.me/blog/post/ectd-pkglite-paper/"><em>Clinical Trials</em> paper</a> <span class="citation">(<a href="#ref-zhao2023electronic">Zhao et al. 2023</a>)</span>.
+We also explored its application in
+<a href="https://nanx.me/blog/post/pkglite-llm-prompt/">retrieval-augmented generation</a>
+to provide code context to large language models.</p>
+<p>pkglite for R has since been adopted in multiple real-world applications,
+including the first two R Consortium open-source R submissions
+(<a href="https://rconsortium.github.io/submissions-wg/pilot1.html">pilot 1</a>,
+<a href="https://rconsortium.github.io/submissions-wg/pilot2.html">pilot 2</a>),
+and sponsor-led submissions
+(<a href="https://youtu.be/t33dS17QHuA?t=2776">webinar 1</a>,
+<a href="https://youtu.be/BlJNILSoZlM?t=2468">webinar 2</a>).
+It is also featured in the <a href="https://pharmaverse.org/e2eclinical/esub/">pharmaverse end-to-end clinical reporting
+packages</a>.</p>
+<p>The overwhelmingly positive feedback on the R package motivated me
+to consider: what’s next?</p>
+</div>
+<div id="creating-pkglite-for-python" class="section level2">
+<h2>Creating pkglite for Python</h2>
+<p>To address this, I asked myself a broader question: what do people need?
+Many colleagues and collaborators of mine use Python and other languages daily.
+Extending the capability to pack and exchange source packages written in their
+language of choice into plain text felt like a natural progression.</p>
+<p>This goal led to several key design updates in pkglite for Python:</p>
+<ul>
+<li><p><strong>Language-agnostic design</strong>.
+To support any programming language, I replaced R-specific packing scope
+specifications with a <code>.pkgliteignore</code> configuration file,
+compliant with the gitignore format standard.</p></li>
+<li><p><strong>Command-line interface</strong>.
+Alongside the Python API, pkglite for Python includes a CLI built with
+<a href="https://github.com/fastapi/typer">typer</a>. This enables seamless integration
+into shell scripts and standard engineering workflows.</p></li>
+<li><p><strong>Optimized tooling</strong>.
+File type recognition now relies on a content-based
+<a href="https://nanx.me/blog/post/txtvsbin/">zlib algorithm</a>,
+replacing file-extension-based methods.
+The packed file parser has been rewritten using finite state machines
+for improved maintainability.
+Additionally, UTF-8 encoding is enforced for all text files across platforms.</p></li>
+</ul>
+</div>
+<div id="performance-testing" class="section level2">
+<h2>Performance testing</h2>
+<p>pkglite for Python is developed with performance in mind. Using this
+<a href="bench.sh"><code>bench.sh</code></a> script, I tested packing and unpacking an entire
+Python project with the virtual environment, which offers a realistic mix
+of text and binary files.</p>
+<p>On an M2 MacBook Air (2022), packing the project generated a 1.1 GB text file
+in 16 seconds:</p>
+<pre class="text"><code>Packing...
+Packing complete.
+Output file size: 1.18 GB
+Packing time: 16 seconds
+Packing write speed: 76.04 MB/s</code></pre>
+<p>Unpacking from the file took only 8 seconds:</p>
+<pre class="text"><code>Unpacking...
+Unpacking complete.
+Unpacking time: 8 seconds
+Unpacking read speed: 152.09 MB/s</code></pre>
+</div>
+<div id="acknowledgements" class="section level2">
+<h2>Acknowledgements</h2>
+<p>I am deeply grateful to my original pkglite R package coauthors,
+Keaven Anderson and Yilong Zhang, for their encouragement to explore new ideas.
+My thanks also go to Ross Farrugia and the pharmaverse council for including
+the package and providing GitHub hosting, plus everyone who kindly contributed
+valuable time for code reviews and validations.</p>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-zhao2023electronic" class="csl-entry">
+Zhao, Yujie, Nan Xiao, Keaven Anderson, and Yilong Zhang. 2023. <span>“Electronic Common Technical Document Submission with Analysis Using <span>R</span>.”</span> <em>Clinical Trials</em> 20 (1): 89–92. <a href="https://doi.org/10.1177/17407745221123244">https://doi.org/10.1177/17407745221123244</a>.
+</div>
+</div>
+</div>
