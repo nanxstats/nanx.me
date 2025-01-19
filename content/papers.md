@@ -5,27 +5,98 @@ menu: "main"
 
 *  *  *  *
 
-<div class="float">
-<img src="/image/wordcloud.png" alt="Word cloud visualization of the keywords in my publications.">
-<div class="figcaption">
-Word cloud visualization of the keywords in my publications.
+<div class="papers-toc mb-5">
+  <!-- External Links Row -->
+  <div class="row g-0 mb-3">
+    <div class="col-md-6 pe-md-2">
+      <a href="https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en" class="btn btn-outline-nav w-100">
+        <i class="fa-brands fa-google-scholar"></i>
+        <span>Google Scholar</span>
+      </a>
+    </div>
+    <div class="col-md-6 ps-md-2">
+      <a href="https://orcid.org/0000-0002-0250-5673" class="btn btn-outline-nav w-100">
+        <i class="fa-brands fa-orcid"></i>
+        <span>ORCID</span>
+      </a>
+    </div>
+    <div class="col-md-6 pe-md-2">
+      <a href="https://www.researchgate.net/profile/Nan-Xiao-9" class="btn btn-outline-nav w-100">
+        <i class="fa-brands fa-researchgate"></i>
+        <span>ResearchGate</span>
+      </a>
+    </div>
+    <div class="col-md-6 ps-md-2">
+      <a href="nanx.bib" class="btn btn-outline-nav w-100">
+        <i class="fa fa-download"></i>
+        <span>Download BibTeX file</span>
+      </a>
+    </div>
+  </div>
 
-[Make yours!](https://nanx.me/blog/post/research-word-cloud/)
-</div>
-</div>
-
-<div class="mt-4"></div>
-
-<div class="text-center toc">
-
-[Google Scholar](https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en) |
-[ORCID](https://orcid.org/0000-0002-0250-5673) |
-[ResearchGate](https://www.researchgate.net/profile/Nan-Xiao-9) |
-[Download BibTeX file](nanx.bib)
-
-[2024](#2024) | [2023](#2023) | [2022](#2022) | [2021](#2021) | [2020](#2020) |
-[2019](#2019) | [2018](#2018) | [2017](#2017) | [2016](#2016) | [2015](#2015)
-
+  <!-- Years Row -->
+  <div class="row g-0">
+    <div class="col-md-2-4 col-4">
+      <a href="#2024" class="btn btn-outline-nav w-100">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>2024</span>
+      </a>
+    </div>
+    <div class="col-md-2-4 col-4">
+      <a href="#2023" class="btn btn-outline-nav w-100">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>2023</span>
+      </a>
+    </div>
+    <div class="col-md-2-4 col-4">
+      <a href="#2022" class="btn btn-outline-nav w-100">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>2022</span>
+      </a>
+    </div>
+    <div class="col-md-2-4 col-4">
+      <a href="#2021" class="btn btn-outline-nav w-100">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>2021</span>
+      </a>
+    </div>
+    <div class="col-md-2-4 col-4">
+      <a href="#2020" class="btn btn-outline-nav w-100">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>2020</span>
+      </a>
+    </div>
+    <div class="col-md-2-4 col-4">
+      <a href="#2019" class="btn btn-outline-nav w-100">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>2019</span>
+      </a>
+    </div>
+    <div class="col-md-2-4 col-4">
+      <a href="#2018" class="btn btn-outline-nav w-100">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>2018</span>
+      </a>
+    </div>
+    <div class="col-md-2-4 col-4">
+      <a href="#2017" class="btn btn-outline-nav w-100">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>2017</span>
+      </a>
+    </div>
+    <div class="col-md-2-4 col-4">
+      <a href="#2016" class="btn btn-outline-nav w-100">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>2016</span>
+      </a>
+    </div>
+    <div class="col-md-2-4 col-4">
+      <a href="#2015" class="btn btn-outline-nav w-100">
+        <i class="fa-regular fa-circle-check"></i>
+        <span>2015</span>
+      </a>
+    </div>
+  </div>
 </div>
 
 <div class="mt-5"></div>
@@ -165,3 +236,119 @@ Word cloud visualization of the keywords in my publications.
   padding: 0.5rem 0;
 }
 </style>
+
+<style>
+/* Papers TOC container */
+.papers-toc {
+    border: 1px solid var(--tw-prose-bullets);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    background-color: var(--tw-bg);
+}
+
+/* Grid system adjustments */
+.papers-toc .row {
+    margin: -0.5rem;
+}
+
+.papers-toc .col-md-2-4,
+.papers-toc .col-4,
+.papers-toc .col-md-6 {
+    padding: 0.5rem;
+}
+
+/* Custom 5-column grid */
+.col-md-2-4 {
+    position: relative;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .col-md-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+/* Button styles */
+.papers-toc .btn-outline-nav {
+    font-family: var(--tw-prose-font-sans-serif);
+    font-weight: 450;
+    font-size: 1rem;
+    font-feature-settings: normal;
+    text-decoration: none;
+    border: 1px solid var(--tw-prose-bullets);
+    border-radius: 0.4rem;
+    padding: 1rem 1.25rem;
+    height: 100%;
+    transition: all 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
+    text-align: left;
+    background-color: var(--tw-bg);
+    display: flex;
+    align-items: center;
+    color: var(--tw-prose-body);
+}
+
+.papers-toc .btn-outline-nav:hover {
+    border-color: var(--tw-prose-counters);
+    text-decoration: none;
+}
+
+.papers-toc .btn-outline-nav:active {
+    background-color: var(--tw-prose-hr);
+}
+
+/* Icon styles */
+.papers-toc .btn-outline-nav i {
+    font-size: 1.1rem;
+    width: 1.5rem;
+    text-align: center;
+    color: var(--tw-prose-captions);
+    margin-right: 0.75rem;
+    transition: color 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
+}
+
+/* Text styles */
+.papers-toc .btn-outline-nav span {
+    color: var(--tw-prose-links);
+    transition: color 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
+}
+
+/* Hover states */
+.papers-toc .btn-outline-nav:hover span {
+    color: var(--tw-prose-links-hover);
+}
+
+.papers-toc .btn-outline-nav:hover i {
+    color: var(--tw-prose-links-hover);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .papers-toc .pe-md-2 {
+        padding-right: 0.5rem !important;
+    }
+
+    .papers-toc .ps-md-2 {
+        padding-left: 0.5rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .papers-toc {
+        padding: 0.75rem;
+    }
+
+    .papers-toc .row {
+        margin: -0.375rem;
+    }
+
+    .papers-toc .col-md-2-4,
+    .papers-toc .col-4,
+    .papers-toc .col-md-6 {
+        padding: 0.375rem;
+    }
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
