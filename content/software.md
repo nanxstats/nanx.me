@@ -77,6 +77,10 @@ menu: "main"
   structure\
   [PyPI](https://pypi.org/project/pkglite/) |
   [GitHub](https://github.com/pharmaverse/py-pkglite)
+- [rtflite](https://pharmaverse.github.io/rtflite/)\
+  Lightweight RTF composer for Python\
+  [PyPI](https://pypi.org/project/rtflite/) |
+  [GitHub](https://github.com/pharmaverse/rtflite)
 
 ## R packages
 
