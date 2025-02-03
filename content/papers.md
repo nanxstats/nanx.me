@@ -52,7 +52,7 @@ menu: "main"
 - [Building an Internal R Package for Statistical Analysis and Reporting in Clinical Trials: A SAS User's Perspective](https://www.pharmasug.org/proceedings/2023/SD/PharmaSUG-2023-SD-122.pdf)\
   Huei-Ling Chen, Heng Zhou, Nan Xiao\
   PharmaSUG 2023
-  ([Best Paper Award](https://www.pharmasug.org/us/2023/bestpapers.html))
+  ([Best Paper Award](https://pharmasug.org/conferences/pharmasug-2023-us/best-paper-winners/))
 
 ## 2022
 
