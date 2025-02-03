@@ -400,8 +400,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 ## Archives
 
-- [使用 R 和 Apache 开发 Web 应用程序](https://nanx.me/rapache/) (2011)
-- [来自 Google 的 R 语言编码风格指南](https://nanx.me/rstyle/) (2011)
+- [<span lang="zh-Hans">使用 R 和 Apache 开发 Web 应用程序</span>](https://nanx.me/rapache/) (2011)
+- [<span lang="zh-Hans">来自 Google 的 R 语言编码风格指南</span>](https://nanx.me/rstyle/) (2011)
 
 <style>
 .markdown ul {
@@ -515,3 +515,10 @@ Shiny apps, widgets, and templates for interactive data analysis.
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+:lang(zh-Hans) {
+  font-family: serif !important;
+  font-weight: 700;
+}
+</style>
