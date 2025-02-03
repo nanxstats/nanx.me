@@ -22,7 +22,7 @@ The source code for this site itself is available at
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Heading text  | [Wittgenstein](https://fonts.google.com/specimen/Wittgenstein)                           <br> Clear, sharp serif typeface                                         |
-| Body text     | [Lato](https://fonts.google.com/specimen/Lato)                                           <br> Humanist sans-serif typeface                                        |
+| Body text     | [Inter](https://fonts.google.com/specimen/Inter)                                         <br> Geometric neo-grotesque sans-serif typeface                         |
 | Code          | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)                             <br> Monospace typeface made for developers                              |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                 |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                      |
@@ -54,13 +54,15 @@ The source code for this site itself is available at
 }
 
 .content .markdown p {
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
+  font-feature-settings: "cv01", "cv10";
 }
 
 .table {
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
+  font-feature-settings: "cv01", "cv10";
 }
 
 .table tr {
@@ -80,7 +82,8 @@ The source code for this site itself is available at
 .table td:nth-child(1),
 table th:nth-child(1) {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 700;
+  font-weight: 600;
+  font-feature-settings: "cv01", "cv10";
   width: 30%;
 }
 </style>

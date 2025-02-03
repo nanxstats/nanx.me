@@ -412,28 +412,21 @@ Shiny apps, widgets, and templates for interactive data analysis.
   line-height: 1.875rem;
 }
 
-.toc a {
-  font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 500;
-  font-size: 1.125rem;
-  font-feature-settings: normal;
-}
-
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 500;
-  font-size: 1.0625rem;
-  font-feature-settings: normal;
+  font-weight: 450;
+  font-size: 1rem;
+  font-feature-settings: "cv01", "cv10";
 }
 
 .markdown ul li a:first-child {
-  font-weight: 600;
-  font-size: 1.25rem;
+  font-weight: 500;
+  font-size: 1.1875rem;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 1.0625rem;
+  font-size: 1rem;
   padding: 0.5rem 0;
 }
 </style>
@@ -458,9 +451,9 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 .software-toc .btn-outline-nav {
     font-family: var(--tw-prose-font-sans-serif);
-    font-weight: 500;
+    font-weight: 450;
     font-size: 1rem;
-    font-feature-settings: normal;
+    font-feature-settings: "cv01", "cv10";
     text-decoration: none;
     border: 1px solid var(--tw-prose-bullets);
     border-radius: 0.4rem;

@@ -147,28 +147,23 @@ menu: "main"
   line-height: 1.875rem;
 }
 
-.toc a {
-  font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 500;
-  font-size: 1.125rem;
-  font-feature-settings: normal;
-}
-
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 500;
-  font-size: 1.0625rem;
-  font-feature-settings: normal;
+  font-weight: 450;
+  font-size: 1rem;
+  font-feature-settings: "cv01", "cv10";
 }
 
 .markdown ul li a:first-child {
-  font-weight: 600;
-  font-size: 1.125rem;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  font-feature-settings: "cv01", "cv10";
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 1.0625rem;
+  font-size: 1rem;
+  font-feature-settings: "cv01", "cv10";
   padding: 0.5rem 0;
 }
 </style>
@@ -195,9 +190,9 @@ menu: "main"
 /* Button styles */
 .papers-toc .btn-outline-nav {
     font-family: var(--tw-prose-font-sans-serif);
-    font-weight: 500;
+    font-weight: 450;
     font-size: 1rem;
-    font-feature-settings: normal;
+    font-feature-settings: "cv01", "cv10";
     text-decoration: none;
     border: 1px solid var(--tw-prose-bullets);
     border-radius: 0.4rem;
