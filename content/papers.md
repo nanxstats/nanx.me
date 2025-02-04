@@ -147,23 +147,28 @@ menu: "main"
   line-height: 1.875rem;
 }
 
+.toc a {
+  font-family: var(--tw-prose-font-sans-serif);
+  font-weight: 500;
+  font-size: 1.125rem;
+  font-feature-settings: normal;
+}
+
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 450;
-  font-size: 1rem;
-  font-feature-settings: "cv01", "cv10";
+  font-weight: 500;
+  font-size: 1.0625rem;
+  font-feature-settings: normal;
 }
 
 .markdown ul li a:first-child {
-  font-weight: 500;
-  font-size: 1.0625rem;
-  font-feature-settings: "cv01", "cv10";
+  font-weight: 600;
+  font-size: 1.125rem;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 1rem;
-  font-feature-settings: "cv01", "cv10";
+  font-size: 1.0625rem;
   padding: 0.5rem 0;
 }
 </style>
@@ -190,9 +195,9 @@ menu: "main"
 /* Button styles */
 .papers-toc .btn-outline-nav {
     font-family: var(--tw-prose-font-sans-serif);
-    font-weight: 450;
+    font-weight: 500;
     font-size: 1rem;
-    font-feature-settings: "cv01", "cv10";
+    font-feature-settings: normal;
     text-decoration: none;
     border: 1px solid var(--tw-prose-bullets);
     border-radius: 0.4rem;

@@ -20,13 +20,13 @@ menu: "main"
 
 ## Translation projects
 
-- [<span lang="zh-Hans">应用预测建模</span>](https://book.douban.com/subject/26800150/) (2016)\
+- [应用预测建模](https://book.douban.com/subject/26800150/) (2016)\
   Translated from [Applied Predictive Modeling](http://appliedpredictivemodeling.com/) (2013)
-- [<span lang="zh-Hans">R数据可视化手册</span>](https://book.douban.com/subject/25873705/) (2014)\
+- [R数据可视化手册](https://book.douban.com/subject/25873705/) (2014)\
   Translated from [R Graphics Cookbook](https://r-graphics.org/) (2013)
-- [<span lang="zh-Hans">ggplot2: 数据分析与图形艺术</span>](https://book.douban.com/subject/24527091/) (2013)\
+- [ggplot2: 数据分析与图形艺术](https://book.douban.com/subject/24527091/) (2013)\
   Translated from [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/) (2009)
-- [<span lang="zh-Hans">R语言实战</span>](https://book.douban.com/subject/20382244/) (2013)\
+- [R语言实战](https://book.douban.com/subject/20382244/) (2013)\
   Translated from [R in Action](https://www.manning.com/books/r-in-action) (2011)
 
 <style>
@@ -40,22 +40,14 @@ menu: "main"
 
 .markdown ul li a:first-child {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 500;
-  font-size: 1.0625rem;
-  font-feature-settings: "cv01", "cv10";
+  font-weight: 600;
+  font-size: 1.125rem;
+  font-feature-settings: normal;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 1rem;
-  font-feature-settings: "cv01", "cv10";
+  font-size: 1.0625rem;
   padding: 0.5rem 0;
-}
-</style>
-
-<style>
-:lang(zh-Hans) {
-  font-family: serif !important;
-  font-weight: 700;
 }
 </style>
