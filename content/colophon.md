@@ -55,6 +55,7 @@ The source code for this site itself is available at
 
 .content .markdown p {
   font-size: 1.0625rem;
+  font-feature-settings: "ss01";
 }
 
 .table {

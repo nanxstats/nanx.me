@@ -48,6 +48,7 @@ menu: "main"
 .markdown ul li {
   color: var(--tw-prose-captions);
   font-size: 1rem;
+  font-feature-settings: "ss01";
   padding: 0.5rem 0;
 }
 </style>

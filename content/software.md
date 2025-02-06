@@ -422,11 +422,13 @@ Shiny apps, widgets, and templates for interactive data analysis.
 .markdown ul li a:first-child {
   font-weight: 550;
   font-size: 1.1875rem;
+  font-feature-settings: "ss01";
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
   font-size: 1rem;
+  font-feature-settings: "ss01";
   padding: 0.5rem 0;
 }
 </style>
