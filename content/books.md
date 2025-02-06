@@ -40,14 +40,14 @@ menu: "main"
 
 .markdown ul li a:first-child {
   font-family: var(--tw-prose-font-sans-serif);
-  font-weight: 600;
-  font-size: 1.125rem;
-  font-feature-settings: normal;
+  font-weight: 550;
+  font-size: 1.0625rem;
+  font-feature-settings: "ss01";
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 1.0625rem;
+  font-size: 1rem;
   padding: 0.5rem 0;
 }
 </style>
