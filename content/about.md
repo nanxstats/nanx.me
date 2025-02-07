@@ -11,8 +11,8 @@ I am part of the Methodology Research group led by
 [Keaven M. Anderson](https://keaven.github.io/) within
 [Biostatistics and Research Decision Sciences](https://jobs.merck.com/bards)
 (BARDS).
-I also represent our company on the R Consortium
-[Infrastructure Steering Committee](https://r-consortium.org/about/governance.html)
+I also represent our company on the [R Consortium
+Infrastructure Steering Committee](https://r-consortium.org/about/governance.html)
 and contribute to the
 [R Submissions Working Group](https://rconsortium.github.io/submissions-wg/).
 
@@ -41,7 +41,7 @@ high-dimensional data analysis, advised by
 
 <style>
 .content .markdown {
-  font-size: 1rem;
+  font-size: 1.03125rem;
   font-feature-settings: "ss01";
 }
 </style>
