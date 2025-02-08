@@ -11,6 +11,7 @@ all while maintaining a personal touch.
 <style>
 .landing {
     font-family: var(--tw-prose-font-serif);
+    font-feature-settings: normal;
     font-weight: 450;
     font-size: 1.5625rem;
 }
