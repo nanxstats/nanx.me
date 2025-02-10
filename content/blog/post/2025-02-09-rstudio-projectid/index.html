@@ -1,0 +1,98 @@
+---
+title: "Prevent RStudio 2024.12.0 from adding ProjectID to .Rproj files"
+author: "Nan Xiao"
+date: "2025-02-09T20:42:00"
+slug: rstudio-projectid
+categories: []
+tags:
+  - R
+  - RStudio IDE
+  - R startup
+  - Git
+  - xfun
+  - automation
+  - developer experience
+meta_img: "rstudio-projectid-git-diff.png"
+description: >
+  RStudio 2024.12.0 unconditionally adds a ProjectID field to .Rproj files,
+  causing unwanted Git diffs and potential editing conflicts.
+  This post explains the issue and provides an R script to automatically
+  remove the field at R startup, keeping repositories clean.
+---
+
+
+
+<div class="float">
+<img src="rstudio-projectid-git-diff.png" alt="Git diff showing the ProjectID field added by RStudio 2024.12.0. Terminal: Ghostty. Theme: Dracula+. Font family: Iosevka Term." />
+<div class="figcaption">Git diff showing the ProjectID field added by RStudio 2024.12.0.<br />
+Terminal: Ghostty. Theme: Dracula+. Font family: Iosevka Term.</div>
+</div>
+<div id="tldr-the-fix" class="section level2">
+<h2>TL;DR: The fix</h2>
+<p>The following script detects newly added <code>ProjectID</code> lines in <code>.Rproj</code> files
+using <code>git diff</code>. If detected, it removes the line and saves the modified
+<code>.Rproj</code> file.</p>
+<pre class="r"><code># Remove ProjectID from .Rproj files if freshly added
+local({
+  xfun &lt;- requireNamespace(&quot;xfun&quot;, quietly = TRUE)
+  rproj_files &lt;- list.files(pattern = &quot;\\.Rproj$&quot;, full.names = TRUE)
+  if (!xfun || length(rproj_files) == 0L) return(invisible(NULL))
+
+  lapply(rproj_files, function(f) {
+    diff_cmd &lt;- system(paste(&quot;git diff --&quot;, shQuote(f)), intern = TRUE)
+    diff_out &lt;- tryCatch(diff_cmd, error = function(e) character(0))
+
+    if (any(grepl(&quot;^\\+ProjectId: &quot;, diff_out))) {
+      dcf_old &lt;- xfun::read_utf8(f)
+      dcf_new &lt;- dcf_old[!grepl(&quot;^ProjectId: &quot;, dcf_old)]
+      xfun::write_utf8(dcf_new, f)
+    }
+  })
+
+  invisible(NULL)
+})</code></pre>
+<p>To apply this fix, add the script to your project-specific <code>.Rprofile</code> or the
+user-specific <code>~/.Rprofile</code>. It will execute on every
+<a href="https://docs.posit.co/ide/user/ide/guide/environments/r/managing-r.html">R startup</a>.
+The script has been tested with RStudio IDE 2024.12.0 on Windows, macOS, and Linux.</p>
+<p>Requirements of the script:</p>
+<ul>
+<li>The project must use Git for version control.</li>
+<li><code>git</code> must be accessible from the command-line
+(<a href="https://github.com/nanxstats/r-windows-paths">Windows how-to</a>).</li>
+<li>The <a href="https://cran.r-project.org/package=xfun">xfun</a> package is installed
+for handling UTF-8 encoded files.</li>
+</ul>
+</div>
+<div id="the-issue" class="section level2">
+<h2>The issue</h2>
+<p>In RStudio 2024.12.0, opening an R package or project automatically adds a
+<code>ProjectID</code> field to the <code>.Rproj</code> file, as shown in the screenshot above.</p>
+<p>This feature was introduced in
+<a href="https://github.com/rstudio/rstudio/pull/15140">rstudio/rstudio#15140</a>.
+It was designed to accurately map projects with their <code>.Rproj.user/</code>
+directories, which can now be stored externally - outside of the project.</p>
+<p>While this feature serves a clear purpose, the current implementation
+introduces some unintended side effects. For example, it may create
+<a href="https://forum.posit.co/t/196345">unnecessary diffs</a> in version control,
+with no clear lifecycle for the <code>ProjectID</code>.
+Team members collolaborating with different RStudio versions might also
+get <a href="https://github.com/rstudio/rstudio/issues/15524">conflicting edits</a>,
+leading to additional version control noise.</p>
+</div>
+<div id="long-term-and-short-term-solutions" class="section level2">
+<h2>Long-term and short-term solutions</h2>
+<p>This behavior has been improved in
+<a href="https://github.com/rstudio/rstudio/pull/15654">rstudio/rstudio#15654</a>,
+where <code>ProjectID</code> is only added when external storage for <code>.Rproj.user/</code>
+is required. However, until a fixed version is released, or if users are
+stuck with RStudio 2024.12.0, a temporary user-space solution could be useful.</p>
+</div>
+<div id="why-this-fix-works" class="section level2">
+<h2>Why this fix works</h2>
+<p>The modification to <code>.Rproj</code> files occurs in RStudio IDE logic before the
+R process starts, meaning we cannot prevent the addition of <code>ProjectID</code>.
+However, we can reliably detect the change via <code>git diff</code> and revert it
+when R starts. The script provided at the beginning of this post
+automates this process.</p>
+</div>
