@@ -420,7 +420,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 }
 
 .markdown ul li a:first-child {
-  font-weight: 500;
+  font-weight: 550;
   font-size: 1.1875rem;
 }
 

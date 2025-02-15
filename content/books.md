@@ -41,7 +41,7 @@ menu: "main"
 .markdown ul li a:first-child {
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
-  font-weight: 500;
+  font-weight: 550;
   font-size: 1.0625rem;
 }
 
