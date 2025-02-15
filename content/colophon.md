@@ -22,7 +22,7 @@ The source code for this site itself is available at
 |               |                                                                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Heading text  | [Wittgenstein](https://fonts.google.com/specimen/Wittgenstein)                           <br> Clear, sharp serif typeface                                         |
-| Body text     | [Mona Sans](https://github.com/github/mona-sans)                                         <br> Grotesque sans-serif typeface                                       |
+| Body text     | [Instrument Sans](https://github.com/Instrument/instrument-sans)                         <br> Neo-grotesque sans-serif typeface                                   |
 | Code          | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)                             <br> Monospace typeface made for developers                              |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                 |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                      |
@@ -59,7 +59,7 @@ The source code for this site itself is available at
 
 .table {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss05";
+  font-feature-settings: normal;
   font-weight: 450;
   font-size: 1.0625rem;
 }
@@ -81,7 +81,7 @@ The source code for this site itself is available at
 .table td:nth-child(1),
 table th:nth-child(1) {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss05";
+  font-feature-settings: normal;
   font-weight: 650;
   width: 30%;
 }

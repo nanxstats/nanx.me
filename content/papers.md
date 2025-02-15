@@ -149,7 +149,7 @@ menu: "main"
 
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss05";
+  font-feature-settings: normal;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -188,7 +188,7 @@ menu: "main"
 /* Button styles */
 .papers-toc .btn-outline-nav {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "ss01", "ss05";
+    font-feature-settings: normal;
     font-weight: 500;
     font-size: 0.9375rem;
     text-decoration: none;

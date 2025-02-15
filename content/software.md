@@ -414,7 +414,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss05";
+  font-feature-settings: normal;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -451,7 +451,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 .software-toc .btn-outline-nav {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "ss01", "ss05";
+    font-feature-settings: normal;
     font-weight: 500;
     font-size: 0.9375rem;
     text-decoration: none;
