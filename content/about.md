@@ -5,8 +5,7 @@ menu: "main"
 
 *  *  *  *
 
-I am a statistician at [Merck & Co., Inc.](https://www.merck.com/),
-Rahway, NJ, USA.
+I am a statistician at [Merck & Co., Inc., Rahway, NJ, USA](https://www.merck.com/).
 I am part of the Methodology Research group led by
 [Keaven M. Anderson](https://keaven.github.io/) within
 [Biostatistics and Research Decision Sciences](https://jobs.merck.com/bards)
