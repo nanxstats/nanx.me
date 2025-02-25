@@ -235,8 +235,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
   [Mirror 2](https://nanx.shinyapps.io/imgsvd/)
 - [hdnom-app](https://github.com/nanxstats/hdnom-app)\
   Benchmarking and visualization of penalized Cox models\
-  [Mirror 1](https://nanx.app/hdnom/) |
-  [Mirror 2](https://nanx.shinyapps.io/hdnom-app/)
+  [Mirror 1](https://nanx.app/hdnom/)
 - [conjugate-normal-umkv](https://github.com/nanxstats/conjugate-normal-umkv)\
   A demo of [Bayesian inference for normal mean (known variance)](https://stephens999.github.io/fiveMinuteStats/shiny_normal_example.html)\
   [Mirror 1](https://nanx.app/conjugate-normal-umkv/) |
