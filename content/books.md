@@ -40,7 +40,7 @@ menu: "main"
 
 .markdown ul li a:first-child {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: normal;
+  font-feature-settings: "ss04", "ss07", "ss08", "ss09", "ss12";
   font-weight: 550;
   font-size: 1.0625rem;
 }
