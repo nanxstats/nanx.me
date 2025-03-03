@@ -10,10 +10,13 @@ I am part of the Methodology Research group led by
 [Keaven M. Anderson](https://keaven.github.io/) within
 [Biostatistics and Research Decision Sciences](https://jobs.merck.com/bards)
 (BARDS).
-I also represent our company on the [R Consortium
+I represent our company on the [R Consortium
 Infrastructure Steering Committee](https://r-consortium.org/about/governance.html)
-and contribute to the
-[R Submissions Working Group](https://rconsortium.github.io/submissions-wg/).
+and participate in the
+[R Consortium R Submissions Working Group](https://rconsortium.github.io/submissions-wg/).
+I also collaborate with the [pharmaverse](https://pharmaverse.org/) community
+by contributing open source software to their cross-industry initiative
+for clinical reporting.
 
 In my daily work, I solve challenges at the intersection of
 statistical methodology research and software architecture innovation.
