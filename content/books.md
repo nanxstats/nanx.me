@@ -33,7 +33,7 @@ menu: "main"
 .markdown ul {
   list-style: none;
   padding-left: 2.5ch;
-  border-left: 1px solid var(--tw-prose-hr);
+  border-left: 1px solid var(--tw-prose-bullets);
   margin-left: 3ch;
   line-height: 1.875rem;
 }
