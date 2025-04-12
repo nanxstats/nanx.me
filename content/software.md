@@ -198,6 +198,10 @@ menu: "main"
   A fork version of Jason Davies' word cloud generator with color palette selection and updated default values\
   [GitHub](https://github.com/nanxstats/wordcloud) |
   [Blog post](https://nanx.me/blog/post/rethinking-word-cloud-generator/)
+- [font-overlay](https://nanx.me/font-overlay/)\
+  Interactively compare typesetting characteristics between fonts
+  across customizable text, font size, letter spacing, and optical size.\
+  [GitHub](https://github.com/nanxstats/font-overlay)
 
 ### Shiny apps
 
