@@ -23,7 +23,7 @@ The source code for this site itself is available at
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Heading text  | [Wittgenstein](https://fonts.google.com/specimen/Wittgenstein)                           <br> Clear, sharp serif typeface                                         |
 | Body text     | [Inter](https://github.com/rsms/inter)                                                   <br> Geometric neo-grotesque sans-serif typeface                         |
-| Code          | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)                             <br> Monospace typeface made for developers                              |
+| Code          | [Ligalex Mono](https://github.com/ToxicFrog/Ligaturizer)                                 <br> IBM Plex Mono with programming ligatures                            |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                 |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                      |
 {{< /bootstrap-table >}}
