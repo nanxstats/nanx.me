@@ -96,13 +96,15 @@ menu: "main"
   font-feature-settings: normal;
   font-weight: 500;
   font-size: 1rem;
-  font-variation-settings: "opsz" 23.4;
+  font-variation-settings: "opsz" var(--inter-opsz-16-500);
+  letter-spacing: var(--inter-ls-16-500);
 }
 
 .markdown ul li a:first-child {
   font-weight: 550;
   font-size: 1.0625rem;
-  font-variation-settings: "opsz" 25.6;
+  font-variation-settings: "opsz" var(--inter-opsz-17-500);
+  letter-spacing: var(--inter-ls-17-500);
 }
 
 .markdown ul li {

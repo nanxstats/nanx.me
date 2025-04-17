@@ -42,6 +42,7 @@ high-dimensional data analysis, advised by
 .content .markdown {
   font-size: 1.0625rem;
   font-feature-settings: normal;
-  font-variation-settings: "opsz" 25.6;
+  font-variation-settings: "opsz" var(--inter-opsz-17-450);
+  letter-spacing: var(--inter-ls-17-450);
 }
 </style>
