@@ -10,9 +10,11 @@ all while maintaining a personal touch.
 
 <style>
 .landing {
-    font-family: var(--tw-prose-font-serif);
+    font-family: var(--tw-prose-font-sans-serif);
     font-feature-settings: normal;
-    font-weight: 500;
-    font-size: 1.5625rem;
+    font-weight: 400;
+    font-size: 1.625rem;
+    font-variation-settings: "opsz" var(--inter-opsz-26-400);
+    letter-spacing: var(--inter-ls-26-400);
 }
 </style>
