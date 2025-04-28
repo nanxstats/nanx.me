@@ -13,7 +13,7 @@ my focus is always on creating software that is not only effective, but also
 genuinely accessible, reliable, and maintainable for everyone involved.
 
 I'm also passionate about <span class="highlight">developer experience</span>,
-enabling workflows that are a pleasure for engineers to reuse and build upon.
+enabling workflows that are a pleasure for teams to reuse and build upon.
 I believe great software should empower everyone who interacts with it,
 from scientists to engineers.
 
