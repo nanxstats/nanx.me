@@ -4,7 +4,7 @@ menu: "main"
 description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
-👋 Hi! I'm Nan --- a statistician by training, a software builder at heart.\
+👋 Hi! I'm Nan --- a statistician by training, a software builder at heart.
 I specialize in building statistical and research software where
 robust implementation meets intuitive design.
 
@@ -12,7 +12,7 @@ Whether advancing healthcare research or contributing to open source,
 my focus is always on transforming real-world complexities into reliable,
 accessible, and maintainable solutions.
 
-My commitment to better software extends to developer experience (DevEx).
+My commitment to software extends to developer experience (DevEx).
 I design workflows that teams can adopt and extend,
 because great software is only possible with great collaboration.
 
@@ -22,8 +22,8 @@ because great software is only possible with great collaboration.
     font-family: var(--tw-prose-font-sans-serif);
     font-feature-settings: normal;
     font-weight: 450;
-    font-size: 1.375rem;
-    font-variation-settings: "opsz" var(--inter-opsz-22-450);
-    letter-spacing: var(--inter-ls-22-450);
+    font-size: 1rem;
+    font-variation-settings: "opsz" var(--inter-opsz-16-450);
+    letter-spacing: var(--inter-ls-16-450);
 }
 </style>
