@@ -91,6 +91,9 @@ menu: "main"
   [CRAN](https://cran.r-project.org/package=pkglite) |
   [GitHub](https://github.com/Merck/pkglite) |
   [Paper](https://doi.org/10.1177/17407745221123244)
+- [pkgdown.offline](https://nanx.me/pkgdown.offline/)\
+  Build pkgdown websites without an internet connection\
+  [GitHub](https://github.com/nanxstats/pkgdown.offline)
 
 ### Statistical machine learning
 
