@@ -42,9 +42,9 @@ menu: "main"
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
   font-weight: 550;
-  font-size: 1.0625rem;
-  font-variation-settings: "opsz" var(--inter-opsz-17-500);
-  letter-spacing: var(--inter-ls-17-500);
+  font-size: 1.25rem;
+  font-variation-settings: "opsz" var(--inter-opsz-20-500);
+  letter-spacing: var(--inter-ls-20-500);
 }
 
 .markdown ul li {
