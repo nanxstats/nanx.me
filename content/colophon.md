@@ -19,12 +19,12 @@ The source code for this site itself is available at
 ## Typography
 
 {{< bootstrap-table "table table-responsive" >}}
-|               |                                                                                                                                                                   |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text          | [Inter](https://github.com/rsms/inter)                                                   <br> Geometric neo-grotesque sans-serif typeface                         |
-| Code          | [Ligalex Mono](https://github.com/ToxicFrog/Ligaturizer)                                 <br> IBM Plex Mono with programming ligatures                            |
-| Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                 |
-| Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                      |
+|               |                                                                                                                                                                     |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text          | [Inter](https://github.com/rsms/inter) + [inter-optical-sizing](https://github.com/nanxstats/inter-optical-sizing) <br> Geometric neo-grotesque sans-serif typeface |
+| Code          | [Ligalex Mono](https://github.com/ToxicFrog/Ligaturizer)                                 <br> IBM Plex Mono with programming ligatures                              |
+| Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                   |
+| Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                        |
 {{< /bootstrap-table >}}
 
 ## Publishing
@@ -69,13 +69,13 @@ The source code for this site itself is available at
 }
 
 .table tr {
-  border-color: var(--tw-prose-hr);
+  border-color: var(--tw-prose-bullets);
 }
 
 .table td {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  line-height: 2rem;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  line-height: 2.75rem;
 }
 
 .table>:not(caption)>*>* {
