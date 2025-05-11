@@ -55,8 +55,8 @@ The source code for this site itself is available at
 .content .markdown p {
   font-weight: 410;
   font-size: 1.25rem;
-  font-variation-settings: "opsz" var(--inter-opsz-20-400);
-  letter-spacing: var(--inter-ls-20-400);
+  font-variation-settings: "opsz" var(--inter-opsz-20-450);
+  letter-spacing: var(--inter-ls-20-450);
 }
 
 .table {
@@ -64,8 +64,8 @@ The source code for this site itself is available at
   font-feature-settings: normal;
   font-weight: 410;
   font-size: 1.125rem;
-  font-variation-settings: "opsz" var(--inter-opsz-18-400);
-  letter-spacing: var(--inter-ls-18-400);
+  font-variation-settings: "opsz" var(--inter-opsz-18-450);
+  letter-spacing: var(--inter-ls-18-450);
 }
 
 .table tr {

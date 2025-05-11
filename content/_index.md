@@ -22,7 +22,7 @@ because great software is only possible with great collaboration.
     font-feature-settings: normal;
     font-weight: 410;
     font-size: 1.125rem;
-    font-variation-settings: "opsz" var(--inter-opsz-18-400);
-    letter-spacing: var(--inter-ls-18-400);
+    font-variation-settings: "opsz" var(--inter-opsz-18-450);
+    letter-spacing: var(--inter-ls-18-450);
 }
 </style>
