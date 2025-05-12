@@ -501,16 +501,16 @@ Shiny apps, widgets, and templates for interactive data analysis.
 }
 
 .software-toc .btn-outline-nav span {
-    color: var(--tw-prose-links);
+    color: var(--tw-prose-captions);
     transition: color 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
 }
 
 .software-toc .btn-outline-nav:hover span {
-    color: var(--tw-prose-links-hover);
+    color: var(--tw-prose-body);
 }
 
 .software-toc .btn-outline-nav:hover i {
-    color: var(--tw-prose-links-hover);
+    color: var(--tw-prose-body);
 }
 
 /* Adjust spacing on mobile */

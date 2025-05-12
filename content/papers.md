@@ -231,17 +231,17 @@ menu: "main"
 
 /* Text styles */
 .papers-toc .btn-outline-nav span {
-    color: var(--tw-prose-links);
+    color: var(--tw-prose-captions);
     transition: color 200ms cubic-bezier(0.08, 0.52, 0.52, 1);
 }
 
 /* Hover states */
 .papers-toc .btn-outline-nav:hover span {
-    color: var(--tw-prose-links-hover);
+    color: var(--tw-prose-body);
 }
 
 .papers-toc .btn-outline-nav:hover i {
-    color: var(--tw-prose-links-hover);
+    color: var(--tw-prose-body);
 }
 
 /* Responsive adjustments */
