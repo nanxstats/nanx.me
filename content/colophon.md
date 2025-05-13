@@ -22,7 +22,7 @@ The source code for this site itself is available at
 |               |                                                                                                                                                                     |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text          | [Inter](https://github.com/rsms/inter) + [inter-optical-sizing](https://github.com/nanxstats/inter-optical-sizing) <br> Geometric neo-grotesque sans-serif typeface |
-| Code          | [Ligalex Mono](https://github.com/ToxicFrog/Ligaturizer)                                 <br> IBM Plex Mono with programming ligatures                              |
+| Code          | [Lilex](https://github.com/mishamyrt/Lilex)                                              <br> IBM Plex Mono with programming ligatures                              |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                   |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                        |
 {{< /bootstrap-table >}}
