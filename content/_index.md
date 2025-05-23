@@ -18,11 +18,12 @@ because great software is only possible with great collaboration.
 
 <style>
 .landing {
+    color: #24292f;
     font-family: var(--tw-prose-font-sans-serif);
     font-feature-settings: normal;
-    font-weight: 500;
-    font-size: 1.0625rem;
-    font-variation-settings: "opsz" var(--inter-opsz-17-500);
-    letter-spacing: var(--inter-ls-17-500);
+    font-weight: 410;
+    font-size: 1.125rem;
+    font-variation-settings: "opsz" var(--inter-opsz-18-450);
+    letter-spacing: var(--inter-ls-18-450);
 }
 </style>
