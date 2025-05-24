@@ -21,9 +21,8 @@ because great software is only possible with great collaboration.
     color: #24292f;
     font-family: var(--tw-prose-font-sans-serif);
     font-feature-settings: normal;
-    font-weight: 410;
-    font-size: 1.125rem;
-    font-variation-settings: "opsz" var(--inter-opsz-18-450);
-    letter-spacing: var(--inter-ls-18-450);
+    font-weight: 400;
+    font-size: 1.09375rem;
+    letter-spacing: var(--bdo-ls-tiny);
 }
 </style>

@@ -426,15 +426,13 @@ Shiny apps, widgets, and templates for interactive data analysis.
   font-feature-settings: normal;
   font-weight: 500;
   font-size: 1rem;
-  font-variation-settings: "opsz" var(--inter-opsz-16-500);
-  letter-spacing: var(--inter-ls-16-500);
+  letter-spacing: var(--bdo-ls-tiny);
 }
 
 .markdown ul li a:first-child {
   font-weight: 550;
-  font-size: 1.25rem;
-  font-variation-settings: "opsz" var(--inter-opsz-20-500);
-  letter-spacing: var(--inter-ls-20-500);
+  font-size: 1.1875rem;
+  letter-spacing: var(--bdo-ls-small);
 }
 
 .markdown ul li {
@@ -467,8 +465,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
     font-feature-settings: normal;
     font-weight: 500;
     font-size: 1rem;
-  font-variation-settings: "opsz" var(--inter-opsz-16-500);
-  letter-spacing: var(--inter-ls-16-500);
+    letter-spacing: var(--bdo-ls-tiny);
     text-decoration: none;
     border: 1px solid var(--tw-prose-bullets);
     border-radius: 0.4rem;

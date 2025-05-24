@@ -21,7 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                     |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text          | [Inter](https://github.com/rsms/inter) + [inter-optical-sizing](https://github.com/nanxstats/inter-optical-sizing) <br> Geometric neo-grotesque sans-serif typeface |
+| Text          | [BDO Grotesk](https://github.com/LCTipografi/BDO-Grotesk)                                <br> Neo-grotesque sans-serif typeface                                     |
 | Code          | [Lilex](https://github.com/mishamyrt/Lilex)                                              <br> IBM Plex Mono with programming ligatures                              |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                   |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                        |
@@ -53,19 +53,17 @@ The source code for this site itself is available at
 }
 
 .content .markdown p {
-  font-weight: 410;
-  font-size: 1.25rem;
-  font-variation-settings: "opsz" var(--inter-opsz-20-450);
-  letter-spacing: var(--inter-ls-20-450);
+  font-weight: 400;
+  font-size: 1.15625rem;
+  letter-spacing: var(--bdo-ls-small);
 }
 
 .table {
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
-  font-weight: 410;
+  font-weight: 400;
   font-size: 1.125rem;
-  font-variation-settings: "opsz" var(--inter-opsz-18-450);
-  letter-spacing: var(--inter-ls-18-450);
+  letter-spacing: var(--bdo-ls-small);
 }
 
 .table tr {

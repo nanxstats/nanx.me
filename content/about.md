@@ -40,10 +40,9 @@ high-dimensional data analysis, advised by
 
 <style>
 .content .markdown {
-  font-weight: 410;
-  font-size: 1.1875rem;
+  font-weight: 400;
+  font-size: 1.15625rem;
   font-feature-settings: normal;
-  font-variation-settings: "opsz" var(--inter-opsz-19-450);
-  letter-spacing: var(--inter-ls-19-450);
+  letter-spacing: var(--bdo-ls-small);
 }
 </style>
