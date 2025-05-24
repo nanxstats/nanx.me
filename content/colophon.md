@@ -22,7 +22,7 @@ The source code for this site itself is available at
 |               |                                                                                                                                                                     |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text          | [BDO Grotesk](https://github.com/LCTipografi/BDO-Grotesk)                                <br> Neo-grotesque sans-serif typeface                                     |
-| Code          | [Lilex](https://github.com/mishamyrt/Lilex)                                              <br> IBM Plex Mono with programming ligatures                              |
+| Code          | [Fragment Mono](https://github.com/weiweihuanghuang/fragment-mono)                       <br> Monospaced coding version of Helvetica                                |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                   |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                        |
 {{< /bootstrap-table >}}
