@@ -23,6 +23,6 @@ because great software is only possible with great collaboration.
     font-feature-settings: normal;
     font-weight: 400;
     font-size: 1.09375rem;
-    letter-spacing: var(--bdo-ls-tiny);
+    letter-spacing: -0.4px;
 }
 </style>

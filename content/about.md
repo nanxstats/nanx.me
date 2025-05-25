@@ -43,6 +43,6 @@ high-dimensional data analysis, advised by
   font-weight: 400;
   font-size: 1.15625rem;
   font-feature-settings: normal;
-  letter-spacing: var(--bdo-ls-small);
+  letter-spacing: -0.4px;
 }
 </style>
