@@ -1,0 +1,138 @@
+---
+title: "Refactoring the GPU Selector App with Claude Code: A Vibe Coding Experiment"
+author: "Nan Xiao"
+date: "2025-06-13T01:03:00"
+slug: claude-code-vibe-refactor
+categories: []
+tags:
+  - Claude Code
+  - Agentic AI
+  - vibe coding
+  - vibe refactoring
+  - Tailwind CSS
+  - JavaScript
+  - large language model
+  - deep learning
+  - GPU
+  - buildapc
+meta_img: "image/amari-james-bzdfrbaGztY-unsplash.jpg"
+description: >
+  I rebuilt my deep learning GPU selector app using Claude Code,
+  and here is what I learned from this small vibe coding experiment.
+---
+
+
+
+<div class="float">
+<img src="/image/amari-james-bzdfrbaGztY-unsplash.jpg" alt="Desk setup with plants. Photo by Amari James." />
+<div class="figcaption">Desk setup with plants. Photo by
+<a href="https://unsplash.com/photos/bzdfrbaGztY">Amari James</a>.</div>
+</div>
+<p>In January 2023, I <a href="https://nanx.me/blog/post/gpu-selector/">built</a> a basic,
+interactive <a href="https://nanx.me/gpu/">deep learning GPU selector app</a> inspired
+by Tim Dettmers’ popular guide. The original project was a pure HTML + JavaScript + CSS
+“vibe coding” experiment, driven by chat with GPT-3.5, which was the SOTA
+at the time. While the core logic worked, I did not focus much on its UI or UX.</p>
+<p>Now, two and a half years later, I wanted to see how far agentic coding
+assistants have come, by refactoring the app with modern tools and design
+sensibilities.</p>
+<div id="before-and-after" class="section level2">
+<h2>Before and after</h2>
+<p>Following the wisdom of always using the most expensive but effective tool
+for the job… I decided to give the app a fresh look and feel using
+Claude Code with Max plan.
+Claude Code is a coding assistant with a cool terminal user interface:</p>
+<div class="float">
+<img src="claude-code.png" alt="Claude Code. Terminal: Ghostty. Theme: Dracula+. Font family: Iosevka Term." />
+<div class="figcaption">Claude Code. Terminal: Ghostty. Theme: Dracula+. Font family: Iosevka Term.</div>
+</div>
+<p>Here is the original GPU selector app:</p>
+<div class="float">
+<img src="gpu-selector-app-before.png" alt="App before refactor" />
+<div class="figcaption">App before refactor</div>
+</div>
+<p>And here is the refactored version:</p>
+<div class="float">
+<img src="gpu-selector-app-after.png" alt="App after refactor" />
+<div class="figcaption">App after refactor</div>
+</div>
+<p>(Please don’t tell me you like the original version better 😅)</p>
+</div>
+<div id="the-refactoring-process" class="section level2">
+<h2>The refactoring process</h2>
+<p>Here is a high-level summary of my interaction with Claude Code:</p>
+<ul>
+<li>I used Claude Opus 4 until the token limit was reached; after that,
+it switched to Claude Sonnet 4.</li>
+<li>The entire refactor took 13 user instructions.
+The main goals were achieved within the first 7.</li>
+<li>Before starting, I watched the official presentation,
+<a href="https://www.youtube.com/watch?v=6eBSHbLKuN0">Mastering Claude Code in 30 minutes</a>, and reviewed
+<a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices">Claude 4 prompt engineering best practices</a>.</li>
+</ul>
+<p>Below is a condensed version of my unfiltered conversation with Claude Code.</p>
+<blockquote>
+<p><strong>Instruction 1</strong>:
+Refactor the app for a modern look and feel using Tailwind CSS,
+with an emphasis on UI/UX aligned with top tech company standards.
+Use Google Fonts as needed. <strong>Don’t hold back, give it your all.</strong></p>
+</blockquote>
+<p>Result: Claude Code added an (impressive) progress bar and made initial
+design improvements. However, there seems to be some backend logic issues.</p>
+<blockquote>
+<p><strong>Instruction 2</strong>:
+The question flow broke, and the progress bar stopped working. Please fix.</p>
+</blockquote>
+<p>Result: Logic fixed.</p>
+<blockquote>
+<p><strong>Instruction 3</strong>:
+Make the result box the same width as the progress bar.</p>
+</blockquote>
+<p>Result: Layout improved.</p>
+<blockquote>
+<p><strong>Instruction 4</strong>:
+The current design feels cheesy. Refactor the UI to match the minimalist
+aesthetic of sites like <code>internet.dev</code> and <code>txt.dev</code>. Capture that “vibe”.</p>
+</blockquote>
+<p>Result: Minimalist look achieved!</p>
+<blockquote>
+<p><strong>Instruction 5</strong>:
+Add subtle full-screen grid lines, as seen on INTDEV sites, to guide
+visual focus. Redesign the Yes/No/Restart buttons for usability and
+consistency with the minimalist style.</p>
+</blockquote>
+<p>Result: Grid lines and buttons updated, but with too many grid lines.</p>
+<blockquote>
+<p><strong>Instruction 6</strong>:
+Reduce the number of grid lines; use them only above/below key elements.</p>
+</blockquote>
+<p>Result: Cleaner look achieved.</p>
+<blockquote>
+<p><strong>Instruction 7</strong>:
+Adjust grid lines: add a horizontal line above the GPU selector,
+remove the one below the footer, and add vertical lines to the left and
+right of the main content. Use balanced spacing.</p>
+</blockquote>
+<p>Result: The app was nearly finished visually.</p>
+<p>At this point, most of the major changes were complete.
+The remaining instructions focused on fine-tuning spacing and alignment.
+This is tricky for LLMs without visual feedback. In hindsight,
+these tweaks could have been made more efficiently by hand.</p>
+<blockquote>
+<p><strong>Instructions 8–13:</strong>
+Refine vertical spacing and button alignment so elements don’t shift
+unexpectedly when questions or answers span multiple lines.
+Reduce unnecessary whitespace and make sure grid lines don’t interfere
+with content, especially on small screens.</p>
+</blockquote>
+<p>Result: Final visual details polished.</p>
+</div>
+<div id="afterthoughts" class="section level2">
+<h2>Afterthoughts</h2>
+<p>AI coding assistants have been evolving rapidly, but the human element
+remains critical for truly “vibey” projects. Whether it is the overall vision
+or the subtle details, success comes from having a super clear idea of what
+you want—with the technical sense and know-how to steer revisions in the
+right direction.</p>
+<p>In reality though, this might be easier said than done.</p>
+</div>
