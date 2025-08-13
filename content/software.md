@@ -378,6 +378,9 @@ Shiny apps, widgets, and templates for interactive data analysis.
 - [vscode-textmate-rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)\
   A light theme for Visual Studio Code inspired by the TextMate (default) theme in RStudio IDE\
   [GitHub repository](https://github.com/nanxstats/vscode-textmate-rstheme)
+- [vscode-markdown-stupefy](https://marketplace.visualstudio.com/items?itemName=nanxstats.markdown-stupefy)\
+  Convert smart punctuation to ASCII\
+  [GitHub repository](https://github.com/nanxstats/vscode-markdown-stupefy)
 
 ## Hugo/blogdown themes
 
