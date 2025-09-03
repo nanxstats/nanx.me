@@ -21,7 +21,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |               |                                                                                                                                                                     |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text          | [BDO Grotesk](https://github.com/LCTipografi/BDO-Grotesk)                                <br> Neo-grotesque sans-serif typeface                                     |
+| Text          | [Lyon](https://commercialtype.com/catalog/lyon)                                          <br> Contemporary serif typeface                                           |
 | Code          | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)                             <br> Monospace typeface made for developers                                |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                   |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                        |
@@ -54,16 +54,14 @@ The source code for this site itself is available at
 
 .content .markdown p {
   font-weight: 400;
-  font-size: 1.15625rem;
-  letter-spacing: var(--bdo-ls-small);
+  font-size: 1.3125rem;
 }
 
 .table {
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
   font-weight: 400;
-  font-size: 1.125rem;
-  letter-spacing: var(--bdo-ls-small);
+  font-size: 1.25rem;
 }
 
 .table tr {

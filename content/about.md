@@ -41,8 +41,7 @@ high-dimensional data analysis, advised by
 <style>
 .content .markdown {
   font-weight: 400;
-  font-size: 1.15625rem;
+  font-size: 1.1875rem;
   font-feature-settings: normal;
-  letter-spacing: -0.4px;
 }
 </style>
