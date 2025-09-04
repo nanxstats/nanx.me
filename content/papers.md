@@ -237,6 +237,7 @@ menu: "main"
 /* Text styles */
 .papers-toc .btn-outline-nav span {
     color: #475569;
+    margin-top: 4px;
     /* Readable dark gray (slate-600) */
     transition: color 0.15s ease-in-out;
 }

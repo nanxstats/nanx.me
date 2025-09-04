@@ -513,6 +513,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 /* Text styles */
 .software-toc .btn-outline-nav span {
     color: #475569;
+    margin-top: 4px;
     /* Readable dark gray (slate-600) */
     transition: color 0.15s ease-in-out;
 }
