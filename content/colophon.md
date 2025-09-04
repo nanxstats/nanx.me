@@ -22,7 +22,7 @@ The source code for this site itself is available at
 |               |                                                                                                                                                                     |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text          | [Lyon](https://commercialtype.com/catalog/lyon)                                          <br> Contemporary serif typeface                                           |
-| Code          | [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)                             <br> Monospace typeface made for developers                                |
+| Code          | [Twilio Sans Mono](https://github.com/twilio/twilio-sans-mono)                           <br> Open source monospace typeface with coding ligatures                  |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                   |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                        |
 {{< /bootstrap-table >}}
