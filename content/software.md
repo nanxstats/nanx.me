@@ -433,7 +433,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 .markdown ul li a:first-child {
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
 }
 
 .markdown ul li {
