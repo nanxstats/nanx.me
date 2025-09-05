@@ -225,7 +225,7 @@ menu: "main"
 
 /* Icon styles */
 .papers-toc .btn-outline-nav i {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     width: 1.5rem;
     text-align: center;
     color: #475569;
@@ -237,7 +237,7 @@ menu: "main"
 /* Text styles */
 .papers-toc .btn-outline-nav span {
     color: #475569;
-    margin-top: 4px;
+    margin-top: 3px;
     /* Readable dark gray (slate-600) */
     transition: color 0.15s ease-in-out;
 }

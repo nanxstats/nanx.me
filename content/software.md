@@ -501,7 +501,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 /* Icon styles */
 .software-toc .btn-outline-nav i {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     width: 1.5rem;
     text-align: center;
     color: #475569;
@@ -513,7 +513,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 /* Text styles */
 .software-toc .btn-outline-nav span {
     color: #475569;
-    margin-top: 4px;
+    margin-top: 3px;
     /* Readable dark gray (slate-600) */
     transition: color 0.15s ease-in-out;
 }
