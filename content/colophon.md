@@ -22,7 +22,7 @@ The source code for this site itself is available at
 |               |                                                                                                                                                                     |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Heading       | [Founders Grotesk](https://klim.co.nz/fonts/founders-grotesk/)                           <br> Grotesque sans-serif typeface designed by Kris Sowersby               |
-| Text          | [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)                           <br> Serif typeface designed by Kris Sowersby                              |
+| Body text     | [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)                           <br> Serif typeface designed by Kris Sowersby                              |
 | Code          | [Twilio Sans Mono](https://github.com/twilio/twilio-sans-mono)                           <br> Open source monospace typeface with coding ligatures                  |
 | Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                   |
 | Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                        |
