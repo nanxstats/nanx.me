@@ -22,5 +22,6 @@ and collaborate with confidence.
     font-feature-settings: normal;
     font-weight: 400;
     font-size: 1.25rem;
+    letter-spacing: -0.1px;
 }
 </style>
