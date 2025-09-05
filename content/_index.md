@@ -19,10 +19,9 @@ because great software is only possible with great collaboration.
 <style>
 .landing {
     color: #24292f;
-    font-family: var(--tw-prose-font-sans-serif);
+    font-family: var(--tw-prose-font-serif);
     font-feature-settings: normal;
     font-weight: 400;
-    font-size: 1.1875rem;
-    letter-spacing: -0.2px;
+    font-size: 1.125rem;
 }
 </style>

@@ -433,7 +433,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 .markdown ul li a:first-child {
   font-weight: 400;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 
 .markdown ul li {
@@ -513,7 +513,6 @@ Shiny apps, widgets, and templates for interactive data analysis.
 /* Text styles */
 .software-toc .btn-outline-nav span {
     color: #475569;
-    margin-top: 3px;
     /* Readable dark gray (slate-600) */
     transition: color 0.15s ease-in-out;
 }

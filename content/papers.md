@@ -156,7 +156,7 @@ menu: "main"
 
 .markdown ul li a:first-child {
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.3125rem;
 }
 
 .markdown ul li {
@@ -237,7 +237,6 @@ menu: "main"
 /* Text styles */
 .papers-toc .btn-outline-nav span {
     color: #475569;
-    margin-top: 3px;
     /* Readable dark gray (slate-600) */
     transition: color 0.15s ease-in-out;
 }
