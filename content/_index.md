@@ -18,8 +18,6 @@ and collaborate with confidence.
 
 <style>
 .landing {
-    font-family: var(--tw-prose-font-serif);
-    font-feature-settings: normal;
     font-weight: 400;
     font-size: 1.25rem;
     letter-spacing: -0.1px;
