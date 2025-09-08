@@ -4,7 +4,7 @@ menu: "main"
 description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
-👋 Hi, I'm Nan---a statistician by training and a software builder at heart.
+Hi, I'm Nan---a statistician by training and a software builder at heart.
 I design and ship research software where rigorous methodology meets clean,
 dependable engineering.
 
@@ -20,6 +20,5 @@ and collaborate with confidence.
 .landing {
     font-weight: 400;
     font-size: 1.25rem;
-    letter-spacing: -0.1px;
 }
 </style>
