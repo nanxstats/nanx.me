@@ -71,6 +71,10 @@ menu: "main"
   Minimalist visual regression testing plugin for pytest\
   [PyPI](https://pypi.org/project/tinyvdiff/) |
   [GitHub](https://github.com/nanxstats/tinyvdiff)
+- [py-ggsci](https://nanx.me/py-ggsci/)\
+  Scientific journal and sci-fi themed color palettes for plotnine\
+  [PyPI](https://pypi.org/project/ggsci/) |
+  [GitHub](https://github.com/nanxstats/py-ggsci)
 - [py-pkglite](https://pharmaverse.github.io/py-pkglite/)\
   A simple framework for packing source packages written in any programming
   language into a text file and restoring them into the original directory
