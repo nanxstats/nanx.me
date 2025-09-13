@@ -37,7 +37,6 @@ high-dimensional data under the supervision of
 <style>
 .content .markdown {
   font-weight: 400;
-  font-size: 1.3125rem;
-  letter-spacing: -0.1px;
+  font-size: 1.1875rem;
 }
 </style>

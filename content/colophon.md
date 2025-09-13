@@ -19,33 +19,33 @@ The source code for this site itself is available at
 ## Typography
 
 {{< bootstrap-table "table table-responsive" >}}
-|               |                                                                                                                                                                     |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Heading       | [Founders Grotesk](https://klim.co.nz/fonts/founders-grotesk/)                           <br> Grotesque sans-serif typeface designed by Kris Sowersby               |
-| Body text     | [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)                           <br> Serif typeface designed by Kris Sowersby                              |
-| Code          | [Twilio Sans Mono](https://github.com/twilio/twilio-sans-mono)                           <br> Open source monospace typeface with coding ligatures                  |
-| Favicon       | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                                   |
-| Color theme   | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                                        |
+|             |                                                                                                                                                       |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Heading     | [Founders Grotesk](https://klim.co.nz/fonts/founders-grotesk/)                           <br> Grotesque sans-serif typeface designed by Kris Sowersby |
+| Body text   | [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)                           <br> Serif typeface designed by Kris Sowersby                |
+| Code        | [Twilio Sans Mono](https://github.com/twilio/twilio-sans-mono)                           <br> Open source monospace typeface with coding ligatures    |
+| Favicon     | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                     |
+| Color theme | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                          |
 {{< /bootstrap-table >}}
 
 ## Publishing
 
 {{< bootstrap-table "table table-responsive" >}}
-|            |                                                                                                                                           |
-|------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Generator  | [blogdown](https://github.com/rstudio/blogdown)             <br> Static site generator for R, driven by [Hugo](https://gohugo.io/)        |
-| Theme      | [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023) <br> Responsive Hugo theme built on [Bootstrap 5](https://getbootstrap.com/)  |
-| Commenting | [utterances](https://utteranc.es/)                          <br> Lightweight commenting system using GitHub issues                        |
+|            |                                                                                                                                          |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Generator  | [blogdown](https://github.com/rstudio/blogdown)             <br> Static site generator for R, driven by [Hugo](https://gohugo.io/)       |
+| Theme      | [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023) <br> Responsive Hugo theme built on [Bootstrap 5](https://getbootstrap.com/) |
+| Commenting | [utterances](https://utteranc.es/)                          <br> Lightweight commenting system using GitHub issues                       |
 {{< /bootstrap-table >}}
 
 ## Editing
 
 {{< bootstrap-table "table table-responsive" >}}
-|               |                                                                                                                                                                                 |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Editor        | [Visual Studio Code](https://code.visualstudio.com/)                                               <br> Code editor from Microsoft                                              |
-| Extension     | [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)                <br> R language support in VS Code                                           |
-| Theme         | [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme) <br> Light VS Code theme optimized for R and R Markdown                      |
+|           |                                                                                                                                                            |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Editor    | [Visual Studio Code](https://code.visualstudio.com/)                                               <br> Code editor from Microsoft                         |
+| Extension | [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)                <br> R language support in VS Code                      |
+| Theme     | [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme) <br> Light VS Code theme optimized for R and R Markdown |
 {{< /bootstrap-table >}}
 
 <style>
@@ -55,7 +55,7 @@ The source code for this site itself is available at
 
 .content .markdown p {
   font-weight: 400;
-  font-size: 1.3125rem;
+  font-size: 1.21875rem;
 }
 
 .table {
