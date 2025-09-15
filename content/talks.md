@@ -84,6 +84,7 @@ menu: "main"
 
 <style>
 .markdown ul {
+  font-family: var(--tw-prose-font-sans-serif);
   list-style: none;
   padding-left: 2.5ch;
   border-left: 1px solid var(--tw-prose-bullets);
