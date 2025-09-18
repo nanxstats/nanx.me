@@ -141,6 +141,7 @@ menu: "main"
 <style>
 .markdown ul {
   font-family: var(--tw-prose-font-sans-serif);
+  letter-spacing: -0.05px;
   list-style: none;
   padding-left: 2.5ch;
   border-left: 1px solid var(--tw-prose-bullets);
@@ -153,6 +154,7 @@ menu: "main"
   font-feature-settings: normal;
   font-weight: 400;
   font-size: 1.25rem;
+  letter-spacing: -0.05px;
 }
 
 .markdown ul li a:first-child {
@@ -192,6 +194,7 @@ menu: "main"
     font-feature-settings: normal;
     font-weight: 400;
     font-size: 1.125rem;
+    letter-spacing: -0.05px;
     text-decoration: none;
     border: 1px solid #e2e8f0;
     /* slate-200 */
