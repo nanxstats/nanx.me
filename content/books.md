@@ -45,7 +45,7 @@ menu: "main"
   font-feature-settings: normal;
   font-weight: 400;
   font-size: 1.3125rem;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.18px;
 }
 
 .markdown ul li {

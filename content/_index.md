@@ -20,7 +20,7 @@ and collaborate with confidence.
 .landing {
     font-family: var(--tw-prose-font-sans-serif);
     font-weight: 400;
-    font-size: 1.28125rem;
-    letter-spacing: -0.2px;
+    font-size: 1.3125rem;
+    letter-spacing: -0.18px;
 }
 </style>

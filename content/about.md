@@ -38,7 +38,7 @@ high-dimensional data under the supervision of
 .content .markdown {
   font-family: var(--tw-prose-font-sans-serif);
   font-weight: 400;
-  font-size: 1.34375rem;
-  letter-spacing: -0.2px;
+  font-size: 1.3125rem;
+  letter-spacing: -0.18px;
 }
 </style>
