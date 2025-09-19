@@ -20,8 +20,7 @@ menu: "main"
   MCP Conference 2022: The 12th International Conference on Multiple Comparison Procedures
 - [Grammar of Group Sequential Design](https://keaven.github.io/talks/grammar-of-gsd-bremen/)\
   Keaven M. Anderson, Yilong Zhang, Nan Xiao, Yujie Zhao\
-  Joint Statistical Meetings\
-  [Presentation](https://ww2.amstat.org/cgi-bin/fileviewer.cfm?filename=AbstractPresentations%5Cjsm2022presentations%5C320465%2Epdf&Outputfile=320465)
+  Joint Statistical Meetings
 
 ## 2021
 

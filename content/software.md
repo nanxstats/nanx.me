@@ -353,7 +353,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
   using metalite, reactable, plotly, and Analysis Data Model (ADaM) datasets\
   [CRAN](https://cran.r-project.org/package=forestly) |
   [GitHub](https://github.com/Merck/forestly)
-- [PDXNet Portal](https://portal.pdxnetwork.org/)\
+- [PDXNet Portal](https://pdxnet.shinyapps.io/portal/)\
   Patient-derived xenograft (PDX) model, data, workflow, and tool discovery\
   [Paper](https://doi.org/10.1093/narcan/zcac014)
 - [ashr](https://github.com/stephens999/ashr)\
@@ -391,7 +391,6 @@ Shiny apps, widgets, and templates for interactive data analysis.
 - [hugo-tanka](https://github.com/nanxstats/hugo-tanka)\
   A minimalist theme for Hugo and blogdown\
   [Live Preview](https://nanx.me/hugo-tanka/) |
-  [Hugo Themes](https://themes.gohugo.io/hugo-tanka/) |
   [blogdown book](https://bookdown.org/yihui/blogdown/other-themes.html)
 - [hugo-renga](https://github.com/nanxstats/hugo-renga)\
   A clean Bootstrap 4 theme for Hugo and blogdown\

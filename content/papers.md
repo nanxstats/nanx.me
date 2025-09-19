@@ -49,14 +49,14 @@ menu: "main"
 - [Electronic Common Technical Document Submission With Analysis Using R](https://doi.org/10.1177/17407745221123244)\
   Yujie Zhao, Nan Xiao, Keaven Anderson, Yilong Zhang\
   *Clinical Trials* 20(1): 89--92, 2023
-- [Building an Internal R Package for Statistical Analysis and Reporting in Clinical Trials: A SAS User's Perspective](https://www.pharmasug.org/proceedings/2023/SD/PharmaSUG-2023-SD-122.pdf)\
+- [Building an Internal R Package for Statistical Analysis and Reporting in Clinical Trials: A SAS User's Perspective](https://pharmasug.org/proceedings/2023/SD/PharmaSUG-2023-SD-122.pdf)\
   Huei-Ling Chen, Heng Zhou, Nan Xiao\
   PharmaSUG 2023
   ([Best Paper Award](https://pharmasug.org/conferences/pharmasug-2023-us/best-paper-winners/))
 
 ## 2022
 
-- [A Multilingual Shiny App for Drug Labelling in Worldwide Submission](https://www.pharmasug.org/proceedings/2022/AD/PharmaSUG-2022-AD-062.pdf)\
+- [A Multilingual Shiny App for Drug Labelling in Worldwide Submission](https://pharmasug.org/proceedings/2022/AD/PharmaSUG-2022-AD-062.pdf)\
   Jinchun Zhang, Aiming Yang, Yiwen Luo, Nan Xiao, Yilong Zhang\
   PharmaSUG 2022
 - [PDXNet Portal: Patient-Derived Xenograft Model, Data, Workflow and Tool Discovery](https://doi.org/10.1093/narcan/zcac014)\
