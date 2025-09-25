@@ -421,7 +421,6 @@ Shiny apps, widgets, and templates for interactive data analysis.
 <style>
 .markdown ul {
   font-family: var(--tw-prose-font-sans-serif);
-  letter-spacing: -0.05px;
   list-style: none;
   padding-left: 2.5ch;
   border-left: 1px solid var(--tw-prose-bullets);
@@ -432,19 +431,19 @@ Shiny apps, widgets, and templates for interactive data analysis.
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
-  font-weight: 400;
-  font-size: 1.25rem;
-  letter-spacing: -0.05px;
+  font-weight: 450;
+  font-size: 1rem;
 }
 
 .markdown ul li a:first-child {
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.375rem;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 1.125rem;
+  font-weight: 450;
+  font-size: 1rem;
   padding: 0.5rem 0;
 }
 </style>
@@ -471,9 +470,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
 .software-toc .btn-outline-nav {
     font-family: var(--tw-prose-font-sans-serif);
     font-feature-settings: normal;
-    font-weight: 400;
-    font-size: 1.125rem;
-    letter-spacing: -0.05px;
+    font-weight: 500;
+    font-size: 1rem;
     text-decoration: none;
     border: 1px solid #e2e8f0;
     /* slate-200 */
@@ -508,7 +506,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 /* Icon styles */
 .software-toc .btn-outline-nav i {
-    font-size: 1.125rem;
+    font-size: 1rem;
     width: 1.5rem;
     text-align: center;
     color: #475569;

@@ -32,7 +32,6 @@ menu: "main"
 <style>
 .markdown ul {
   font-family: var(--tw-prose-font-sans-serif);
-  letter-spacing: -0.05px;
   list-style: none;
   padding-left: 2.5ch;
   border-left: 1px solid var(--tw-prose-bullets);
@@ -43,14 +42,14 @@ menu: "main"
 .markdown ul li a:first-child {
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
-  font-weight: 400;
-  font-size: 1.3125rem;
-  letter-spacing: -0.18px;
+  font-weight: 500;
+  font-size: 1.1875rem;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-size: 1.125rem;
+  font-weight: 450;
+  font-size: 1rem;
   padding: 0.5rem 0;
 }
 </style>
