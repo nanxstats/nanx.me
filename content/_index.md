@@ -18,8 +18,9 @@ and collaborate with confidence.
 
 <style>
 .landing {
-    font-family: var(--tw-prose-font-serif);
-    font-weight: 400;
-    font-size: 1.1875rem;
+    font-family: var(--tw-prose-font-sans-serif);
+    font-weight: 450;
+    font-size: 1.125rem;
+    letter-spacing: -0.1px;
 }
 </style>
