@@ -12,7 +12,8 @@ from WordPress and OpenScholar to hand-written HTML. My journey led me
 to adopt the static website generator: blogdown, driven by Hugo.
 
 This page lists the tools I use to build the site today.
-The entire stack is free and open source, and can be found on GitHub.
+Besides the proprietary fonts, the entire stack is free and open source,
+and can be found on GitHub.
 The source code for this site itself is available at
 <https://github.com/nanxstats/nanx.me>.
 
