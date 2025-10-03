@@ -12,7 +12,7 @@ turning real-world constraints into systems that are reliable, accessible,
 and maintainable.
 My commitment to software extends to developer experience.
 I design plaintext workflows that teams can adopt and extend,
-because great software is only possible with great collaboration.
+because great software is only possible with effective collaboration.
 
 <style>
 .landing {
