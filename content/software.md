@@ -85,6 +85,14 @@ menu: "main"
   Lightweight RTF composer for Python\
   [PyPI](https://pypi.org/project/rtflite/) |
   [GitHub](https://github.com/pharmaverse/rtflite)
+- [gsdesign-python](https://pypi.org/project/gsdesign/)\
+  Group sequential design for Python (experimental)\
+  [PyPI](https://pypi.org/project/gsdesign/) |
+  [GitHub](https://github.com/nanxstats/gsdesign-python)
+- [simtrial-python](https://pypi.org/project/simtrial/)\
+  Clinical trial simulation for Python (experimental)\
+  [PyPI](https://pypi.org/project/simtrial/) |
+  [GitHub](https://github.com/nanxstats/simtrial-python)
 
 ## R packages
 
@@ -202,6 +210,17 @@ menu: "main"
 - [vscode-markdown-stupefy](https://marketplace.visualstudio.com/items?itemName=nanxstats.markdown-stupefy)\
   Convert smart punctuation to ASCII\
   [GitHub repository](https://github.com/nanxstats/vscode-markdown-stupefy)
+
+## Rust packages
+
+- [gsdesign-rust](https://docs.rs/gsdesign/)\
+  Group sequential design for Rust (experimental)\
+  [crates.io](https://crates.io/crates/gsdesign) |
+  [GitHub](https://github.com/nanxstats/gsdesign-rust)
+- [simtrial-rust](https://docs.rs/simtrial/)\
+  Clinical trial simulation for Rust (experimental)\
+  [crates.io](https://crates.io/crates/simtrial) |
+  [GitHub](https://github.com/nanxstats/simtrial-rust)
 
 ## Web applications
 
