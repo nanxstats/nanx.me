@@ -20,15 +20,27 @@ menu: "main"
       </a>
     </div>
     <div class="col-md-6">
+      <a href="#rust-packages" class="btn btn-outline-nav w-100">
+        <i class="fab fa-rust"></i>
+        <span>Rust Packages</span>
+      </a>
+    </div>
+    <div class="col-md-6">
       <a href="#vs-code-extensions" class="btn btn-outline-nav w-100">
         <i class="fas fa-puzzle-piece"></i>
         <span>VS Code Extensions</span>
       </a>
     </div>
     <div class="col-md-6">
-      <a href="#web-applications" class="btn btn-outline-nav w-100">
-        <i class="fas fa-globe"></i>
-        <span>Web Applications</span>
+      <a href="#javascript-apps" class="btn btn-outline-nav w-100">
+        <i class="fab fa-js"></i>
+        <span>JS Apps</span>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <a href="#shiny-apps" class="btn btn-outline-nav w-100">
+        <i class="fas fa-chart-line"></i>
+        <span>Shiny Apps</span>
       </a>
     </div>
     <div class="col-md-6">
@@ -202,15 +214,6 @@ menu: "main"
   Pack and upload CWL apps to Seven Bridges powered platforms\
   [GitHub](https://github.com/nanxstats/sbpack-r)
 
-## VS Code extensions
-
-- [vscode-textmate-rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)\
-  A light theme for Visual Studio Code inspired by the TextMate (default) theme in RStudio IDE\
-  [GitHub repository](https://github.com/nanxstats/vscode-textmate-rstheme)
-- [vscode-markdown-stupefy](https://marketplace.visualstudio.com/items?itemName=nanxstats.markdown-stupefy)\
-  Convert smart punctuation to ASCII\
-  [GitHub repository](https://github.com/nanxstats/vscode-markdown-stupefy)
-
 ## Rust packages
 
 - [gsdesign-rust](https://docs.rs/gsdesign/)\
@@ -221,6 +224,15 @@ menu: "main"
   Clinical trial simulation for Rust (experimental)\
   [crates.io](https://crates.io/crates/simtrial) |
   [GitHub](https://github.com/nanxstats/simtrial-rust)
+
+## VS Code extensions
+
+- [vscode-textmate-rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)\
+  A light theme for Visual Studio Code inspired by the TextMate (default) theme in RStudio IDE\
+  [GitHub repository](https://github.com/nanxstats/vscode-textmate-rstheme)
+- [vscode-markdown-stupefy](https://marketplace.visualstudio.com/items?itemName=nanxstats.markdown-stupefy)\
+  Convert smart punctuation to ASCII\
+  [GitHub repository](https://github.com/nanxstats/vscode-markdown-stupefy)
 
 ## Web applications
 
