@@ -10,7 +10,7 @@ menu: "main"
   <div class="row g-0">
     <div class="col-md-6 pe-md-2">
       <a href="https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en" class="btn btn-outline-nav w-100">
-        <i class="fa-brands fa-google-scholar"></i>
+        <i class="fa-solid fa-graduation-cap"></i>
         <span>Google Scholar</span>
       </a>
     </div>
@@ -282,4 +282,4 @@ menu: "main"
 }
 </style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />

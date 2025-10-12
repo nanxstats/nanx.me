@@ -27,13 +27,13 @@ menu: "main"
     </div>
     <div class="col-md-6">
       <a href="#vs-code-extensions" class="btn btn-outline-nav w-100">
-        <i class="fas fa-puzzle-piece"></i>
+        <i class="fa-solid fa-cubes"></i>
         <span>VS Code Extensions</span>
       </a>
     </div>
     <div class="col-md-6">
       <a href="#javascript-apps" class="btn btn-outline-nav w-100">
-        <i class="fab fa-js"></i>
+        <i class="fa-brands fa-square-js"></i>
         <span>JS Apps</span>
       </a>
     </div>
@@ -579,4 +579,4 @@ Shiny apps, widgets, and templates for interactive data analysis.
 }
 </style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
