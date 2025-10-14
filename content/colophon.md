@@ -22,7 +22,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |             |                                                                                                                                                       |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Heading     | [Pretendard](https://github.com/orioncactus/pretendard)                                  <br> Neo-grotesque typeface                                  |
+| Heading     | [Anek Latin](https://github.com/EkType/Anek)                                             <br> Humanist typeface with ink traps                        |
 | Body text   | [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)                           <br> Serif typeface designed by Kris Sowersby                |
 | Code        | [Twilio Sans Mono](https://github.com/twilio/twilio-sans-mono)                           <br> Open source monospace typeface with coding ligatures    |
 | Favicon     | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                     |
@@ -64,7 +64,7 @@ The source code for this site itself is available at
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
   font-weight: 450;
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
 }
 
 .table tr {
