@@ -141,6 +141,7 @@ menu: "main"
 <style>
 .markdown ul {
   font-family: var(--tw-prose-font-sans-serif);
+  font-variant-numeric: lining-nums;
   list-style: none;
   padding-left: 2.5ch;
   border-left: 1px solid var(--tw-prose-bullets);
@@ -152,19 +153,18 @@ menu: "main"
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
   font-weight: 450;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
 }
 
 .markdown ul li a:first-child {
   font-weight: 500;
   font-size: 1.25rem;
-  letter-spacing: -0.1px;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
   font-weight: 450;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   padding: 0.5rem 0;
 }
 </style>
@@ -193,7 +193,7 @@ menu: "main"
     font-family: var(--tw-prose-font-sans-serif);
     font-feature-settings: normal;
     font-weight: 500;
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
     text-decoration: none;
     border: 1px solid #e2e8f0;
     /* slate-200 */

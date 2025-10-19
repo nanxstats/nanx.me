@@ -84,6 +84,7 @@ menu: "main"
 <style>
 .markdown ul {
   font-family: var(--tw-prose-font-sans-serif);
+  font-variant-numeric: lining-nums;
   list-style: none;
   padding-left: 2.5ch;
   border-left: 1px solid var(--tw-prose-bullets);
@@ -95,7 +96,7 @@ menu: "main"
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
   font-weight: 450;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
 }
 
 .markdown ul li a:first-child {
@@ -106,7 +107,7 @@ menu: "main"
 .markdown ul li {
   color: var(--tw-prose-captions);
   font-weight: 450;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   padding: 0.5rem 0;
 }
 </style>

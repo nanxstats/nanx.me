@@ -20,13 +20,13 @@ The source code for this site itself is available at
 ## Typography
 
 {{< bootstrap-table "table table-responsive" >}}
-|             |                                                                                                                                                       |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Heading     | [Anek Latin](https://github.com/EkType/Anek)                                             <br> Humanist typeface with ink traps                        |
-| Body text   | [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)                           <br> Serif typeface designed by Kris Sowersby                |
-| Code        | [Twilio Sans Mono](https://github.com/twilio/twilio-sans-mono)                           <br> Open source monospace typeface with coding ligatures    |
-| Favicon     | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                     |
-| Color theme | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                          |
+|             |                                                                                                                                                    |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Heading     | [Epunda Sans](https://github.com/typofactur/epundasans)                                  <br> Humanist sans serif typeface                         |
+| Body text   | [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)                           <br> Serif typeface designed by Kris Sowersby             |
+| Code        | [Twilio Sans Mono](https://github.com/twilio/twilio-sans-mono)                           <br> Open source monospace typeface with coding ligatures |
+| Favicon     | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                  |
+| Color theme | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                       |
 {{< /bootstrap-table >}}
 
 ## Publishing
@@ -63,6 +63,7 @@ The source code for this site itself is available at
 .table {
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
+  font-variant-numeric: lining-nums;
   font-weight: 450;
   font-size: 1.1875rem;
 }
@@ -85,7 +86,7 @@ The source code for this site itself is available at
 table th:nth-child(1) {
   font-family: var(--tw-prose-font-sans-serif);
   font-feature-settings: normal;
-  font-weight: 600;
+  font-weight: 700;
   width: 30%;
 }
 </style>
