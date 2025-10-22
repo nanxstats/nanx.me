@@ -504,7 +504,7 @@ Shiny apps, widgets, and templates for interactive data analysis.
     font-family: var(--tw-prose-font-sans-serif);
     font-feature-settings: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     text-decoration: none;
     border: 1px solid #e2e8f0;
     /* slate-200 */
@@ -544,7 +544,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
     text-align: center;
     color: #475569;
     /* Primary-like color (slate-600) */
-    margin-right: 0.75rem;
+    margin-top: -0.125rem;
+    margin-right: 0.5rem;
     transition: color 0.15s ease-in-out;
 }
 
