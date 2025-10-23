@@ -11,6 +11,8 @@ menu: "main"
   Learn how to use a web interface to design, explore, and optimize
   group sequential clinical trials leveraging the flexible capabilities of
   the R package gsDesign.
+- [Python for Clinical Study Reports and Submission](https://pycsr.org/)\
+  Use Python for tables, listings, and figures generation and submission
 - [R for Clinical Study Reports and Submission](https://r4csr.org/)\
   Prepare tables, listings, and figures for clinical study report and submission
 - [Group Sequential Design Under Non-Proportional Hazards](https://keaven.github.io/gsd-deming/)\
