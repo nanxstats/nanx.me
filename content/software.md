@@ -461,20 +461,20 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 .markdown ul li a {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: normal;
+  font-feature-settings: "ss01", "ss04", "ss07", "ss09";
   font-weight: 450;
   font-size: 1rem;
 }
 
 .markdown ul li a:first-child {
-  font-weight: 500;
+  font-weight: 550;
   font-size: 1.375rem;
   letter-spacing: -0.2px;
 }
 
 .markdown ul li {
   color: var(--tw-prose-captions);
-  font-weight: 400;
+  font-weight: 450;
   font-size: 1rem;
   letter-spacing: -0.2px;
   padding: 0.5rem 0;
@@ -502,8 +502,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 .software-toc .btn-outline-nav {
     font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: normal;
-    font-weight: 500;
+    font-feature-settings: "ss01", "ss04", "ss07", "ss09";
+    font-weight: 550;
     font-size: 0.9375rem;
     text-decoration: none;
     border: 1px solid #e2e8f0;

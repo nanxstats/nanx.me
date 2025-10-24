@@ -22,7 +22,7 @@ The source code for this site itself is available at
 {{< bootstrap-table "table table-responsive" >}}
 |             |                                                                                                                                                    |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Heading     | [BDO Grotesk](https://github.com/LCTipografi/BDO-Grotesk)                                <br> Neo-grotesque typeface                               |
+| Heading     | [Instrument Sans](https://github.com/Instrument/instrument-sans)                         <br> Neo-grotesque typeface                               |
 | Body text   | [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)                           <br> Serif typeface designed by Kris Sowersby             |
 | Code        | [Twilio Sans Mono](https://github.com/twilio/twilio-sans-mono)                           <br> Open source monospace typeface with coding ligatures |
 | Favicon     | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                  |
@@ -62,8 +62,8 @@ The source code for this site itself is available at
 
 .table {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: normal;
-  font-weight: 400;
+  font-feature-settings: "ss01", "ss04", "ss07", "ss09";
+  font-weight: 450;
   font-size: 1.125rem;
 }
 
@@ -84,7 +84,7 @@ The source code for this site itself is available at
 .table td:nth-child(1),
 table th:nth-child(1) {
   font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: normal;
+  font-feature-settings: "ss01", "ss04", "ss07", "ss09";
   font-weight: 700;
   width: 30%;
 }
