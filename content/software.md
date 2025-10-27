@@ -216,6 +216,10 @@ menu: "main"
 
 ## Rust packages
 
+- [revdeprun](https://docs.rs/revdeprun/)\
+  One-key reverse dependency checks for R\
+  [crates.io](https://crates.io/crates/revdeprun) |
+  [GitHub](https://github.com/nanxstats/revdeprun)
 - [gsdesign-rust](https://docs.rs/gsdesign/)\
   Group sequential design for Rust (experimental)\
   [crates.io](https://crates.io/crates/gsdesign) |
