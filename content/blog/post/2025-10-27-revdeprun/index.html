@@ -1,0 +1,121 @@
+---
+title: "revdeprun: Rust CLI for R package reverse dependency check automation"
+author: "Nan Xiao"
+date: "2025-10-27T17:42:00"
+slug: revdeprun
+categories: []
+tags:
+  - R
+  - Rust
+  - Cargo
+  - Rust packages
+  - R packages
+  - automation
+  - developer experience
+  - integration testing
+  - reverse dependency
+  - revdepcheck
+  - toolchain
+meta_img: "image/jack-stapleton-J9y7LWpRTWo-unsplash.jpg"
+description: >
+  revdeprun is a Rust CLI tool that makes running reverse dependency
+  checks on cloud instances as easy as a single command. Learn why this matters
+  for R package maintainers and how it can save you hours of manual setup.
+---
+
+
+
+<div class="float">
+<img src="/image/jack-stapleton-J9y7LWpRTWo-unsplash.jpg" alt="Smoke and speed: a race car mid-drift on the track. Photo by Jack Stapleton." />
+<div class="figcaption">Smoke and speed: a race car mid-drift on the track.
+Photo by <a href="https://unsplash.com/photos/J9y7LWpRTWo">Jack Stapleton</a>.</div>
+</div>
+<p>I’m glad to announce the release of
+<a href="https://crates.io/crates/revdeprun">revdeprun</a>, a Rust CLI tool that makes
+it easy to run reverse dependency checks on cloud instances<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>If you maintain an R package with many reverse dependencies, you’ll know that
+revdep checking can be time-consuming and requires significant computational
+resources. revdeprun aims to make this process as painless as possible by
+automating the entire workflow in a single command.</p>
+<p>You can install revdeprun from crates.io using Cargo:</p>
+<pre class="bash"><code>cargo install revdeprun</code></pre>
+<p>Then, running a full reverse dependency check is as simple as:</p>
+<pre class="bash"><code>revdeprun https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</code></pre>
+<p>This will automatically set up R, configure your environment, clone your package,
+and run <code>revdepcheck::revdep_check()</code> with all the sensible defaults.
+The <a href="https://github.com/nanxstats/revdeprun">README</a> provides more details about
+installation and usage.</p>
+<div id="why-reverse-dependency-checking-matters" class="section level2">
+<h2>Why reverse dependency checking matters</h2>
+<p>If you’ve been lucky enough to have other R package authors depend on your work,
+you’ll eventually need to think about reverse dependency checking.
+The idea is simple but important: before you release a new version of your package,
+you want to make sure that your changes don’t break any of the packages that
+depend on you. It’s like integration testing, but at the CRAN ecosystem level.</p>
+<p>The <a href="https://r-pkgs.org/release.html#sec-release-revdep-checks">R Packages book</a>
+has a nice explanation of the overall workflow, and there are several excellent
+tools in R for running these checks locally:</p>
+<ul>
+<li><a href="https://github.com/r-lib/revdepcheck"><code>revdepcheck</code></a> from r-lib</li>
+<li><a href="https://github.com/yihui/crandalf"><code>crandalf</code></a> and <code>xfun::rev_check()</code> from Yihui Xie</li>
+<li><a href="https://github.com/HenrikBengtsson/revdepcheck.extras"><code>revdepcheck.extras</code></a> from Henrik Bengtsson</li>
+</ul>
+<p>These tools work great when you have a handful of reverse dependencies,
+but things get trickier as that number grows.</p>
+</div>
+<div id="the-challenge-of-scale" class="section level2">
+<h2>The challenge of scale</h2>
+<p>The trouble starts when you have many reverse dependencies.
+Reverse dependency checking is an embarrassingly parallel, CPU-bound task:
+each package can be checked independently, and more CPU cores mean faster results.</p>
+<p>If you’re maintaining a popular package with 100+ reverse dependencies,
+even a maxed out desktop setup with 32 threads<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> won’t be fast enough.
+You really need to move to the cloud, where you can spin up instances
+with 128+ vCPUs on demand.</p>
+<p>But there is another reason to use cloud instances: security.
+Running reverse dependency checks means executing third-party code
+that you probably shouldn’t fully trust. Using disposable cloud instances
+gives you a clean environment that you can throw away when you’re done.</p>
+<p>The catch is that setting up these throwaway instances is tedious.
+You need to install R, configure package repositories, set up the right
+environment variables, and handle a bunch of other running context details<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
+<p>This manual setup gets old fast when you’re spinning up instances regularly.
+That’s the gap that revdeprun fills: it handles all the provisioning and
+configuration automatically, so you can focus on reviewing the actual results.</p>
+</div>
+<div id="why-rust" class="section level2">
+<h2>Why Rust?</h2>
+<p>You might be wondering why this is a Rust CLI tool rather than an R package,
+a Python package or a simple shell script. The answer comes down to the
+constraints of the problem: when you’re paying for cloud compute by the minute,
+you want everything to work smoothly on the first try, with minimal dependencies.</p>
+<p>Rust fits this niche well:</p>
+<ul>
+<li><p><strong>Better than a shell script</strong>: Rust gives you proper error handling,
+better testing, and easier distribution. It also has better cross-platform
+potential if we want to support Windows or macOS in the future.</p></li>
+<li><p><strong>Easier than R or Python</strong>: To use R or Python to set up R itself
+feels circular. We’d need to set up the language runtime first,
+which is exactly what we’re trying to automate. With Rust, you can distribute
+a single static executable that just works.</p></li>
+</ul>
+<p>That said, the core revdep checking recipe is still written in R:
+see it in <a href="https://github.com/nanxstats/revdeprun/blob/main/src/revdep.rs"><code>revdep.rs</code></a>.
+The Rust tool is really just a wrapper that orchestrates
+the setup and execution.</p>
+</div>
+<div id="contributing" class="section level2">
+<h2>Contributing</h2>
+<p>If you run into any issues or have ideas for improvements, please
+<a href="https://github.com/nanxstats/revdeprun/issues">open an issue</a>.
+The codebase is relatively straightforward so contributions are very welcome.</p>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>“There is no cloud, it’s just someone else’s computer.”<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>As of today, an example is AMD Ryzen 9 9950X.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>We touched on some of these details in a
+<a href="https://nanx.me/blog/post/ggsci-3-1-0/">previous post</a>.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
