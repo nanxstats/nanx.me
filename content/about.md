@@ -15,14 +15,17 @@ and [pharmaverse](https://pharmaverse.org/).
 
 My work sits at the intersection of statistical methodology and
 research software engineering. Interests include sparse linear models,
-representation learning, and computational reproducibility.
-I build [software](https://nanx.me/software/) in R, Python, TypeScript, and Rust;
-selected projects include
+representation learning, and developer tooling.
+I build [software](https://nanx.me/software/) in R, Python, TypeScript, and Rust.
+Selected projects include
+[ggsci for R](https://nanx.me/ggsci/),
+[ggsci for Python](https://nanx.me/py-ggsci/),
+[pkglite for R](https://merck.github.io/pkglite/),
+[pkglite for Python](https://pharmaverse.github.io/py-pkglite/),
 [tinytopics](https://nanx.me/tinytopics/),
 [msaenet](https://nanx.me/msaenet/),
-[ggsci](https://nanx.me/ggsci/),
-[pkglite](https://merck.github.io/pkglite/), and
-[py-pkglite](https://pharmaverse.github.io/py-pkglite/).
+[revdeprun](https://crates.io/crates/revdeprun),
+and [Markdown Stupefy](https://marketplace.visualstudio.com/items?itemName=nanxstats.markdown-stupefy).
 
 Previously, I was a data scientist at [Seven Bridges](https://www.sevenbridges.com/)
 (now acquired by Summa Equity) in Boston, Massachusetts.
