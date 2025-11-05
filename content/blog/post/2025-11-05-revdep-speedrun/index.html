@@ -1,0 +1,176 @@
+---
+title: "Reverse dependency check speedrun: a data.table case study"
+author: "Nan Xiao"
+date: "2025-11-05T08:51:00"
+slug: revdep-speedrun
+categories: []
+tags:
+  - R
+  - R packages
+  - data.table
+  - automation
+  - speedrun
+  - developer experience
+  - integration testing
+  - reverse dependency
+  - Rust
+  - Rust packages
+  - Cargo
+meta_img: "image/elvis-liang-dKI9xpL8l-k-unsplash.jpg"
+description: >
+  How fast can you run reverse dependency checks for a package with 1700+
+  reverse dependencies? I put revdeprun to the test with data.table on a
+  48-core cloud instance. Here is what I learned about speed, cost, and the
+  future of reverse dependency checking at scale.
+---
+
+
+
+<div class="float">
+<img src="/image/elvis-liang-dKI9xpL8l-k-unsplash.jpg" alt="Monument Valley Navajo Tribal Park, Saint Michaels, United States. Photo by Elvis Liang." />
+<div class="figcaption">Monument Valley Navajo Tribal Park, Saint Michaels, United States.
+Photo by <a href="https://unsplash.com/photos/dKI9xpL8l-k">Elvis Liang</a>.</div>
+</div>
+<p>A week ago, I <a href="https://nanx.me/blog/post/revdeprun/">announced revdeprun</a>,
+a Rust CLI tool for automating R package reverse dependency checks.
+Since then, I have been iterating rapidly: 16 crates.io releases in a week!
+These updates focused on both correctness and speed.
+The tool has evolved from its initial v0.1.0 to v1.4.2,
+and the workflow now leverages pak for dependency resolution
+and xfun for the checking<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>Through this process, I improved my understanding of R’s build system and
+developer tooling. I also gained confidence that revdeprun can handle packages
+with long lists of reverse dependencies reliably. But I wanted to really put
+it to the test.</p>
+<div id="speedrunning-revdep-checks" class="section level2">
+<h2>Speedrunning revdep checks?</h2>
+<p>Since there are <a href="https://www.tylerromero.com/posts/nanogpt-speedrun-worklog/">GPT-2 speedruns</a>,
+why not revdep check speedruns? Here’s my working definition:</p>
+<blockquote>
+<p>Given a cloud instance running fresh Ubuntu LTS, how fast can you set up the
+environment and run reverse dependency checks <em>correctly</em> for a CRAN package
+with hundreds or thousands of reverse dependencies?</p>
+</blockquote>
+<p>This is essentially a performance test for CPU, network, and I/O, but mostly
+CPU. For packages with more reverse dependencies, you will spend most of the
+time in the parallel checking phase, using every core you can afford.
+A server CPU with strong multi-core performance and decent single-core
+performance will serve you well.</p>
+<p>Of course, the baseline shifts over time. As your package gets more popular,
+there will be more reverse dependencies to check. Timing matters too:
+sometimes more CRAN packages were just updated and you need to compile them
+from source. But for packages with large reverse dependency footprints,
+these can be rounding errors<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
+</div>
+<div id="case-study-data.table" class="section level2">
+<h2>Case study: data.table</h2>
+<p>For my test, I chose data.table, an R package for blazing fast and
+memory-efficient tabular data manipulation. It is one of the
+<a href="https://r-pkg.org/depended">most depended upon packages</a> on CRAN
+(ranking 15th at the time of writing), and has helped countless package
+authors and data frame workflows achieve optimal performance,
+including <a href="https://keaven.github.io/blog/simtrial-0-3-2/">speeding up clinical trial simulations for time-to-event endpoints
+in simtrial</a>.</p>
+<p>The data.table maintainers were kind enough to be the first to try revdeprun
+and <a href="https://github.com/nanxstats/revdeprun/issues/24">report their experience</a>,
+so it felt right to return the favor with a real-world test.</p>
+<p>For this baseline run, I used a modest cloud instance costing $1.55 per hour, with:</p>
+<ul>
+<li>48 CPU cores (AMD EPYC 7713, launched in Q1 2021)</li>
+<li>96 GB DDR4 RAM</li>
+<li>1920 GB storage</li>
+<li>Ubuntu 24.04 LTS</li>
+</ul>
+<p>After booting up the instance, the entire setup was just four commands:</p>
+<pre class="bash"><code>curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+sudo apt-get update &amp;&amp; sudo apt-get install -y build-essential
+cargo install revdeprun
+revdeprun https://github.com/Rdatatable/data.table.git</code></pre>
+<div id="the-timeline" class="section level3">
+<h3>The timeline</h3>
+<p>Here is the speedrun timer:</p>
+<p><strong>00:00:00</strong> - Started running. Download and install 4,395 packages required
+for checking. This is mostly single-core work, although pak does
+parallelize where it can.</p>
+<p><strong>01:48:00</strong> - Started the “updating all R packages” step in <code>xfun::rev_check()</code>.
+All 48 cores running at 100%.</p>
+<p><strong>01:55:00</strong> - Started downloading all 1,723 reverse dependencies from source.
+Back to single-core work while fetching source tarballs from the CRAN mirror.</p>
+<p><strong>02:12:00</strong> - Downloads finished. Now the real work begins:
+run <code>R CMD check</code> on all 1,723 packages, twice.
+Note that we are only checking CRAN packages here. CRAN won’t know or care
+if you break a Bioconductor package<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. Time for coffee…</p>
+<p><strong>05:20:00</strong> - 890 packages remaining. We are halfway done.</p>
+<p><strong>08:55:00</strong> - Finished checking all 1,723 packages. 37 packages reported check diffs.</p>
+<p>Screenshots from the speedrun (theme: Selenized Light, font: Berkeley Mono):</p>
+<div class="figure"><span style="display:block;" id="fig:btop"></span>
+<img src="images/btop.png" alt="`btop` showing all 48 cores at 100% utilization during the checking phase." width="100%" />
+<p class="caption">
+Figure 1: <code>btop</code> showing all 48 cores at 100% utilization during the checking phase.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:start"></span>
+<img src="images/start.png" alt="The moment checking begins." width="100%" />
+<p class="caption">
+Figure 2: The moment checking begins.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:finish"></span>
+<img src="images/finish.png" alt="Crossing the finish line after almost 7 hours of parallel checking." width="100%" />
+<p class="caption">
+Figure 3: Crossing the finish line after almost 7 hours of parallel checking.
+</p>
+</div>
+</div>
+<div id="the-results" class="section level3">
+<h3>The results</h3>
+<p><strong>Total time</strong>: 8 hours 55 minutes from start to finish.</p>
+<p><strong>Total cost</strong>: $14 approximately (9 hours × $1.55/hour).</p>
+<p><strong>Setup time</strong>: 2 hours 12 minutes (mostly installing dependencies).</p>
+<p><strong>Checking time</strong>: 6 hours 43 minutes for 1,723 packages.</p>
+<p>For less than the cost of lunch (2025 standard as inflation is high),
+I got a complete reverse dependency check for data.table, a package in
+the top 20 most depended upon packages on CRAN.</p>
+</div>
+</div>
+<div id="whats-next" class="section level2">
+<h2>What’s next?</h2>
+<p>This baseline gives us something concrete to work with, but it also raises
+some interesting questions:</p>
+<p><strong>How faster can we go?</strong> With more powerful instances, we can
+potentially cut the checking time in half or more. But there may be a
+sweet spot between speed and cost-effectiveness that can be explored further.
+For packages with varying number of reverse dependencies, choosing the
+right instance type and size is critical: too small and you will wait too long,
+too large and you might be burning money unnecessarily.</p>
+<p><strong>What about 10x scale checks?</strong> Consider knitr, with over 10,000
+reverse dependencies. Running this on knitr means essentially installing and
+checking the entire CRAN ecosystem (23,031 packages as of today).</p>
+<p><strong>Can we optimize the workflow further?</strong> The 2+ hour setup phase is substantial.
+Some of this is unavoidable (installing 4,000+ packages takes time, even if
+they are binary), but there might be opportunities for optimizations (rewrite
+pak in Rust?), especially if you need to run checks repeatedly before a release.</p>
+</div>
+<div id="wrapping-up" class="section level2">
+<h2>Wrapping up</h2>
+<p>What started as a tool to solve my own curiosity has become something
+I hope other R package developers will find useful. The ability for anyone
+to run reverse dependency checks at scale with large, accessible Linux
+cloud instances makes it much more feasible to check regularly (even nightly)
+during development, rather than just before CRAN releases.</p>
+<p>If you maintain an R package with many reverse dependencies,
+give <a href="https://github.com/nanxstats/revdeprun">revdeprun</a> a try.
+And if you do, I would love to hear about your experience.
+What worked well and what could be better? Please feel free to <a href="https://github.com/nanxstats/revdeprun/issues">open an issue</a> and let me know.</p>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>I learned a lot from studying revdepcheck and revdepcheck.extras while
+building this. I even got to <a href="https://github.com/yihui/xfun/pull/109">contribute a bug fix</a>
+to the amazing xfun along the way.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>When you are checking 1700+ packages, an extra 50 packages here or
+there won’t move the needle too much.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Though you probably should care! But that’s a story for another day.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
