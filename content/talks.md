@@ -5,6 +5,12 @@ menu: "main"
 
 *  *  *  *
 
+## 2025
+
+- [Python for Clinical Study Reports and Submission](https://pycsr.org/)\
+  R/Pharma Conference (workshop)\
+  [Workshop slides](https://pycsr.org/slides/workshop-slides.html)
+
 ## 2022
 
 - [Asynchronous Processing of Long-Running Tasks in Shiny](https://rinpharma.com/publication/rinpharma_310/)\
