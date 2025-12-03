@@ -9,7 +9,7 @@ menu: "main"
 
 - [Python for Clinical Study Reports and Submission](https://pycsr.org/)\
   R/Pharma Conference (workshop)\
-  [Workshop slides](https://pycsr.org/slides/workshop-slides.html)
+  [Workshop slides](https://pycsr.org/slides/rinpharma2025/)
 
 ## 2022
 
