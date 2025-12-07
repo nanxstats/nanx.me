@@ -1,0 +1,130 @@
+---
+title: "DM Mono with Fira Code ligatures"
+author: "Nan Xiao"
+date: "2025-12-06T23:57:00"
+slug: dm-mono-ligaturized
+categories: []
+tags:
+  - developer experience
+  - automation
+  - readability
+  - monospaced font
+  - coding fonts
+  - programming ligatures
+  - Ligaturizer
+  - Makefile
+  - awk
+meta_img: "image/dm-mono-ligaturized-ghostty.png"
+description: >
+  Add a sprinkle of Fira Code ligatures to DM Mono for a unique terminal experience.
+---
+
+
+
+<p>I’ve created a ligaturized version of <a href="https://fonts.google.com/specimen/DM+Mono">DM Mono</a>
+by adding <a href="https://github.com/tonsky/FiraCode">Fira Code</a> ligatures.
+You can download it from GitHub: <a href="https://github.com/nanxstats/dm-mono-ligaturized" class="uri">https://github.com/nanxstats/dm-mono-ligaturized</a>.</p>
+<div class="float">
+<img src="/image/dm-mono-ligaturized-ghostty.png" alt="Ligaturized DM Mono in action: Running Homebrew in Ghostty. Theme: Dracula+." />
+<div class="figcaption">Ligaturized DM Mono in action: Running Homebrew in Ghostty. Theme: Dracula+.</div>
+</div>
+<style type="text/css">
+@font-face {
+    font-display: swap;
+    font-family: "Liga DM Mono Regular";
+    src: url("fonts/LigaDMMono-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+.font-liga-dm-mono pre code {
+    font-family: "Liga DM Mono Regular" !important;
+    font-feature-settings: normal !important;
+    font-size: 2rem !important;
+    line-height: 1.5 !important;
+}
+
+.font-liga-dm-mono-nolig pre code {
+    font-family: "Liga DM Mono Regular" !important;
+    font-feature-settings: normal !important;
+    font-size: 2rem !important;
+    line-height: 1.5 !important;
+    font-variant-ligatures: none !important;
+}
+</style>
+<div id="why-ligatures" class="section level2">
+<h2>Why ligatures?</h2>
+<p>I’ll confess: I can’t start real work until I’ve found a coding font
+that fits the vibe of the day.
+My <a href="https://github.com/nanxstats/dotfiles">dotfiles</a> are fairly basic,
+but they include an extensive list of free and commercial monospaced fonts
+that I rotate through regularly.</p>
+<p>After years of font-hopping, things started to feel stale.
+So I decided to create something new by modifying a less commonly modified
+monospaced font: DM Mono, designed by Colophon Foundry for DeepMind
+(now Google DeepMind).</p>
+<p>If you’re wondering whether ligatures are worth the trouble,
+I wrote about this in a <a href="https://nanx.me/blog/post/gpt-models-font-ligatures/">previous post</a>
+exploring how ligatures can improve readability when working with
+special tokens in GPT models.
+The short version: ligatures reduce cognitive load by rendering
+multi-character sequences as single, visually distinct glyphs.</p>
+</div>
+<div id="how-it-works" class="section level2">
+<h2>How it works</h2>
+<p>Thanks to <a href="https://github.com/ToxicFrog/Ligaturizer">ToxicFrog/Ligaturizer</a>,
+a collection of FontForge scripts written in Python, patching fonts with
+Fira Code ligatures is surprisingly straightforward.</p>
+<p>The build process is wrapped in a <a href="https://github.com/nanxstats/dm-mono-ligaturized/blob/main/Makefile">Makefile</a>.
+The result is six font files covering light, regular, and medium weights,
+each with an italic variant.
+As usual, it’s licensed under the SIL Open Font License.</p>
+</div>
+<div id="what-makes-dm-mono-special" class="section level2">
+<h2>What makes DM Mono special</h2>
+<p>DM Mono has some distinctive design choices that I wanted to highlight.
+In my opinion, these glyphs are what give DM Mono its character:</p>
+<div class="font-liga-dm-mono">
+<pre class="text"><code>0 ? @ [ ] f i j k l r t y</code></pre>
+</div>
+<p>After patching, you get these common ligatures from Fira Code,
+frequently used in Python, R, Rust, TypeScript, and the command line:</p>
+<div class="font-liga-dm-mono">
+<pre class="text"><code>&lt;- -&gt; =&gt; ==&gt; |&gt; :: :::
+== != &gt;= &lt;= === || //</code></pre>
+</div>
+<p>For comparison, here’s vanilla DM Mono without ligatures:</p>
+<div class="font-liga-dm-mono-nolig">
+<pre class="text"><code>&lt;- -&gt; =&gt; ==&gt; |&gt; :: :::
+== != &gt;= &lt;= === || //</code></pre>
+</div>
+</div>
+<div id="opinionated-defaults" class="section level2">
+<h2>Opinionated defaults</h2>
+<p>Not all Fira Code ligatures fit DM Mono’s aesthetic.
+These sequences have quirky ligatures in Fira Code that feel a bit out of place,
+so I’ve disabled them. They render as individual DM Mono characters instead:</p>
+<div class="font-liga-dm-mono">
+<pre class="text"><code>&amp;&amp; .? ?: ?= ?. ?? ;;</code></pre>
+</div>
+<p>If you disagree with these choices, the Makefile makes it easy to adjust.
+The ligature configuration is filtered using awk, so adding back or
+removing more ligatures is just a matter of editing a few lines.</p>
+</div>
+<div id="setting-it-up" class="section level2">
+<h2>Setting it up</h2>
+<p>Install the fonts from the <code>fonts/</code> directory using your OS font manager.
+For VS Code and its forks, add this to your <code>settings.json</code>:</p>
+<pre class="json"><code>&quot;editor.fontFamily&quot;: &quot;&#39;Liga DM Mono&#39;, monospace&quot;,
+&quot;editor.fontLigatures&quot;: &quot;&#39;calt&#39;, &#39;liga&#39;&quot;,
+&quot;terminal.integrated.fontFamily&quot;: &quot;&#39;Liga DM Mono&#39;, monospace&quot;,
+&quot;terminal.integrated.fontLigatures.enabled&quot;: true,</code></pre>
+<p>For Ghostty, set the font family in your config:</p>
+<pre class="text"><code>font-family = Liga DM Mono</code></pre>
+</div>
+<div id="when-to-use-it" class="section level2">
+<h2>When to use it</h2>
+<p>I find this ligaturized DM Mono works particularly well for terminal use.
+For editors, I’m currently switching between TheSansMono (for long-form writing)
+and JetBrains Mono/Twilio Sans Mono (for code). But your mileage may vary.
+The only way to know is to try everything and see what works for you.</p>
+</div>
