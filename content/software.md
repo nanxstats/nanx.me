@@ -87,6 +87,10 @@ menu: "main"
   Scientific journal and sci-fi themed color palettes for plotnine\
   [PyPI](https://pypi.org/project/ggsci/) |
   [GitHub](https://github.com/nanxstats/py-ggsci)
+- [pytest-r-snapshot](https://nanx.me/pytest-r-snapshot/)\
+  A pytest plugin for snapshot testing against R reference outputs\
+  [PyPI](https://pypi.org/project/pytest-r-snapshot/) |
+  [GitHub](https://github.com/nanxstats/pytest-r-snapshot)
 - [py-pkglite](https://pharmaverse.github.io/py-pkglite/)\
   A simple framework for packing source packages written in any programming
   language into a text file and restoring them into the original directory
