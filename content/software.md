@@ -443,6 +443,11 @@ Shiny apps, widgets, and templates for interactive data analysis.
 - [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023)\
   A minimalist Bootstrap 5 theme for Hugo and blogdown
 
+## Fonts
+
+- [DM Mono Ligaturized](https://github.com/nanxstats/dm-mono-ligaturized)\
+  DM Mono font with Fira Code ligatures
+
 ## Collections
 
 - [dockflow.org](https://dockflow.org)\
