@@ -1,0 +1,288 @@
+---
+title: "revdeprun 2.1.0: hunting bottlenecks and a new speedrun record"
+author: "Nan Xiao"
+date: "2025-12-24T19:01:00"
+slug: revdeprun-2-1-0
+categories: []
+tags:
+  - R
+  - R packages
+  - Rust
+  - automation
+  - reverse dependency
+  - developer experience
+  - integration testing
+  - monkey patching
+  - speedrun
+  - xfun
+  - pkgdepends
+meta_img: "image/paul-kruger-gg0ZAFpRHHU-unsplash.jpg"
+description: >
+  revdeprun 2.1.0 tackles three bottlenecks in the reverse dependency checking
+  workflow: pak's install scheduler, tarball downloads, and package builds.
+  The result? A new speedrun record: 2 hours 44 minutes to check all 1,732
+  data.table reverse dependencies on a 256-core Zen 5 instance.
+---
+
+
+
+<div class="float">
+<img src="/image/paul-kruger-gg0ZAFpRHHU-unsplash.jpg" alt="A race car pit crew in action during a pit stop. Photo by Paul Krüger." />
+<div class="figcaption">A race car pit crew in action during a pit stop.
+Photo by <a href="https://unsplash.com/photos/gg0ZAFpRHHU">Paul Krüger</a>.</div>
+</div>
+<p>I’m excited to announce <a href="https://github.com/nanxstats/revdeprun">revdeprun</a> 2.1.0,
+a major update to my Rust CLI tool for automating R package reverse dependency checks.
+This release is really two updates in one: version 2.0.0 accelerated dependency
+installation, while 2.1.0 addressed two more bottlenecks I discovered during testing.
+The combined result is a much faster workflow from start to finish.</p>
+<p>You can install revdeprun from <a href="https://crates.io/crates/revdeprun">crates.io</a>:</p>
+<pre class="bash"><code>cargo install revdeprun</code></pre>
+<p>If you’re new to revdeprun, you might want to read the
+<a href="https://nanx.me/blog/post/revdeprun/">original announcement</a> first.
+For full details of what changed, see
+<a href="https://github.com/nanxstats/revdeprun/pull/121">PR #121</a> (2.0.0),
+<a href="https://github.com/nanxstats/revdeprun/pull/125">PR #125</a>, and
+<a href="https://github.com/nanxstats/revdeprun/pull/127">PR #127</a> (2.1.0).</p>
+<div id="optimizing-the-install-scheduler-in-pak" class="section level2">
+<h2>Optimizing the install scheduler in pak</h2>
+<p>When installing thousands of packages for a reverse dependency check<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>,
+we want to fully use every CPU core we have. <code>pak::pkg_install()</code> is excellent
+at this. It resolves dependencies from both CRAN and Bioconductor intelligently
+and installs packages in parallel when possible.
+But I noticed something odd: even on a 48-core or 256-core machine,
+installing thousands of packages from binary and source does not feel
+“butter smooth”. The installed and built packages are not refreshing the
+console fast enough, but almost one by one in small bursts.</p>
+<p>The culprit turned out to be in pkgdepends, which pak embeds internally.
+For a large set of packages, the install scheduler has two potential bottlenecks:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Worker pool refill</strong>: The event loop only starts exactly one
+new install task per poll iteration (every 100ms).
+When many small binary packages finish installing between polls,
+the worker pool might empty out faster than it refills.</p></li>
+<li><p><strong>Dependency bookkeeping</strong>: After every install, the scheduler updates
+dependency tracking for all remaining packages, even those that don’t
+need it<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p></li>
+</ol>
+<p>The fix is straightforward: refill the worker pool up to <code>num_workers</code> after
+each poll, and only update dependency tracking for packages that are not
+packaged or built yet. I’ve shipped these more “aggressive” install scheduling
+details as a monkey patch that revdeprun applies automatically before
+running <code>pak::pkg_install()</code>, so your high core count instances can be fully
+utilized without upstream changes.</p>
+</div>
+<div id="squashing-two-more-bottlenecks" class="section level2">
+<h2>Squashing two more bottlenecks</h2>
+<p>After releasing 2.0.0, I ran the data.table speedrun and was pleased
+with the installation improvements. But I noticed the overall time wasn’t
+as fast as I expected. So I had to dig deeper and found two more obvious issues.</p>
+<div id="the-mysterious-hour-long-preparation-phase" class="section level3">
+<h3>The mysterious hour-long preparation phase</h3>
+<p>During the <code>xfun::rev_check()</code> preparation phase, I was seeing an hour of
+single-core work. What was going on?
+It turned out that revdeprun installs all dependencies into a <code>revdep/</code>
+subdirectory within the package directory. When <code>rev_check()</code> builds
+a source tarball of the package, it was packing this <strong>entire library</strong>
+into the archive… Not only did this slow things down dramatically,
+it was also the source of a cryptic warning message I’ve been ignoring:</p>
+<blockquote>
+<p>Warning in utils::tar(filepath, pkgname, compression = compression, compression_level = 9L, :
+storing paths of more than 100 bytes is not portable:</p>
+</blockquote>
+<p>The fix is simple: revdeprun now automatically adds <code>^revdep$</code> to the
+<code>.Rbuildignore</code> file. That hour-long phase now only takes minutes.</p>
+</div>
+<div id="serial-tarball-downloads" class="section level3">
+<h3>Serial tarball downloads</h3>
+<p>The second bottleneck was in downloading reverse dependency source packages.
+<code>xfun:::download_tarball()</code> fetches packages one at a time, which meant
+downloading 1,700+ tarballs was slower than it needed to be.</p>
+<p>I’ve added a monkey patch in revdeprun that parallelizes this using
+<code>parallel::mcmapply()</code> with 5 workers. I’ve also submitted
+<a href="https://github.com/yihui/xfun/pull/112">PR #112</a> to xfun
+to make this improvement available to everyone.</p>
+</div>
+</div>
+<div id="a-new-speedrun-record" class="section level2">
+<h2>A new speedrun record</h2>
+<p>To verify if all these improvements are effective and correct, I reran the
+data.table speedrun from
+<a href="https://nanx.me/blog/post/revdep-speedrun/">my original speedrun post</a>.
+To push the limits, I used a large cloud instance with the latest
+generation of hardware. It costs $8.64 per hour:</p>
+<ul>
+<li>256 CPU cores (AMD EPYC 9845, launched Q4 2024)</li>
+<li>512 GB DDR5 RAM</li>
+<li>5 TB storage</li>
+<li>Ubuntu 24.04 LTS</li>
+</ul>
+<p>After booting up the instance, the setup is only five commands<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>:</p>
+<pre class="bash"><code>curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+sudo apt-get update &amp;&amp; sudo apt-get install -y build-essential
+cargo install revdeprun
+ulimit -n 10240
+revdeprun https://github.com/Rdatatable/data.table.git</code></pre>
+<div id="the-timeline" class="section level3">
+<h3>The timeline</h3>
+<p>Here’s how the run progressed:</p>
+<p><strong>00:00:00</strong> - Started. Setting up R and installing system dependencies.</p>
+<p><strong>00:14:00</strong> - Started downloading 4,430 packages required for checking.</p>
+<p><strong>00:23:00</strong> - Started installing packages. The 2.0.0 scheduler patch works here.</p>
+<p><strong>00:49:00</strong> - <code>xfun::rev_check()</code> started preparation. Thanks to the fix in
+2.1.0, this phase now takes just minutes instead of an hour.</p>
+<p><strong>00:53:00</strong> - Started downloading all 1,732 reverse dependencies from source.
+With parallel downloads, this takes about 3 minutes instead of 17 minutes.</p>
+<p><strong>00:56:00</strong> - Downloads finished. The real work begins:
+run <code>R CMD check</code> on all 1,732 packages, twice<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>.</p>
+<p><strong>01:28:00</strong> - 866 packages remaining. Halfway there.</p>
+<p><strong>02:44:00</strong> - Finished! 35 packages reported check diffs.</p>
+<p>Screenshot from the run:</p>
+<div class="figure"><span style="display:block;" id="fig:btop"></span>
+<img src="images/btop.png" alt="`btop` showing all 256 cores at 100% utilization during the checking phase." width="100%" />
+<p class="caption">
+Figure 1: <code>btop</code> showing all 256 cores at 100% utilization during the checking phase.
+</p>
+</div>
+</div>
+<div id="comparison-with-the-previous-run" class="section level3">
+<h3>Comparison with the previous run</h3>
+<style type="text/css">
+table.table tr {
+  font-family: var(--tw-prose-font-serif);
+}
+</style>
+<table class="table table-hover">
+<thead>
+<tr>
+<th style="text-align:left;">
+Metric
+</th>
+<th style="text-align:left;">
+Previous run
+</th>
+<th style="text-align:left;">
+This run
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+CPU cores
+</td>
+<td style="text-align:left;">
+48
+</td>
+<td style="text-align:left;">
+256
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Architecture
+</td>
+<td style="text-align:left;">
+Zen 3
+</td>
+<td style="text-align:left;">
+Zen 5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Total time
+</td>
+<td style="text-align:left;">
+8h 55min
+</td>
+<td style="text-align:left;">
+2h 44min
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Setup time
+</td>
+<td style="text-align:left;">
+2h 12min
+</td>
+<td style="text-align:left;">
+56min
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Checking time
+</td>
+<td style="text-align:left;">
+6h 43min
+</td>
+<td style="text-align:left;">
+1h 48min
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Total cost
+</td>
+<td style="text-align:left;">
+~$14
+</td>
+<td style="text-align:left;">
+~$24
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Packages checked
+</td>
+<td style="text-align:left;">
+1,723
+</td>
+<td style="text-align:left;">
+1,732
+</td>
+</tr>
+</tbody>
+</table>
+<p>The headline number is <strong>2 hours 44 minutes</strong> from a cold start to
+a complete reverse dependency check for one of CRAN’s most depended packages.
+A ~70% reduction from the original 8 hour 55 minute run.</p>
+<p>The setup time dropped from over 2 hours to under an hour, thanks to
+the combined effect of the scheduler patch, the <code>.Rbuildignore</code> fix, and
+parallel downloads. The checking phase also scaled nicely with 256 cores,
+though we’ll often hit diminishing returns when we’re bound by the
+slowest individual package checks.</p>
+<p>The ~$24 cost is quite reasonable considering the time saved.
+For packages with fewer reverse dependencies, a smaller instance
+would bring the cost down further.</p>
+</div>
+</div>
+<div id="acknowledgments" class="section level2">
+<h2>Acknowledgments</h2>
+<p>Thanks to Devin Pastoor for reminding me that <a href="https://github.com/A2-ai/rv">rv</a>,
+a uv-inspired R package manager written in Rust, exists.
+Although I didn’t end up using it directly for
+<a href="https://github.com/A2-ai/rv/issues/351">technical reasons</a>,
+it confirmed that substantial speed improvements in the R package
+installation toolchain are entirely possible.</p>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>To run <code>R CMD check</code> on any reverse dependency, the minimal set of
+packages needed is: their hard dependencies recursively, plus their
+first-order soft dependencies, plus the hard dependencies of those
+first-order soft dependencies recursively.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>The <a href="https://github.com/r-lib/pkgdepends/blob/7938930cb073c610cb867a7a81b37bc5cc6a9f5a/R/install-plan.R"><code>deps_left</code></a>
+field tracks which dependencies still need to be installed.
+For packages that are already building from source, this bookkeeping
+could bring unnecessary overhead, considering this is an <span class="math inline">\(O(n^2)\)</span> operation.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>With 256 cores, I hit the default file descriptor limit during
+parallel installations. The <code>ulimit</code> command raises this to a safe level.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Each package is checked twice: once against the released CRAN version
+and once against the development version. This lets you identify which
+check failures are new.<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
