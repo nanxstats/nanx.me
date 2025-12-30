@@ -44,6 +44,12 @@ menu: "main"
       </a>
     </div>
     <div class="col-md-6">
+      <a href="#browser-extensions" class="btn btn-outline-nav w-100">
+        <i class="fa-brands fa-chrome"></i>
+        <span>Browser Extensions</span>
+      </a>
+    </div>
+    <div class="col-md-6">
       <a href="#machine-learning-workflows" class="btn btn-outline-nav w-100">
         <i class="fas fa-share-nodes"></i>
         <span>Machine Learning Workflows</span>
@@ -65,6 +71,12 @@ menu: "main"
       <a href="#hugoblogdown-themes" class="btn btn-outline-nav w-100">
         <i class="fas fa-wand-magic-sparkles"></i>
         <span>Hugo Themes</span>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <a href="#fonts" class="btn btn-outline-nav w-100">
+        <i class="fas fa-font"></i>
+        <span>Fonts</span>
       </a>
     </div>
   </div>
@@ -242,9 +254,7 @@ menu: "main"
   Convert smart punctuation to ASCII\
   [GitHub repository](https://github.com/nanxstats/vscode-markdown-stupefy)
 
-## Web applications
-
-### JavaScript apps
+## JavaScript apps
 
 - [Deep Learning GPU Selector](https://nanx.me/gpu/)\
   Discover the best GPU for your deep learning needs by answering a few yes/no questions\
@@ -259,7 +269,7 @@ menu: "main"
   across customizable text, font size, letter spacing, and optical size.\
   [GitHub](https://github.com/nanxstats/font-overlay)
 
-### Shiny apps
+## Shiny apps
 
 Shiny apps, widgets, and templates for interactive data analysis.
 
@@ -313,6 +323,12 @@ Shiny apps, widgets, and templates for interactive data analysis.
 - [cwl-upgrader](https://github.com/nanxstats/cwl-upgrader)\
   Upgrade CWL apps from sbg:draft2 to v1.0\
   [Mirror 1](https://nanx.app/cwl-upgrader/)
+
+## Browser extensions
+
+- [Unsplash Landscape](https://github.com/nanxstats/unsplash-landscape)\
+  A Chrome extension that hides Unsplash+ photos and shows only landscape
+  images from Unsplash.
 
 ## Machine learning workflows
 
