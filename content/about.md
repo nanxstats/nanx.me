@@ -22,10 +22,11 @@ Selected projects include
 [ggsci for Python](https://nanx.me/py-ggsci/),
 [pkglite for R](https://merck.github.io/pkglite/),
 [pkglite for Python](https://pharmaverse.github.io/py-pkglite/),
+[rtflite](https://pharmaverse.github.io/rtflite/),
 [tinytopics](https://nanx.me/tinytopics/),
 [msaenet](https://nanx.me/msaenet/),
-[revdeprun](https://crates.io/crates/revdeprun),
-and [Markdown Stupefy](https://marketplace.visualstudio.com/items?itemName=nanxstats.markdown-stupefy).
+[revdeprun](https://nanx.me/revdeprun/),
+and [vscode-markdown-stupefy](https://marketplace.visualstudio.com/items?itemName=nanxstats.markdown-stupefy).
 
 Previously, I was a data scientist at [Seven Bridges](https://www.sevenbridges.com/)
 (now acquired by Summa Equity) in Boston, Massachusetts.
