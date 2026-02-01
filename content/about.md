@@ -5,38 +5,37 @@ menu: "main"
 
 *  *  *  *
 
-I am a statistician at [Merck & Co., Inc., Rahway, NJ, USA](https://www.merck.com/)
-in [Biostatistics and Research Decision Sciences (BARDS)](https://jobs.merck.com/bards),
-Methodology Research, led by [Keaven M. Anderson](https://keaven.github.io/).
-I also contribute to cross-industry initiatives including the
-[R Consortium Infrastructure Steering Committee](https://r-consortium.org/about/governance.html),
-[R Submissions Working Group](https://rconsortium.github.io/submissions-wg/),
-and [pharmaverse](https://pharmaverse.org/).
+I'm a statistician in [Methodology Research](https://jobs.merck.com/bards),
+led by [Keaven M. Anderson](https://keaven.github.io/),
+at [Merck & Co., Inc., Rahway, NJ, USA](https://www.merck.com/).
+I work on problems at the intersection of statistical methodology and
+research software engineering.
+My focus is on building software infrastructure that makes late-stage
+clinical development efficient and reliable.
 
-My work sits at the intersection of statistical methodology and
-research software engineering. Interests include sparse linear models,
-representation learning, and developer tooling.
-I build [software](https://nanx.me/software/) in R, Python, TypeScript, and Rust.
-Selected projects include
-[ggsci for R](https://nanx.me/ggsci/),
-[ggsci for Python](https://nanx.me/py-ggsci/),
-[pkglite for R](https://merck.github.io/pkglite/),
-[pkglite for Python](https://pharmaverse.github.io/py-pkglite/),
+I serve on the [R Consortium Infrastructure Steering Committee](https://r-consortium.org/about/governance.html)
+and contribute to the [R Submissions Working Group](https://rconsortium.github.io/submissions-wg/),
+which pioneered the first successful open source R submission pilot to the FDA.
+I'm a regular contributor to [pharmaverse](https://pharmaverse.org/),
+an ecosystem of open source tools for clinical reporting.
+
+My research interests include sparse linear models, representation learning,
+and developer tooling. I build [software](/software/) in R, Python, and Rust.
+Projects I maintain include
+[ggsci](https://nanx.me/ggsci/),
+[pkglite](https://merck.github.io/pkglite/),
 [rtflite](https://pharmaverse.github.io/rtflite/),
 [tinytopics](https://nanx.me/tinytopics/),
 [msaenet](https://nanx.me/msaenet/),
-[revdeprun](https://nanx.me/revdeprun/),
-and [vscode-markdown-stupefy](https://marketplace.visualstudio.com/items?itemName=nanxstats.markdown-stupefy).
+and [revdeprun](https://nanx.me/revdeprun/).
 
 Previously, I was a data scientist at [Seven Bridges](https://www.sevenbridges.com/)
-(now acquired by Summa Equity) in Boston, Massachusetts.
-Earlier, I studied [human genetics](https://genes.uchicago.edu/)
-in [Matthew Stephens Lab](https://stephenslab.uchicago.edu/) at the
-University of Chicago.
-I hold a Ph.D. in Statistics from Central South University, China,
-where I developed statistical machine learning methods for
-high-dimensional data under the supervision of
-[Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en).
+in Boston, building genomics platforms.
+I studied human genetics in [Matthew Stephens lab](https://stephenslab.uchicago.edu/)
+at the University of Chicago.
+I have a Ph.D. in Statistics from Central South University,
+where I developed machine learning methods for high-dimensional data
+with [Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en).
 
 <style>
 .content .markdown {

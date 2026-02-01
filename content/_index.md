@@ -4,18 +4,17 @@ menu: "main"
 description: "Personal website of Nan Xiao; 肖楠的个人网站"
 ---
 
-Hi! I'm Nan---a statistician by training, a software builder at heart.
-I build statistical research software where dependable engineering meets
-intuitive design.
+I'm a statistician working on clinical development and research software
+engineering at [Merck & Co., Inc., Rahway, NJ, USA](https://www.merck.com/).
 
-I work across clinical research, machine learning, and open source tooling,
-turning real-world constraints into systems that are reliable, accessible,
-and maintainable.
+My work shapes how statistical methods become reliable software,
+and how that software clears regulatory review with transparency
+and reproducibility.
 
-My commitment to better software also extends to developer experience (DevEx).
-For example, I design plaintext workflows that teams can adopt and extend
-at a large scale, because great software products are only possible with
-effective collaboration.
+I care about building software infrastructure that scales:
+infrastructure for electronic submissions and developer workflows that
+make effective collaboration possible across teams and companies.
+I maintain [software](/software/) in R, Python, and Rust.
 
 <style>
 .landing {
