@@ -24,7 +24,7 @@ The source code for this site itself is available at
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Heading     | [Instrument Sans](https://github.com/Instrument/instrument-sans)                         <br> Neo-grotesque typeface                               |
 | Body text   | [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)                           <br> Serif typeface designed by Kris Sowersby             |
-| Code        | [Twilio Sans Mono](https://github.com/twilio/twilio-sans-mono)                           <br> Open source monospace typeface with coding ligatures |
+| Code        | [Noto Sans Mono Ligaturized](https://github.com/nanxstats/noto-sans-mono-ligaturized)    <br> Noto Sans Mono with Fira Code ligatures              |
 | Favicon     | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                  |
 | Color theme | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                       |
 {{< /bootstrap-table >}}
