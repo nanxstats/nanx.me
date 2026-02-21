@@ -18,3 +18,6 @@
 [submodule "themes/hugo-nanx2023"]
 	path = themes/hugo-nanx2023
 	url = https://github.com/nanxstats/hugo-nanx2023.git
+[submodule "themes/hugo-nanx2026"]
+	path = themes/hugo-nanx2026
+	url = git@github.com:nanxstats/hugo-nanx2026.git
