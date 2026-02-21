@@ -433,6 +433,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
   A minimalist Bootstrap 5 theme for Hugo and blogdown
 - [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023)\
   A minimalist Bootstrap 5 theme for Hugo and blogdown
+- [hugo-nanx2026](https://github.com/nanxstats/hugo-nanx2026)\
+  A minimalist Tailwind CSS theme for Hugo and blogdown
 
 ## Fonts
 

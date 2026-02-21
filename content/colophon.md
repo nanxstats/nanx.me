@@ -33,7 +33,7 @@ The source code for this site itself is available at
 |            |                                                                                                                                          |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | Generator  | [blogdown](https://github.com/rstudio/blogdown)             <br> Static site generator for R, driven by [Hugo](https://gohugo.io/)       |
-| Theme      | [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023) <br> Responsive Hugo theme built on [Bootstrap 5](https://getbootstrap.com/) |
+| Theme      | [hugo-nanx2026](https://github.com/nanxstats/hugo-nanx2026) <br> Responsive Hugo theme built on Tailwind CSS |
 | Commenting | [utterances](https://utteranc.es/)                          <br> Lightweight commenting system using GitHub issues                       |
 
 
