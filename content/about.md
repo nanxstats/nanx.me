@@ -3,8 +3,6 @@ title: "About"
 menu: "main"
 ---
 
-*  *  *  *
-
 I'm a statistician in [Methodology Research](https://jobs.merck.com/bards),
 led by [Keaven M. Anderson](https://keaven.github.io/),
 at [Merck & Co., Inc., Rahway, NJ, USA](https://www.merck.com/).
@@ -37,10 +35,3 @@ I have a Ph.D. in Statistics from Central South University,
 where I developed machine learning methods for high-dimensional data
 with [Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en).
 
-<style>
-.content .markdown {
-  font-family: var(--tw-prose-font-serif);
-  font-weight: 400;
-  font-size: 1.1875rem;
-}
-</style>

@@ -3,82 +3,56 @@ title: "Software"
 menu: "main"
 ---
 
-*  *  *  *
-
-<div class="software-toc">
-  <div class="row g-0">
-    <div class="col-md-6">
-      <a href="#python-packages" class="btn btn-outline-nav w-100">
-        <i class="fab fa-python"></i>
-        <span>Python Packages</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#r-packages" class="btn btn-outline-nav w-100">
-        <i class="fab fa-r-project"></i>
-        <span>R Packages</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#rust-packages" class="btn btn-outline-nav w-100">
-        <i class="fab fa-rust"></i>
-        <span>Rust Packages</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#vs-code-extensions" class="btn btn-outline-nav w-100">
-        <i class="fa-solid fa-cubes"></i>
-        <span>VS Code Extensions</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#javascript-apps" class="btn btn-outline-nav w-100">
-        <i class="fa-brands fa-square-js"></i>
-        <span>JS Apps</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#shiny-apps" class="btn btn-outline-nav w-100">
-        <i class="fas fa-chart-line"></i>
-        <span>Shiny Apps</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#browser-extensions" class="btn btn-outline-nav w-100">
-        <i class="fa-brands fa-chrome"></i>
-        <span>Browser Extensions</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#machine-learning-workflows" class="btn btn-outline-nav w-100">
-        <i class="fas fa-share-nodes"></i>
-        <span>Machine Learning Workflows</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#open-source-contributions" class="btn btn-outline-nav w-100">
-        <i class="fas fa-code-merge"></i>
-        <span>Open Source Contributions</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#awesome-lists-and-code-recipes" class="btn btn-outline-nav w-100">
-        <i class="fas fa-list-ul"></i>
-        <span>Awesome Lists</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#hugoblogdown-themes" class="btn btn-outline-nav w-100">
-        <i class="fas fa-wand-magic-sparkles"></i>
-        <span>Hugo Themes</span>
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="#fonts" class="btn btn-outline-nav w-100">
-        <i class="fas fa-font"></i>
-        <span>Fonts</span>
-      </a>
-    </div>
+<div class="p-4 border border-zinc-200 rounded-lg bg-[#fdfdfd] mb-12">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+    <a href="#python-packages" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fab fa-python w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Python Packages</span>
+    </a>
+    <a href="#r-packages" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fab fa-r-project w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">R Packages</span>
+    </a>
+    <a href="#rust-packages" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fab fa-rust w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Rust Packages</span>
+    </a>
+    <a href="#vs-code-extensions" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fa-solid fa-cubes w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">VS Code Extensions</span>
+    </a>
+    <a href="#javascript-apps" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fa-brands fa-square-js w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">JS Apps</span>
+    </a>
+    <a href="#shiny-apps" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fas fa-chart-line w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Shiny Apps</span>
+    </a>
+    <a href="#browser-extensions" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fa-brands fa-chrome w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Browser Extensions</span>
+    </a>
+    <a href="#machine-learning-workflows" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fas fa-share-nodes w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Machine Learning Workflows</span>
+    </a>
+    <a href="#open-source-contributions" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fas fa-code-merge w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Open Source Contributions</span>
+    </a>
+    <a href="#awesome-lists-and-code-recipes" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fas fa-list-ul w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Awesome Lists</span>
+    </a>
+    <a href="#hugoblogdown-themes" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fas fa-wand-magic-sparkles w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Hugo Themes</span>
+    </a>
+    <a href="#fonts" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fas fa-font w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Fonts</span>
+    </a>
   </div>
 </div>
 
@@ -481,137 +455,6 @@ Shiny apps, widgets, and templates for interactive data analysis.
 - [使用 R 和 Apache 开发 Web 应用程序](https://nanx.me/rapache/) (2011)
 - [来自 Google 的 R 语言编码风格指南](https://nanx.me/rstyle/) (2011)
 
-<style>
-.markdown ul {
-  font-family: var(--tw-prose-font-sans-serif);
-  list-style: none;
-  padding-left: 2.5ch;
-  border-left: 1px solid var(--tw-prose-bullets);
-  margin-left: 3ch;
-  line-height: 1.875rem;
-}
 
-.markdown ul li a {
-  font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss04", "ss07", "ss09";
-  font-weight: 450;
-  font-size: 1rem;
-}
-
-.markdown ul li a:first-child {
-  font-weight: 550;
-  font-size: 1.375rem;
-  letter-spacing: -0.2px;
-}
-
-.markdown ul li {
-  color: var(--tw-prose-captions);
-  font-weight: 450;
-  font-size: 1rem;
-  letter-spacing: -0.2px;
-  padding: 0.5rem 0;
-}
-</style>
-
-<style>
-/* Software TOC buttons */
-.software-toc {
-    border: 1px solid #e2e8f0;
-    /* slate-200 */
-    border-radius: 0.4rem;
-    padding: 1rem;
-    background-color: var(--tw-bg);
-}
-
-.software-toc .row {
-    margin: -0.5rem;
-    /* Compensate for inner padding */
-}
-
-.software-toc .col-md-6 {
-    padding: 0.5rem;
-}
-
-.software-toc .btn-outline-nav {
-    font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "ss01", "ss04", "ss07", "ss09";
-    font-weight: 550;
-    font-size: 0.9375rem;
-    text-decoration: none;
-    border: 1px solid #e2e8f0;
-    /* slate-200 */
-    border-radius: 0.4rem;
-    padding: 1rem 1.25rem;
-    height: 100%;
-    text-align: left;
-    background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 1px 4px -1px rgba(0, 0, 0, 0.03);
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
-}
-
-.software-toc .btn-outline-nav:hover {
-    background-color: #F9FAFB;
-    /* Slightly off-white */
-    border-color: #cbd5e1;
-    /* Darker border, slate-300 */
-    text-decoration: none;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06);
-    transform: translateY(-2px);
-}
-
-.software-toc .btn-outline-nav:active {
-    background-color: #F3F4F6;
-    border-color: #94a3b8;
-    /* slate-400 */
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    transform: translateY(-1px);
-}
-
-/* Icon styles */
-.software-toc .btn-outline-nav i {
-    font-size: 1rem;
-    width: 1.5rem;
-    text-align: center;
-    color: #475569;
-    /* Primary-like color (slate-600) */
-    margin-top: -0.125rem;
-    margin-right: 0.5rem;
-    transition: color 0.15s ease-in-out;
-}
-
-/* Text styles */
-.software-toc .btn-outline-nav span {
-    color: #475569;
-    /* Readable dark gray (slate-600) */
-    transition: color 0.15s ease-in-out;
-}
-
-.software-toc .btn-outline-nav:hover span {
-    color: #1f2937;
-    /* Darker text on hover (slate-800) */
-}
-
-.software-toc .btn-outline-nav:hover i {
-    color: #1f2937;
-    /* Darker primary on hover (slate-800) */
-}
-
-/* Adjust spacing on mobile */
-@media (max-width: 767.98px) {
-    .software-toc {
-        padding: 0.75rem;
-    }
-
-    .software-toc .row {
-        margin: -0.375rem;
-    }
-
-    .software-toc .col-md-6 {
-        padding: 0.375rem;
-    }
-}
-</style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />

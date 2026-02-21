@@ -3,35 +3,24 @@ title: "Papers"
 menu: "main"
 ---
 
-*  *  *  *
-
-<div class="papers-toc">
-  <!-- External Links Row -->
-  <div class="row g-0">
-    <div class="col-md-6 pe-md-2">
-      <a href="https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en" class="btn btn-outline-nav w-100">
-        <i class="fa-solid fa-graduation-cap"></i>
-        <span>Google Scholar</span>
-      </a>
-    </div>
-    <div class="col-md-6 ps-md-2">
-      <a href="https://orcid.org/0000-0002-0250-5673" class="btn btn-outline-nav w-100">
-        <i class="fa-brands fa-orcid"></i>
-        <span>ORCID</span>
-      </a>
-    </div>
-    <div class="col-md-6 pe-md-2">
-      <a href="https://www.researchgate.net/profile/Nan-Xiao-9" class="btn btn-outline-nav w-100">
-        <i class="fa-brands fa-researchgate"></i>
-        <span>ResearchGate</span>
-      </a>
-    </div>
-    <div class="col-md-6 ps-md-2">
-      <a href="nanx.bib" class="btn btn-outline-nav w-100">
-        <i class="fa fa-download"></i>
-        <span>Download BibTeX file</span>
-      </a>
-    </div>
+<div class="p-4 border border-zinc-200 rounded-lg bg-[#fdfdfd] mb-12">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+    <a href="https://scholar.google.com/citations?user=BNizRecAAAAJ&hl=en" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fa-solid fa-graduation-cap w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Google Scholar</span>
+    </a>
+    <a href="https://orcid.org/0000-0002-0250-5673" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fa-brands fa-orcid w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">ORCID</span>
+    </a>
+    <a href="https://www.researchgate.net/profile/Nan-Xiao-9" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fa-brands fa-researchgate w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">ResearchGate</span>
+    </a>
+    <a href="nanx.bib" class="flex items-center text-left border border-zinc-200 rounded-lg p-3 sm:p-4 bg-white shadow-sm hover:bg-zinc-50 hover:border-zinc-300 hover:shadow hover:-translate-y-0.5 active:bg-zinc-100 active:translate-y-0 transition-all duration-150 group !no-underline">
+      <i class="fa fa-download w-6 text-center text-zinc-500 group-hover:text-zinc-800 transition-colors mr-2 sm:mr-3 text-base"></i>
+      <span class="font-sans font-medium text-[12px] text-zinc-600 group-hover:text-zinc-800 transition-colors">Download BibTeX file</span>
+    </a>
   </div>
 </div>
 
@@ -138,151 +127,6 @@ menu: "main"
   *Journal of Chemometrics* 29(7): 389--398, 2015\
   [PDF](logd.pdf) | [Dataset](https://github.com/nanxstats/logd74)
 
-<style>
-.markdown ul {
-  font-family: var(--tw-prose-font-sans-serif);
-  list-style: none;
-  padding-left: 2.5ch;
-  border-left: 1px solid var(--tw-prose-bullets);
-  margin-left: 3ch;
-  line-height: 1.875rem;
-}
 
-.markdown ul li a {
-  font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss04", "ss07", "ss09";
-  font-weight: 450;
-  font-size: 1rem;
-  letter-spacing: -0.2px;
-}
-
-.markdown ul li a:first-child {
-  font-weight: 550;
-  font-size: 1.125rem;
-  letter-spacing: -0.2px;
-}
-
-.markdown ul li {
-  color: var(--tw-prose-captions);
-  font-weight: 450;
-  font-size: 1rem;
-  letter-spacing: -0.2px;
-  padding: 0.5rem 0;
-}
-</style>
-
-<style>
-/* Papers TOC container */
-.papers-toc {
-    border: 1px solid #e2e8f0;
-    border-radius: 0.4rem;
-    padding: 1rem;
-    background-color: var(--tw-bg);
-}
-
-/* Grid system adjustments */
-.papers-toc .row {
-    margin: -0.5rem;
-}
-
-.papers-toc .col-4,
-.papers-toc .col-md-6 {
-    padding: 0.5rem;
-}
-
-/* Button styles */
-.papers-toc .btn-outline-nav {
-    font-family: var(--tw-prose-font-sans-serif);
-    font-feature-settings: "ss01", "ss04", "ss07", "ss09";
-    font-weight: 550;
-    font-size: 0.9375rem;
-    text-decoration: none;
-    border: 1px solid #e2e8f0;
-    /* slate-200 */
-    border-radius: 0.4rem;
-    padding: 1rem 1.25rem;
-    height: 100%;
-    text-align: left;
-    background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 1px 4px -1px rgba(0, 0, 0, 0.03);
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
-}
-
-.papers-toc .btn-outline-nav:hover {
-    background-color: #F9FAFB;
-    /* Slightly off-white */
-    border-color: #cbd5e1;
-    /* Darker border, slate-300 */
-    text-decoration: none;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06);
-    transform: translateY(-2px);
-}
-
-.papers-toc .btn-outline-nav:active {
-    background-color: #F3F4F6;
-    border-color: #94a3b8;
-    /* slate-400 */
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    transform: translateY(-1px);
-}
-
-/* Icon styles */
-.papers-toc .btn-outline-nav i {
-    font-size: 1rem;
-    width: 1.5rem;
-    text-align: center;
-    color: #475569;
-    /* Primary-like color (slate-600) */
-    margin-top: -0.125rem;
-    margin-right: 0.5rem;
-    transition: color 0.15s ease-in-out;
-}
-
-/* Text styles */
-.papers-toc .btn-outline-nav span {
-    color: #475569;
-    /* Readable dark gray (slate-600) */
-    transition: color 0.15s ease-in-out;
-}
-
-/* Hover states */
-.papers-toc .btn-outline-nav:hover span {
-    color: #1f2937;
-    /* Darker text on hover (slate-800) */
-}
-
-.papers-toc .btn-outline-nav:hover i {
-    color: #1f2937;
-    /* Darker primary on hover (slate-800) */
-}
-
-/* Responsive adjustments */
-@media (min-width: 768px) {
-    .papers-toc .pe-md-2 {
-        padding-right: 0.5rem !important;
-    }
-
-    .papers-toc .ps-md-2 {
-        padding-left: 0.5rem !important;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .papers-toc {
-        padding: 0.75rem;
-    }
-
-    .papers-toc .row {
-        margin: -0.375rem;
-    }
-
-    .papers-toc .col-4,
-    .papers-toc .col-md-6 {
-        padding: 0.375rem;
-    }
-}
-</style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />

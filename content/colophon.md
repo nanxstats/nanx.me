@@ -3,8 +3,6 @@ title: "Colophon"
 menu: "main"
 ---
 
-*  *  *  *
-
 I launched this website in 2009, initially as a personal blog,
 before later expanding it to include a professional portfolio.
 Throughout the years, I have explored different publishing platforms:
@@ -19,7 +17,7 @@ The source code for this site itself is available at
 
 ## Typography
 
-{{< bootstrap-table "table table-responsive" >}}
+
 |             |                                                                                                                                                    |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Heading     | [Instrument Sans](https://github.com/Instrument/instrument-sans)                         <br> Neo-grotesque typeface                               |
@@ -27,65 +25,26 @@ The source code for this site itself is available at
 | Code        | [Noto Sans Mono Ligaturized](https://github.com/nanxstats/noto-sans-mono-ligaturized)    <br> Noto Sans Mono with Fira Code ligatures              |
 | Favicon     | [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed) <br> Legible condensed humanist typeface                  |
 | Color theme | [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography)        <br> Beautiful typographic defaults                       |
-{{< /bootstrap-table >}}
+
 
 ## Publishing
 
-{{< bootstrap-table "table table-responsive" >}}
+
 |            |                                                                                                                                          |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | Generator  | [blogdown](https://github.com/rstudio/blogdown)             <br> Static site generator for R, driven by [Hugo](https://gohugo.io/)       |
 | Theme      | [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023) <br> Responsive Hugo theme built on [Bootstrap 5](https://getbootstrap.com/) |
 | Commenting | [utterances](https://utteranc.es/)                          <br> Lightweight commenting system using GitHub issues                       |
-{{< /bootstrap-table >}}
+
 
 ## Editing
 
-{{< bootstrap-table "table table-responsive" >}}
+
 |           |                                                                                                                                                            |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Editor    | [Visual Studio Code](https://code.visualstudio.com/)                                               <br> Code editor from Microsoft                         |
 | Extension | [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)                <br> R language support in VS Code                      |
 | Theme     | [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme) <br> Light VS Code theme optimized for R and R Markdown |
-{{< /bootstrap-table >}}
 
-<style>
-.content .markdown h2 {
-  margin-top: 2.5rem;
-}
 
-.content .markdown p {
-  font-family: var(--tw-prose-font-serif);
-  font-weight: 400;
-  font-size: 1.1875rem;
-}
 
-.table {
-  font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss04", "ss07", "ss09";
-  font-weight: 450;
-  font-size: 1.125rem;
-}
-
-.table tr {
-  border-color: var(--tw-prose-bullets);
-}
-
-.table td {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
-  line-height: 2.75rem;
-}
-
-.table>:not(caption)>*>* {
-  padding-left: 1px;
-}
-
-.table td:nth-child(1),
-table th:nth-child(1) {
-  font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss04", "ss07", "ss09";
-  font-weight: 700;
-  width: 30%;
-}
-</style>

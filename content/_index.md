@@ -16,10 +16,3 @@ infrastructure for electronic submissions and developer workflows that
 make effective collaboration possible across teams and companies.
 I maintain [software](/software/) in R, Python, and Rust.
 
-<style>
-.landing {
-    font-family: var(--tw-prose-font-serif);
-    font-weight: 400;
-    font-size: 1.21875rem;
-}
-</style>

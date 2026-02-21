@@ -3,8 +3,6 @@ title: "Talks"
 menu: "main"
 ---
 
-*  *  *  *
-
 ## 2025
 
 - [Python for Clinical Study Reports and Submission](https://pycsr.org/)\
@@ -87,35 +85,3 @@ menu: "main"
 - [Web Scraping With R](https://nanx.me/talks/web-scraping-with-r-nanxiao.pdf)\
   China R Conference
 
-<style>
-.markdown ul {
-  font-family: var(--tw-prose-font-sans-serif);
-  list-style: none;
-  padding-left: 2.5ch;
-  border-left: 1px solid var(--tw-prose-bullets);
-  margin-left: 3ch;
-  line-height: 1.875rem;
-}
-
-.markdown ul li a {
-  font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss04", "ss07", "ss09";
-  font-weight: 450;
-  font-size: 1rem;
-  letter-spacing: -0.2px;
-}
-
-.markdown ul li a:first-child {
-  font-weight: 550;
-  font-size: 1.125rem;
-  letter-spacing: -0.2px;
-}
-
-.markdown ul li {
-  color: var(--tw-prose-captions);
-  font-weight: 450;
-  font-size: 1rem;
-  letter-spacing: -0.2px;
-  padding: 0.5rem 0;
-}
-</style>

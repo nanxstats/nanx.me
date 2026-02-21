@@ -3,8 +3,6 @@ title: "Books"
 menu: "main"
 ---
 
-*  *  *  *
-
 ## Bookdown and Quarto book projects
 
 - [Group Sequential Designs Made Easy: A Web Interface Handbook](https://keaven.github.io/gsd-shiny/)\
@@ -31,29 +29,3 @@ menu: "main"
 - [R语言实战](https://book.douban.com/subject/20382244/) (2013)\
   Translated from [R in Action](https://www.manning.com/books/r-in-action) (2011)
 
-<style>
-.markdown ul {
-  font-family: var(--tw-prose-font-sans-serif);
-  list-style: none;
-  padding-left: 2.5ch;
-  border-left: 1px solid var(--tw-prose-bullets);
-  margin-left: 3ch;
-  line-height: 1.875rem;
-}
-
-.markdown ul li a:first-child {
-  font-family: var(--tw-prose-font-sans-serif);
-  font-feature-settings: "ss01", "ss04", "ss07", "ss09";
-  font-weight: 550;
-  font-size: 1.125rem;
-  letter-spacing: -0.2px;
-}
-
-.markdown ul li {
-  color: var(--tw-prose-captions);
-  font-weight: 450;
-  font-size: 1rem;
-  letter-spacing: -0.2px;
-  padding: 0.5rem 0;
-}
-</style>
