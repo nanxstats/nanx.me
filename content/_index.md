@@ -18,5 +18,5 @@ make effective collaboration possible across teams and companies.
 I maintain [software](/software/) in R, Python, and Rust.
 
 <style>
-.landing { font-size: 1.25rem; }
+.landing { font-size: 1.3125rem; }
 </style>
