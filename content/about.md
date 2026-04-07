@@ -3,12 +3,12 @@ title: "About"
 menu: "main"
 ---
 
-I'm a statistician working at the intersection of statistical methodology and
+I'm a data scientist in Product Development Data Sciences at
+[Genentech](https://www.gene.com/),
+working at the intersection of statistical computing infrastructure and
 research software engineering.
-My focus is on building software infrastructure that makes late-stage
+My focus is on building software and AI infrastructure that makes
 clinical development efficient and reliable.
-Previously, I was a statistician in Methodology Research,
-led by [Keaven M. Anderson](https://keaven.github.io/), at Merck & Co., Inc.
 
 I served on the [R Consortium Infrastructure Steering Committee](https://r-consortium.org/about/governance.html) from 2022 to 2026.
 I also contribute to the [R Submissions Working Group](https://rconsortium.github.io/submissions-wg/),
@@ -26,10 +26,12 @@ Projects I maintain include
 [msaenet](https://nanx.me/msaenet/),
 and [revdeprun](https://nanx.me/revdeprun/).
 
+Previously, I was a statistician in Methodology Research,
+led by [Keaven M. Anderson](https://keaven.github.io/), at Merck & Co., Inc.
 Earlier, I was a data scientist at [Seven Bridges](https://www.sevenbridges.com/)
-in Boston, building genomics platforms.
+in Boston, MA, building genomics platforms.
 I studied human genetics in [Matthew Stephens lab](https://stephenslab.uchicago.edu/)
 at the University of Chicago.
 I have a Ph.D. in Statistics from Central South University,
-where I developed machine learning methods for high-dimensional data
+where I developed statistical machine learning methods for high-dimensional data
 with [Qing-Song Xu](https://scholar.google.com/citations?user=b98MXiYAAAAJ&hl=en).
