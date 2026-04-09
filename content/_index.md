@@ -6,7 +6,7 @@ description: "Personal website of Nan Xiao; 肖楠的个人网站"
 
 I'm a data scientist working on clinical development and
 research software engineering at [Genentech](https://www.gene.com/)
-in the SF Bay Area.
+in the San Francisco Bay Area.
 
 My work shapes how statistical methods become reliable software,
 and how that software clears regulatory review with transparency
