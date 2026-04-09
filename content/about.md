@@ -28,8 +28,8 @@ and [revdeprun](https://nanx.me/revdeprun/).
 
 Previously, I was a statistician in Methodology Research,
 led by [Keaven M. Anderson](https://keaven.github.io/), at Merck & Co., Inc.
-Earlier, I was a data scientist at [Seven Bridges](https://www.sevenbridges.com/)
-in Boston, MA, building genomics platforms.
+Earlier, I was a data scientist at [Seven Bridges](https://www.sevenbridges.com/),
+building cloud platforms for genomic data analysis.
 I studied human genetics in [Matthew Stephens lab](https://stephenslab.uchicago.edu/)
 at the University of Chicago.
 I have a Ph.D. in Statistics from Central South University,
