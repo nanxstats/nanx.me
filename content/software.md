@@ -60,38 +60,38 @@ menu: "main"
 
 ## Python packages
 
-- [tinytopics](https://nanx.me/tinytopics/)\
+- [**tinytopics**](https://nanx.me/tinytopics/)\
   GPU-accelerated topic modeling via sum-to-one constrained
   neural Poisson NMF\
   [PyPI](https://pypi.org/project/tinytopics/) |
   [GitHub](https://github.com/nanxstats/tinytopics)
-- [tinyvdiff](https://nanx.me/tinyvdiff/)\
+- [**tinyvdiff**](https://nanx.me/tinyvdiff/)\
   Minimalist visual regression testing plugin for pytest\
   [PyPI](https://pypi.org/project/tinyvdiff/) |
   [GitHub](https://github.com/nanxstats/tinyvdiff)
-- [py-ggsci](https://nanx.me/py-ggsci/)\
+- [**py-ggsci**](https://nanx.me/py-ggsci/)\
   Scientific journal and sci-fi themed color palettes for plotnine\
   [PyPI](https://pypi.org/project/ggsci/) |
   [GitHub](https://github.com/nanxstats/py-ggsci)
-- [pytest-r-snapshot](https://nanx.me/pytest-r-snapshot/)\
+- [**pytest-r-snapshot**](https://nanx.me/pytest-r-snapshot/)\
   A pytest plugin for snapshot testing against R reference outputs\
   [PyPI](https://pypi.org/project/pytest-r-snapshot/) |
   [GitHub](https://github.com/nanxstats/pytest-r-snapshot)
-- [py-pkglite](https://pharmaverse.github.io/py-pkglite/)\
+- [**py-pkglite**](https://pharmaverse.github.io/py-pkglite/)\
   A simple framework for packing source packages written in any programming
   language into a text file and restoring them into the original directory
   structure\
   [PyPI](https://pypi.org/project/pkglite/) |
   [GitHub](https://github.com/pharmaverse/py-pkglite)
-- [rtflite](https://pharmaverse.github.io/rtflite/)\
+- [**rtflite**](https://pharmaverse.github.io/rtflite/)\
   Lightweight RTF composer for Python\
   [PyPI](https://pypi.org/project/rtflite/) |
   [GitHub](https://github.com/pharmaverse/rtflite)
-- [gsdesign-python](https://pypi.org/project/gsdesign/)\
+- [**gsdesign-python**](https://pypi.org/project/gsdesign/)\
   Group sequential design for Python (experimental)\
   [PyPI](https://pypi.org/project/gsdesign/) |
   [GitHub](https://github.com/nanxstats/gsdesign-python)
-- [simtrial-python](https://pypi.org/project/simtrial/)\
+- [**simtrial-python**](https://pypi.org/project/simtrial/)\
   Clinical trial simulation for Python (experimental)\
   [PyPI](https://pypi.org/project/simtrial/) |
   [GitHub](https://github.com/nanxstats/simtrial-python)
@@ -100,61 +100,61 @@ menu: "main"
 
 ### Infrastructure and automation
 
-- [pkglite](https://merck.github.io/pkglite/)\
+- [**pkglite**](https://merck.github.io/pkglite/)\
   Compact package representations\
   [CRAN](https://cran.r-project.org/package=pkglite) |
   [GitHub](https://github.com/Merck/pkglite) |
   [Paper](https://doi.org/10.1177/17407745221123244)
-- [pkgdown.offline](https://nanx.me/pkgdown.offline/)\
+- [**pkgdown.offline**](https://nanx.me/pkgdown.offline/)\
   Build pkgdown websites without an internet connection\
   [CRAN](https://cran.r-project.org/package=pkgdown.offline) |
   [GitHub](https://github.com/nanxstats/pkgdown.offline)
 
 ### Statistical machine learning
 
-- [msaenet](https://nanx.me/msaenet/)\
+- [**msaenet**](https://nanx.me/msaenet/)\
   Multi-step adaptive estimation for sparse regressions\
   [CRAN](https://cran.r-project.org/package=msaenet) |
   [GitHub](https://github.com/nanxstats/msaenet) |
   [Paper](https://nanx.me/papers/msaenet.pdf)
-- [stackgbm](https://nanx.me/stackgbm/)\
+- [**stackgbm**](https://nanx.me/stackgbm/)\
   Minimalist implementation of model stacking for gradient boosted tree models
   built by xgboost, lightgbm, and catboost\
   [CRAN](https://cran.r-project.org/package=stackgbm) |
   [GitHub](https://github.com/nanxstats/stackgbm)
-- [oneclust](https://nanx.me/oneclust/)\
+- [**oneclust**](https://nanx.me/oneclust/)\
   Maximum homogeneity clustering for univariate data\
   [CRAN](https://cran.r-project.org/package=oneclust) |
   [GitHub](https://github.com/nanxstats/oneclust)
-- [logreg](https://nanx.me/logreg/)\
+- [**logreg**](https://nanx.me/logreg/)\
   Regularized logistic regressions with computational graphs\
   [GitHub](https://github.com/nanxstats/logreg)
-- [OHPL](https://OHPL.io/doc/)\
+- [**OHPL**](https://OHPL.io/doc/)\
   Ordered homogeneity pursuit lasso for group variable selection\
   [CRAN](https://cran.r-project.org/package=OHPL) |
   [GitHub](https://github.com/nanxstats/OHPL) |
   [Paper](https://nanx.me/papers/OHPL.pdf)
-- [RECA](https://nanx.me/RECA/)\
+- [**RECA**](https://nanx.me/RECA/)\
   Relevant component analysis for supervised distance metric learning\
   [CRAN](https://cran.r-project.org/package=RECA) |
   [GitHub](https://github.com/nanxstats/RECA)
-- [enpls](https://nanx.me/enpls/)\
+- [**enpls**](https://nanx.me/enpls/)\
   Ensemble partial least squares regression\
   [CRAN](https://cran.r-project.org/package=enpls) |
   [GitHub](https://github.com/nanxstats/enpls)
 
 ### Statistical graphics and computing
 
-- [ggsci](https://nanx.me/ggsci/)\
+- [**ggsci**](https://nanx.me/ggsci/)\
   Scientific journal and sci-fi themed color palettes for ggplot2\
   [CRAN](https://cran.r-project.org/package=ggsci) |
   [GitHub](https://github.com/nanxstats/ggsci)
-- [liftr](https://liftr.me/)\
+- [**liftr**](https://liftr.me/)\
   Containerize R Markdown documents\
   [CRAN](https://cran.r-project.org/package=liftr) |
   [GitHub](https://github.com/nanxstats/liftr) |
   [Paper](https://doi.org/10.32614/RJ-2020-007)
-- [hdnom](https://nanx.me/hdnom/)\
+- [**hdnom**](https://nanx.me/hdnom/)\
   Benchmarking and visualization toolkit for penalized Cox models\
   [CRAN](https://cran.r-project.org/package=hdnom) |
   [GitHub](https://github.com/nanxstats/hdnom) |
@@ -162,84 +162,84 @@ menu: "main"
 
 ### Bioinformatics and cheminformatics
 
-- [protr](https://nanx.me/protr/)\
+- [**protr**](https://nanx.me/protr/)\
   Protein sequence feature extraction\
   [CRAN](https://cran.r-project.org/package=protr) |
   [GitHub](https://github.com/nanxstats/protr) |
   [Paper](https://nanx.me/papers/protr.pdf)
-- [Rcpi](https://nanx.me/Rcpi/)\
+- [**Rcpi**](https://nanx.me/Rcpi/)\
   Feature extraction for proteins, compounds, and their interactions\
   [Bioconductor](https://bioconductor.org/packages/Rcpi) |
   [GitHub](https://github.com/nanxstats/Rcpi) |
   [Paper](https://nanx.me/papers/Rcpi.pdf)
-- [ssw-r](https://nanx.me/ssw-r/)\
+- [**ssw-r**](https://nanx.me/ssw-r/)\
   R interface for SSW, a fast implementation of the Smith-Waterman algorithm using SIMD\
   [CRAN](https://cran.r-project.org/package=ssw) |
   [GitHub](https://github.com/nanxstats/ssw-r)
-- [grex](https://nanx.me/grex/)\
+- [**grex**](https://nanx.me/grex/)\
   Gene ID mapping for Genotype-Tissue Expression (GTEx) data\
   [CRAN](https://cran.r-project.org/package=grex) |
   [GitHub](https://github.com/nanxstats/grex)
-- [tidychem](https://nanx.me/tidychem/)\
+- [**tidychem**](https://nanx.me/tidychem/)\
   Read, preprocess, and featurize chemical data using RDKit\
   [GitHub](https://github.com/nanxstats/tidychem)
-- [cats](https://nanx.me/cats/)\
+- [**cats**](https://nanx.me/cats/)\
   Joint power analysis for non-symmetric two-stage case-control designs\
   [GitHub](https://github.com/nanxstats/cats)
-- [tidycwl](https://sbg.github.io/tidycwl/)\
+- [**tidycwl**](https://sbg.github.io/tidycwl/)\
   Tidy Common Workflow Language tools and workflows\
   [CRAN](https://cran.r-project.org/package=tidycwl) |
   [GitHub](https://github.com/sbg/tidycwl) |
   [Paper](https://doi.org/10.12688/f1000research.25902.1)
-- [biocompute](https://sbg.github.io/biocompute/)\
+- [**biocompute**](https://sbg.github.io/biocompute/)\
   Create and manipulate BioCompute Objects\
   [CRAN](https://cran.r-project.org/package=biocompute) |
   [GitHub](https://github.com/sbg/biocompute) |
   [Paper](https://doi.org/10.12688/f1000research.25902.1)
-- [sevenbridges-r](https://sbg.github.io/sevenbridges-r/)\
+- [**sevenbridges-r**](https://sbg.github.io/sevenbridges-r/)\
   Seven Bridges API client\
   [Bioconductor](https://bioconductor.org/packages/sevenbridges) |
   [GitHub](https://github.com/sbg/sevenbridges-r)
-- [sbpack-r](https://nanx.me/sbpack-r/)\
+- [**sbpack-r**](https://nanx.me/sbpack-r/)\
   Pack and upload CWL apps to Seven Bridges powered platforms\
   [GitHub](https://github.com/nanxstats/sbpack-r)
 
 ## Rust packages
 
-- [revdeprun](https://nanx.me/revdeprun/)\
+- [**revdeprun**](https://nanx.me/revdeprun/)\
   Easy reverse dependency checks for R with cloud-ready environment setup\
   [crates.io](https://crates.io/crates/revdeprun) |
   [docs.rs](https://docs.rs/revdeprun/) |
   [GitHub](https://github.com/nanxstats/revdeprun)
-- [gsdesign-rust](https://docs.rs/gsdesign/)\
+- [**gsdesign-rust**](https://docs.rs/gsdesign/)\
   Group sequential design for Rust (experimental)\
   [crates.io](https://crates.io/crates/gsdesign) |
   [GitHub](https://github.com/nanxstats/gsdesign-rust)
-- [simtrial-rust](https://docs.rs/simtrial/)\
+- [**simtrial-rust**](https://docs.rs/simtrial/)\
   Clinical trial simulation for Rust (experimental)\
   [crates.io](https://crates.io/crates/simtrial) |
   [GitHub](https://github.com/nanxstats/simtrial-rust)
 
 ## VS Code extensions
 
-- [vscode-textmate-rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)\
+- [**vscode-textmate-rstheme**](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)\
   A light theme for Visual Studio Code inspired by the TextMate (default) theme in RStudio IDE\
   [GitHub repository](https://github.com/nanxstats/vscode-textmate-rstheme)
-- [vscode-markdown-stupefy](https://marketplace.visualstudio.com/items?itemName=nanxstats.markdown-stupefy)\
+- [**vscode-markdown-stupefy**](https://marketplace.visualstudio.com/items?itemName=nanxstats.markdown-stupefy)\
   Convert smart punctuation to ASCII\
   [GitHub repository](https://github.com/nanxstats/vscode-markdown-stupefy)
 
 ## JavaScript apps
 
-- [Deep Learning GPU Selector](https://nanx.me/gpu/)\
+- [**Deep Learning GPU Selector**](https://nanx.me/gpu/)\
   Discover the best GPU for your deep learning needs by answering a few yes/no questions\
   [GitHub](https://github.com/nanxstats/gpu) |
   [Blog post](https://nanx.me/blog/post/gpu-selector/)
-- [Word Cloud Generator (Batteries Included)](https://nanx.me/wordcloud/)\
+- [**Word Cloud Generator (Batteries Included)**](https://nanx.me/wordcloud/)\
   A fork version of Jason Davies' word cloud generator with color palette selection and updated default values\
   [GitHub](https://github.com/nanxstats/wordcloud) |
   [Blog post](https://nanx.me/blog/post/rethinking-word-cloud-generator/)
-- [font-overlay](https://nanx.me/font-overlay/)\
+- [**font-overlay**](https://nanx.me/font-overlay/)\
   Interactively compare typesetting characteristics between fonts
   across customizable text, font size, letter spacing, and optical size.\
   [GitHub](https://github.com/nanxstats/font-overlay)
@@ -248,81 +248,81 @@ menu: "main"
 
 Shiny apps, widgets, and templates for interactive data analysis.
 
-- [shiny-loading-skeleton](https://github.com/nanxstats/shiny-loading-skeleton)\
+- [**shiny-loading-skeleton**](https://github.com/nanxstats/shiny-loading-skeleton)\
   Shiny app template with an animated, fully customizable skeleton loader\
   [Demo](https://nanx.shinyapps.io/shiny-loading-skeleton/)
-- [shiny-fcp-loader](https://github.com/nanxstats/shiny-fcp-loader)\
+- [**shiny-fcp-loader**](https://github.com/nanxstats/shiny-fcp-loader)\
   Shiny app template with a loading screen that aims to minimize the time to first contentful paint (FCP)\
   [Demo](https://nanx.shinyapps.io/shiny-fcp-loader/)
-- [shiny-highlight-rmarkdown](https://github.com/nanxstats/shiny-highlight-rmarkdown)\
+- [**shiny-highlight-rmarkdown**](https://github.com/nanxstats/shiny-highlight-rmarkdown)\
   Syntax highlighting for R Markdown output in Shiny based on highlight.js\
   [Demo](https://nanx.shinyapps.io/shiny-highlight-rmarkdown/)
-- [exp2vec-shiny](https://github.com/nanxstats/exp2vec-shiny)\
+- [**exp2vec-shiny**](https://github.com/nanxstats/exp2vec-shiny)\
   Shiny app for gene neighbors and gene analogies discovery with tissue-specific gene embeddings training on GTEx data\
   [Demo](https://nanx.shinyapps.io/exp2vec/)
-- [bco-app](https://github.com/sbg/bco-app)\
+- [**bco-app**](https://github.com/sbg/bco-app)\
   Create, validate, and browse BioCompute Objects\
   Advanced track winner of the [precisionFDA challenge on BioCompute Objects](https://precision.fda.gov/challenges/7/results)\
   [Documentation](https://sbg.github.io/bco-app/) |
   [Paper](https://doi.org/10.12688/f1000research.25902.1)
-- [protrweb](https://github.com/nanxstats/protrweb)\
+- [**protrweb**](https://github.com/nanxstats/protrweb)\
   Compute protein sequence-derived descriptors\
   [Mirror 1](https://nanx.app/protr/) |
   [Mirror 2](https://nanx.shinyapps.io/protrweb/) |
   [Paper](https://nanx.me/papers/protr.pdf)
-- [targetnet](https://github.com/nanxstats/targetnet)\
+- [**targetnet**](https://github.com/nanxstats/targetnet)\
   Drug target identification with large-scale binding affinities data\
   [Mirror 1](https://nanx.app/targetnet/) |
   [Mirror 2](https://nanx.shinyapps.io/targetnet/)
-- [imgsvd](https://github.com/nanxstats/imgsvd)\
+- [**imgsvd**](https://github.com/nanxstats/imgsvd)\
   Image compression via singular value decomposition\
   [Mirror 1](https://nanx.app/imgsvd/) |
   [Mirror 2](https://nanx.shinyapps.io/imgsvd/)
-- [hdnom-app](https://github.com/nanxstats/hdnom-app)\
+- [**hdnom-app**](https://github.com/nanxstats/hdnom-app)\
   Benchmarking and visualization of penalized Cox models\
   [Mirror 1](https://nanx.app/hdnom/)
-- [conjugate-normal-umkv](https://github.com/nanxstats/conjugate-normal-umkv)\
+- [**conjugate-normal-umkv**](https://github.com/nanxstats/conjugate-normal-umkv)\
   A demo of [Bayesian inference for normal mean (known variance)](https://stephens999.github.io/fiveMinuteStats/shiny_normal_example.html)\
   [Mirror 1](https://nanx.app/conjugate-normal-umkv/) |
   [Mirror 2](https://nanx.shinyapps.io/conjugate-normal-umkv/)
-- [signify](https://github.com/nanxstats/signify)\
+- [**signify**](https://github.com/nanxstats/signify)\
   Make your (>0.05) *p*-values "sound significant"\
   [Mirror 1](https://nanx.app/signify/) |
   [Mirror 2](https://nanx.shinyapps.io/signify/)
-- [cwl-formatter](https://github.com/nanxstats/cwl-formatter)\
+- [**cwl-formatter**](https://github.com/nanxstats/cwl-formatter)\
   Format Common Workflow Language (CWL) apps\
   [Mirror 1](https://nanx.app/cwl-formatter/)
-- [cwl-exploder](https://github.com/nanxstats/cwl-exploder)\
+- [**cwl-exploder**](https://github.com/nanxstats/cwl-exploder)\
   Unpack monolithic CWL workflows\
   [Mirror 1](https://nanx.app/cwl-exploder/)
-- [cwl-upgrader](https://github.com/nanxstats/cwl-upgrader)\
+- [**cwl-upgrader**](https://github.com/nanxstats/cwl-upgrader)\
   Upgrade CWL apps from sbg:draft2 to v1.0\
   [Mirror 1](https://nanx.app/cwl-upgrader/)
 
 ## Browser extensions
 
-- [Unsplash Landscape](https://github.com/nanxstats/unsplash-landscape)\
+- [**Unsplash Landscape**](https://github.com/nanxstats/unsplash-landscape)\
   A Chrome extension that hides Unsplash+ photos and shows only landscape
   images from Unsplash.
 
 ## Machine learning workflows
 
-- [exp2vec](https://github.com/nanxstats/exp2vec)\
+- [**exp2vec**](https://github.com/nanxstats/exp2vec)\
   Workflow for training tissue-specific gene embeddings on GTEx data
-- [bcpm-msaenet](https://github.com/nanxstats/bcpm-msaenet)\
+- [**bcpm-msaenet**](https://github.com/nanxstats/bcpm-msaenet)\
   Workflow for the [precisionFDA challenge on brain cancer predictive modeling and biomarker discovery](https://precision.fda.gov/challenges/8/results).
   The 2nd place solution by predictive performance.
   Features multi-step adaptive SCAD-net and relaxed stability selection
   for feature selection, and a two-layer stacking tree model with xgboost,
   lightgbm, and catboost.
-- [rankv](https://github.com/nanxstats/rankv)\
+- [**rankv**](https://github.com/nanxstats/rankv)\
   Workflow for the [precisionFDA challenge on detecting adverse event anomalies using FDA open data](https://precision.fda.gov/challenges/9).
   Features a rank aggregated signal detection method for
   Vaccine Adverse Event Reporting System (VAERS) data,
   with base signal detection methods including Gamma Poisson Shrinker,
   PRR, ROR, and BCPNN.\
   [Website](https://nanx.me/rankv/)
-- [ChromaClust](https://github.com/nanxstats/ChromaClust)\
+- [**ChromaClust**](https://github.com/nanxstats/ChromaClust)\
   Image color topic modeling using
   [fastTopics](https://github.com/stephenslab/fastTopics).\
   The original idea was from my final project
@@ -331,133 +331,133 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 ## Open source contributions
 
-- [gsDesign](https://keaven.github.io/gsDesign/)\
+- [**gsDesign**](https://keaven.github.io/gsDesign/)\
   Group sequential clinical trial design,
   largely as presented in Jennison and Turnbull (2000)\
   [CRAN](https://cran.r-project.org/package=gsDesign) |
   [GitHub](https://github.com/keaven/gsDesign) |
   [gsDesign: 15 Years of Development in 5 Minutes (4K 60fps)](https://www.youtube.com/watch?v=_ZUddQAhPFw)
-- [gsDesign Shiny app](https://rinpharma.shinyapps.io/gsdesign/)\
+- [**gsDesign Shiny app**](https://rinpharma.shinyapps.io/gsdesign/)\
   Web application for group sequential clinical trial design\
   [Mirror 1](https://gsdesign.shinyapps.io/prod/) |
   [Mirror 2](https://gsdesign.shinyapps.io/devel/)
-- [gsDesign2](https://merck.github.io/gsDesign2/)\
+- [**gsDesign2**](https://merck.github.io/gsDesign2/)\
   Group sequential design with non-constant effect\
   [CRAN](https://cran.r-project.org/package=gsDesign2) |
   [GitHub](https://github.com/Merck/gsDesign2)
-- [simtrial](https://merck.github.io/simtrial/)\
+- [**simtrial**](https://merck.github.io/simtrial/)\
   Clinical trial simulation\
   [CRAN](https://cran.r-project.org/package=simtrial) |
   [GitHub](https://github.com/Merck/simtrial)
-- [gMCPLite](https://merck.github.io/gMCPLite/)\
+- [**gMCPLite**](https://merck.github.io/gMCPLite/)\
   Lightweight fork of gMCP for graph-based multiple comparison procedures\
   [CRAN](https://cran.r-project.org/package=gMCPLite) |
   [GitHub](https://github.com/Merck/gMCPLite)
-- [gMCPShiny](https://merck.github.io/gMCPShiny/)\
+- [**gMCPShiny**](https://merck.github.io/gMCPShiny/)\
   Shiny app for graphical multiplicity control\
   [GitHub](https://github.com/Merck/gMCPShiny)
-- [r2rtf](https://merck.github.io/r2rtf/)\
+- [**r2rtf**](https://merck.github.io/r2rtf/)\
   Create production-ready Rich Text Format (RTF) tables and figures\
   [CRAN](https://cran.r-project.org/package=r2rtf) |
   [GitHub](https://github.com/Merck/r2rtf)
-- [metalite](https://merck.github.io/metalite/)\
+- [**metalite**](https://merck.github.io/metalite/)\
   Unified data structure for metadata information in clinical
   analysis & reporting (A&R), leveraging the
   Analysis Data Model (ADaM) datasets for consistent and
   accurate metadata representation\
   [CRAN](https://cran.r-project.org/package=metalite) |
   [GitHub](https://github.com/Merck/metalite)
-- [metalite.ae](https://merck.github.io/metalite.ae/)\
+- [**metalite.ae**](https://merck.github.io/metalite.ae/)\
   Analyzes adverse events in clinical trials using the metalite data structure.
   Simplifies the workflow to create production-ready tables, listings,
   and figures discussed in the adverse events analysis chapters of
   *R for Clinical Study Reports and Submission*.\
   [CRAN](https://cran.r-project.org/package=metalite.ae) |
   [GitHub](https://github.com/Merck/metalite.ae)
-- [boxly](https://merck.github.io/boxly/)\
+- [**boxly**](https://merck.github.io/boxly/)\
   Interactive box plot using plotly for clinical data analysis\
   [CRAN](https://cran.r-project.org/package=boxly) |
   [GitHub](https://github.com/Merck/boxly)
-- [forestly](https://merck.github.io/forestly/)\
+- [**forestly**](https://merck.github.io/forestly/)\
   Interactive forest plot for clinical trial safety analysis
   using metalite, reactable, plotly, and Analysis Data Model (ADaM) datasets\
   [CRAN](https://cran.r-project.org/package=forestly) |
   [GitHub](https://github.com/Merck/forestly)
-- [PDXNet Portal](https://pdxnet.shinyapps.io/portal/)\
+- [**PDXNet Portal**](https://pdxnet.shinyapps.io/portal/)\
   Patient-derived xenograft (PDX) model, data, workflow, and tool discovery\
   [Paper](https://doi.org/10.1093/narcan/zcac014)
-- [ashr](https://github.com/stephens999/ashr)\
+- [**ashr**](https://github.com/stephens999/ashr)\
   Methods for adaptive shrinkage, using Empirical Bayes\
   [CRAN](https://cran.r-project.org/package=ashr) |
   [Paper](https://doi.org/10.1093/biostatistics/kxw041)
-- [dml](https://github.com/terrytangyuan/dml)\
+- [**dml**](https://github.com/terrytangyuan/dml)\
   Distance metric learning in R\
   [CRAN](https://cran.r-project.org/package=dml) |
   [Paper](https://doi.org/10.21105/joss.01036)
 
 ## Awesome lists and code recipes
 
-- [awesome-shiny-extensions](https://github.com/nanxstats/awesome-shiny-extensions)\
+- [**awesome-shiny-extensions**](https://github.com/nanxstats/awesome-shiny-extensions)\
   A curated list of R packages that offer extended UI or server components for Shiny
-- [awesome-webr](https://github.com/nanxstats/awesome-webr)\
+- [**awesome-webr**](https://github.com/nanxstats/awesome-webr)\
   A curated list of awesome resources for learning WebR, a version of the
   statistical language R compiled for the browser and Node.js using WebAssembly
-- [r-base-shortcuts](https://github.com/nanxstats/r-base-shortcuts)\
+- [**r-base-shortcuts**](https://github.com/nanxstats/r-base-shortcuts)\
   A collection of lesser-known base R idioms and shortcuts for
   writing concise and fast base R code
-- [r-rust-pkgs](https://github.com/nanxstats/r-rust-pkgs)\
+- [**r-rust-pkgs**](https://github.com/nanxstats/r-rust-pkgs)\
   R packages using Rust on CRAN
-- [r-future-recipes](https://github.com/nanxstats/r-future-recipes)\
+- [**r-future-recipes**](https://github.com/nanxstats/r-future-recipes)\
   Guides and examples for the R future framework for parallel computing
-- [r-windows-paths](https://github.com/nanxstats/r-windows-paths)\
+- [**r-windows-paths**](https://github.com/nanxstats/r-windows-paths)\
   Key R toolchain paths for Windows systems
-- [deep-learning-recipes](https://github.com/nanxstats/deep-learning-recipes)\
+- [**deep-learning-recipes**](https://github.com/nanxstats/deep-learning-recipes)\
   R implementation for selected machine learning methods with deep learning frameworks
-- [llm-cliches](https://github.com/nanxstats/llm-cliches)\
+- [**llm-cliches**](https://github.com/nanxstats/llm-cliches)\
   A collection of commonly used clichés and phrases in Large Language Models (LLMs) outputs.
 
 ## Hugo/blogdown themes
 
-- [hugo-tanka](https://github.com/nanxstats/hugo-tanka)\
+- [**hugo-tanka**](https://github.com/nanxstats/hugo-tanka)\
   A minimalist theme for Hugo and blogdown\
   [Live Preview](https://nanx.me/hugo-tanka/) |
   [blogdown book](https://bookdown.org/yihui/blogdown/other-themes.html)
-- [hugo-renga](https://github.com/nanxstats/hugo-renga)\
+- [**hugo-renga**](https://github.com/nanxstats/hugo-renga)\
   A clean Bootstrap 4 theme for Hugo and blogdown\
   [Live Preview](https://nanx.me/hugo-renga/)
-- [hugo-nanx2020](https://github.com/nanxstats/hugo-nanx2020)\
+- [**hugo-nanx2020**](https://github.com/nanxstats/hugo-nanx2020)\
   An opinionated Bootstrap 4 theme for Hugo and blogdown
-- [hugo-nanx2021](https://github.com/nanxstats/hugo-nanx2021)\
+- [**hugo-nanx2021**](https://github.com/nanxstats/hugo-nanx2021)\
   A minimalist Bootstrap 5 theme for Hugo and blogdown
-- [hugo-nanx2022](https://github.com/nanxstats/hugo-nanx2022)\
+- [**hugo-nanx2022**](https://github.com/nanxstats/hugo-nanx2022)\
   A minimalist Bootstrap 5 theme for Hugo and blogdown
-- [hugo-nanx2023](https://github.com/nanxstats/hugo-nanx2023)\
+- [**hugo-nanx2023**](https://github.com/nanxstats/hugo-nanx2023)\
   A minimalist Bootstrap 5 theme for Hugo and blogdown
-- [hugo-nanx2026](https://github.com/nanxstats/hugo-nanx2026)\
+- [**hugo-nanx2026**](https://github.com/nanxstats/hugo-nanx2026)\
   A minimalist Tailwind CSS theme for Hugo and blogdown
 
 ## Fonts
 
-- [DM Mono Ligaturized](https://github.com/nanxstats/dm-mono-ligaturized)\
+- [**DM Mono Ligaturized**](https://github.com/nanxstats/dm-mono-ligaturized)\
   DM Mono font with Fira Code ligatures
-- [Noto Sans Mono Ligaturized](https://github.com/nanxstats/noto-sans-mono-ligaturized)\
+- [**Noto Sans Mono Ligaturized**](https://github.com/nanxstats/noto-sans-mono-ligaturized)\
   Noto Sans Mono font with Fira Code ligatures
-- [Instrument Sans Modded](https://github.com/nanxstats/instrument-sans-mod)\
+- [**Instrument Sans Modded**](https://github.com/nanxstats/instrument-sans-mod)\
   Instrument Sans font with modified glyphs (uppercase R leg placement, flat head lowercase t)
 
 ## Collections
 
-- [dockflow.org](https://dockflow.org)\
+- [**dockflow.org**](https://dockflow.org)\
   Bioconductor workflow containerization with liftr\
   [GitHub](https://github.com/nanxstats/dockflow)
-- [nanx.app](https://nanx.app)\
+- [**nanx.app**](https://nanx.app)\
   A collection of shiny apps built by me\
   [GitHub](https://github.com/nanxstats/nanx.app)
 
 ## Archives
 
-- [使用 R 和 Apache 开发 Web 应用程序](https://nanx.me/rapache/) (2011)
-- [来自 Google 的 R 语言编码风格指南](https://nanx.me/rstyle/) (2011)
+- [**使用 R 和 Apache 开发 Web 应用程序**](https://nanx.me/rapache/) (2011)
+- [**来自 Google 的 R 语言编码风格指南**](https://nanx.me/rstyle/) (2011)
 
 
 
