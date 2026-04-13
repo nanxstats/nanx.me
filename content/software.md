@@ -450,6 +450,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
   DM Mono font with Fira Code ligatures
 - [Noto Sans Mono Ligaturized](https://github.com/nanxstats/noto-sans-mono-ligaturized)\
   Noto Sans Mono font with Fira Code ligatures
+- [Paper Mono Ligaturized](https://github.com/nanxstats/paper-mono-ligaturized)\
+  Paper Mono font with Fira Code ligatures and default slashed zero
 - [Instrument Sans Modded](https://github.com/nanxstats/instrument-sans-mod)\
   Instrument Sans font with modified glyphs (uppercase R leg placement, flat head lowercase t)
 
