@@ -117,6 +117,10 @@ main article > ol > li > a:first-child {
   Build pkgdown websites without an internet connection\
   [CRAN](https://cran.r-project.org/package=pkgdown.offline) |
   [GitHub](https://github.com/nanxstats/pkgdown.offline)
+- [gsDesignTune](https://nanx.me/gsDesignTune/)\
+  Dependency-aware scenario exploration for group sequential designs\
+  [CRAN](https://cran.r-project.org/package=gsDesignTune) |
+  [GitHub](https://github.com/nanxstats/gsDesignTune)
 
 ### Statistical machine learning
 
