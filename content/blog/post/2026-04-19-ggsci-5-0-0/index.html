@@ -1,0 +1,166 @@
+---
+title: "ggsci 5.0.0 and py-ggsci 2.0.0: Generative Color Scales from Gephi"
+author: "Nan Xiao"
+date: "2026-04-19T01:33:00"
+slug: ggsci-5-0-0
+categories: []
+tags:
+  - R
+  - Python
+  - ggplot2
+  - plotnine
+  - ggsci
+  - color palettes
+  - color scales
+  - data visualization
+  - R packages
+  - Python packages
+meta_img: "image/pine-watt-3_Xwxya43hE-unsplash.jpg"
+description: >
+  ggsci 5.0.0 introduces generative color palettes from Gephi.
+  Instead of a fixed list of colors, you get a recipe: define the mood,
+  ask for as many colors as you need, and the palette grows with your data.
+---
+
+
+
+<div class="float">
+<img src="/image/pine-watt-3_Xwxya43hE-unsplash.jpg" alt="San Francisco 1.4. Photo by Pine Watt." />
+<div class="figcaption">San Francisco 1.4. Photo by <a href="https://unsplash.com/photos/3_Xwxya43hE">Pine Watt</a>.</div>
+</div>
+<p>After the <a href="/blog/post/ggsci-4-0-0/">last major version update</a> in September 2025,
+I am happy to announce the release of <a href="https://nanx.me/ggsci/">ggsci</a> 5.0.0
+and <a href="https://nanx.me/py-ggsci/">ggsci for Python</a> 2.0.0.</p>
+<p>You can install the R package ggsci from CRAN:</p>
+<pre class="r"><code>install.packages(&quot;ggsci&quot;)</code></pre>
+<p>And install the Python package from PyPI:</p>
+<pre class="bash"><code>pip install ggsci</code></pre>
+<div id="whats-new" class="section level2">
+<h2>What’s new</h2>
+<p>Every color palette in ggsci until now has been a fixed list:
+someone chose those exact colors, arranged them in a particular order,
+and you used them as-is. That works beautifully when you have five or eight
+categories. But real data does not always cooperate. You might have 15 clusters,
+20 cell types, or a network with dozens of communities,
+and at that point, a curated palette simply runs out.</p>
+<p>Generating purely random colors is no solution either.
+Random colors look random. They clash and merge, and your
+plot becomes harder to read.</p>
+<p>So the real question is: <em>how do you encode taste into a generator?</em>
+That is what this release is about.
+ggsci 5.0.0 and py-ggsci 2.0.0 introduce <strong>generative color palettes</strong> ported from
+<a href="https://gephi.org/">Gephi</a>, the open source network visualization platform.
+The Gephi palettes give you recipes instead of fixed lists.
+You choose a preset that defines the mood, request as many colors as
+you need, and the palette grows with your data.</p>
+<p>The original idea came from a conversation with my friend Simo
+about having a “YOLO” color scale
+(<a href="https://github.com/nanxstats/ggsci/issues/71">nanxstats/ggsci#71</a>),
+something like the “I’m feeling lucky” button where you trust the system
+to make a good decision on your behalf. That idea stuck with me.
+Gephi’s palette generator turned out to be the right answer to a question
+I hadn’t quite known how to ask.</p>
+<p>Here are the 17 Gephi presets, each generating 10 colors:</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig-ggsci-gephi-color-palettes"></span>
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-ggsci-gephi-color-palettes-1.png" alt="The 17 Gephi generative palettes added in ggsci 5.0.0 and py-ggsci 2.0.0." width="100%" />
+<p class="caption">
+Figure 1: The 17 Gephi generative palettes added in ggsci 5.0.0 and py-ggsci 2.0.0.
+</p>
+</div>
+<p>Each preset has a distinct character.
+“Intense” is saturated and punchy, while “pastel” leans soft and recessive.
+“Dark” favors deep tones.
+The number of colors, though, is entirely up to you.
+Ask for 6 or 60, and the generator will find colors that are
+visually distinct within the mood you chose.</p>
+</div>
+<div id="a-real-world-example" class="section level2">
+<h2>A real-world example</h2>
+<p>The payoff becomes clear when you have more categories than most
+fixed palettes can handle. Here is the t-SNE plot from the
+<a href="/blog/post/exp2vec/">tissue-specific gene embeddings</a> post,
+with 15 clusters rendered using the Gephi “intense” preset.</p>
+<pre class="r"><code>word_vectors &lt;- readRDS(url(&quot;https://raw.githubusercontent.com/nanxstats/exp2vec/main/output/Pancreas_embedding.rds&quot;))
+tsne_out &lt;- readRDS(url(&quot;https://raw.githubusercontent.com/nanxstats/exp2vec/main/output/Pancreas_tsne.rds&quot;))
+
+set.seed(42)
+cl &lt;- kmeans(word_vectors, centers = 15, iter.max = 20)
+df &lt;- cbind(as.data.frame(tsne_out$Y), as.factor(cl$cluster))
+names(df) &lt;- c(&quot;x&quot;, &quot;y&quot;, &quot;cluster&quot;)
+
+ggplot2::ggplot(df, ggplot2::aes(x = x, y = y)) +
+  ggplot2::geom_point(ggplot2::aes(colour = cluster), alpha = 0.3, size = 1) +
+  ggplot2::guides(colour = ggplot2::guide_legend(override.aes = list(alpha = 1, size = 3))) +
+  cowplot::theme_minimal_grid() +
+  ggsci::scale_color_gephi(palette = &quot;intense&quot;)</code></pre>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig-ggsci-gephi-t-sne"></span>
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-ggsci-gephi-t-sne-1.png" alt="A t-SNE plot of tissue-specific gene embeddings rendered with the Gephi intense palette. Each point is a gene, the color indicates its cluster assignment." width="100%" />
+<p class="caption">
+Figure 2: A t-SNE plot of tissue-specific gene embeddings rendered with the Gephi intense palette. Each point is a gene, the color indicates its cluster assignment.
+</p>
+</div>
+<p>OK! Now, everything below is mostly technical details about the implementation.
+Feel free to skip the next sections if you only want to know what’s new.</p>
+</div>
+<div id="why-gephi" class="section level2">
+<h2>Why Gephi</h2>
+<p>I first knew Gephi at a visualization summer school in 2010,
+and it has been my favorite tool for network visualization ever since.
+What keeps me coming back is its design and product sensibility as a whole:</p>
+<ol style="list-style-type: decimal">
+<li>Bringing your own data is easy. The import feature just works.</li>
+<li>The defaults look good without major tuning efforts: sensible color palettes and
+<a href="https://github.com/beyondbeneath/bezier-curved-edges-networkx">Bézier curve edges</a>
+that feel polished off-the-shelf.</li>
+<li>A plugin system that lets people extend it without cluttering the core.</li>
+</ol>
+<p>Designing a new color palette generator from scratch is a
+daunting task. The better move is to recognize that someone has already
+solved the problem well and bring their solution to a new context.
+Gephi’s palette generator has been serving the network visualization
+community reliably for over a decade. That track record is worth more
+than novelty.</p>
+</div>
+<div id="the-algorithm" class="section level2">
+<h2>The algorithm</h2>
+<p>The core idea behind Gephi’s generator is deceptively simple.
+Each preset defines a region of the
+<a href="https://en.wikipedia.org/wiki/CIELAB_color_space">CIE Lab color space</a>
+by specifying allowable ranges of hue, chroma, and luminance.
+These ranges together describe a visual mood.
+The “intense” preset permits high chroma and wide hue range.
+The “pastel” preset restricts chroma and lifts luminance.
+The presets are where the taste lives.</p>
+<p>Within those constraints, the generator can produce an arbitrary number
+of category colors that look relatively distinct, even though the exact
+result depends on the random seed.
+The underlying mechanism is, as you might guess,
+a constrained <em>k</em>-means clustering algorithm operating in the color space.</p>
+<p>The algorithm keeps only colors that satisfy the preset’s limits and
+also convert safely to RGB.
+It starts with random candidate colors in a normalized Lab-like space,
+then repeatedly assigns a large grid of valid sample colors to their
+nearest candidate and moves each candidate toward the average of its
+assigned samples.
+If an average falls outside the allowed region,
+the algorithm snaps that candidate to the nearest valid sample instead.
+After several refinement rounds, the final colors are reordered so
+that consecutive colors are as different from the already chosen ones
+as possible.</p>
+<p>This division of labor feels right to me.
+The presets capture a human judgment about what the palette
+should <em>feel</em> like.
+The algorithm handles the combinatorics of making <em>k</em> colors
+distinguishable within that feeling.
+The result is that you get the coherence of a curated palette
+with the flexibility to scale to any number of categories.</p>
+</div>
+<div id="whats-next" class="section level2">
+<h2>What’s next</h2>
+<p>I’m always looking for color palettes worth bringing to ggsci,
+whether they come from design systems, visualization research,
+or tools that have earned their defaults through years of use.
+If you have a favorite that you think deserves a wider audience,
+please let me know by
+<a href="https://github.com/nanxstats/ggsci/issues">opening an issue</a>.</p>
+</div>
