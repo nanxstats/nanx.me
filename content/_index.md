@@ -15,7 +15,7 @@ and reproducibility, in high-stakes clinical settings worldwide.
 I care about building software infrastructure that scales:
 infrastructure for electronic submissions and developer workflows that
 make effective collaboration possible across teams and companies.
-I maintain [software](/software/) in R, Python, and Rust.
+I maintain [software](/software/) in R, Python, Rust, and TypeScript.
 
 <style>
 .landing { font-size: 1.3125rem; }
