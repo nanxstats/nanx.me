@@ -14,7 +14,7 @@ main article > ol > li > a:first-child {
 
 ## Bookdown and Quarto book projects
 
-- [Group Sequential Designs Made Easy: A Web Interface Handbook](https://keaven.github.io/gsd-shiny/)\
+- [Group Sequential Design in R: A Practical Guide to the gsDesign Web Interface](https://keaven.github.io/gsd-shiny/)\
   Use a web interface to design, explore, and optimize
   group sequential clinical trials leveraging the flexible capabilities of
   the R package gsDesign.
