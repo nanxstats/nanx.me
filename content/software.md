@@ -450,6 +450,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 ## Fonts
 
+- [Anthrosevka Mono](https://github.com/nanxstats/anthrosevka)\
+  An Iosevka custom build inspired by Anthropic Mono
 - [DM Mono Ligaturized](https://github.com/nanxstats/dm-mono-ligaturized)\
   DM Mono font with Fira Code ligatures
 - [Noto Sans Mono Ligaturized](https://github.com/nanxstats/noto-sans-mono-ligaturized)\
