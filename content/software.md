@@ -452,7 +452,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 - [Anthrosevka Mono](https://nanx.me/anthrosevka/)\
   An Iosevka custom build inspired by Anthropic Mono\
-  [GitHub](https://github.com/nanxstats/anthrosevka)
+  [GitHub](https://github.com/nanxstats/anthrosevka) |
+  [Blog post](https://nanx.me/blog/post/anthrosevka-mono/)
 - [DM Mono Ligaturized](https://github.com/nanxstats/dm-mono-ligaturized)\
   DM Mono font with Fira Code ligatures
 - [Noto Sans Mono Ligaturized](https://github.com/nanxstats/noto-sans-mono-ligaturized)\
