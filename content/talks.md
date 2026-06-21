@@ -13,7 +13,7 @@ catalog: true
 
 ## 2022
 
-- [Asynchronous Processing of Long-Running Tasks in Shiny](https://rinpharma.com/publication/rinpharma_310/)\
+- [Asynchronous Processing of Long-Running Tasks in Shiny](https://web.archive.org/web/20240304044611/https://rinpharma.com/publication/rinpharma_310/)\
   Nicole Jones, Nan Xiao, Shuqi Zhao, Lawrence A. Gould\
   R/Pharma Conference\
   [Video recording](https://www.youtube.com/watch?v=G1JVt0m9qOo)
