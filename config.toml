@@ -17,6 +17,9 @@ hasCJKLanguage = true
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
+[security]
+allowContent = ["^text/html$", "^text/markdown$"]
+
 [params]
 pagetitle = "Nan Xiao"
 copyright = "© 2026 Nan Xiao. All rights reserved."

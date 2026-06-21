@@ -1,16 +1,8 @@
 ---
 title: "Books"
 menu: "main"
+catalog: true
 ---
-
-<style>
-main article > ul > li > a:first-child,
-main article > ol > li > a:first-child {
-  font-family: "Instrument Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-}
-</style>
 
 ## Bookdown and Quarto book projects
 
