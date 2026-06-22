@@ -18,64 +18,29 @@ The source code for this site itself is available at
 
 ## Typography
 
-
-<div class="catalog-table">
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Heading</div>
-    <div class="catalog-table-value"><a href="https://github.com/nanxstats/instrument-sans-mod">Instrument Sans Modded</a><br><span>Neo-grotesque typeface</span></div>
-  </div>
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Body text</div>
-    <div class="catalog-table-value"><a href="https://klim.co.nz/fonts/martina-plantijn/">Martina Plantijn</a><br><span>Serif typeface designed by Kris Sowersby</span></div>
-  </div>
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Code</div>
-    <div class="catalog-table-value"><a href="https://github.com/nanxstats/paper-mono-ligaturized">Paper Mono Ligaturized</a><br><span>Paper Mono with Fira Code ligatures</span></div>
-  </div>
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Favicon</div>
-    <div class="catalog-table-value"><a href="https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed">Fira Sans Extra Condensed</a><br><span>Legible condensed humanist typeface</span></div>
-  </div>
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Color theme</div>
-    <div class="catalog-table-value"><a href="https://github.com/tailwindlabs/tailwindcss-typography">Tailwind CSS Typography</a><br><span>Beautiful typographic defaults</span></div>
-  </div>
-</div>
-
+- [Instrument Sans Modded](https://github.com/nanxstats/instrument-sans-mod)\
+  Neo-grotesque typeface derived from Instrument Sans
+- [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)\
+  Serif typeface designed by Kris Sowersby
+- [Paper Mono Ligaturized](https://github.com/nanxstats/paper-mono-ligaturized)\
+  Code font with Fira Code ligatures
+- [Fira Sans Extra Condensed](https://fonts.google.com/specimen/Fira+Sans+Extra+Condensed)\
+  Favicon typeface
 
 ## Publishing
 
-
-<div class="catalog-table">
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Generator</div>
-    <div class="catalog-table-value"><a href="https://github.com/rstudio/blogdown">blogdown</a><br><span>Static site generator for R, driven by <a href="https://gohugo.io/">Hugo</a></span></div>
-  </div>
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Theme</div>
-    <div class="catalog-table-value"><a href="https://github.com/nanxstats/hugo-nanx2026">hugo-nanx2026</a><br><span>Responsive Hugo theme built on Tailwind CSS</span></div>
-  </div>
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Commenting</div>
-    <div class="catalog-table-value"><a href="https://utteranc.es/">utterances</a><br><span>Lightweight commenting system using GitHub issues</span></div>
-  </div>
-</div>
-
+- [blogdown](https://github.com/rstudio/blogdown)\
+  Static site generator for R, driven by Hugo
+- [hugo-nanx2026](https://github.com/nanxstats/hugo-nanx2026)\
+  Responsive Hugo theme built on Tailwind CSS
+- [utterances](https://utteranc.es/)\
+  Lightweight commenting system using GitHub issues
 
 ## Editing
 
-
-<div class="catalog-table">
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Editor</div>
-    <div class="catalog-table-value"><a href="https://code.visualstudio.com/">Visual Studio Code</a><br><span>Code editor from Microsoft</span></div>
-  </div>
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Extension</div>
-    <div class="catalog-table-value"><a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r">R extension</a><br><span>R language support in VS Code</span></div>
-  </div>
-  <div class="catalog-table-row">
-    <div class="catalog-table-key">Theme</div>
-    <div class="catalog-table-value"><a href="https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme">textmate.rstheme</a><br><span>Light VS Code theme optimized for R and R Markdown</span></div>
-  </div>
-</div>
+- [Visual Studio Code](https://code.visualstudio.com/)\
+  Code editor from Microsoft
+- [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)\
+  R language support in VS Code
+- [textmate.rstheme](https://marketplace.visualstudio.com/items?itemName=nanxstats.textmate-rstheme)\
+  Light VS Code theme optimized for R and R Markdown
