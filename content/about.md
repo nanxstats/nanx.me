@@ -3,10 +3,8 @@ title: "About"
 menu: "main"
 ---
 
-I'm a data scientist in Product Development Data Sciences at
-[Genentech](https://www.gene.com/),
-working at the intersection of statistical computing infrastructure and
-research software engineering.
+I'm a statistician working at the intersection of
+statistical computing infrastructure and research software engineering.
 My focus is on building software and AI infrastructure that makes
 clinical development efficient and reliable.
 
