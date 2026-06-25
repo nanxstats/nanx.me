@@ -4,12 +4,14 @@ menu: "main"
 catalog: true
 ---
 
+## Published books
+
+- [Group Sequential Design in R: A Practical Guide to the gsDesign Web Interface](https://link.springer.com/book/9783032315892)\
+  Springer, Use R! series, forthcoming 2026.\
+  [Preprint version](https://keaven.github.io/gsd-shiny/)
+
 ## Bookdown and Quarto book projects
 
-- [Group Sequential Design in R: A Practical Guide to the gsDesign Web Interface](https://keaven.github.io/gsd-shiny/)\
-  Use a web interface to design, explore, and optimize
-  group sequential clinical trials leveraging the flexible capabilities of
-  the R package gsDesign.
 - [Python for Clinical Study Reports and Submission](https://pycsr.org/)\
   Use Python for tables, listings, and figures generation and submission
 - [R for Clinical Study Reports and Submission](https://r4csr.org/)\
