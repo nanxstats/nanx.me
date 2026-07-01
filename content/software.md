@@ -73,6 +73,10 @@ catalog: true
   Scientific journal and sci-fi themed color palettes for plotnine\
   [PyPI](https://pypi.org/project/ggsci/) |
   [GitHub](https://github.com/nanxstats/py-ggsci)
+- [playwright-byob](https://nanx.me/playwright-byob/)\
+  Bring your own browser to Playwright\
+  [PyPI](https://pypi.org/project/playwright-byob/) |
+  [GitHub](https://github.com/nanxstats/playwright-byob)
 - [pytest-r-snapshot](https://nanx.me/pytest-r-snapshot/)\
   A pytest plugin for snapshot testing against R reference outputs\
   [PyPI](https://pypi.org/project/pytest-r-snapshot/) |
