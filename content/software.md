@@ -73,6 +73,10 @@ catalog: true
   Scientific journal and sci-fi themed color palettes for plotnine\
   [PyPI](https://pypi.org/project/ggsci/) |
   [GitHub](https://github.com/nanxstats/py-ggsci)
+- [asciilint](https://nanx.me/asciilint/)\
+  ASCII and character policy checks for text files\
+  [PyPI](https://pypi.org/project/asciilint/) |
+  [GitHub](https://github.com/nanxstats/asciilint)
 - [playwright-byob](https://nanx.me/playwright-byob/)\
   Bring your own browser to Playwright\
   [PyPI](https://pypi.org/project/playwright-byob/) |
