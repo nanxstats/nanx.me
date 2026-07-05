@@ -223,6 +223,10 @@ catalog: true
   [crates.io](https://crates.io/crates/revdeprun) |
   [docs.rs](https://docs.rs/revdeprun/) |
   [GitHub](https://github.com/nanxstats/revdeprun)
+- [ggsci-rs](https://docs.rs/ggsci/)\
+  Scientific journal and sci-fi themed color palettes for Rust\
+  [crates.io](https://crates.io/crates/ggsci) |
+  [GitHub](https://github.com/nanxstats/ggsci-rs)
 - [gsdesign-rust](https://docs.rs/gsdesign/)\
   Group sequential design for Rust (experimental)\
   [crates.io](https://crates.io/crates/gsdesign) |
