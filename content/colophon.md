@@ -18,8 +18,8 @@ The source code for this site itself is available at
 
 ## Typography
 
-- [Instrument Sans Modded](https://github.com/nanxstats/instrument-sans-mod)\
-  Neo-grotesque typeface derived from Instrument Sans
+- [Scoutie Sans](https://github.com/sursly/scoutie)\
+  Grotesque typeface designed by Ty Finck
 - [Martina Plantijn](https://klim.co.nz/fonts/martina-plantijn/)\
   Serif typeface designed by Kris Sowersby
 - [Paper Mono Ligaturized](https://github.com/nanxstats/paper-mono-ligaturized)\
