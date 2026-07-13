@@ -460,6 +460,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
   [Blog post](https://nanx.me/blog/post/anthrosevka-mono/)
 - [DM Mono Ligaturized](https://github.com/nanxstats/dm-mono-ligaturized)\
   DM Mono font with Fira Code ligatures
+- [Fira Mono Ligaturized](https://github.com/nanxstats/fira-mono-ligaturized)\
+  Fira Mono font with opinionated Fira Code ligatures and stylistic sets
 - [Noto Sans Mono Ligaturized](https://github.com/nanxstats/noto-sans-mono-ligaturized)\
   Noto Sans Mono font with Fira Code ligatures
 - [Paper Mono Ligaturized](https://github.com/nanxstats/paper-mono-ligaturized)\
