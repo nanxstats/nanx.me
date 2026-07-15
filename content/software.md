@@ -218,6 +218,10 @@ catalog: true
 
 ## Rust packages
 
+- [bisectrunk](https://nanx.me/bisectrunk/)\
+  Parallel, environment-aware, resumable Git bisection executor\
+  [crates.io](https://crates.io/crates/bisectrunk) |
+  [GitHub](https://github.com/nanxstats/bisectrunk)
 - [revdeprun](https://nanx.me/revdeprun/)\
   Easy reverse dependency checks for R with cloud-ready environment setup\
   [crates.io](https://crates.io/crates/revdeprun) |
