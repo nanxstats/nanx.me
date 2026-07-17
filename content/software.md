@@ -477,6 +477,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
 
 ## Collections
 
+- [Nan Homebrew Tap](https://github.com/nanxstats/homebrew-tap)\
+  Homebrew formulae and font casks maintained by me
 - [dockflow.org](https://dockflow.org)\
   Bioconductor workflow containerization with liftr\
   [GitHub](https://github.com/nanxstats/dockflow)
