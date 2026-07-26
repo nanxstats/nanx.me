@@ -121,6 +121,12 @@ catalog: true
   Dependency-aware scenario exploration for group sequential designs\
   [CRAN](https://cran.r-project.org/package=gsDesignTune) |
   [GitHub](https://github.com/nanxstats/gsDesignTune)
+- [liteformats](https://nanx.me/liteformats/)\
+  Minimalist output formats and templates for litedown\
+  [GitHub](https://github.com/nanxstats/liteformats)
+- [zmij](https://nanx.me/zmij/)\
+  Round-trip-safe double-precision formatting\
+  [GitHub](https://github.com/nanxstats/zmij)
 
 ### Statistical machine learning
 
