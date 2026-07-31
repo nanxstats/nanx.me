@@ -237,14 +237,14 @@ catalog: true
   Scientific journal and sci-fi themed color palettes for Rust\
   [crates.io](https://crates.io/crates/ggsci) |
   [GitHub](https://github.com/nanxstats/ggsci-rs)
-- [gsdesign-rust](https://docs.rs/gsdesign/)\
+- [gsdesign-rs](https://docs.rs/gsdesign/)\
   Group sequential design for Rust (experimental)\
   [crates.io](https://crates.io/crates/gsdesign) |
-  [GitHub](https://github.com/nanxstats/gsdesign-rust)
-- [simtrial-rust](https://docs.rs/simtrial/)\
+  [GitHub](https://github.com/nanxstats/gsdesign-rs)
+- [simtrial-rs](https://docs.rs/simtrial/)\
   Clinical trial simulation for Rust (experimental)\
   [crates.io](https://crates.io/crates/simtrial) |
-  [GitHub](https://github.com/nanxstats/simtrial-rust)
+  [GitHub](https://github.com/nanxstats/simtrial-rs)
 
 ## VS Code extensions
 
