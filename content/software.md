@@ -123,9 +123,11 @@ catalog: true
   [GitHub](https://github.com/nanxstats/gsDesignTune)
 - [liteformats](https://nanx.me/liteformats/)\
   Minimalist output formats and templates for litedown\
+  [CRAN](https://cran.r-project.org/package=liteformats) |
   [GitHub](https://github.com/nanxstats/liteformats)
 - [zmij](https://nanx.me/zmij/)\
   Round-trip-safe double-precision formatting\
+  [CRAN](https://cran.r-project.org/package=zmij) |
   [GitHub](https://github.com/nanxstats/zmij)
 
 ### Statistical machine learning
