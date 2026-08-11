@@ -470,6 +470,8 @@ Shiny apps, widgets, and templates for interactive data analysis.
   An Iosevka custom build inspired by Anthropic Mono\
   [GitHub](https://github.com/nanxstats/anthrosevka) |
   [Blog post](https://nanx.me/blog/post/anthrosevka-mono/)
+- [Courier Prime Sans Ligaturized](https://github.com/nanxstats/courier-prime-sans-ligaturized)\
+  Courier Prime Sans font with character designs from Courier Prime Code and Fira Code ligatures
 - [DM Mono Ligaturized](https://github.com/nanxstats/dm-mono-ligaturized)\
   DM Mono font with Fira Code ligatures
 - [Fira Mono Ligaturized](https://github.com/nanxstats/fira-mono-ligaturized)\
