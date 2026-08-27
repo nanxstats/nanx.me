@@ -6,9 +6,10 @@ catalog: true
 
 ## Published books
 
-- [Group Sequential Design in R: A Practical Guide to the gsDesign Web Interface](https://link.springer.com/book/9783032315892)\
+- [Group Sequential Design in R: A Practical Guide to the gsDesign Web Interface](https://keaven.github.io/gsd-shiny/)\
   Springer, Use R! series, forthcoming 2026.\
-  [Preprint version](https://keaven.github.io/gsd-shiny/)
+  [Preorder from Springer](https://link.springer.com/book/9783032315892) |
+  [Preorder on Amazon](https://www.amazon.com/dp/3032315891/)
 
 ## Bookdown and Quarto book projects
 
