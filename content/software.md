@@ -129,6 +129,9 @@ catalog: true
   Round-trip-safe double-precision formatting\
   [CRAN](https://cran.r-project.org/package=zmij) |
   [GitHub](https://github.com/nanxstats/zmij)
+- [shinygenui](https://nanx.me/shinygenui/)\
+  Generative UI for Shiny\
+  [GitHub](https://github.com/nanxstats/shinygenui)
 
 ### Statistical machine learning
 
