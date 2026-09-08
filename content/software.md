@@ -270,6 +270,10 @@ catalog: true
 
 ## JavaScript apps
 
+- [p5-brush-skeleton](https://github.com/nanxstats/p5-brush-skeleton)\
+  Sketched generated interfaces. A small library on top of p5.js and p5.brush
+  that draws a bento grid of UI cards in pencil and fills them with watercolor
+  washes, hatching, charts, forms, tables, and other components.
 - [Deep Learning GPU Selector](https://nanx.me/gpu/)\
   Discover the best GPU for your deep learning needs by answering a few yes/no questions\
   [GitHub](https://github.com/nanxstats/gpu) |
