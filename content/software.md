@@ -108,6 +108,18 @@ catalog: true
 
 ### Infrastructure and automation
 
+- [shinygenui](https://nanx.me/shinygenui/)\
+  Generative UI for Shiny\
+  [CRAN](https://cran.r-project.org/package=shinygenui) |
+  [GitHub](https://github.com/nanxstats/shinygenui)
+- [liteformats](https://nanx.me/liteformats/)\
+  Minimalist output formats and templates for litedown\
+  [CRAN](https://cran.r-project.org/package=liteformats) |
+  [GitHub](https://github.com/nanxstats/liteformats)
+- [zmij](https://nanx.me/zmij/)\
+  Round-trip-safe double-precision formatting\
+  [CRAN](https://cran.r-project.org/package=zmij) |
+  [GitHub](https://github.com/nanxstats/zmij)
 - [pkglite](https://merck.github.io/pkglite/)\
   Compact package representations\
   [CRAN](https://cran.r-project.org/package=pkglite) |
@@ -121,17 +133,6 @@ catalog: true
   Dependency-aware scenario exploration for group sequential designs\
   [CRAN](https://cran.r-project.org/package=gsDesignTune) |
   [GitHub](https://github.com/nanxstats/gsDesignTune)
-- [liteformats](https://nanx.me/liteformats/)\
-  Minimalist output formats and templates for litedown\
-  [CRAN](https://cran.r-project.org/package=liteformats) |
-  [GitHub](https://github.com/nanxstats/liteformats)
-- [zmij](https://nanx.me/zmij/)\
-  Round-trip-safe double-precision formatting\
-  [CRAN](https://cran.r-project.org/package=zmij) |
-  [GitHub](https://github.com/nanxstats/zmij)
-- [shinygenui](https://nanx.me/shinygenui/)\
-  Generative UI for Shiny\
-  [GitHub](https://github.com/nanxstats/shinygenui)
 
 ### Statistical machine learning
 
