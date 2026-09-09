@@ -1,0 +1,188 @@
+---
+title: "shinygenui: Generative UI for Shiny"
+author: "Nan Xiao"
+date: "2026-09-09T11:39:00"
+slug: shinygenui
+categories: []
+tags:
+  - R
+  - R packages
+  - Shiny
+  - Generative UI
+  - Agentic AI
+  - Large Language Model
+  - ellmer
+  - shinychat
+  - A2UI
+  - json-render
+meta_img: "image/shinygenui-hero.png"
+description: >
+  shinygenui brings generative UI to Shiny. Give a language model a catalog
+  of trusted components, and it can build and revise an interactive interface
+  as people describe what they need.
+---
+
+
+
+<div class="float">
+<img src="/image/shinygenui-hero.png" alt="Sketched user interface skeletons. Procedurally generated with p5.brush.skeleton." />
+<div class="figcaption">Sketched user interface skeletons. Procedurally generated with
+<a href="https://github.com/nanxstats/p5-brush-skeleton">p5.brush.skeleton</a>.</div>
+</div>
+<p>It’s my pleasure to share that <a href="https://nanx.me/shinygenui/">shinygenui</a>
+is now on CRAN. It brings generative UI to Shiny: the developer defines a
+catalog of components, and a language model builds and updates an interface
+as users describe what they need.</p>
+<p>You can install it with:</p>
+<pre class="r"><code>install.packages(&quot;shinygenui&quot;)</code></pre>
+<p>Or get the development version from GitHub:</p>
+<pre class="r"><code>pak::pak(&quot;nanxstats/shinygenui&quot;)</code></pre>
+<p>Apparently, language models are <a href="https://openai.com/index/better-language-models/">unsupervised multitask learners</a>, but that’s so 2019.
+Leviathan et al. (2026) showed that <a href="https://doi.org/10.48550/arXiv.2604.09577">current LLMs can also generate effective
+user interfaces</a>. Vercel’s
+<a href="https://github.com/vercel-labs/json-render">json-render</a> and Google’s
+<a href="https://github.com/a2ui-project/a2ui">A2UI</a> are two popular projects
+exploring this idea in the JavaScript world.</p>
+<p>shinygenui brings the same (broad) idea to R, with a much smaller scope.
+The flow goes like this: the app developer defines the available components
+and the arguments each one accepts. When someone makes a request in chat,
+the model chooses components from this catalog and supplies their arguments
+through tool calls. shinygenui verifies those arguments and renders the result
+on a canvas. As the conversation continues, the model can update or remove
+what it built.</p>
+<p>Behind the scenes, <a href="https://ellmer.tidyverse.org">ellmer</a> provides
+model providers and tool call abstractions,
+and <a href="https://posit-dev.github.io/shinychat/r/">shinychat</a> streams the
+conversation into Shiny. Both foundational packages saved me
+from reinventing some fairly huge wheels.</p>
+<div id="example" class="section level2">
+<h2>Example</h2>
+<p>Here is a recording of an mtcars explorer app built with shinygenui:</p>
+<div class="float">
+<video autoplay loop muted playsinline src="/image/shinygenui-mtcars-explorer.mp4">
+</video>
+<div class="figcaption">
+Going through the four example prompts in the mtcars explorer app built with shinygenui. Playing at 1x speed. The model used is gpt-5.6-sol medium.
+</div>
+</div>
+<p>A minimal version of the app:</p>
+<pre class="r"><code>readRenviron(&quot;.env&quot;)
+
+library(shiny)
+library(bslib)
+library(shinygenui)
+
+ui &lt;- page_sidebar(
+  title = &quot;mtcars explorer&quot;,
+  sidebar = sidebar(
+    width = 380,
+    shinychat::chat_ui(&quot;chat&quot;, height = &quot;100%&quot;)
+  ),
+  genui_canvas(&quot;canvas&quot;)
+)
+
+server &lt;- function(input, output, session) {
+  catalog &lt;- genui_catalog(
+    genui_components_bslib(data = mtcars)
+  )
+  chat &lt;- ellmer::chat_openai(
+    model = Sys.getenv(&quot;SHINYGENUI_MODEL&quot;),
+    params = ellmer::params(
+      reasoning_effort = Sys.getenv(&quot;SHINYGENUI_EFFORT&quot;)
+    ),
+    echo = &quot;none&quot;
+  )
+  genui_server(
+    &quot;canvas&quot;,
+    catalog = catalog,
+    chat = chat,
+    data = reactive(mtcars),
+    chat_id = &quot;chat&quot;,
+    system_prompt = genui_prompt(
+      catalog,
+      context = &quot;The data is mtcars.&quot;
+    )
+  )
+}
+
+shinyApp(ui, server)</code></pre>
+<p>In the Shiny UI code, <code>genui_canvas()</code> creates the space where components appear.
+In the server code, <code>genui_components_bslib()</code> supplies a small set of
+predefined UI components, <code>genui_catalog()</code> bundles them,
+and <code>genui_server()</code> connects the catalog to the chat.
+Eventually, <code>genui_prompt()</code> tells the model about the catalog and the data.
+The example uses OpenAI API, but any model provider supported by ellmer works.</p>
+<p>Once a component appears, it behaves like regular Shiny UI. The histogram
+comes with a slider for the number of bins, and dragging it redraws the plot
+immediately via Shiny. The model understands the question and decides
+what to put on the canvas, and Shiny handles the interaction after it gets there.</p>
+<p>The “bslib starter components” were only created to keep the example app short.
+The point here is to build your own catalog. <code>genui_component()</code> can wrap the
+UI and server logic you would normally put in a <a href="https://mastering-shiny.org/scaling-modules.html">Shiny module</a>.
+This allows an app to offer a small set of domain-specific components,
+each with its own validations and <a href="https://nanx.me/blog/post/sensible-defaults/">sensible defaults</a>.
+shinygenui also records successful changes to the canvas, so you can save and
+replay an interface later without burning more tokens.</p>
+<p>You can find polished examples under
+<a href="https://github.com/nanxstats/shinygenui/tree/main/inst/examples"><code>inst/examples/</code></a>
+in the source package, ready to customize and run. I recommend checking
+the development version.</p>
+</div>
+<div id="why-generative-ui" class="section level2">
+<h2>Why generative UI?</h2>
+<p>We can observe two ends of the user interface spectrum.
+A traditional Shiny app works ok when the developer fully anticipates the
+(metaphorical) questions people will ask and how to answer them.
+Every code path through the app can be carefully designed and tested.
+In contrast, a post-2022 chat interface can accept any questions,
+but its common answer is often limited to a wall of text.</p>
+<p>Generative UI (GenUI) opens up the space between them, because… why not?
+We should be able to ask a question, get an interface tailored to that question,
+and then interact with it to explore the answer. Like the elastic-net,
+there should to be a useful point between the two extremes.</p>
+</div>
+<div id="declarative-genui" class="section level2">
+<h2>Declarative GenUI</h2>
+<p>Although the idea sounds amazing, the obvious concern is safety.
+Letting a model write arbitrary UI code gives it great power (and responsibility)
+inside your users’ browser sessions. shinygenui takes a boring approach.
+The model can only choose UI components from the catalog defined by the app developer.
+Each catalog entry is an ellmer tool with typed arguments.
+The model output is plain data, and shinygenui validates it before
+calling the component’s UI and server functions.</p>
+<p>The catalog can be created inside the server function,
+so its argument types can reflect the current session. For example, a column
+name argument can be limited to the columns in the current dataset.
+If the model invents a column that doesn’t exist, validation will simply reject
+the call and send a useful error message back to the model so it can try again.</p>
+<p>This approach is often called
+<a href="https://docs.langchain.com/oss/python/langchain/frontend/declarative-generative-ui">declarative generative UI</a>.
+The model has freedom to choose and arrange components, while the developer
+has control over the possible component options and behavior.
+It might not be <em>that</em> flexible, but it is predictable.</p>
+</div>
+<div id="im-finally-making-a-shiny-extension" class="section level2">
+<h2>I’m finally making a Shiny extension!</h2>
+<p>I have been curating
+<a href="https://github.com/nanxstats/awesome-shiny-extensions">awesome-shiny-extensions</a>
+since 2018. Somehow, during all that time, I never made a proper Shiny
+extension package of my own.</p>
+<p>My personal diagnosis is analysis paralysis. After years of cataloging
+every possibility in every shape and direction, everything speaks to my heart,
+so nothing speaks loudly enough. Any package I built would need
+a strong and clear reason to exist.</p>
+<p>Generative UI meets that bar. It’s quirky, meta, and new enough that R deserves
+an opinionated take on it. I am glad shinygenui is my first Shiny extension,
+and I hope you find something useful to build with it. If you do,
+I would love to hear about it.</p>
+</div>
+<div id="ai-usage-disclaimer" class="section level2">
+<h2>AI usage disclaimer</h2>
+<p>I used Claude (Fable 5, max) for parts of the problem analysis and spec writing.
+I generated, reviewed, and revised the prompts before sending the plan to
+Claude Code (Fable 5, xhigh) for implementation. I then reviewed
+and revised the code with substantial help from Codex (GPT-5.6 Sol, xhigh).</p>
+<p>Despite my best efforts to minimize AI slop… some generated content
+probably still escaped my review. If you see anything that looks bizarro,
+please <a href="https://github.com/nanxstats/shinygenui/issues">create an issue</a>.</p>
+</div>
