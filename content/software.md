@@ -234,23 +234,27 @@ catalog: true
   Scientific journal and sci-fi themed color palettes for Rust\
   [crates.io](https://crates.io/crates/ggsci) |
   [GitHub](https://github.com/nanxstats/ggsci-rs)
-- [promptjar](https://docs.rs/promptjar/)\
-  Query a Git repo of Markdown prompt archives like a database\
-  [crates.io](https://crates.io/crates/promptjar) |
-  [GitHub](https://github.com/nanxstats/promptjar)
+- [bisectrunk](https://nanx.me/bisectrunk/)\
+  Parallel, environment-aware, resumable Git bisection executor\
+  [crates.io](https://crates.io/crates/bisectrunk) |
+  [GitHub](https://github.com/nanxstats/bisectrunk)
+- [boringbib](https://docs.rs/boringbib/)\
+  A boring BibTeX formatter\
+  [crates.io](https://crates.io/crates/boringbib) |
+  [GitHub](https://github.com/nanxstats/boringbib)
 - [okr](https://nanx.me/okr/)\
   Reproducible R source context for coding agents\
   [crates.io](https://crates.io/crates/okr) |
   [GitHub](https://github.com/nanxstats/okr)
+- [promptjar](https://docs.rs/promptjar/)\
+  Query a Git repo of Markdown prompt archives like a database\
+  [crates.io](https://crates.io/crates/promptjar) |
+  [GitHub](https://github.com/nanxstats/promptjar)
 - [revdeprun](https://nanx.me/revdeprun/)\
   Easy reverse dependency checks for R with cloud-ready environment setup\
   [crates.io](https://crates.io/crates/revdeprun) |
   [docs.rs](https://docs.rs/revdeprun/) |
   [GitHub](https://github.com/nanxstats/revdeprun)
-- [bisectrunk](https://nanx.me/bisectrunk/)\
-  Parallel, environment-aware, resumable Git bisection executor\
-  [crates.io](https://crates.io/crates/bisectrunk) |
-  [GitHub](https://github.com/nanxstats/bisectrunk)
 - [gsdesign-rs](https://docs.rs/gsdesign/)\
   Group sequential design for Rust (experimental)\
   [crates.io](https://crates.io/crates/gsdesign) |
