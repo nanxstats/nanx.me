@@ -112,6 +112,9 @@ catalog: true
   Generative UI for Shiny\
   [CRAN](https://cran.r-project.org/package=shinygenui) |
   [GitHub](https://github.com/nanxstats/shinygenui)
+- [shinysnap](https://nanx.me/shinysnap/)\
+  Save and restore the state of Shiny applications\
+  [GitHub](https://github.com/nanxstats/shinysnap)
 - [liteformats](https://nanx.me/liteformats/)\
   Minimalist output formats and templates for litedown\
   [CRAN](https://cran.r-project.org/package=liteformats) |
