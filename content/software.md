@@ -114,6 +114,7 @@ catalog: true
   [GitHub](https://github.com/nanxstats/shinygenui)
 - [shinysnap](https://nanx.me/shinysnap/)\
   Save and restore the state of Shiny applications\
+  [CRAN](https://cran.r-project.org/package=shinysnap) |
   [GitHub](https://github.com/nanxstats/shinysnap)
 - [liteformats](https://nanx.me/liteformats/)\
   Minimalist output formats and templates for litedown\
