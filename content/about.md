@@ -3,7 +3,11 @@ title: "About"
 menu: "main"
 ---
 
-I'm a statistician working at the intersection of
+I'm a statistician in Methodology Research, a group led by
+[Keaven M. Anderson](https://keaven.github.io/) within
+[Biostatistics and Research Decision Sciences (BARDS)](https://jobs.merck.com/bards)
+at [Merck & Co., Inc., Rahway, NJ, USA](https://www.merck.com/).
+I work at the intersection of
 statistical computing infrastructure and research software engineering.
 My focus is on building software and AI infrastructure that makes
 clinical development efficient and reliable.
@@ -20,13 +24,12 @@ Projects I maintain include
 [ggsci](https://nanx.me/ggsci/),
 [pkglite](https://merck.github.io/pkglite/),
 [rtflite](https://pharmaverse.github.io/rtflite/),
-[tinytopics](https://nanx.me/tinytopics/),
-[msaenet](https://nanx.me/msaenet/),
-and [revdeprun](https://nanx.me/revdeprun/).
+[shinygenui](https://nanx.me/shinygenui/),
+[shinysnap](https://nanx.me/shinysnap/),
+[revdeprun](https://nanx.me/revdeprun/),
+and [okr](https://nanx.me/okr/).
 
-Previously, I was a statistician in Methodology Research,
-led by [Keaven M. Anderson](https://keaven.github.io/), at Merck & Co., Inc.
-Earlier, I was a data scientist at [Seven Bridges](https://www.sevenbridges.com/),
+Previously, I was a data scientist at [Seven Bridges](https://www.sevenbridges.com/),
 building cloud platforms for genomic data analysis.
 I studied human genetics in [Matthew Stephens lab](https://stephenslab.uchicago.edu/)
 at the University of Chicago.
